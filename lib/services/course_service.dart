@@ -1,13 +1,15 @@
 import 'dart:convert';
-import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import '../models/course.dart';
+import '../utils/io_stub.dart' if (dart.library.io) 'dart:io';
 
 class CourseService {
   static String? _docsPath;
 
   static Future<String> get _courseBasePath async {
+    if (kIsWeb) return '';
     if (_docsPath != null) return '$_docsPath/courses';
     final dir = await getApplicationDocumentsDirectory();
     _docsPath = dir.path;
@@ -22,6 +24,7 @@ class CourseService {
   }
 
   static Future<List<Course>> loadDownloadedCourses() async {
+    if (kIsWeb) return [];
     final base = await _courseBasePath;
     final dir = Directory(base);
     if (!dir.existsSync()) return [];
@@ -41,23 +44,28 @@ class CourseService {
   }
 
   static Future<bool> isCourseDownloaded(String courseCode) async {
+    if (kIsWeb) return false;
     final base = await _courseBasePath;
     return Directory('$base/$courseCode').existsSync();
   }
 
   static Future<String> readCourseFile(String courseCode, String fileName) async {
-    final base = await _courseBasePath;
-    final file = File('$base/$courseCode/$fileName');
-    if (await file.exists()) {
-      return await file.readAsString();
+    if (!kIsWeb) {
+      final base = await _courseBasePath;
+      final file = File('$base/$courseCode/$fileName');
+      if (await file.exists()) {
+        return await file.readAsString();
+      }
     }
     return rootBundle.loadString('assets/courses/$courseCode/$fileName');
   }
 
   static Future<String> getCourseDir(String courseCode) async {
-    final base = await _courseBasePath;
-    final fileDir = '$base/$courseCode';
-    if (Directory(fileDir).existsSync()) return fileDir;
+    if (!kIsWeb) {
+      final base = await _courseBasePath;
+      final fileDir = '$base/$courseCode';
+      if (Directory(fileDir).existsSync()) return fileDir;
+    }
     return 'assets/courses/$courseCode';
   }
 
@@ -67,6 +75,7 @@ class CourseService {
   }
 
   static Future<void> markCourseDownloaded(String courseCode) async {
+    if (kIsWeb) return;
     final base = await _courseBasePath;
     final stateDir = Directory('$base/.downloads');
     if (!stateDir.existsSync()) stateDir.createSync(recursive: true);

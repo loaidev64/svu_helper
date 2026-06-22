@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:path_provider/path_provider.dart';
 import '../models/course.dart';
+import '../utils/io_stub.dart' if (dart.library.io) 'dart:io';
 
 class DownloadService {
   static const _baseUrl = 'https://svu-helper.vercel.app/assets/assets/courses';
