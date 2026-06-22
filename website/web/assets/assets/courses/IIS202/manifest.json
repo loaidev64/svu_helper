@@ -1,0 +1,127 @@
+{
+  "code": "IIS202",
+  "title": "Database Architecture And Design",
+  "totalUnits": 12,
+  "units": [
+    {
+      "id": "001",
+      "title": "النماذج",
+      "lecture": "IIS202_001_lecture.md",
+      "quiz": "IIS202_001_quiz.json",
+      "flashcards": "IIS202_001_flashcards.json",
+      "pdf": "IIS202_001_pdf.pdf",
+      "quizCount": 30,
+      "flashcardCount": 75
+    },
+    {
+      "id": "002",
+      "title": "عالئقي",
+      "lecture": "IIS202_002_lecture.md",
+      "quiz": "IIS202_002_quiz.json",
+      "flashcards": "IIS202_002_flashcards.json",
+      "pdf": "IIS202_002_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 55
+    },
+    {
+      "id": "003",
+      "title": "المعطيات",
+      "lecture": "IIS202_003_lecture.md",
+      "quiz": "IIS202_003_quiz.json",
+      "flashcards": "IIS202_003_flashcards.json",
+      "pdf": "IIS202_003_pdf.pdf",
+      "quizCount": 30,
+      "flashcardCount": 50
+    },
+    {
+      "id": "004",
+      "title": "النمذجة",
+      "lecture": "IIS202_004_lecture.md",
+      "quiz": "IIS202_004_quiz.json",
+      "flashcards": "IIS202_004_flashcards.json",
+      "pdf": "IIS202_004_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 40
+    },
+    {
+      "id": "005",
+      "title": "نمذجة",
+      "lecture": "IIS202_005_lecture.md",
+      "quiz": "IIS202_005_quiz.json",
+      "flashcards": "IIS202_005_flashcards.json",
+      "pdf": "IIS202_005_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 65
+    },
+    {
+      "id": "006",
+      "title": "(1) (Normalization)",
+      "lecture": "IIS202_006_lecture.md",
+      "quiz": "IIS202_006_quiz.json",
+      "flashcards": "IIS202_006_flashcards.json",
+      "pdf": "IIS202_006_pdf.pdf",
+      "quizCount": 27,
+      "flashcardCount": 40
+    },
+    {
+      "id": "007",
+      "title": "(2) (Normalization)",
+      "lecture": "IIS202_007_lecture.md",
+      "quiz": "IIS202_007_quiz.json",
+      "flashcards": "IIS202_007_flashcards.json",
+      "pdf": "IIS202_007_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 50
+    },
+    {
+      "id": "008",
+      "title": "استعلامات",
+      "lecture": "IIS202_008_lecture.md",
+      "quiz": "IIS202_008_quiz.json",
+      "flashcards": "IIS202_008_flashcards.json",
+      "pdf": "IIS202_008_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 55
+    },
+    {
+      "id": "009",
+      "title": "استعلامات",
+      "lecture": "IIS202_009_lecture.md",
+      "quiz": "IIS202_009_quiz.json",
+      "flashcards": "IIS202_009_flashcards.json",
+      "pdf": "IIS202_009_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 50
+    },
+    {
+      "id": "010",
+      "title": "استعلامات",
+      "lecture": "IIS202_010_lecture.md",
+      "quiz": "IIS202_010_quiz.json",
+      "flashcards": "IIS202_010_flashcards.json",
+      "pdf": "IIS202_010_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 60
+    },
+    {
+      "id": "011",
+      "title": "المناقلات",
+      "lecture": "IIS202_011_lecture.md",
+      "quiz": "IIS202_011_quiz.json",
+      "flashcards": "IIS202_011_flashcards.json",
+      "pdf": "IIS202_011_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 40
+    },
+    {
+      "id": "012",
+      "title": "مخازن المعطيات",
+      "lecture": "IIS202_012_lecture.md",
+      "quiz": "IIS202_012_quiz.json",
+      "flashcards": "IIS202_012_flashcards.json",
+      "pdf": "IIS202_012_pdf.pdf",
+      "quizCount": 27,
+      "flashcardCount": 40
+    }
+  ]
+}

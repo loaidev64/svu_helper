@@ -1,0 +1,14 @@
+{
+  "courses": [
+    {
+      "code": "IIS202",
+      "title": "Database Architecture And Design",
+      "totalUnits": 12
+    },
+    {
+      "code": "INT203",
+      "title": "INT203",
+      "totalUnits": 5
+    }
+  ]
+}
