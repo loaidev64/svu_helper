@@ -210,6 +210,8 @@ void main() {
     const JsonEncoder.withIndent('  ').convert({'courses': courses}),
   );
 
+  _updatePubspecAssets(courses);
+
   if (anyWorkDone) {
     print('\n  Done! ${courses.length} courses indexed.');
   } else {
@@ -332,7 +334,46 @@ String? _deriveCourseTitleFromNested(String firstUnitPath, String courseCode) {
   return null;
 }
 
-/// Derive course-level title from already-flat lecture file.
+/// Update pubspec.yaml assets section to include all processed courses.
+void _updatePubspecAssets(List<Map<String, dynamic>> courses) {
+  const pubspecPath = 'pubspec.yaml';
+  final pubspec = File(pubspecPath);
+  if (!pubspec.existsSync()) {
+    print('  WARNING: pubspec.yaml not found');
+    return;
+  }
+
+  final lines = pubspec.readAsLinesSync();
+  final newLines = <String>[];
+  bool inAssets = false;
+  bool replaced = false;
+
+  for (final line in lines) {
+    if (!inAssets && line.trimLeft() == 'assets:') {
+      inAssets = true;
+      newLines.add(line);
+      newLines.add('    - assets/courses/courses_index.json');
+      final sorted = courses.map((c) => c['code'] as String).toList()..sort();
+      for (final code in sorted) {
+        newLines.add('    - assets/courses/$code/');
+      }
+      replaced = true;
+      continue;
+    }
+
+    if (inAssets) {
+      if (line.trimLeft().startsWith('- assets/courses/')) continue;
+      inAssets = false;
+    }
+
+    newLines.add(line);
+  }
+
+  if (replaced) {
+    pubspec.writeAsStringSync(newLines.join('\n'));
+    print('  Updated pubspec.yaml assets');
+  }
+}
 String? _deriveCourseTitleFromFlat(
     String courseCode, String coursePath, String firstUnitId) {
   final prefix = '${courseCode}_$firstUnitId';

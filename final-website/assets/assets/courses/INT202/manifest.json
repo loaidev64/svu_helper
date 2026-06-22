@@ -1,0 +1,97 @@
+{
+  "code": "INT202",
+  "title": "INT202",
+  "totalUnits": 9,
+  "units": [
+    {
+      "id": "000",
+      "title": "بطاقات",
+      "lecture": "INT202_000_lecture.md",
+      "quiz": "INT202_000_quiz.json",
+      "flashcards": "INT202_000_flashcards.json",
+      "pdf": "INT202_000_pdf.pdf",
+      "quizCount": 15,
+      "flashcardCount": 36
+    },
+    {
+      "id": "001",
+      "title": "بطاقات",
+      "lecture": "INT202_001_lecture.md",
+      "quiz": "INT202_001_quiz.json",
+      "flashcards": "INT202_001_flashcards.json",
+      "pdf": "INT202_001_pdf.pdf",
+      "quizCount": 20,
+      "flashcardCount": 20
+    },
+    {
+      "id": "002",
+      "title": "بطاقات",
+      "lecture": "INT202_002_lecture.md",
+      "quiz": "INT202_002_quiz.json",
+      "flashcards": "INT202_002_flashcards.json",
+      "pdf": "INT202_002_pdf.pdf",
+      "quizCount": 10,
+      "flashcardCount": 50
+    },
+    {
+      "id": "003",
+      "title": "بطاقات",
+      "lecture": "INT202_003_lecture.md",
+      "quiz": "INT202_003_quiz.json",
+      "flashcards": "INT202_003_flashcards.json",
+      "pdf": "INT202_003_pdf.pdf",
+      "quizCount": 23,
+      "flashcardCount": 32
+    },
+    {
+      "id": "004",
+      "title": "بطاقات",
+      "lecture": "INT202_004_lecture.md",
+      "quiz": "INT202_004_quiz.json",
+      "flashcards": "INT202_004_flashcards.json",
+      "pdf": "INT202_004_pdf.pdf",
+      "quizCount": 20,
+      "flashcardCount": 28
+    },
+    {
+      "id": "005",
+      "title": "بطاقات",
+      "lecture": "INT202_005_lecture.md",
+      "quiz": "INT202_005_quiz.json",
+      "flashcards": "INT202_005_flashcards.json",
+      "pdf": "INT202_005_pdf.pdf",
+      "quizCount": 23,
+      "flashcardCount": 32
+    },
+    {
+      "id": "006",
+      "title": "بطاقات",
+      "lecture": "INT202_006_lecture.md",
+      "quiz": "INT202_006_quiz.json",
+      "flashcards": "INT202_006_flashcards.json",
+      "pdf": "INT202_006_pdf.pdf",
+      "quizCount": 24,
+      "flashcardCount": 30
+    },
+    {
+      "id": "007",
+      "title": "بطاقات",
+      "lecture": "INT202_007_lecture.md",
+      "quiz": "INT202_007_quiz.json",
+      "flashcards": "INT202_007_flashcards.json",
+      "pdf": "INT202_007_pdf.pdf",
+      "quizCount": 15,
+      "flashcardCount": 50
+    },
+    {
+      "id": "008",
+      "title": "بطاقات",
+      "lecture": "INT202_008_lecture.md",
+      "quiz": "INT202_008_quiz.json",
+      "flashcards": "INT202_008_flashcards.json",
+      "pdf": "INT202_008_pdf.pdf",
+      "quizCount": 12,
+      "flashcardCount": 12
+    }
+  ]
+}

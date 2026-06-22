@@ -1,13 +1,14 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import '../services/course_service.dart';
 import 'flashcard_screen.dart';
 import 'pdf_screen.dart';
 import 'quiz_screen.dart';
 
 class CourseScreen extends StatefulWidget {
   final String courseCode;
-  const CourseScreen({super.key, required this.courseCode});
+  final bool isDownloaded;
+
+  const CourseScreen({super.key, required this.courseCode, this.isDownloaded = false});
 
   @override
   State<CourseScreen> createState() => _CourseScreenState();
@@ -24,16 +25,22 @@ class _CourseScreenState extends State<CourseScreen> {
   }
 
   Future<void> _loadManifest() async {
-    final raw = await rootBundle.loadString(
-      'assets/courses/${widget.courseCode}/manifest.json',
-    );
+    try {
+      _manifest = await CourseService.loadManifest(widget.courseCode);
+    } catch (_) {}
     setState(() {
-      _manifest = jsonDecode(raw) as Map<String, dynamic>;
       _loading = false;
     });
   }
 
-  void _showUnitOptions(Map<String, dynamic> unit) {
+  Future<String> _getFilePath(String fileName) async {
+    final dir = await CourseService.getCourseDir(widget.courseCode);
+    return '$dir/$fileName';
+  }
+
+  void _showUnitOptions(Map<String, dynamic> unit) async {
+    final pdfPath = unit['pdf'] as String;
+
     showModalBottomSheet(
       context: context,
       builder: (ctx) => SafeArea(
@@ -53,15 +60,17 @@ class _CourseScreenState extends State<CourseScreen> {
                 leading: const Icon(Icons.picture_as_pdf),
                 title: const Text('PDF'),
                 subtitle: const Text('عرض الملف الأصلي'),
-                onTap: () {
+                onTap: () async {
                   Navigator.pop(ctx);
+                  final path = await _getFilePath(pdfPath);
+                  if (!mounted) return;
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (_) => PdfScreen(
                         courseCode: widget.courseCode,
                         unitId: unit['id'] as String,
-                        filePath:
-                            'assets/courses/${widget.courseCode}/${unit['pdf']}',
+                        filePath: path,
+                        isDownloaded: widget.isDownloaded,
                       ),
                     ),
                   );
@@ -78,6 +87,7 @@ class _CourseScreenState extends State<CourseScreen> {
                       builder: (_) => QuizScreen(
                         courseCode: widget.courseCode,
                         unitId: unit['id'] as String,
+                        isDownloaded: widget.isDownloaded,
                       ),
                     ),
                   );
@@ -94,6 +104,7 @@ class _CourseScreenState extends State<CourseScreen> {
                       builder: (_) => FlashcardScreen(
                         courseCode: widget.courseCode,
                         unitId: unit['id'] as String,
+                        isDownloaded: widget.isDownloaded,
                       ),
                     ),
                   );
@@ -117,27 +128,29 @@ class _CourseScreenState extends State<CourseScreen> {
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator())
-          : ListView.builder(
-              padding: const EdgeInsets.all(16),
-              itemCount: (_manifest!['units'] as List).length,
-              itemBuilder: (context, i) {
-                final u = (_manifest!['units'] as List)[i]
-                    as Map<String, dynamic>;
-                return Card(
-                  child: ListTile(
-                    leading: CircleAvatar(
-                      child: Text(u['id'] as String),
-                    ),
-                    title: Text(u['title'] as String),
-                    subtitle: Text(
-                      '${u['quizCount']} سؤال · ${u['flashcardCount']} بطاقة',
-                    ),
-                    trailing: const Icon(Icons.chevron_right),
-                    onTap: () => _showUnitOptions(u),
-                  ),
-                );
-              },
-            ),
+          : _manifest == null
+              ? const Center(child: Text('فشل تحميل المقرر'))
+              : ListView.builder(
+                  padding: const EdgeInsets.all(16),
+                  itemCount: (_manifest!['units'] as List).length,
+                  itemBuilder: (context, i) {
+                    final u = (_manifest!['units'] as List)[i]
+                        as Map<String, dynamic>;
+                    return Card(
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          child: Text(u['id'] as String),
+                        ),
+                        title: Text(u['title'] as String),
+                        subtitle: Text(
+                          '${u['quizCount']} سؤال · ${u['flashcardCount']} بطاقة',
+                        ),
+                        trailing: const Icon(Icons.chevron_right),
+                        onTap: () => _showUnitOptions(u),
+                      ),
+                    );
+                  },
+                ),
     );
   }
 }

@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+import '../services/course_service.dart';
+import '../services/download_service.dart';
+import '../models/course.dart';
 import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -9,16 +14,35 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  List<Course> _newCourses = [];
+
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () {
-      if (mounted) {
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const HomeScreen()),
-        );
-      }
-    });
+    _init();
+  }
+
+  Future<void> _init() async {
+    if (defaultTargetPlatform == TargetPlatform.android) {
+      try {
+        final result = await Connectivity().checkConnectivity();
+        if (result.any((c) => c != ConnectivityResult.none)) {
+          final remote = await DownloadService.fetchRemoteIndex();
+          if (remote != null) {
+            final local = await CourseService.loadLocalCourses();
+            final downloaded = await CourseService.loadDownloadedCourses();
+            _newCourses = DownloadService.getNewCourses(remote, [...local, ...downloaded]);
+          }
+        }
+      } catch (_) {}
+    }
+
+    await Future.delayed(const Duration(seconds: 3));
+    if (mounted) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (_) => HomeScreen(newCourses: _newCourses)),
+      );
+    }
   }
 
   @override

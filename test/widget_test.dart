@@ -8,8 +8,5 @@ void main() {
 
     expect(find.text('SVU Helper'), findsOneWidget);
     expect(find.text('منصة تعليمية مساعدة'), findsOneWidget);
-
-    // Let the splash timer expire
-    await tester.pumpAndSettle(const Duration(seconds: 4));
   });
 }

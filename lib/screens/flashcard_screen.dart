@@ -1,18 +1,20 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
+import '../services/course_service.dart';
 
 class FlashcardScreen extends StatefulWidget {
   final String courseCode;
   final String unitId;
+  final bool isDownloaded;
 
   const FlashcardScreen({
     super.key,
     required this.courseCode,
     required this.unitId,
+    this.isDownloaded = false,
   });
 
   @override
@@ -33,9 +35,9 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
   Future<void> _loadFlashcards() async {
     try {
-      final path =
-          'assets/courses/${widget.courseCode}/${widget.courseCode}_${widget.unitId}_flashcards.json';
-      final raw = await rootBundle.loadString(path);
+      final fileName =
+          '${widget.courseCode}_${widget.unitId}_flashcards.json';
+      final raw = await CourseService.readCourseFile(widget.courseCode, fileName);
       final data = jsonDecode(raw) as Map<String, dynamic>;
       final cards =
           (data['cards'] as List<dynamic>).cast<Map<String, dynamic>>();

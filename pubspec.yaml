@@ -37,6 +37,9 @@ dependencies:
   syncfusion_flutter_pdfviewer: ^33.2.13+1
   flip_card: ^0.7.0
   gpt_markdown: ^1.1.7
+  dio: ^5.4.0
+  path_provider: ^2.1.0
+  connectivity_plus: ^6.0.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +66,7 @@ flutter:
   assets:
     - assets/courses/courses_index.json
     - assets/courses/IIS202/
+    - assets/courses/INT202/
     - assets/courses/INT203/
 
   # An image asset can refer to one or more resolution-specific "variants", see

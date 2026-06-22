@@ -1,15 +1,21 @@
 import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
+import '../services/course_service.dart';
 import 'pdf_screen.dart';
 
 class QuizScreen extends StatefulWidget {
   final String courseCode;
   final String unitId;
+  final bool isDownloaded;
 
-  const QuizScreen({super.key, required this.courseCode, required this.unitId});
+  const QuizScreen({
+    super.key,
+    required this.courseCode,
+    required this.unitId,
+    this.isDownloaded = false,
+  });
 
   @override
   State<QuizScreen> createState() => _QuizScreenState();
@@ -51,9 +57,9 @@ class _QuizScreenState extends State<QuizScreen> {
 
   Future<void> _loadQuiz() async {
     try {
-      final path =
-          'assets/courses/${widget.courseCode}/${widget.courseCode}_${widget.unitId}_quiz.json';
-      final raw = await rootBundle.loadString(path);
+      final fileName =
+          '${widget.courseCode}_${widget.unitId}_quiz.json';
+      final raw = await CourseService.readCourseFile(widget.courseCode, fileName);
       final data = jsonDecode(raw) as Map<String, dynamic>;
       final questions = (data['questions'] as List<dynamic>)
           .cast<Map<String, dynamic>>();
@@ -208,19 +214,24 @@ class _QuizScreenState extends State<QuizScreen> {
                               Icons.help_outline,
                               color: Colors.amber.shade700,
                             ),
-                            onPressed: () {
+                            onPressed: () async {
+                              final fileName =
+                                  '${widget.courseCode}_${widget.unitId}_pdf.pdf';
+                              final dir = await CourseService.getCourseDir(widget.courseCode);
+                              final path = '$dir/$fileName';
+                              if (!mounted) return;
                               Navigator.of(context).push(
                                 MaterialPageRoute(
                                   builder: (_) => PdfScreen(
                                     courseCode: widget.courseCode,
                                     unitId: widget.unitId,
-                                    filePath:
-                                        'assets/courses/${widget.courseCode}/${widget.courseCode}_${widget.unitId}_pdf.pdf',
+                                    filePath: path,
                                     initialPage: (int.tryParse(
                                           q['page'] as String? ?? '',
                                         ) ??
                                         0) +
                                         1,
+                                    isDownloaded: widget.isDownloaded,
                                   ),
                                 ),
                               );

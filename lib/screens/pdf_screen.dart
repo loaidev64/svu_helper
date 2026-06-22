@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
@@ -6,6 +7,7 @@ class PdfScreen extends StatefulWidget {
   final String unitId;
   final String filePath;
   final int? initialPage;
+  final bool isDownloaded;
 
   const PdfScreen({
     super.key,
@@ -13,6 +15,7 @@ class PdfScreen extends StatefulWidget {
     required this.unitId,
     required this.filePath,
     this.initialPage,
+    this.isDownloaded = false,
   });
 
   @override
@@ -29,15 +32,25 @@ class _PdfScreenState extends State<PdfScreen> {
         title: Text('${widget.courseCode} - ${widget.unitId}'),
         centerTitle: true,
       ),
-      body: SfPdfViewer.asset(
-        widget.filePath,
-        controller: _pdfViewerController,
-        onDocumentLoaded: (details) {
-          if (widget.initialPage != null) {
-            _pdfViewerController.jumpToPage(widget.initialPage!);
-          }
-        },
-      ),
+      body: widget.isDownloaded
+          ? SfPdfViewer.file(
+              File(widget.filePath),
+              controller: _pdfViewerController,
+              onDocumentLoaded: (details) {
+                if (widget.initialPage != null) {
+                  _pdfViewerController.jumpToPage(widget.initialPage!);
+                }
+              },
+            )
+          : SfPdfViewer.asset(
+              widget.filePath,
+              controller: _pdfViewerController,
+              onDocumentLoaded: (details) {
+                if (widget.initialPage != null) {
+                  _pdfViewerController.jumpToPage(widget.initialPage!);
+                }
+              },
+            ),
     );
   }
 }
