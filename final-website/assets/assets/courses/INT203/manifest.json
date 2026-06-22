@@ -1,0 +1,57 @@
+{
+  "code": "INT203",
+  "title": "INT203",
+  "totalUnits": 5,
+  "units": [
+    {
+      "id": "001",
+      "title": "مقدمة في الشبكات اللاسلكية",
+      "lecture": "INT203_001_lecture.md",
+      "quiz": "INT203_001_quiz.json",
+      "flashcards": "INT203_001_flashcards.json",
+      "pdf": "INT203_001_pdf.pdf",
+      "quizCount": 15,
+      "flashcardCount": 32
+    },
+    {
+      "id": "002",
+      "title": "أجهزة البنية التحتية",
+      "lecture": "INT203_002_lecture.md",
+      "quiz": "INT203_002_quiz.json",
+      "flashcards": "INT203_002_flashcards.json",
+      "pdf": "INT203_002_pdf.pdf",
+      "quizCount": 14,
+      "flashcardCount": 44
+    },
+    {
+      "id": "003",
+      "title": "هيكلية الشبكة 802.11",
+      "lecture": "INT203_003_lecture.md",
+      "quiz": "INT203_003_quiz.json",
+      "flashcards": "INT203_003_flashcards.json",
+      "pdf": "INT203_003_pdf.pdf",
+      "quizCount": 10,
+      "flashcardCount": 50
+    },
+    {
+      "id": "004",
+      "title": "MAC الطلقة الفيزيائية والطبقة الجزئية",
+      "lecture": "INT203_004_lecture.md",
+      "quiz": "INT203_004_quiz.json",
+      "flashcards": "INT203_004_flashcards.json",
+      "pdf": "INT203_004_pdf.pdf",
+      "quizCount": 15,
+      "flashcardCount": 36
+    },
+    {
+      "id": "005",
+      "title": "أمن الشبكات اللاسلكية",
+      "lecture": "INT203_005_lecture.md",
+      "quiz": "INT203_005_quiz.json",
+      "flashcards": "INT203_005_flashcards.json",
+      "pdf": "INT203_005_pdf.pdf",
+      "quizCount": 20,
+      "flashcardCount": 36
+    }
+  ]
+}
