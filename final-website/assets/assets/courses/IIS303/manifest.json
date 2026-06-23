@@ -1,0 +1,117 @@
+{
+  "code": "IIS303",
+  "title": "IIS303",
+  "totalUnits": 11,
+  "units": [
+    {
+      "id": "001",
+      "title": "SQL",
+      "lecture": "IIS303_001_lecture.md",
+      "quiz": "IIS303_001_quiz.json",
+      "flashcards": "IIS303_001_flashcards.json",
+      "pdf": "IIS303_001_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 60
+    },
+    {
+      "id": "002",
+      "title": "قواعد البيانات",
+      "lecture": "IIS303_002_lecture.md",
+      "quiz": "IIS303_002_quiz.json",
+      "flashcards": "IIS303_002_flashcards.json",
+      "pdf": "IIS303_002_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 50
+    },
+    {
+      "id": "003",
+      "title": "SQL",
+      "lecture": "IIS303_003_lecture.md",
+      "quiz": "IIS303_003_quiz.json",
+      "flashcards": "IIS303_003_flashcards.json",
+      "pdf": "IIS303_003_pdf.pdf",
+      "quizCount": 27,
+      "flashcardCount": 60
+    },
+    {
+      "id": "004",
+      "title": "القيود",
+      "lecture": "IIS303_004_lecture.md",
+      "quiz": "IIS303_004_quiz.json",
+      "flashcards": "IIS303_004_flashcards.json",
+      "pdf": "IIS303_004_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 55
+    },
+    {
+      "id": "005",
+      "title": "استعلامات",
+      "lecture": "IIS303_005_lecture.md",
+      "quiz": "IIS303_005_quiz.json",
+      "flashcards": "IIS303_005_flashcards.json",
+      "pdf": "IIS303_005_pdf.pdf",
+      "quizCount": 25,
+      "flashcardCount": 55
+    },
+    {
+      "id": "006",
+      "title": "استعلامات",
+      "lecture": "IIS303_006_lecture.md",
+      "quiz": "IIS303_006_quiz.json",
+      "flashcards": "IIS303_006_flashcards.json",
+      "pdf": "IIS303_006_pdf.pdf",
+      "quizCount": 28,
+      "flashcardCount": 50
+    },
+    {
+      "id": "007",
+      "title": "الربط",
+      "lecture": "IIS303_007_lecture.md",
+      "quiz": "IIS303_007_quiz.json",
+      "flashcards": "IIS303_007_flashcards.json",
+      "pdf": "IIS303_007_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 54
+    },
+    {
+      "id": "008",
+      "title": "التدفق",
+      "lecture": "IIS303_008_lecture.md",
+      "quiz": "IIS303_008_quiz.json",
+      "flashcards": "IIS303_008_flashcards.json",
+      "pdf": "IIS303_008_pdf.pdf",
+      "quizCount": 30,
+      "flashcardCount": 64
+    },
+    {
+      "id": "009",
+      "title": "إجرائيات",
+      "lecture": "IIS303_009_lecture.md",
+      "quiz": "IIS303_009_quiz.json",
+      "flashcards": "IIS303_009_flashcards.json",
+      "pdf": "IIS303_009_pdf.pdf",
+      "quizCount": 30,
+      "flashcardCount": 55
+    },
+    {
+      "id": "010",
+      "title": "التوابع المعرفة من قبل المستخدم والمناظير",
+      "lecture": "IIS303_010_lecture.md",
+      "quiz": "IIS303_010_quiz.md",
+      "flashcards": "IIS303_010_flashcards.json",
+      "pdf": "IIS303_010_pdf.pdf",
+      "quizCount": 0,
+      "flashcardCount": 50
+    },
+    {
+      "id": "011",
+      "title": "بطاقات",
+      "lecture": "IIS303_011_lecture.md",
+      "quiz": "IIS303_011_quiz.json",
+      "flashcards": "IIS303_011_flashcards.json",
+      "pdf": "IIS303_011_pdf.pdf",
+      "quizCount": 12,
+      "flashcardCount": 12
+    }
+  ]
+}

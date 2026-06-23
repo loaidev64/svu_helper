@@ -1,0 +1,380 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو موضوع الفصل الثامن؟",
+      "a": "Schema Objects: Tables and Constraints (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هي المكونات الرئيسية التي يغطيها هذا الفصل في إدارة قواعد بيانات أوراكل؟",
+      "a": "الجداول (Tables) والقيود (Constraints) (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "ما الذي يجب فهمه عند التعامل مع الكائنات المخطط لها (Schema Objects)؟",
+      "a": "قواعد التسمية وأنواع البيانات (Naming Rules and Data Types) (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "اذكر أحد أنواع الجداول التي يتم تناولها في هذا الفصل.",
+      "a": "الجدول المُرتَّب بالمعرف (Index-Organized Table) أو الجدول المؤقت (Temporary Table) (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هو الهدف من دراسة \"القيود\" (Constraints) في سياق قواعد البيانات؟",
+      "a": "تحديد القواعد التي يجب أن تتبعها البيانات لضمان سلامتها (الصفحة 3)"
+    },
+    {
+      "id": 6,
+      "q": "What are the general naming rules for schema objects?",
+      "a": "The length of names must be from 1 to 30 characters. Non quoted names cannot begin with an alphabetic character from your database character set. Names can only use letters, numbers, underscore (_), the dollar sign ($), or the hash symbol (#). (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "According to special naming rules for schema objects, what are the maximum lengths for a database name and a database link name?",
+      "a": "Database name may be up to 8 characters only. Database link names may be up to 128 characters long. (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "What is the description and typical use of a Heap Organized table?",
+      "a": "Description: The default table type and the most commonly used. Typical Use: Table type to use unless you have a specific reason to use a different type. (الصفحة 5)"
+    },
+    {
+      "id": 9,
+      "q": "What is the description and typical use of an Index organized table?",
+      "a": "Description: Data stored in a B-tree structure sorted by primary key. Typical Use: Table is queried mainly on primary key columns; provides fast random access. (الصفحة 5)"
+    },
+    {
+      "id": 10,
+      "q": "What is the purpose and typical use of a Temporary table?",
+      "a": "Description: Session private data, stored for the duration of a session or transaction; space allocated in temporary segments. Typical Use: Program needs a temporary table structure to store and sort data; table is not required after program ends. (الصفحة 5)"
+    },
+    {
+      "id": 11,
+      "q": "What is a table in a database?",
+      "a": "A basic storage container for data in a database. (الصفحة 7)"
+    },
+    {
+      "id": 12,
+      "q": "What mechanism enforces that data adhere to business rules by inspecting data during insertion, updating, and deleting?",
+      "a": "A constraint. (الصفحة 7)"
+    },
+    {
+      "id": 13,
+      "q": "How is a schema defined in a database?",
+      "a": "Collection of database objects that are owned by a particular user. (الصفحة 7)"
+    },
+    {
+      "id": 14,
+      "q": "What types of statements are used to create and modify the table structure, versus accessing and manipulating data?",
+      "a": "DDL statements (CREATE TABLE and ALTER TABLE) are used for structure; DML statements (INSERT, UPDATE, DELETE, MERGE, SELECT) are used for access/manipulation. (الصفحة 7)"
+    },
+    {
+      "id": 15,
+      "q": "When using DML statements, what must be explicitly or implicitly issued to end the transaction?",
+      "a": "A COMMIT or ROLLBACK. (الصفحة 7)"
+    },
+    {
+      "id": 16,
+      "q": "What characters can names in Oracle schema objects use?",
+      "a": "Letters, numbers, underscore (_), the dollar sign (\\$), or the hash symbol (#). (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What are the maximum length limits for a Database name and a Database link name?",
+      "a": "Database name may be up to 8 characters; Database link names may be up to 128 characters. (الصفحة 10)"
+    },
+    {
+      "id": 18,
+      "q": "Which table type is described as the default, most commonly used type, and is not required for a specific reason?",
+      "a": "Heap Organized. (الصفحة 12)"
+    },
+    {
+      "id": 19,
+      "q": "What table type stores data in a B-tree index structure and provides fast random access when queried mainly on primary key columns?",
+      "a": "Index organized. (الصفحة 12)"
+    },
+    {
+      "id": 20,
+      "q": "Which table type is used for session private data, stored only for the duration of a session or transaction?",
+      "a": "Temporary. (الصفحة 12)"
+    },
+    {
+      "id": 21,
+      "q": "When creating a table, what must be specified?",
+      "a": "The columns names and corresponding data types. (الصفحة 14)"
+    },
+    {
+      "id": 22,
+      "q": "What groups of data types does Oracle support?",
+      "a": "Character, Numeric, Date/Time, RAW, ROWID, LOB, JSON. (الصفحة 14)"
+    },
+    {
+      "id": 23,
+      "q": "As a DBA, what should one understand regarding data types?",
+      "a": "The appropriate use of each data type. (الصفحة 14)"
+    },
+    {
+      "id": 24,
+      "q": "Which data type is used for storing semi-structured data like JSON?",
+      "a": "JSON (الصفحة 14)"
+    },
+    {
+      "id": 25,
+      "q": "What does LOB refer to in Oracle's supported data types?",
+      "a": "Large Object. (الصفحة 14)"
+    },
+    {
+      "id": 26,
+      "q": "What is the primary advantage of using `VARCHAR2` over `CHAR` for storing character/string data?",
+      "a": "A `VARCHAR2` only allocates space based on the number of characters in the string, whereas a `CHAR` always allocates a fixed length (الصفحة 16)."
+    },
+    {
+      "id": 27,
+      "q": "When defining a `VARCHAR2` column for multibyte character sets, which specification (`BYTE` or `CHAR`) is recommended?",
+      "a": "Specifying the length using `CHAR` is safer because it ensures that the specified number of characters can always be stored, regardless of whether some characters require more than 1 byte (الصفحة 16)."
+    },
+    {
+      "id": 28,
+      "q": "What are `NVARCHAR2` and `NCHAR` data types useful for?",
+      "a": "They are useful if a database was originally created with a single-byte, fixed-width character set but later needs to store multibyte character set data (الصفحة 18)."
+    },
+    {
+      "id": 29,
+      "q": "When is it appropriate to use the `CHAR` data type?",
+      "a": "It should only be used if the size of the value will not change and is absolutely static, as using it can lead to inefficient space usage (الصفحة 18)."
+    },
+    {
+      "id": 30,
+      "q": "In which version of Oracle Database can developers specify up to 32,767 characters in a `VARCHAR2` or `NVARCHAR2` data type?",
+      "a": "Oracle Database 12c and higher (الصفحة 18)."
+    },
+    {
+      "id": 31,
+      "q": "What character set is used for CHAR/VARCHAR2 data storage?",
+      "a": "NLS_CHARACTERSET (الصفحة 19)"
+    },
+    {
+      "id": 32,
+      "q": "For NCHAR/NVARCHAR2, which character set is used, and what is the minimum size per character?",
+      "a": "NLS_NCHAR_CHARACTERSET; each character will not occupy less than 2 bytes (الصفحة 19)"
+    },
+    {
+      "id": 33,
+      "q": "Which data types are supported by Oracle for storing data that may be used with mathematical functions like SUM, AVG, MAX, and MIN?",
+      "a": "NUMBER, BINARY_DOUBLE, and BINARY_FLOAT (الصفحة 20)"
+    },
+    {
+      "id": 34,
+      "q": "What numeric data types are utilized specifically for scientific calculations?",
+      "a": "The BINARY_DOUBLE and BINARY_FLOAT data types (الصفحة 20)"
+    },
+    {
+      "id": 35,
+      "q": "When defining a column, how does Oracle implement other data types such as INT or INTEGER?",
+      "a": "These data types are all implemented by Oracle with a NUMBER data type (الصفحة 20)"
+    },
+    {
+      "id": 36,
+      "q": "Which date data type contains a time component granular to fractions of a second?",
+      "a": "TIMESTAMP (الصفحة 22)"
+    },
+    {
+      "id": 37,
+      "q": "What data type is used specifically to store a duration, or interval, of time?",
+      "a": "INTERVAL (الصفحة 24)"
+    },
+    {
+      "id": 38,
+      "q": "Which data type allows storing binary data and has a maximum size of 32,767 bytes?",
+      "a": "RAW (الصفحة 23)"
+    },
+    {
+      "id": 39,
+      "q": "What LOB data type is useful for storing large amounts of character data, such as log files, that do not fit within VARCHAR2?",
+      "a": "CLOB (الصفحة 24)"
+    },
+    {
+      "id": 40,
+      "q": "What is ROWID, and what information does it contain?",
+      "a": "A pseudocolumn provided with every table row that contains the physical location of the row on disk. (الصفحة 24)"
+    },
+    {
+      "id": 41,
+      "q": "What is an NCLOB similar to a CLOB but allows for?",
+      "a": "Information encoded in the nation character set of the database. (الصفحة 26)"
+    },
+    {
+      "id": 42,
+      "q": "What type of data do BLOBs store, and what are typical examples?",
+      "a": "Large amounts of binary data that usually are not meant to be human readable; typical examples include images, audio, and video files. (الصفحة 26)"
+    },
+    {
+      "id": 43,
+      "q": "When should a BFILE column be used instead of storing large binary files within the database?",
+      "a": "Use a BFILE when it is not feasible to store a large binary file within the database, as BFILES store a pointer to a file on the OS that is outside the database. (الصفحة 26)"
+    },
+    {
+      "id": 44,
+      "q": "What distinguishes internal LOBs from external LOBs?",
+      "a": "CLOBs, NCLOBs, and BLOBs are known as internal LOBs because they are stored inside the Oracle database; BFILES are known as external LOBs. (الصفحة 26)"
+    },
+    {
+      "id": 45,
+      "q": "How can JSON data be put into a database table?",
+      "a": "The JSON can be put into the database tables with JSON columns, allowing it to be stored and queried using SQL without needing to know the schema or any other details about the JSON data. (الصفحة 26)"
+    },
+    {
+      "id": 46,
+      "q": "What is the Oracle default table type?",
+      "a": "Heap organized (الصفحة 30)"
+    },
+    {
+      "id": 47,
+      "q": "According to the text, what does the term 'heap' mean regarding data storage in a table?",
+      "a": "The data are not stored in a specific order in the table (instead, they're a heap of data). (الصفحة 30)"
+    },
+    {
+      "id": 48,
+      "q": "What general factors should be considered when creating a table?",
+      "a": "Type of table, Naming conventions, Column data types and sizes, Constraints, Index requirements, Initial storage requirements, Special features, Growth requirements, Tablespace(s) (الصفحة 30)"
+    },
+    {
+      "id": 49,
+      "q": "If a tablespace is not specified when creating a table, where will it be created?",
+      "a": "In the default permanent tablespace of the user that creates the table. (الصفحة 30)"
+    },
+    {
+      "id": 50,
+      "q": "How can JSON data be inserted and queried in an Oracle column?",
+      "a": "It can be inserted using an SQL INSERT statement, and the JSON data can be queried also using SQL: SELECT dept.deptno, dept.dprojects.projectID, dept.dprojects.projectName from dept; (الصفحة 28)"
+    },
+    {
+      "id": 51,
+      "q": "What constraint defines the primary key for the `dept` table?",
+      "a": "CONSTRAINT dept_pk PRIMARY KEY (deptno) (الصفحة 32)"
+    },
+    {
+      "id": 52,
+      "q": "When creating a table, what clauses are used to specify the tablespace for the index and the table data, respectively?",
+      "a": "USING INDEX TABLESPACE hr_index and TABLESPACE hr_data (الصفحة 32)"
+    },
+    {
+      "id": 53,
+      "q": "What command is used to add a comment to the `dept` table?",
+      "a": "COMMENT ON TABLE dept IS 'Department table' (الصفحة 32)"
+    },
+    {
+      "id": 54,
+      "q": "What SQL command creates a unique index on the `dname` column of the `dept` table?",
+      "a": "CREATE UNIQUE INDEX dept_uk1 ON dept(dname) (الصفحة 32)"
+    },
+    {
+      "id": 55,
+      "q": "Name three columns and their data types defined in the `emp` table.",
+      "a": "empno NUMBER(10), ename VARCHAR2(10 CHAR), job VARCHAR2 (9 CHAR) (الصفحة 32)"
+    },
+    {
+      "id": 56,
+      "q": "What SQL clause is used to define a primary key?",
+      "a": "`PRIMARY KEY` (الصفحة 34)"
+    },
+    {
+      "id": 57,
+      "q": "How do you add a foreign key constraint using the `ALTER TABLE` statement?",
+      "a": "Using `ALTER TABLE table_name ADD CONSTRAINT constraint_name FOREIGN KEY (column) REFERENCES other_table(other_column);` (الصفحة 34)"
+    },
+    {
+      "id": 58,
+      "q": "What is the purpose of a unique constraint?",
+      "a": "To ensure that columns always be unique within a table. (الصفحة 34)"
+    },
+    {
+      "id": 59,
+      "q": "What does a check constraint enforce in SQL?",
+      "a": "It ensures that values entered into a column meet specific criteria, such as being greater than or equal to zero (`CHECK (column >= 0)`). (الصفحة 34)"
+    },
+    {
+      "id": 60,
+      "q": "Which command is used to create an index on existing columns?",
+      "a": "`CREATE INDEX index_name ON table_name(column1, column2);` (الصفحة 34)"
+    },
+    {
+      "id": 61,
+      "q": "What is the purpose of the `NOT NULL` constraint?",
+      "a": "It ensures that a column cannot contain null values (الصفحة 37)"
+    },
+    {
+      "id": 62,
+      "q": "How can a primary key or foreign key constraint be defined when creating a table?",
+      "a": "By naming the constraint and listing it after defining columns, e.g., `CONSTRAINT name PRIMARY KEY (column)` (الصفحة 37)"
+    },
+    {
+      "id": 63,
+      "q": "What command is used to disable constraints on a table?",
+      "a": "`ALTER TABLE table_name constraint_name DISABLE;` (الصفحة 37)"
+    },
+    {
+      "id": 64,
+      "q": "According to the text, what does the state `ENABLE VALIDATE` mean for a constraint?",
+      "a": "It is not possible to enter rows that would violate the constraint, and all rows in the table conform to the constraint (الصفحة 37)"
+    },
+    {
+      "id": 65,
+      "q": "If a column has a NOT NULL constraint, what must happen if there are currently NULL values in that column?",
+      "a": "You must update the table so that the column has a value in every row (الصفحة 37)"
+    },
+    {
+      "id": 66,
+      "q": "Virtual columns are based on what sources?",
+      "a": "One or more existing columns from the same table, constants, SQL functions, and user-defined PL/SQL functions, or a combination of these (الصفحة 40)"
+    },
+    {
+      "id": 67,
+      "q": "How are virtual columns stored and evaluated?",
+      "a": "They are not stored on disk; they are evaluated at runtime when the SQL query executes (الصفحة 40)"
+    },
+    {
+      "id": 68,
+      "q": "What advantages can be gained by using a virtual column regarding indexing and optimization?",
+      "a": "You can create an index on a virtual column, and you can store statistics in it that can be used by the cost-based optimizer (CBO) (الصفحة 42)"
+    },
+    {
+      "id": 69,
+      "q": "Besides being referenced in WHERE clauses, what is another benefit of using virtual columns?",
+      "a": "They are permanently defined in the database, providing one central definition for such a column (الصفحة 42)"
+    },
+    {
+      "id": 70,
+      "q": "What SQL clause structure is used when defining a virtual column to specify its generated value?",
+      "a": "`generated always as (...)` (الصفحة 42)"
+    },
+    {
+      "id": 71,
+      "q": "What types of tables cannot have a virtual column defined on them?",
+      "a": "An index-organized table, an external table, a temporary table, object tables, or cluster tables (Page 44)"
+    },
+    {
+      "id": 72,
+      "q": "According to the caveats associated with virtual columns, what must the output of a virtual column be?",
+      "a": "A scalar value (i.e., a single value, not a set of values) (Page 44)"
+    },
+    {
+      "id": 73,
+      "q": "List three reasons why one may require the read-only feature at the table level.",
+      "a": "The data in the table are historical and should never be updated; performing maintenance on the table to ensure it does not change; or determining if any users are attempting to update the table before dropping it (Page 44)"
+    },
+    {
+      "id": 74,
+      "q": "When you create a primary key constraint, does Oracle also create a unique index with the same name?",
+      "a": "True (الصفحة 43)"
+    },
+    {
+      "id": 75,
+      "q": "What must virtual columns reference?",
+      "a": "Columns from the table in which the virtual column is defined (Page 44)"
+    }
+  ]
+}

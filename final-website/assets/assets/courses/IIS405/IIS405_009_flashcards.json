@@ -1,0 +1,245 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is the title of Chapter 9?",
+      "a": "Schema Objects: Indexes, Views, Synonyms, and Sequences (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "Name the four schema objects covered in this chapter.",
+      "a": "Indexes, Views, Synonyms, and Sequences (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "According to the objectives listed, what is the first object type to be created?",
+      "a": "Create indexes (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "Name an object that can be created after Indexes and before Sequences.",
+      "a": "Views or Synonyms (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What is the main benefit of creating an index?",
+      "a": "It can increase query performance by allowing the database to retrieve all data without having to retrieve all of a column's data. (الصفحة 5)"
+    },
+    {
+      "id": 6,
+      "q": "Name two potential drawbacks or costs associated with indexes.",
+      "a": "They consume disk space and system resources, and they can cause a decrease in database performance and greater cost for DML statements. (الصفحة 5)"
+    },
+    {
+      "id": 7,
+      "q": "When should DBAs/developers consider creating an index?",
+      "a": "Proactively (when first deploying an application) or Reactively (when application performance bogs down). (الصفحة 5)"
+    },
+    {
+      "id": 8,
+      "q": "Describe the structure of a B-tree index.",
+      "a": "It consists of a root, branch blocks (which point to the next level), and leaf nodes (which contain entries that point to rows in the table). (الصفحة 5)"
+    },
+    {
+      "id": 9,
+      "q": "What is an index in a database?",
+      "a": "An optionally created database object used primarily to increase query performance. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "Without indexes, what process occurs with each DML operation on the table?",
+      "a": "The entire table is scanned (full table scan). (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "Name two situations where DBAs and developers decide to create indexes.",
+      "a": "Proactively (when first deploying an application) or Reactively (when application performance bogs down). (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What are multicolumn indexes also known as, and when are they effective?",
+      "a": "Concatenated indexes (or composite indexes); they are especially effective when multiple columns are used in the WHERE clause. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "Besides columns in the SELECT and WHERE clauses, what other SQL constructs might benefit from creating indexes?",
+      "a": "Columns used in the ORDER BY, GROUP BY, UNION, and DISTINCT clauses. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What is a B-tree index, and for what type of columns is it generally recommended?",
+      "a": "It is the default index, good for columns with high cardinality (i.e., high degree of distinct values). (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "Describe the three levels found in the structure of a B-tree index.",
+      "a": "The root (contains entries pointing to the next level), branch blocks (point to the next level), and leaf nodes (contain index entries that point to rows). (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "What are the components of an index entry found in the leaf blocks?",
+      "a": "Entry header, Key column length-value pairs, and ROWID. (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "Under what conditions are B-Tree indexes recommended?",
+      "a": "When the cardinality in the column is high, the number of rows in the table is high, and the column is used in WHERE clauses or JOIN conditions (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "What type of environment are Bitmap indexes excellent for?",
+      "a": "Data warehouse environments with low cardinality columns and SQL statements using many AND or OR operators in the WHERE clause (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "How is a bitmap index structured differently from standard indices?",
+      "a": "The leaf node stores a bitmap for each key value instead of a list of row IDs. Each bit corresponds to a possible row ID, and if the bit is set, the row contains the key value (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "Why are Bitmap indexes not appropriate for OLTP databases?",
+      "a": "Because rows are frequently updated, and you cannot create a unique bitmap index (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What components are contained in the leaf node of a bitmap index?",
+      "a": "An entry header, key values, Start ROWID, End ROWID, and a bitmap segment (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "When is it recommended to use Bitmap indexes?",
+      "a": "When the cardinality in the column is low, the number of rows in the table is high, and the column is used in Boolean algebra operations (الصفحة 16)"
+    },
+    {
+      "id": 23,
+      "q": "What is the primary recommendation for managing space in a database regarding tables and indexes?",
+      "a": "It is recommended to separate tables and indexes into different tablespaces (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "Name three reasons for separating tables and indexes into different tablespaces.",
+      "a": "Doing so allows for differing backup and recovery requirements, accounts for different storage requirements, and can increase the performance of actions when on separate controllers (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What can cause dramatic performance degradation when creating indexes?",
+      "a": "Creating indexes on the wrong columns or using features in the wrong situations (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "What type of index is discussed for creation?",
+      "a": "B-tree Indexes (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "To create an index in Toad of Oracle, what should the user follow?",
+      "a": "Follow steps provided in the video (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "When creating an index, besides the name and schema, what basic info must be entered?",
+      "a": "The table's name and type of index (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "What is the SQL statement used to create a B-tree index on an existing table?",
+      "a": "`CREATE INDEX cust_idx1 ON cust(last_name);` (الصفحة 24)"
+    },
+    {
+      "id": 30,
+      "q": "How can you specify a tablespace when creating an index in Oracle?",
+      "a": "By using the syntax: `CREATE INDEX [index_name] ON [table_name]([column]) TABLESPACE [tablespace_name];` (الصفحة 24)"
+    },
+    {
+      "id": 31,
+      "q": "Which view provides details about the structure of B-tree indexes in Oracle?",
+      "a": "The `INDEX_STATS DBA/ALL/USER_INDEXES` view. (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "What information does the INDEX_STATS view contain, and when is it populated?",
+      "a": "It contains information regarding HEIGHT (number of blocks from root to leaf blocks) and LF_ROWS (number of index entries), and it is only populated after you analyze the structure of the index. (الصفحة 24)"
+    },
+    {
+      "id": 33,
+      "q": "What are concatenated indexes, also known as multicolumn indexes?",
+      "a": "Indexes that contain more than one column, which are especially effective when multiple columns are used in the WHERE clause when accessing a table. (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "How can you create a unique index using SQL?",
+      "a": "Use the UNIQUE clause, such as `create unique index cust_uk1 on cust(first_name, last_name);`. (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "When does Oracle automatically create a unique index?",
+      "a": "When you create a primary key constraint or a unique key constraint. (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "Which views should be looked at to view the details of a unique index that has been created by a primary key or unique key constraint?",
+      "a": "DBA_INDEXES and DBA_IND_COLUMNS. (الصفحة 27)"
+    },
+    {
+      "id": 37,
+      "q": "What statement is used to rename an index in Oracle SQL?",
+      "a": "Use the ALTER INDEX ... RENAME TO statement (الصفحة 28)"
+    },
+    {
+      "id": 38,
+      "q": "Which package can be used to display the DDL required to re-create an Index?",
+      "a": "DBMS_METADATA package (الصفحة 28)"
+    },
+    {
+      "id": 39,
+      "q": "What is the advantage of marking an index UNUSABLE rather than dropping it?",
+      "a": "If later determined that the index is being used, you can alter it to a USABLE state and rebuild it without needing the DDL on hand (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "What statement is used to drop an index?",
+      "a": "Use the DROP INDEX statement (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "What are views?",
+      "a": "Representations of queries of data from one or more tables or other views. (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "Do views actually contain data?",
+      "a": "No; they derive their data from the base tables on which they are based. (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "What is one of the common uses for views regarding security and complexity?",
+      "a": "Views provide an additional level of security by restricting access to a predetermined set of rows and columns of a table, and they also hide data complexity. (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "When operations are performed on a view, what is actually affected?",
+      "a": "All operations performed on a view actually affect the base tables of the view. (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "ما هي العناصر الثلاثة التي يجب إدخالها لتنفيذ الاستعلام؟",
+      "a": "اسم المخطط (schema name)، واسم العرض (view name)، وعبارة SELECT. (الصفحة 34)"
+    },
+    {
+      "id": 46,
+      "q": "ما هو الإجراء الذي يمثل الخطوة الأولى (step1) في العملية الموضحة؟",
+      "a": "إدخال اسم المخطط واسم العرض وعبارة SELECT. (الصفحة 34)"
+    },
+    {
+      "id": 47,
+      "q": "ما هي العبارة المستخدمة لاسترداد البيانات عند تنفيذ الاستعلام؟",
+      "a": "عبارة SELECT. (الصفحة 34)"
+    },
+    {
+      "id": 48,
+      "q": "ماذا يجب إدخاله قبل استخدام عبارة SELECT في سياق العمليات الموضحة؟",
+      "a": "اسم المخطط واسم العرض. (الصفحة 34)"
+    }
+  ]
+}

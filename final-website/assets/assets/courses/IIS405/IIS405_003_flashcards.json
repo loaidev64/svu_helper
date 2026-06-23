@@ -1,0 +1,430 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو عنوان الكتاب؟",
+      "a": "Oracle Database Administration I (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هو موضوع الفصل الثالث؟",
+      "a": "Creating a Database (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "كيف يمكن إنشاء قاعدة بيانات وفقاً للأهداف المذكورة؟",
+      "a": "Create a database by using the Database Configuration Assistant (DBCA) (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما هو الموضوع الذي يليه بعد إنشاء قاعدة البيانات في الأهداف؟",
+      "a": "Oracle Database Architecture Overview (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هي المهمة الأخيرة المتعلقة بتهيئة قاعدة البيانات المذكورة في الأهداف؟",
+      "a": "Modify database initialization parameters (الصفحة 3)"
+    },
+    {
+      "id": 6,
+      "q": "What utility is used to create a database?",
+      "a": "Database Configuration Assistant (dbca) (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "Describe the interface of the dbca utility.",
+      "a": "A graphical interface (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "Name two ways to create an Oracle database mentioned in the text.",
+      "a": "Using the Database Configuration Assistant (dbca) or running from SQL*Plus/Toad for Oracle (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What is a key advantage of using dbca?",
+      "a": "It can run in silent mode and does not depend on a graphical component (الصفحة 4)"
+    },
+    {
+      "id": 10,
+      "q": "Besides DBCA, what other tool can be used to create an Oracle database?",
+      "a": "SQL*Plus/Toad (الصفحة 4)"
+    },
+    {
+      "id": 11,
+      "q": "What are a few standard ways for creating Oracle databases?",
+      "a": "Use the Database Configuration Assistant (dbca) utility, Run a CREATE DATABASE statement from any SQL Tool like: SQL\\*Plus/Toad, or Clone a database from an existing database. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What is the primary characteristic of Oracle's dbca utility?",
+      "a": "It has a graphical interface from which you can configure and create databases, making it easy to use and very intuitive. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "How does using dbca in silent mode help with database creation?",
+      "a": "Using dbca in silent mode with a response file is an efficient way to create databases in a consistent and repeatable manner. (الصفحة 8)"
+    },
+    {
+      "id": 14,
+      "q": "What are the advantages of using SQL\\*Plus/Toad for Oracle when creating a database?",
+      "a": "It works no matter how slow the network connection is, and it isn't dependent on a graphical component. (الصفحة 8)"
+    },
+    {
+      "id": 15,
+      "q": "Besides its graphical interface, what other mode can the dbca utility run in?",
+      "a": "The dbca utility also allows you to create a database in silent mode. (الصفحة 8)"
+    },
+    {
+      "id": 16,
+      "q": "What does the ORACLE_HOME variable define?",
+      "a": "It defines the starting point directory for the default location for the initialization file, and it also defines the starting point directory for locating the Oracle binary files (such as sqlplus, dbca, netca, rman, and so on) (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What is the purpose of the ORACLE_SID variable?",
+      "a": "It defines the default name of the database you're attempting to create, and it is also used as the default name for the parameter file, which is init<ORACLE_SID>.ora or spfile<ORACLE_SID>.ora (الصفحة 10)"
+    },
+    {
+      "id": 18,
+      "q": "Which directory must be included in the PATH variable?",
+      "a": "ORACLE_HOME/bin, as it contains the location of the Oracle binaries (الصفحة 10)"
+    },
+    {
+      "id": 19,
+      "q": "What utility is used to create a database?",
+      "a": "The dbca utility (الصفحة 12)"
+    },
+    {
+      "id": 20,
+      "q": "In what two modes does the dbca utility work?",
+      "a": "Graphical and silent (الصفحة 12)"
+    },
+    {
+      "id": 21,
+      "q": "What does the System Global Area (SGA) store?",
+      "a": "Copies of data blocks read from data files and various constructs used by all server and background processes. (الصفحة 14)"
+    },
+    {
+      "id": 22,
+      "q": "What types of information are cached in the Shared Pool?",
+      "a": "Parsed SQL, PL/SQL code, system parameters, and data dictionary information. (الصفحة 15)"
+    },
+    {
+      "id": 23,
+      "q": "Which memory area stores copies of data blocks read from data files?",
+      "a": "The Database Buffer Cache. (الصفحة 15)"
+    },
+    {
+      "id": 24,
+      "q": "What does the Redo Log Buffer store information about?",
+      "a": "Changes made to the database. (الصفحة 15)"
+    },
+    {
+      "id": 25,
+      "q": "Which process copies modified blocks from the buffer cache to the flashback buffer?",
+      "a": "The Recovery Writer Process (RVIWR). (الصفحة 15)"
+    },
+    {
+      "id": 26,
+      "q": "To access advanced database configuration options, which option should be chosen as a Database Creation Mode?",
+      "a": "Advanced configuration option (الصفحة 16)"
+    },
+    {
+      "id": 27,
+      "q": "When setting up a new database, what are the two template options available for selection?",
+      "a": "General Purpose or Transaction Processing option (الصفحة 18)"
+    },
+    {
+      "id": 28,
+      "q": "What specific type of database should be chosen when configuring the setup process?",
+      "a": "Oracle Single Instance database (الصفحة 18)"
+    },
+    {
+      "id": 29,
+      "q": "When entering the name of your database SID and Global database name, what must be chosen if creating a container database?",
+      "a": "Choose to create as container database (الصفحة 18)"
+    },
+    {
+      "id": 30,
+      "q": "After choosing the Advanced configuration option for Database Creation Mode, which button should be pressed next?",
+      "a": "Next button at the bottom (الصفحة 16)"
+    },
+    {
+      "id": 31,
+      "q": "What does the Global Area (SGA) store?",
+      "a": "The SGA is a non-shared memory region that contains data and control information exclusively for use by server and background processes. (الصفحة 19)"
+    },
+    {
+      "id": 32,
+      "q": "What is the purpose of the Private Global Area (PGA)?",
+      "a": "PGA stores private information about a parsed SQL statement and other session-specific information for processing. (الصفحة 19)"
+    },
+    {
+      "id": 33,
+      "q": "Which background process handles instance recovery?",
+      "a": "The SMON (System Monitor) process is responsible for instance recovery. (الصفحة 20)"
+    },
+    {
+      "id": 34,
+      "q": "What component of the SGA is used by functions that order data, such as ORDER BY and GROUP BY?",
+      "a": "The SQL work area. (الصفحة 19)"
+    },
+    {
+      "id": 35,
+      "q": "Which background process writes committed changes from the database buffer to the data files?",
+      "a": "DBWn (Database Writer). (الصفحة 20)"
+    },
+    {
+      "id": 36,
+      "q": "What does a database server generally do in a multi-user environment?",
+      "a": "It reliably manages a large amount of data so that many users can concurrently access the same data, while also preventing unauthorized access and providing efficient solutions for failure recovery. (الصفحة 22)"
+    },
+    {
+      "id": 37,
+      "q": "What two main components make up an Oracle database server?",
+      "a": "An Oracle database (physical structures and logical structures), and an Oracle instance (memory structures and background processes). (الصفحة 22)"
+    },
+    {
+      "id": 38,
+      "q": "What is the combination of background processes and memory buffers called?",
+      "a": "An Oracle instance. (الصفحة 24)"
+    },
+    {
+      "id": 39,
+      "q": "Regarding existence, what is true about an Oracle instance?",
+      "a": "Instance existence is transient; it exists in RAM and on CPU(s), and all trace of its existence goes away when the running instance is shut down. (الصفحة 24)"
+    },
+    {
+      "id": 40,
+      "q": "What remains indefinitely, even if the instance is stopped or shut down?",
+      "a": "The database, which consists of physical files on disk. (الصفحة 24)"
+    },
+    {
+      "id": 41,
+      "q": "What are the main memory structures in an Oracle Database instance?",
+      "a": "The System Global Area (SGA) and the Program Global Areas (PGAs). (الصفحة 26)"
+    },
+    {
+      "id": 42,
+      "q": "What type of processes handle connections to the database on behalf of client programs, such as parsing SQL statements?",
+      "a": "Server processes, also referred to as foreground processes. (الصفحة 26)"
+    },
+    {
+      "id": 43,
+      "q": "Which components share the SGA?",
+      "a": "All server and background processes. (الصفحة 27)"
+    },
+    {
+      "id": 44,
+      "q": "What do background processes operate on within a database instance?",
+      "a": "The stored data (data files) in the database, using memory structures. (الصفحة 26)"
+    },
+    {
+      "id": 45,
+      "q": "Besides operating on data files, what is the function of server processes?",
+      "a": "To handle connections to the database and perform work for client programs; retrieving and returning results to the client programs. (الصفحة 26)"
+    },
+    {
+      "id": 46,
+      "q": "What constructs does the shared pool cache?",
+      "a": "Parsed SQL, PL/SQL code, system parameters, and data dictionary information. (الصفحة 28)"
+    },
+    {
+      "id": 47,
+      "q": "What is the function of the Recovery Writer Process (RVWR)?",
+      "a": "RVWR periodically copies modified blocks from the buffer cache to the flashback buffer, and sequentially writes Flashback Database data from the flashback buffer to the Flashback Database logs. (الصفحة 28)"
+    },
+    {
+      "id": 48,
+      "q": "What is the database buffer cache?",
+      "a": "The memory area that stores copies of data blocks read from data files. (الصفحة 28)"
+    },
+    {
+      "id": 49,
+      "q": "What is the Redo Log Buffer and what does it store?",
+      "a": "A circular buffer in the SGA that holds information about changes made to the database, stored in redo entries. (الصفحة 30)"
+    },
+    {
+      "id": 50,
+      "q": "What do redo entries contain?",
+      "a": "The information necessary to reconstruct (or redo) changes that are made to the database by data manipulation language (DML), data definition language (DDL), or internal operations. (الصفحة 30)"
+    },
+    {
+      "id": 51,
+      "q": "What is the Large pool?",
+      "a": "An optional memory area intended for memory allocations that are larger than appropriate for the shared pool. (الصفحة 32)"
+    },
+    {
+      "id": 52,
+      "q": "Name some functions or areas that utilize the Large pool.",
+      "a": "User Global Area (UGA), Oracle XA interface, message buffers used in parallel execution of statements, buffers for Recovery Manager (RMAN) I/O slaves, and deferred inserts. (الصفحة 32)"
+    },
+    {
+      "id": 53,
+      "q": "What is an In-Memory Area?",
+      "a": "An optional component that enables objects (tables, partitions, and other types) to be stored in memory in a new format known as the columnar format. (الصفحة 32)"
+    },
+    {
+      "id": 54,
+      "q": "How does the columnar format provided by the In-Memory Area improve performance?",
+      "a": "It enables scans, joins, and aggregates to perform much faster than the traditional on-disk format, providing fast reporting and DML performance. (الصفحة 32)"
+    },
+    {
+      "id": 55,
+      "q": "For what type of applications is the In-Memory Area particularly useful?",
+      "a": "Analytic applications that operate on a few columns returning many rows. (الصفحة 32)"
+    },
+    {
+      "id": 56,
+      "q": "What is the Memoptimize Pool used for?",
+      "a": "It provides high performance and scalability for key-based queries, containing a memoptimize buffer area and a hashindex. (الصفحة 34)"
+    },
+    {
+      "id": 57,
+      "q": "Which pool is used for large I/O operations on SecureFile Large Objects (LOBs)?",
+      "a": "The Shared I/O pool. (الصفحة 34)"
+    },
+    {
+      "id": 58,
+      "q": "What does the Streams pool store, and which processes use it?",
+      "a": "It stores buffered queue messages and is used by Oracle Streams, Data Pump, and GoldenGate. (الصفحة 36)"
+    },
+    {
+      "id": 59,
+      "q": "For what purpose is the Java pool memory utilized?",
+      "a": "It is used for all session-specific Java code and data in the Java Virtual Machine (JVM). (الصفحة 36)"
+    },
+    {
+      "id": 60,
+      "q": "What is the Fixed SGA?",
+      "a": "An internal housekeeping area containing general information about the state of the database and database instance. (الصفحة 36)"
+    },
+    {
+      "id": 61,
+      "q": "What is the Program Global Area (PGA)?",
+      "a": "A non-shared memory region that contains data and control information exclusively for use by server and background processes. (Page 38)"
+    },
+    {
+      "id": 62,
+      "q": "In a shared server environment, what happens to the UGA?",
+      "a": "The UGA is moved into the large pool, leaving the PGA with only stack space, hash area, and bitmap merge area. (Page 38)"
+    },
+    {
+      "id": 63,
+      "q": "What are SQL work areas used for?",
+      "a": "They are used by functions that order data, such as ORDER BY and GROUP BY. (Page 38)"
+    },
+    {
+      "id": 64,
+      "q": "What does the Private SQL area store when a server process executes SQL or PL/SQL code?",
+      "a": "It stores bind variable values, query execution state information, and query execution work areas. (Page 38)"
+    },
+    {
+      "id": 65,
+      "q": "According to the text, what is a cursor?",
+      "a": "A name or handle to a specific area in the private SQL area. (Page 39)"
+    },
+    {
+      "id": 66,
+      "q": "What are background processes in a database instance?",
+      "a": "They perform maintenance tasks required to operate the database and to maximize performance for multiple users. (الصفحة 42)"
+    },
+    {
+      "id": 67,
+      "q": "Which types of background processes automatically start when a database instance is started?",
+      "a": "Mandatory background processes automatically start; optional background processes can be started later as required. (الصفحة 42)"
+    },
+    {
+      "id": 68,
+      "q": "Name some mandatory background processes present in typical database configurations.",
+      "a": "Process Monitor Process (PMON), Process Manager Process (PMAN), Listener Registration Process (LREG), System Monitor Process (SMON), Database Writer Process (DBWn), Checkpoint Process (CKPT), Manageability Monitor Process (MMON), Manageability Monitor Lite Process (MMNL), Recoverer Process (RECO), and LogWriter Process (LGWR). (الصفحة 42)"
+    },
+    {
+      "id": 69,
+      "q": "What happens to mandatory background processes when a read-only database instance is started?",
+      "a": "A read-only database instance disables some of these processes. (الصفحة 42)"
+    },
+    {
+      "id": 70,
+      "q": "What determines the presence of background processes in an Oracle Database?",
+      "a": "The features that are being used in the database. (الصفحة 42)"
+    },
+    {
+      "id": 71,
+      "q": "What is the function of the Process Monitor Process (PMON)?",
+      "a": "PMON periodically scans all processes to find any that have died abnormally (الصفحة 43)"
+    },
+    {
+      "id": 72,
+      "q": "Which two cleanup processes does PMON coordinate?",
+      "a": "The Cleanup MainProcess (CLMN) and the Cleanup Slave Process slaves (CLnn) (الصفحة 43)"
+    },
+    {
+      "id": 73,
+      "q": "How does PMON run in terms of operating system resources?",
+      "a": "PMON runs as an operating system process, and not as a thread (الصفحة 43)"
+    },
+    {
+      "id": 74,
+      "q": "Name three types of instances where PMON can run.",
+      "a": "Database instances, Oracle Automatic Storage Management (ASM) instances, and Oracle ASM Proxy instances (الصفحة 43)"
+    },
+    {
+      "id": 75,
+      "q": "List some common optional background processes mentioned in the text.",
+      "a": "Archiver Processes (ARCn), Job Queue Coordinator Process (CJQ0), Recovery Writer Process (RVWR), Flashback Data Archive Process (FBDA), and Space Management Coordinator Process (SMCO) (الصفحة 43)"
+    },
+    {
+      "id": 76,
+      "q": "What is the function of the Process Manager Process (PMAN)?",
+      "a": "PMAN monitors, spawns, and stops Dispatcher and shared server processes, Connection broker and pooled server processes for database resident connection pools, Job queue processes, and Restartable background processes. (الصفحة 47)"
+    },
+    {
+      "id": 77,
+      "q": "How does the Process Manager Process (PMAN) run?",
+      "a": "PMAN runs as an operating system process, and not as a thread. (الصفحة 47)"
+    },
+    {
+      "id": 78,
+      "q": "What is the function of the Listener Registration Process (LREG)?",
+      "a": "LREG is a background process that notifies the listeners about instances, services, handlers, and endpoints. (الصفحة 47)"
+    },
+    {
+      "id": 79,
+      "q": "Can the Listener Registration Process (LREG) run as a thread or an operating system process?",
+      "a": "Yes, LREG can run as a thread or an operating system process. (الصفحة 47)"
+    },
+    {
+      "id": 80,
+      "q": "Besides database instances, what environments do PMAN and LREG also run on?",
+      "a": "PMAN runs on Oracle Automatic Storage Management (ASM) instances and Oracle ASM Proxy instances; LREG also runs on Oracle Real Application Clusters (RAC). (الصفحة 47)"
+    },
+    {
+      "id": 81,
+      "q": "What is the System Monitor Process (SMON)?",
+      "a": "A background process that performs many database maintenance tasks, including creating and managing temporary tablespace metadata (الصفحة 49)"
+    },
+    {
+      "id": 82,
+      "q": "Name one task performed by SMON related to undo segments.",
+      "a": "Maintains the undo tablespace by onlining, offlining, and shrinking the undo segments based on undospace usage statistics (الصفحة 49)"
+    },
+    {
+      "id": 83,
+      "q": "What is the primary function of the Database Writer Process (DBWn)?",
+      "a": "Writes data blocks to disk, and also handles checkpoints, file open synchronization, and logging of Block Written records (الصفحة 51)"
+    },
+    {
+      "id": 84,
+      "q": "How are DBWn writes generally compared to LGWR writes?",
+      "a": "The writes tend to be slower than the sequential writes performed by the Log Writer Process (LGWR) (الصفحة 51)"
+    },
+    {
+      "id": 85,
+      "q": "Which initialization parameter specifies the number of Database Writer Processes, and what is its range?",
+      "a": "DB_WRITER_PROCESSES; it can be 1 to 100 (الصفحة 51)"
+    }
+  ]
+}

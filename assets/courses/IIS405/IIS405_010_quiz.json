@@ -1,0 +1,455 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the overall subject area covered by this textbook?",
+      "options": [
+        "Data Dictionary Fundamentals",
+        "Oracle Database Administration",
+        "SQL Programming Techniques",
+        "Network Security Management"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The book's primary focus, as indicated on the title page, is Oracle Database Administration. This field covers the management and maintenance of Oracle database systems.",
+      "id": 1
+    },
+    {
+      "question": "What is the specific topic covered in Chapter 10?",
+      "options": [
+        "Data Dictionary Architecture",
+        "Data Dictionary Fundamentals",
+        "Advanced Metadata Management",
+        "Query Optimization Techniques"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter title clearly states that Chapter 10 focuses on \"Data Dictionary Fundamentals,\" indicating the core concepts and principles related to the database dictionary.",
+      "id": 2
+    },
+    {
+      "question": "According to the Table of Contents, what two types of views are discussed in detail within this chapter?",
+      "options": [
+        "Architecture Views and Metadata Views",
+        "Static Views and Dynamic Performance Views",
+        "System Views and User Views",
+        "Query Views and Report Views"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The Table of Contents lists \"1.1. Static Views\" and \"1.2. Dynamic Performance Views,\" confirming that these two specific types of views are key components of the chapter's content.",
+      "id": 3
+    },
+    {
+      "question": "What are the four main areas covered when studying Data Dictionary Architecture?",
+      "options": [
+        "Only Static Views and Dynamic Performance Views",
+        "Data Dictionary Contents, Static Views, Dynamic Performance Views, and Problem solving using data dictionary views",
+        "Database Schema Design and Indexing Techniques",
+        "SQL Query Optimization and Transaction Management"
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The study of Data Dictionary Architecture is comprehensive, covering not only the contents of the dictionary itself but also its two main types of views—Static and Dynamic Performance Views—and concluding with practical problem-solving applications using these data dictionary views.",
+      "id": 4
+    },
+    {
+      "question": "Which type of view provides information about the current, real-time activity within the database?",
+      "options": [
+        "Static Views (V$)",
+        "Dynamic Performance Views (GV$)",
+        "User Views (USER_*)",
+        "All Views (ALL_*)"
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "Dynamic performance views are designed to track real-time activity, such as currently executing sessions, memory usage, and locks. This makes them crucial for monitoring the live operational status of the database, unlike static views which reflect definitions at a point in time.",
+      "id": 5
+    },
+    {
+      "question": "Which data dictionary view provides comprehensive information about all objects in the database, regardless of ownership or access privilege?",
+      "options": [
+        "USER_VIEWS",
+        "ALL_VIEWS",
+        "DBA_VIEWS",
+        "SYSTEM_VIEWS"
+      ],
+      "correctIndex": 2,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "The DBA views are the most powerful and comprehensive set of data dictionary views. They grant visibility into every object within the entire database, allowing administrators to monitor structures owned by other users or schemas.",
+      "id": 6
+    },
+    {
+      "question": "What is the primary function of the Oracle Data Dictionary?",
+      "options": [
+        "To execute complex SQL queries for end-users.",
+        "To manage user accounts and passwords only.",
+        "To store metadata describing all objects and attributes within the database.",
+        "To handle physical storage allocation and disk partitioning."
+      ],
+      "correctIndex": 2,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The data dictionary is fundamentally a repository for metadata—data about data. It records details such as object names, attributes, constraints, and ownership information, allowing users to understand the structure of the database without needing direct access to every underlying table.",
+      "id": 7
+    },
+    {
+      "question": "What is the primary function of the Oracle data dictionary?",
+      "options": [
+        "It is a temporary storage area used only during database transactions.",
+        "It serves as metadata, containing names and attributes of all objects within the database.",
+        "It is a physical log file that records every user action taken on the system.",
+        "It is a set of stored procedures designed to manage user accounts exclusively."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The Oracle data dictionary acts as the metadata repository for the entire database. This means it does not store the actual user data, but rather stores information *about* the data, such as the names, types, and attributes of every object (like tables, indexes, etc.) that exists in the system.",
+      "id": 8
+    },
+    {
+      "question": "According to best practices, who owns the Oracle data dictionary, and how should it be modified?",
+      "options": [
+        "It is owned by the DBA user and can be modified using standard SQL commands.",
+        "It is owned by the sys user and should never be modified directly using SQL.",
+        "It is owned by the application owner and modifications are restricted to schema changes only.",
+        "It is owned by the system administrator and requires elevated privileges for any modification."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The data dictionary is a highly sensitive component of the database structure. It is maintained and owned by the `sys` user, and because it contains critical structural information, direct modifications using standard SQL are strongly discouraged to maintain data integrity.",
+      "id": 9
+    },
+    {
+      "question": "What type of performance metrics do dynamic views primarily provide?",
+      "options": [
+        "Historical records of resource usage from previous fiscal quarters.",
+        "Static definitions of object structures that never change over time.",
+        "Real-time information crucial for diagnosing current operational and performance issues.",
+        "Predicted future resource requirements based on growth models."
+      ],
+      "correctIndex": 2,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "Dynamic views are specifically designed to provide up-to-date, real-time metrics about the database's operation. They allow DBAs to monitor how the system is performing right now, which is essential for diagnosing immediate performance bottlenecks or issues.",
+      "id": 10
+    },
+    {
+      "question": "What distinguishes \"dynamic performance views\" from static data dictionary views?",
+      "options": [
+        "Dynamic views are based on internal tables like USER\\$ and TAB\\$.",
+        "Dynamic views provide a real-time view of activity, while static views reflect structural changes.",
+        "Static views only show information available to the current user.",
+        "Dynamic views require special privileges to access any data."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Dynamic performance views are based on virtual memory tables and continuously update information as events occur within the database, such as active users or I/O statistics. In contrast, static views reflect the structure of the database and only change when structural modifications, like creating a table, are made.",
+      "id": 11
+    },
+    {
+      "question": "If a user wants to see information about tables owned exclusively by themselves, which data dictionary view should they query?",
+      "options": [
+        "ALL\\_TABLES",
+        "USER\\_TABLES",
+        "DBA\\_TABLES",
+        "CDB\\_TABLES"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The USER views are designed to contain information that is available only to the current user. Therefore, querying a view like USER\\_TABLES will provide details about objects owned by the person currently logged into the database.",
+      "id": 12
+    },
+    {
+      "question": "Which data dictionary view allows a user to see all object information for which they have access, regardless of ownership?",
+      "options": [
+        "USER views",
+        "ALL views",
+        "DBA views",
+        "CDB views"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The ALL views are specifically designed to show comprehensive object information that the current user has permission to interact with. This includes displaying all database tables on which the user can perform DML operations, making it broader than just objects owned by the user.",
+      "id": 13
+    },
+    {
+      "question": "To view metadata describing every single object in the entire database, including those belonging to other users or schemas, a user must query which set of views?",
+      "options": [
+        "USER views",
+        "ALL views",
+        "DBA views",
+        "CDB views"
+      ],
+      "correctIndex": 2,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The DBA views contain metadata describing all objects in the database. These views provide a complete picture regardless of ownership or access privilege, but accessing them typically requires elevated permissions, such as a DBA role.",
+      "id": 14
+    },
+    {
+      "question": "What is the primary purpose of the CDB-level views when using the pluggable database feature?",
+      "options": [
+        "To show only the objects created by the current user within the container.",
+        "To provide information about all individual pluggable databases (PDBs) housed within a single container database.",
+        "To display real-time performance metrics for the entire Oracle instance.",
+        "To list the underlying internal tables like USER\\$ and TAB\\$."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The CDB-level views are applicable when using the pluggable database feature. They provide information about all the individual pluggable databases that reside within the larger container database, helping administrators manage the entire multi-tenant environment.",
+      "id": 15
+    },
+    {
+      "question": "What is the primary function of dynamic performance data dictionary views?",
+      "options": [
+        "To store permanent metadata about user accounts and schemas.",
+        "To reflect the current condition of the instance and database, aiding in real-time performance diagnosis.",
+        "To execute complex stored procedures that manage transaction commits.",
+        "To provide historical records of all executed SQL statements by users."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Dynamic views are constantly updated by Oracle to reflect the current operational status of the database instance and the overall system condition, making them essential tools for diagnosing performance issues as they happen.",
+      "id": 16
+    },
+    {
+      "question": "Which sequence correctly describes the underlying structure of dynamic performance views?",
+      "options": [
+        "V$ synonyms point to SYS.V$ views, which are based on X$ memory structures.",
+        "The top layer consists of V$ synonyms pointing to SYS.V$ views, which are built upon SYS.GV$ views and ultimately rest on X$ memory structures.",
+        "SYS.V$ views point directly to the X$ tables without intermediate layers.",
+        "X$ memory structures are accessed directly by user queries through the V$ layer."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The structure is layered: at the top, users interact with V$ synonyms; these point to SYS.V$ views; these in turn rely on SYS.GV$ views, which finally draw their data from the underlying X$ internal memory structures.",
+      "id": 17
+    },
+    {
+      "question": "Regarding dynamic performance views, what state must the database typically be in for a view like V$BH to provide useful results?",
+      "options": [
+        "The instance only needs to be started using STARTUP NOMOUNT.",
+        "The database must be fully opened (opened) to access kernel-processing information provided by this view.",
+        "The control file must be mounted, but the database does not need to be open.",
+        "Only a simple connection is required; no specific startup state is necessary."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Views that provide kernel-processing information, such as V$BH, require the deepest level of access and thus are only useful after the database has been fully opened.",
+      "id": 18
+    },
+    {
+      "question": "What colloquial name is commonly used for the dynamic performance data dictionary views?",
+      "options": [
+        "DBA_VIEWS",
+        "SYS_CONTEXT",
+        "The V$(and GV$)$ views",
+        "X$ tables"
+      ],
+      "correctIndex": 2,
+      "page": null,
+      "section": null,
+      "hint": "",
+      "explanation": "",
+      "id": 19
+    },
+    {
+      "question": "What is the primary difference between V$ views and GVS global views?",
+      "options": [
+        "V$ views provide information for all instances in a cluster, while GVS views are instance specific.",
+        "V$ views are limited to single database instances, whereas GVS views offer global dynamic performance information across all instances in a cluster.",
+        "Both types of views contain the same type of dynamic performance data but use different naming conventions.",
+        "GVS views can only be accessed through synonyms, while V$ views require direct querying."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "V$ views are designed to provide dynamic performance information specific to a single instance of the database. In contrast, Global View System (GVS) views are necessary when working with Oracle Real Application Clusters (RAC), as they aggregate and provide global dynamic performance data regarding all instances within the entire cluster environment.",
+      "id": 20
+    },
+    {
+      "question": "Which sequence correctly describes the hierarchy of logical and physical storage containers in an Oracle database?",
+      "options": [
+        "OS blocks $\\rightarrow$ Data File $\\rightarrow$ Tablespace $\\rightarrow$ Segment",
+        "Tablespace $\\rightarrow$ Physical Data File $\\rightarrow$ OS Blocks $\\rightarrow$ Segment",
+        "Segment $\\rightarrow$ Extent $\\rightarrow$ Table $\\rightarrow$ Tablespace",
+        "Physical Data File $\\rightarrow$ OS blocks $\\rightarrow$ Tablespace $\\rightarrow$ Segment"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The storage structure moves from the largest logical container down to smaller physical units. A tablespace is a collection of one or more physical data files, which are composed of many operating system (OS) blocks. Within these blocks reside segments, and each segment is allocated space using extents.",
+      "id": 21
+    },
+    {
+      "question": "To troubleshoot issues related to insufficient space or understanding the logical/physical structure of an Oracle database, which set of data dictionary views should be queried?",
+      "options": [
+        "DBA_VIEWS, V$SESSION, and $FIXED_VIEW_DEFINITION",
+        "DBA_TABLES, DBA_SEGMENTS, DBA_TABLESPACES, and DBA_DATA_FILES",
+        "V$DATABASE, GVS, and ALL_OBJECTS",
+        "DBA_USERS, DBA_CONSTRAINTS, and DBA_INDEXES"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "When diagnosing physical or logical space issues, it is crucial to understand the relationships between various database constructs. The views DBA\\_TABLES, DBA\\_SEGMENTS, DBA\\_TABLESPACES, and DBA\\_DATA\\_FILES provide comprehensive information about almost all the logical and physical elements of an Oracle database necessary for troubleshooting.",
+      "id": 22
+    },
+    {
+      "question": "How can a user display the definitions of both V$ and GVS views?",
+      "options": [
+        "By querying the ALL_VIEWS dictionary view using the owner name.",
+        "By querying the VIEW\\_DEFINITION column of the $FIXED\\_VIEW\\_DEFINITION view.",
+        "They must be retrieved by running `DESCRIBE` on the respective views.",
+        "The definitions are stored in a separate system catalog that requires elevated privileges to access."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "To display the underlying definition of standard dynamic performance views like V$ and GVS, users should query the VIEW\\_DEFINITION column within the $FIXED\\_VIEW\\_DEFINITION view. This method allows administrators to inspect the structure and source code of these system-level views.",
+      "id": 23
+    },
+    {
+      "question": "How many CDB/DBA/ALL/USER static views are available?",
+      "options": [
+        "Fewer than 700",
+        "Several thousand",
+        "Exactly one thousand",
+        "Tens of thousands"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The material notes that there are several thousand CDB/DBA/ALL/USER static views, indicating a large number of predefined structures used to store metadata about the database.",
+      "id": 24
+    },
+    {
+      "question": "Approximately how many V$ dynamic performance views exist?",
+      "options": [
+        "Several thousand",
+        "More than 700",
+        "Fewer than 100",
+        "Exactly 700"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The text specifies that there are more than 700 V$ dynamic performance views, which provide real-time operational data about the database.",
+      "id": 25
+    },
+    {
+      "question": "What does the diagram of data dictionary views primarily provide?",
+      "options": [
+        "A complete list of all possible SQL queries.",
+        "A secure foundation on which to build your understanding of how to leverage the data dictionary views.",
+        "Direct access to the underlying physical storage structure.",
+        "The ability to bypass standard security protocols for read-only access."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The diagram serves as a foundational guide, helping users understand how to utilize the various data dictionary views effectively to retrieve necessary information for their job tasks.",
+      "id": 26
+    },
+    {
+      "question": "If a user is troubleshooting an issue related to materialized views and needs to find associated data dictionary views, which SQL query can be executed?",
+      "options": [
+        "select object_name from dba_dictionary where object_name like '%MV%'",
+        "select object_name from dba_objects where object_name like '%MV%' and owner='SYS'",
+        "select table_name from dictionary where table_name like '%MV%'",
+        "select view_name from dba_views where view_name like '%MV%'"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "To troubleshoot materialized views, the `dba_objects` view is used in conjunction with a pattern match (`LIKE '%MV%'`) and filtering by owner ('SYS') to retrieve object names that contain 'MV', indicating potential MV associations.",
+      "id": 27
+    },
+    {
+      "question": "Which data dictionary view is specifically designed to store the names of other data dictionary views?",
+      "options": [
+        "DICT_COLUMNS",
+        "DICTIONARY",
+        "DBA_OBJECTS",
+        "ALL_VIEWS"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The `DICTIONARY` view serves as a central repository, holding the names of various data dictionary views, allowing users to understand which views are available within the system.",
+      "id": 28
+    },
+    {
+      "question": "What is the primary benefit of using both the DICTIONARY and DICT_COLUMNS views?",
+      "options": [
+        "They allow direct modification of materialized view definitions.",
+        "They can be invaluable when needing more detailed information about each data dictionary view.",
+        "They are used exclusively for creating new materialized views in the database.",
+        "They provide a list of all users who have access to MV logs."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The DICTIONARY and DICT_COLUMNS views are crucial tools because they provide comprehensive details, enabling users to gain deeper insights into the structure and nature of various data dictionary views.",
+      "id": 29
+    },
+    {
+      "question": "According to the provided material, which view is used to list all materialized logs within the database?",
+      "options": [
+        "DBA_MVIEWS",
+        "DBA_MVIEW_LOGS",
+        "DBA_MVIEW_ANALYSIS",
+        "DBA_MVIEW_COMMENTS"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The `DBA_MVIEW_LOGS` view is specifically designed to contain and list all the materialized view logs that have been created within the database environment.",
+      "id": 30
+    }
+  ]
+}

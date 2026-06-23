@@ -1,0 +1,770 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the main topic covered in Chapter 9?",
+      "options": [
+        "Database Administration Fundamentals",
+        "Schema Objects: Indexes, Views, Synonyms, and Sequences",
+        "Advanced SQL Querying Techniques",
+        "Managing User Accounts and Permissions"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter 9 is dedicated to discussing specific types of database structures known as schema objects. These objects include indexes, views, synonyms, and sequences, which are detailed throughout the chapter.",
+      "id": 1
+    },
+    {
+      "question": "According to the objectives listed in the material, what object type should be created first?",
+      "options": [
+        "Create Views",
+        "Create Indexes",
+        "Create Synonyms",
+        "Create Sequences"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The objectives section outlines a specific order of learning. The very first objective listed is \"Create indexes,\" indicating that this object type will be covered initially in the chapter.",
+      "id": 2
+    },
+    {
+      "question": "Which of the following objects is explicitly mentioned as being created after Indexes and before Sequences?",
+      "options": [
+        "Tablespaces",
+        "Views or Synonyms",
+        "Triggers",
+        "Stored Procedures"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The objectives list covers creating indexes, views, synonyms, and sequences. Since the order is sequential in the chapter's goals, both Views and Synonyms are listed between Indexes and Sequences.",
+      "id": 3
+    },
+    {
+      "question": "Which of these items represents a schema object covered within Chapter 9?",
+      "options": [
+        "Backup Logs",
+        "Synonyms",
+        "Network Connections",
+        "Hardware Specifications"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Schema objects are database structures that allow users to organize and manage data. The material specifically lists Indexes, Views, Synonyms, and Sequences as the schema objects covered in this chapter.",
+      "id": 4
+    },
+    {
+      "question": "What is the main benefit of creating an index in a database?",
+      "options": [
+        "It guarantees that data will never be lost during updates.",
+        "It increases query performance by allowing the retrieval of specific data without scanning all column records.",
+        "It automatically optimizes all stored procedures and functions.",
+        "It eliminates the need for primary keys in a table structure."
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "Indexes are designed to speed up data retrieval operations. By creating an index, the database can quickly locate specific records or ranges of data without having to perform a full table scan across every single row, thus significantly improving query performance.",
+      "id": 5
+    },
+    {
+      "question": "Which of the following is a potential drawback or cost associated with implementing indexes?",
+      "options": [
+        "They never consume system resources and are always free to use.",
+        "They consume disk space and system resources, potentially decreasing DML statement performance.",
+        "They only affect read operations (SELECT statements) and have no impact on writes.",
+        "Their existence automatically prevents the need for proper database normalization."
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "While indexes boost query speed, they are not without cost. Indexes require physical storage space on disk and consume system resources. Furthermore, because every time data is inserted, updated, or deleted (DML), the index structure must also be maintained, this process can decrease overall DML performance.",
+      "id": 6
+    },
+    {
+      "question": "According to the text, what constitutes the basic structure of a B-tree index?",
+      "options": [
+        "It consists only of leaf nodes that point directly to the physical data blocks in the table.",
+        "It is composed of a root node, branch blocks that link levels, and leaf nodes containing entries pointing to rows.",
+        "It uses hash values stored in a central directory structure for rapid lookups.",
+        "It relies solely on sequential pointers from one block to the next without hierarchical organization."
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "A B-tree index is a self-balancing tree data structure used for efficient searching. Its structure is hierarchical, starting with a root node, which branches out through branch blocks to subsequent levels, finally terminating at leaf nodes that hold the actual entries pointing back to the corresponding rows in the table.",
+      "id": 7
+    },
+    {
+      "question": "Indexes are particularly effective when they can be utilized with which types of SQL constructs?",
+      "options": [
+        "Only simple SELECT statements that retrieve data based on a single column name.",
+        "Clauses such as WHERE, ORDER BY, GROUP BY, and those used to define unique constraints.",
+        "Statements that modify the table structure (e.g., ALTER TABLE) rather than querying data.",
+        "Functions that perform complex mathematical calculations across multiple columns simultaneously."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Indexes are most valuable when they can narrow down the search space efficiently. They work exceptionally well with clauses like WHERE, which filter records; ORDER BY, which sorts results; and GROUP BY, which aggregates data, as these operations rely on sorting or filtering specific subsets of data that an index can quickly locate.",
+      "id": 8
+    },
+    {
+      "question": "What is the primary function of an index in a database?",
+      "options": [
+        "To automatically enforce data integrity constraints on all columns.",
+        "To increase query performance by providing quick access to specific data records.",
+        "To replace the need for defining primary keys and unique constraints.",
+        "To limit the amount of disk space consumed by the table structure."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "An index is an optional database object designed specifically to improve how quickly a database can retrieve data. By creating pointers to specific records, indexes allow the system to bypass scanning every single row in the table, thus significantly boosting query performance.",
+      "id": 9
+    },
+    {
+      "question": "If a database lacks appropriate indexes, what process must occur when performing a DML operation?",
+      "options": [
+        "The system automatically creates temporary indexes for faster processing.",
+        "The entire table must be scanned (full table scan).",
+        "Only the primary key columns need to be checked sequentially.",
+        "The database will throw an error and prevent the operation from running."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Without indexes, the database management system has no shortcut for finding data. Therefore, it must perform a full table scan, meaning it reads every single row in the entire table to check if the required data matches the query criteria.",
+      "id": 10
+    },
+    {
+      "question": "Which type of index is best suited for columns that have low cardinality and are frequently used in Boolean algebra operations (AND/OR)?",
+      "options": [
+        "B-Tree Index",
+        "Bitmap Index",
+        "Unique Constraint Index",
+        "Composite Index"
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "Bitmap indexes are highly effective when dealing with columns that have low cardinality, meaning they contain a limited number of distinct values. They are optimized for Boolean operations like AND and OR, which are common in data warehousing environments.",
+      "id": 11
+    },
+    {
+      "question": "When should developers typically choose to create an index using the B-Tree structure?",
+      "options": [
+        "When the column is used only for simple equality checks (e.g., WHERE status = 'Active').",
+        "When the column has high cardinality and is frequently involved in JOIN conditions or complex WHERE clauses.",
+        "When the table contains very few rows, making indexing unnecessary.",
+        "When the goal is solely to enforce data uniqueness across the entire dataset."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "B-Tree indexes are designed for columns with high cardinality—meaning they have many unique values. They are excellent choices when joining tables or filtering records using complex conditions because they maintain efficient search paths even in large datasets.",
+      "id": 12
+    },
+    {
+      "question": "What is a key reason to separate tables and indexes into different tablespaces?",
+      "options": [
+        "To ensure that the database cannot be accessed by unauthorized users.",
+        "To improve performance, especially when running maintenance reports or managing storage resources.",
+        "Because it is mandatory for all databases to comply with modern security standards.",
+        "To guarantee that data will never need to be backed up or recovered."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "Separating objects into different tablespaces allows DBAs to manage resource allocation more effectively. This separation can improve performance, simplify maintenance tasks like backups and recovery, and provide better control over storage usage.",
+      "id": 13
+    },
+    {
+      "question": "Which SQL constructs, besides those used in SELECT and WHERE clauses, are potential candidates for creating indexes to improve query efficiency?",
+      "options": [
+        "Columns only used in JOIN conditions.",
+        "Columns used in the ORDER BY, GROUP BY, UNION, and DISTINCT clauses.",
+        "Columns that appear only in comments within the SQL script.",
+        "Primary keys defined on related tables."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Creating indexes on columns utilized in constructs like ORDER BY, GROUP BY, UNION, and DISTINCT can significantly enhance query performance because Oracle can use the index structure to efficiently process these grouping or sorting operations.",
+      "id": 14
+    },
+    {
+      "question": "According to the material, what is the primary characteristic that makes a B-tree index suitable for?",
+      "options": [
+        "Columns with low cardinality (few distinct values).",
+        "Columns with high cardinality (a high degree of distinct values).",
+        "Large text fields containing unstructured data.",
+        "Columns used exclusively in foreign key constraints."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The B-tree index is the default and generally recommended type because it performs optimally on columns that have a high cardinality, meaning they contain many unique values, allowing for efficient searching and retrieval of data records.",
+      "id": 15
+    },
+    {
+      "question": "What are the three distinct levels found in the structure of a B-tree index?",
+      "options": [
+        "The Index Header, the Data Block, and the Leaf Node.",
+        "The root, branch blocks, and leaf nodes.",
+        "The Primary Key level, the Secondary Key level, and the Table Level.",
+        "The SELECT clause, the WHERE clause, and the ORDER BY clause."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "A B-tree index is structured hierarchically: it starts with a root node that points to subsequent levels, followed by branch blocks which point further down, and finally reaching the leaf nodes containing the actual index entries pointing to table rows.",
+      "id": 16
+    },
+    {
+      "question": "Which of the following components is NOT listed as part of an index entry found in the leaf blocks?",
+      "options": [
+        "Entry header",
+        "Key column length-value pairs",
+        "ROWID",
+        "Index definition name"
+      ],
+      "correctIndex": -1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "An index entry must contain an entry header for metadata, key column length-value pairs defining the indexed data, and the ROWID, which is the unique identifier pointing directly to the row in the table.",
+      "id": 17
+    },
+    {
+      "question": "Under what conditions is a B-Tree index most appropriate to use?",
+      "options": [
+        "When the data set has low cardinality and many rows are updated frequently.",
+        "When the column has high cardinality, the table has many rows, and the column is used in WHERE or JOIN clauses.",
+        "In environments where complex queries involving multiple AND/OR operators are common.",
+        "When creating a unique index on a column that rarely changes."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "B-Tree indexes are highly effective when the data set is large, meaning both the number of rows and the variety of values (cardinality) in the indexed column are high. They are designed for transactional systems where columns are frequently used to filter or join records.",
+      "id": 18
+    },
+    {
+      "question": "Bitmap indexes are particularly excellent for which type of environment?",
+      "options": [
+        "Online Transaction Processing (OLTP) databases with frequent row updates.",
+        "Data warehouse environments that feature low cardinality and complex queries using many AND or OR operators.",
+        "Systems requiring unique constraints on indexed columns.",
+        "Tables where the primary key is used exclusively for lookups."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Bitmap indexes are optimized for data warehousing scenarios because they handle low cardinality—meaning there are few distinct values in the column—very efficiently. They excel when queries combine multiple conditions using logical operators like AND or OR.",
+      "id": 19
+    },
+    {
+      "question": "How does the structure of a bitmap index differ from standard B-Tree indices?",
+      "options": [
+        "It uses a separate table to store row IDs instead of storing them within the leaf node.",
+        "The leaf node stores a bitmap for each key value, where each bit corresponds to a possible row ID.",
+        "It requires that all indexed columns must be unique to function correctly.",
+        "It organizes data using hash values rather than a tree structure."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "While a bitmap index is organized like a B-tree, its key structural difference lies in the leaf node. Instead of listing every row ID associated with a key value, it uses a compact bitmap. If a specific bit is set to '1', it indicates that the corresponding row ID contains that particular key value.",
+      "id": 20
+    },
+    {
+      "question": "Why are bitmap indexes generally unsuitable for OLTP databases?",
+      "options": [
+        "Because they cannot be created on columns used in JOIN conditions.",
+        "Because frequent updates to rows can make them inefficient and complex to maintain.",
+        "Because they only support querying based on single column values, not combinations.",
+        "Because they require the table to have a very low number of total rows."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Bitmap indexes are designed for read-heavy environments like data warehouses. In Online Transaction Processing (OLTP) systems, where individual rows are updated frequently, maintaining and updating the associated bitmaps becomes computationally expensive and inefficient.",
+      "id": 21
+    },
+    {
+      "question": "If an index needs to be corrected or optimized after significant changes in the underlying data statistics, what action should be taken?",
+      "options": [
+        "Dropping the index entirely and recreating it from scratch.",
+        "Using the `ALTER INDEX ... REBUILD` statement.",
+        "Changing the index type using `ALTER INDEX ... MODIFY`.",
+        "Setting the index to unusable status with `ALTER INDEX ... UNUSABLE`."
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "The `REBUILD` clause is used when an existing index needs maintenance or optimization. Running this command ensures that the index structure accurately reflects the current state and statistics of the data in the table, which can be crucial for query performance.",
+      "id": 22
+    },
+    {
+      "question": "What components are contained within the leaf node of a bitmap index?",
+      "options": [
+        "Only the key values and the entry header.",
+        "An entry header, key values, Start ROWID, End ROWID, and a bitmap segment.",
+        "The table name, column name, and primary key.",
+        "A list of all row IDs and their corresponding block numbers."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The leaf node of a bitmap index is structured to contain several pieces of information necessary for locating data efficiently. These components include an entry header that holds metadata, the actual key values, start and end ROWIDs defining the range, and the core bitmap segment which uses bits to indicate row presence or absence for a given key value.",
+      "id": 23
+    },
+    {
+      "question": "According to the material, when is it recommended to use Bitmap indexes?",
+      "options": [
+        "When the number of rows in the table is low and the cardinality is high.",
+        "When the cardinality is low, the number of rows is high, and the column is used in Boolean algebra operations.",
+        "Only when the column contains unique identifiers (primary keys).",
+        "Whenever the data requires complex joins across multiple tables."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Bitmap indexes are most effective under specific conditions related to data distribution and usage patterns. They should be used when a column has low cardinality (few distinct values), but the table itself contains a large number of rows, and critically, when that column is frequently involved in Boolean algebra operations like AND or OR.",
+      "id": 24
+    },
+    {
+      "question": "What is one primary benefit of separating tables and indexes into different tablespaces?",
+      "options": [
+        "It automatically increases the performance regardless of hardware setup.",
+        "Doing so allows for differing backup and recovery requirements tailored to object types.",
+        "It eliminates the need for logging entirely, saving disk space.",
+        "It guarantees that all objects will reside on separate physical controllers."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Separating tables and indexes into dedicated tablespaces is a best practice for database management because it allows administrators to manage storage resources independently. A key benefit is the ability to define different backup and recovery strategies for groups of objects that have varying requirements, such as logs versus static index data.",
+      "id": 25
+    },
+    {
+      "question": "Which scenario describes an advantage gained by separating tables and indexes into distinct tablespaces?",
+      "options": [
+        "When all tables and indexes are small and fit easily within a single storage unit.",
+        "It can increase the performance of actions, especially if different tablespaces are placed on separate controllers.",
+        "When the database only needs to be backed up once every few years.",
+        "If the primary goal is simply to reduce the overall space consumption of the database."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "A significant performance advantage of using multiple tablespaces is that it allows for physical separation of data types or object groups onto different storage controllers. This distribution can optimize I/O operations, leading to faster execution times for maintenance reports and general actions compared to having everything stored together.",
+      "id": 26
+    },
+    {
+      "question": "What action can lead to dramatic performance degradation when creating indexes?",
+      "options": [
+        "Only using features in the wrong situations.",
+        "Creating indexes on the wrong columns or using features in the wrong situations.",
+        "Failing to enter the table's name and type of index.",
+        "Not following the steps provided in the video tutorial."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Performance degradation can occur if you create indexes on incorrect columns or utilize specific features within the wrong contexts, making it crucial to plan index creation carefully.",
+      "id": 27
+    },
+    {
+      "question": "When creating a B-tree Index using Toad of Oracle, what is generally required?",
+      "options": [
+        "Only knowing the name and schema of the index.",
+        "Entering the index's name, its schema, the table's name, and the type of index.",
+        "Running a specific SQL command to generate the basic info automatically.",
+        "Consulting an administrator for all necessary details before starting."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "To successfully create an index in Toad of Oracle, you must provide comprehensive information, including the name and schema of the index, along with the table's name and its specific type.",
+      "id": 28
+    },
+    {
+      "question": "According to the material, what is a primary concern regarding index creation?",
+      "options": [
+        "Indexes should only be created on columns that are frequently updated.",
+        "Creating indexes on the wrong columns or using features in the wrong situations can cause dramatic performance degradation.",
+        "The type of index used must always match the data type of the column.",
+        "Index creation is best left to database administrators only, as users cannot manage it."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "It is vital for developers and DBAs to be cautious because creating indexes improperly—either on incorrect columns or by misusing features—can severely degrade the overall performance of the database system.",
+      "id": 29
+    },
+    {
+      "question": "What is the basic SQL statement required to create a B-tree index named `cust_idx1` on the `last_name` column of the `cust` table?",
+      "options": [
+        "CREATE INDEX cust_idx1 ON cust(last_name) TABLESPACE reporting_index;",
+        "CREATE INDEX cust_idx1 ON cust(last_name);",
+        "SELECT * FROM user_indexes WHERE index_name = 'cust_idx1';",
+        "ALTER TABLE cust ADD INDEX cust_idx1 (last_name);"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "The standard SQL command to create an index on an existing table is `CREATE INDEX`. By specifying the index name, the table name, and the column(s), you can successfully establish a B-tree index structure.",
+      "id": 30
+    },
+    {
+      "question": "If a user needs to ensure that a newly created index resides within a specific storage area called `reporting_index`, which clause must be included in the `CREATE INDEX` statement?",
+      "options": [
+        "USING TABLESPACE reporting_index",
+        "TABLESPACE reporting_index",
+        "LOCATION reporting_index",
+        "WITH STORAGE = reporting_index"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "To manage where an index is physically stored, the `TABLESPACE` clause must be appended to the `CREATE INDEX` statement. This allows the database administrator to direct the index creation process to a specific tablespace, which is crucial for overall database management and organization.",
+      "id": 31
+    },
+    {
+      "question": "Which view provides detailed information regarding the structure of B-tree indexes within an Oracle database?",
+      "options": [
+        "DBA_INDEX_STRUCTURES",
+        "INDEX_STATS DBA/ALL/USER_INDEXES",
+        "USER_INDEX_DETAILS",
+        "ALL_B_TREE_INFO"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "The `INDEX_STATS` view is the designated location within Oracle to find detailed structural information about B-tree indexes. This view allows users and administrators to analyze metrics such as height and row counts for index optimization purposes.",
+      "id": 32
+    },
+    {
+      "question": "What key piece of information does the `INDEX_STATS` view provide regarding the structure of an index, besides the number of index entries (LF_ROWS)?",
+      "options": [
+        "The last user who modified the index.",
+        "The HEIGHT, which represents the number of blocks from root to leaf blocks.",
+        "The total storage size allocated for the table associated with the index.",
+        "Whether the index is unique or non-unique."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Besides tracking the number of index entries using `LF_ROWS`, the `INDEX_STATS` view also provides structural metrics like HEIGHT. This height value indicates how many blocks are required to traverse from the root node down to the leaf nodes, which is vital for understanding query performance.",
+      "id": 33
+    },
+    {
+      "question": "What is the primary benefit of using concatenated indexes?",
+      "options": [
+        "They allow an index to contain data from multiple tables simultaneously.",
+        "They are especially effective when multiple columns are used in the WHERE clause when accessing a table.",
+        "They can only be created on single, non-primary key columns.",
+        "They automatically enforce uniqueness across all associated tables."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "Concatenated indexes, also known as multicolumn indexes, are highly beneficial because they allow an index to cover multiple columns simultaneously. This makes them particularly effective when a query frequently filters or searches using combinations of these multiple columns in the WHERE clause.",
+      "id": 34
+    },
+    {
+      "question": "When does Oracle automatically create a unique index?",
+      "options": [
+        "When you explicitly use the `CREATE UNIQUE INDEX` statement on any set of columns.",
+        "When you create a primary key constraint or a unique key constraint.",
+        "Only when the table is created with the `UNIQUE` keyword specified.",
+        "It must be manually created using the DBA_INDEXES view before constraints are applied."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "Oracle automatically handles the creation of necessary indexes to enforce data integrity. Specifically, if you define a primary key constraint or a unique key constraint on a table, Oracle will automatically create a corresponding unique index to ensure that no duplicate values exist for those constrained columns.",
+      "id": 35
+    },
+    {
+      "question": "Which views should be queried to view the detailed information about a unique index created by a primary key or unique key constraint?",
+      "options": [
+        "DBA_INDEXES and USER_CONSTRAINTS",
+        "DBA_INDEXES and DBA_IND_COLUMNS",
+        "ALL_INFORME_VIEWS and USER_DETAILS",
+        "DBMS_STATS and DBA_TABLES"
+      ],
+      "correctIndex": 1,
+      "page": "27",
+      "section": null,
+      "hint": "راجع الصفحة 27",
+      "explanation": "To examine the specific details of a unique index, including which columns it covers, you must query both `DBA_INDEXES` and `DBA_IND_COLUMNS`. These views provide comprehensive metadata regarding the structure and composition of indexes within the database.",
+      "id": 36
+    },
+    {
+      "question": "In SQL sequence management, what is the purpose of using the pseudo column `NEXTVAL`?",
+      "options": [
+        "It retrieves the last value that was successfully assigned to the sequence in the current session.",
+        "It generates the next sequential number available from the defined sequence.",
+        "It displays the maximum possible value the sequence can reach before cycling.",
+        "It is used only when inserting data into a table that has no primary key constraint."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "The `NEXTVAL` pseudo column is designed to retrieve and advance the sequence counter, ensuring that every time it is called, a new, unique number is generated from the sequence definition. This mechanism is crucial for assigning unique identifiers during data insertion.",
+      "id": 37
+    },
+    {
+      "question": "If you want to reference a value that was already retrieved from a sequence within the current session (e.g., in an UPDATE statement), which pseudo column should you use?",
+      "options": [
+        "NEXTVAL",
+        "CURRVAL",
+        "SEQUENCE_VALUE",
+        "LAST_SEQ"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `CURRVAL` pseudo column is used to retrieve the value of a sequence that was most recently generated within the current database session. This allows developers to reference or reuse the specific number assigned by `NEXTVAL` without generating another new number.",
+      "id": 38
+    },
+    {
+      "question": "Which SQL statement is used to rename an existing index in Oracle?",
+      "options": [
+        "ALTER INDEX ... RENAME TO STATEMENT",
+        "ALTER INDEX ... RENAME TO statement",
+        "DROP INDEX ... RENAME TO statement",
+        "MODIFY INDEX ... RENAME TO statement"
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "To change the name of an index, you must use the `ALTER INDEX` command followed by `RENAME TO`. This allows database administrators to update the index's identifier without affecting its underlying structure or function.",
+      "id": 39
+    },
+    {
+      "question": "To retrieve the Data Definition Language (DDL) required to recreate an index, which package should be utilized?",
+      "options": [
+        "USER_INDEXES package",
+        "DBMS_METADATA package",
+        "ALTER INDEX package",
+        "DBA_INDEX_USAGE package"
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The `DBMS_METADATA` package is specifically designed to generate the DDL statements needed for database objects, including indexes. By calling `dbms_metadata.get_ddl('INDEX', 'index_name')`, a user can obtain the exact SQL required to rebuild or recreate that index.",
+      "id": 40
+    },
+    {
+      "question": "What is the primary advantage of marking an index as UNUSABLE instead of immediately dropping it?",
+      "options": [
+        "It automatically removes all associated constraints from the table.",
+        "If later determined that the index is needed, it can be rebuilt without needing the DDL on hand.",
+        "It prevents other users from accessing the underlying table data until it is dropped.",
+        "It immediately frees up disk space occupied by the index structure."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Marking an index as UNUSABLE is a safe, temporary measure. Unlike dropping it, which permanently removes the object, marking it unusable allows the administrator to verify its necessity. If needed later, the index can be rebuilt using `ALTER INDEX ... REBUILD` without needing to retrieve the original DDL script.",
+      "id": 41
+    },
+    {
+      "question": "Which command is used to completely remove an index from the database schema?",
+      "options": [
+        "ALTER INDEX ... DROP statement",
+        "DROP INDEX statement",
+        "UNUSABLE INDEX statement",
+        "REMOVE INDEX statement"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The `DROP INDEX` statement is the standard SQL command used to permanently delete an index object from the database. This action removes the index structure and associated metadata, making it unavailable for use by queries.",
+      "id": 42
+    },
+    {
+      "question": "If a user wants to check if an index is actively being monitored for usage statistics, which specific clause should they use?",
+      "options": [
+        "ALTER INDEX ... CHECK USAGE statement",
+        "ALTER INDEX ... MONITORING USAGE statement",
+        "SHOW INDEX STATUS statement",
+        "SELECT INDEX_USAGE FROM USER_INDEXES statement"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "To enable basic monitoring and track whether an index is being used by the database, the `ALTER INDEX` command must be followed by `MONITORING USAGE`. This action allows administrators to report on which indexes are actively contributing to query performance.",
+      "id": 43
+    },
+    {
+      "question": "What are views in a database context?",
+      "options": [
+        "They are physical tables that store derived data sets.",
+        "They are representations of queries of data from one or more tables or other views.",
+        "They are standalone structures used only for reporting purposes.",
+        "They require explicit storage of all underlying column definitions."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Views function as virtual representations of data, meaning they do not store the actual records themselves. Instead, a view is defined by a query that pulls data from one or more existing base tables or even other views.",
+      "id": 44
+    },
+    {
+      "question": "Regarding data storage, what is true about views?",
+      "options": [
+        "They must contain all the data present in their underlying base tables.",
+        "They derive their data from the base tables on which they are based and do not actually contain data.",
+        "They store a copy of the data that was last queried against them.",
+        "They only store metadata about the structure, never the actual values."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Views are virtual constructs; they are stored queries, not physical storage containers for data. When you query a view, the database executes the underlying query definition to retrieve the current data from the base tables.",
+      "id": 45
+    },
+    {
+      "question": "If an operation (like updating or deleting records) is performed on a view, what is actually affected?",
+      "options": [
+        "Only the view structure itself is modified, leaving the base tables untouched.",
+        "All operations performed on a view actually affect the base tables of the view.",
+        "The database throws an error because views cannot be written to directly.",
+        "Only the most recently accessed row in the base table is affected."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Views act as a window into the data, but they are not independent storage units. Therefore, any modification made through a view must propagate back and change the actual underlying records stored in the original base tables.",
+      "id": 46
+    },
+    {
+      "question": "Which of the following is listed as a common use for views?",
+      "options": [
+        "To replace complex joins with simple column selections only.",
+        "Provide an interface layer between an application and physical tables.",
+        "To eliminate the need for primary keys in the base tables.",
+        "To automatically encrypt all data accessed through the view definition."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Views serve multiple architectural purposes, including providing a simplified interface layer. This means that applications can interact with the view without needing to know the complex structure or underlying physical table relationships required to retrieve the data.",
+      "id": 47
+    },
+    {
+      "question": "What is one of the primary benefits views offer regarding security and complexity?",
+      "options": [
+        "They guarantee that all users will see the most up-to-date data instantly.",
+        "They provide an additional level of security by restricting access to a predetermined set of rows and columns of a table, and they also hide data complexity.",
+        "They automatically optimize the performance of the base tables upon creation.",
+        "They allow multiple users to bypass all existing database authentication mechanisms."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Views are crucial for implementing security policies because administrators can grant access only to specific columns or rows defined in the view, thereby restricting what a user can see without altering the underlying table structure. This also helps hide complexity from end-users and applications.",
+      "id": 48
+    },
+    {
+      "question": "What are the three essential elements that must be entered to successfully execute a query based on the process shown?",
+      "options": [
+        "Only the schema name and view name.",
+        "The schema name, the view name, and the SELECT statement.",
+        "Just the SELECT statement itself.",
+        "The table name and the column list."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "To execute a query using the method described, it is necessary to specify three distinct components: the schema name, which identifies the owner of the object; the view name, which specifies the virtual table being queried; and finally, the SELECT statement, which defines the data to be retrieved.",
+      "id": 49
+    },
+    {
+      "question": "In the context of database querying, what is the primary function of the SELECT statement?",
+      "options": [
+        "To define the structure or columns of a new view.",
+        "To retrieve specific data from the specified view or table.",
+        "To establish a connection between two different databases.",
+        "To modify existing records within the underlying tables."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The SELECT statement is the fundamental command used in SQL to query and extract information. Its purpose is specifically to retrieve data that matches certain criteria from the designated source, such as a view or table.",
+      "id": 50
+    },
+    {
+      "question": "According to the process illustrated, what must be entered before utilizing the actual SELECT statement?",
+      "options": [
+        "The database connection credentials.",
+        "The schema name and the view name.",
+        "A primary key identifier.",
+        "The column data types list."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "Before running the command to select data, the system requires knowledge of the source location. Therefore, the first steps involve specifying both the schema name and the view name, which together pinpoint exactly where the desired data resides within the database structure.",
+      "id": 51
+    }
+  ]
+}

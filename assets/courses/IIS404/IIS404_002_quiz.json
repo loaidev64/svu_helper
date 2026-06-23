@@ -1,0 +1,845 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What course does this material cover?",
+      "options": [
+        "Database Management Systems IIS404",
+        "MS SQL Server Administration IIS404",
+        "Advanced Networking Concepts BAIT",
+        "Operating System Principles II"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The textbook explicitly identifies the course covered by this material as MS SQL Server Administration IIS404.",
+      "id": 1
+    },
+    {
+      "question": "What is the main topic of Chapter Two?",
+      "options": [
+        "Database Indexing and Optimization",
+        "Backup & Restore in MS SQL Server",
+        "Advanced Query Writing Techniques",
+        "Security Protocols for SQL Databases"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter Two, as listed on the title page, focuses specifically on the processes of Backup & Restore within the context of MS SQL Server.",
+      "id": 2
+    },
+    {
+      "question": "To what academic program does this material belong?",
+      "options": [
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of IT Program BAIT",
+        "Master of Business Administration (MBA)",
+        "Diploma in Information Technology"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The title page indicates that the content is associated with the Bachelor of IT Program BAIT.",
+      "id": 3
+    },
+    {
+      "question": "Who is listed as the author for Chapter Two?",
+      "options": [
+        "Ayham Mohammad Eng.",
+        "Eng. Ayham Mohammad",
+        "A. M. Hassan",
+        "Michael Smith"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The material credits Eng. Ayham Mohammad as the author responsible for writing Chapter Two on Backup & Restore in MS SQL Server.",
+      "id": 4
+    },
+    {
+      "question": "What is the primary purpose of performing regular backups for an SQL Server database?",
+      "options": [
+        "To compress the data to reduce storage costs only.",
+        "To provide a safeguard against potential catastrophic data loss from various failures.",
+        "To speed up the performance of the live operational database.",
+        "To automatically update the database schema structure."
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "Backups are essential because they create copies of the data, ensuring that if the primary database suffers a failure—such as hardware issues or accidental deletion—the original information can be recovered and restored to a working state.",
+      "id": 5
+    },
+    {
+      "question": "Which combination of backup types is typically used together to ensure complete recovery of changes made since the last full backup?",
+      "options": [
+        "Copy-only, File backup, and Partial backup.",
+        "Full backup, Differential backup, and Log backup.",
+        "Data backup, File backup, and Copy-only backup.",
+        "Simple backup, Bulk logged backup, and Page restore."
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "To achieve a complete recovery point, the process usually starts with a Full backup, which captures all data; this is supplemented by Differential backups (capturing changes since the last full backup), and finally completed using Log backups to capture transactions that occurred in between those major backups.",
+      "id": 6
+    },
+    {
+      "question": "What distinguishes a Copy-only backup from other types of backups?",
+      "options": [
+        "It can only be performed on databases using the Simple Recovery Model.",
+        "It is a special type of backup that is independent of the regular sequence of SQL Server backups.",
+        "It must always follow a Differential backup immediately after a Full backup.",
+        "It is limited to backing up only specific files within a database container."
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "A Copy-only backup serves as an independent safeguard because its creation does not rely on the chronological order or sequence of previous backups, making it useful for maintaining historical recovery points even if the standard backup chain is broken.",
+      "id": 7
+    },
+    {
+      "question": "When performing a restore operation, which recovery model allows administrators to restore the database to a specific point in time?",
+      "options": [
+        "Simple Recovery Model.",
+        "Full Recovery Model.",
+        "Bulk logged Recovery Model.",
+        "File Backup Model."
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "The Full Recovery Model is necessary when granular control over data recovery is required, as it keeps detailed transaction logs that allow the administrator to restore the database precisely to a specific moment in time, rather than just restoring the last full backup point.",
+      "id": 8
+    },
+    {
+      "question": "What is the primary function of the SQL Server backup and restore component?",
+      "options": [
+        "To speed up database query performance.",
+        "To provide an essential safeguard for protecting critical data stored in your SQL Server databases.",
+        "To manage user permissions and access controls within the database.",
+        "To optimize network connectivity between servers."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The SQL Server backup and restore component is designed to be a crucial protective measure, ensuring that critical data stored within your SQL Server databases remains safe from loss or corruption. By regularly backing up the data, users can recover it if various failures occur.",
+      "id": 9
+    },
+    {
+      "question": "Which of the following scenarios represents a failure that necessitates performing a database backup?",
+      "options": [
+        "Routine performance tuning and optimization.",
+        "User errors, such as accidentally dropping an entire table.",
+        "Implementing new features or schema changes.",
+        "Running scheduled maintenance scripts."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Backups are necessary to protect against various types of failures, including user mistakes like dropping a table by accident. This safeguard ensures that even human error does not result in permanent data loss.",
+      "id": 10
+    },
+    {
+      "question": "What metric defines the maximum acceptable amount of data loss during a disaster?",
+      "options": [
+        "Recovery Time Objective (RTO)",
+        "Recovery Point Objective (RPO)",
+        "Disaster Recovery Plan (DRP)",
+        "Business Continuity Plan (BCP)"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "The Recovery Point Objective (RPO) determines the maximum amount of time that data can be lost from an IT service due to a major incident. It essentially dictates how current your recovered data must be relative to the moment of failure.",
+      "id": 11
+    },
+    {
+      "question": "To protect against natural disasters affecting an on-premises location, what method is recommended for creating backups?",
+      "options": [
+        "Storing all backups locally on the primary server's hard drive.",
+        "Using services like SQL Server Backup to Windows Azure Blob storage service for off-site backup.",
+        "Relying solely on physical copies stored in a safe deposit box.",
+        "Only performing full backups and never differential or log backups."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "To mitigate the risk posed by natural disasters that could affect an entire location, it is best practice to create off-site backups. Using cloud services like Windows Azure Blob storage allows data to be stored in a different geographical region than the primary operational site.",
+      "id": 12
+    },
+    {
+      "question": "Which type of backup captures all changes made since the last full or differential backup?",
+      "options": [
+        "Full Backup",
+        "Log Backup",
+        "Differential Backup",
+        "Complete Backup"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "A log backup is crucial because it records all transactions and changes that have occurred within the database. This allows administrators to restore the database to a point in time, capturing every change since the last major backup operation.",
+      "id": 13
+    },
+    {
+      "question": "What type of backup is specifically designed to be independent of the regular sequence of SQL Server backups?",
+      "options": [
+        "A differential database backup",
+        "A special-use backup called `copy_only`",
+        "A full database backup",
+        "A partial filegroup backup"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The `copy_only` backup is a specialized function that creates a backup independent of the standard, sequential process of SQL Server backups. This makes it useful when you need an isolated copy without affecting the normal backup chain.",
+      "id": 14
+    },
+    {
+      "question": "According to the text, what information do differential database backups contain?",
+      "options": [
+        "A complete representation of the entire database at the time the backup finished.",
+        "Only changes made to the database since its most recent full database backup.",
+        "All filegroups designated for read-only access.",
+        "The entire history of all transactions recorded in the database."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Differential backups are designed to save space and time by capturing only the data that has changed since the last full backup. They do not contain a complete copy of the whole database, unlike a full backup.",
+      "id": 15
+    },
+    {
+      "question": "Which command structure is used when performing a backup of one or more filegroups within a database?",
+      "options": [
+        "`backup database DB-name to disk = 'path of backup file.bak'`",
+        "`backup database [DB-name] filegroup = ‘file group name’ to disk = ‘path of backup file.bak’`",
+        "`backup database DB-name name-of-file-groups to disk = ‘path of backup file.bak’`",
+        "`restore database new-DB-name from disk = ‘path of backup file.bak’ with`"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "To back up specific sections of a database, such as one or more filegroups, you must use the command that explicitly names the filegroup(s). This allows for granular control over which parts of the database are included in the backup.",
+      "id": 16
+    },
+    {
+      "question": "Partial backups are most useful when:",
+      "options": [
+        "The user needs to restore an entire database from a single file.",
+        "You want to exclude filegroups designated for read-only access.",
+        "The goal is to capture all changes since the last full backup.",
+        "A complete, independent copy of the database is required immediately."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Partial backups provide flexibility by allowing administrators to exclude specific filegroups, such as those marked for read-only access. This ensures that only the necessary and writable data components are included in the backup set.",
+      "id": 17
+    },
+    {
+      "question": "What does Recovery Point Objective (RPO) define in disaster recovery planning?",
+      "options": [
+        "The maximum acceptable downtime for restoring services.",
+        "How much data loss is acceptable in the case of a disaster.",
+        "The frequency at which log backups must be performed.",
+        "The total time required to restore an entire database instance."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Recovery Point Objective (RPO) establishes the maximum amount of data that an organization can afford to lose during a disaster. This metric helps determine how frequently backups, especially log backups, must be taken to minimize potential data loss exposure.",
+      "id": 18
+    },
+    {
+      "question": "Which objective defines the acceptable downtime for the recovery process?",
+      "options": [
+        "Recovery Point Objective (RPO).",
+        "Recovery Time Objective (RTO).",
+        "Transaction Log Backup Frequency.",
+        "Data Loss Tolerance Level."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The Recovery Time Objective (RTO) is a critical metric that specifies the maximum amount of time allowed for restoring business operations after a failure occurs. It dictates how quickly the system must be back online to meet operational needs.",
+      "id": 19
+    },
+    {
+      "question": "What characterizes a Differential backup (D)?",
+      "options": [
+        "It contains all data from the database, making it the most comprehensive type of backup.",
+        "It holds data changes and only changed Extents since the last Full Backup.",
+        "It captures every transaction committed since the beginning of time.",
+        "It is used exclusively when a database is in Restoring Mode."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "A Differential backup saves all data that has changed since the most recent full backup. By only saving the modified Extents, it reduces storage requirements compared to a full backup while still capturing changes accumulated over time.",
+      "id": 20
+    },
+    {
+      "question": "What specific type of committed transaction log data does a Tail-Log Backup (TLB) contain?",
+      "options": [
+        "All transactions that occurred since the last Full Backup.",
+        "Committed transaction log data that has not been backed up.",
+        "Only the initial setup and schema definitions of the database.",
+        "Data from all previous Differential backups performed in the month."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "A Tail-Log Backup is specifically designed to capture committed transaction log data that has occurred but has not yet been included in a formal backup set. This makes it crucial for restoring a database to the most current point in time.",
+      "id": 21
+    },
+    {
+      "question": "According to best practices, what should be considered when determining the appropriate frequency for taking log backups?",
+      "options": [
+        "Only the total amount of storage space available on the server.",
+        "The required RTO and RPO, balanced by storage capacity.",
+        "Whether the database is currently in a production or test environment.",
+        "The number of users who have access to perform manual backups."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Determining log backup frequency requires balancing the business's tolerance for data loss (RPO) and acceptable downtime (RTO) against the practical limitations of how much log data can be stored, managed, and potentially restored.",
+      "id": 22
+    },
+    {
+      "question": "When an online database is planned for a restore operation, what must be done first to prevent errors?",
+      "options": [
+        "Use the WITH CONTINUE_AFTER_ERROR option during backup.",
+        "Begin by backing up the tail of the log using the WITH NORECOVERY option.",
+        "Wait until the database is offline before performing any backups.",
+        "Only perform a full backup, as it covers all necessary transaction logs."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "If you are restoring an online database, backing up the tail of the log first is crucial. Using the WITH NORECOVERY option ensures that the database remains in a state ready for subsequent restore operations and prevents accidental changes to the data during this process.",
+      "id": 23
+    },
+    {
+      "question": "If a database is damaged and you need to attempt a tail-log backup, which specific option should be used with the BACKUP statement?",
+      "options": [
+        "WITH NORECOVERY",
+        "WITH CONTINUE_AFTER_ERROR",
+        "WITH FULLBACKUP",
+        "WITH ONLINE"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "When dealing with a damaged database, using the WITH CONTINUE_AFTER_ERROR option allows the backup process to continue even if minor errors are encountered in the log files. This increases the chances of successfully capturing as much transaction data as possible.",
+      "id": 24
+    },
+    {
+      "question": "For a tail-log backup on a damaged database to succeed, which combination of conditions must be met?",
+      "options": [
+        "The database must be online, and no bulk-logged changes can occur.",
+        "The log files must be undamaged, the database must support tail-log backups, and there should be no bulk-logged changes.",
+        "Only the database being offline is sufficient, regardless of log file integrity.",
+        "The backup must use NORECOVERY, and the database must contain recent full backups."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Successful tail-log backup on a damaged database requires three specific conditions: first, the log files themselves must be undamaged; second, the database structure must support this type of backup; and third, the database cannot have undergone bulk-logged changes (like bulk inserts), as these can complicate recovery.",
+      "id": 25
+    },
+    {
+      "question": "What is the primary function and effect of using the WITH NORECOVERY option during a restore operation?",
+      "options": [
+        "It immediately brings the database online for user access after backup completion.",
+        "It places the database into a restoring state, guaranteeing that no changes occur until all necessary restores are complete.",
+        "It automatically truncates the log files to save disk space after the backup is taken.",
+        "It allows users to continue accessing the data while the restore process is running in the background."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The WITH NORECOVERY option is critical because it transitions the database into a special \"restoring state.\" This state ensures that the database remains protected and does not accept any changes from users or processes until all required backup pieces have been successfully applied, maintaining data integrity.",
+      "id": 26
+    },
+    {
+      "question": "What is the main advantage of using a compressed backup?",
+      "options": [
+        "It guarantees that the database structure remains unchanged.",
+        "The resulting backup file is smaller than an uncompressed one, significantly reducing device I/O and increasing speed.",
+        "It automatically fixes all corrupted data within the database files.",
+        "It allows the user to bypass the need for a transaction log entirely."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "Compressed backups are beneficial because they reduce the physical size of the backup file compared to uncompressed versions. This smaller size means that less input/output operations (I/O) are required by the device, which consequently speeds up the entire backup process significantly.",
+      "id": 27
+    },
+    {
+      "question": "Which sequence of commands is used to create a new database named `svu` and log it on?",
+      "options": [
+        "Use svu; Create database svu on (name='svu_data', filename='path.mdf') Log on (name='svu_log', filename='path.ldf')",
+        "Create database svu on (name='svu_data', filename='path.mdf'); Log on (name='svu_log', filename='path.ldf'); Use svu",
+        "Drop table if exists table1; Create table table1 (time,[backup type])",
+        "Analyze the transaction log; Redo Phase"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "To establish a new database environment, one must first execute the `Create database` command specifying the data and log file paths. Following this, the `Log on` command is used to connect to the newly created log, and finally, the `Use svu` command sets the context for subsequent operations within that specific database.",
+      "id": 28
+    },
+    {
+      "question": "What commands are required to create a new table named `table1` in the database?",
+      "options": [
+        "Create table table1 (time,[backup type]); Drop table if exists table1",
+        "Drop table if exists table1; Create table table1 ( [time of transaction] time, [backup type] varchar(2) )",
+        "Use svu; Create database svu on (name='svu_data', filename='path.mdf')",
+        "Log on (name='svu_log', filename='path.ldf'); Drop table if exists table1"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "When creating a new table, it is best practice to first ensure that any existing table with the same name is removed using `Drop table if exists`. Subsequently, the `Create table` command must be executed, defining the specific column names and their respective data types.",
+      "id": 29
+    },
+    {
+      "question": "During database recovery, what is the primary function of the Analysis Phase?",
+      "options": [
+        "Applying all committed transactions found in the transaction log to bring the database up to date.",
+        "Analyzing the transaction log to determine which transactions were last committed and identifying dirty pages and active transactions.",
+        "Forcing the removal of all data from the backup media onto the primary storage location.",
+        "Recreating the entire database structure using only the initial schema definition files."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Analysis Phase is crucial because it reads through the transaction log to establish a precise point in time for recovery. It identifies which transactions were successfully committed and determines the status of data pages, specifically noting any dirty pages that need attention or active transactions that require rollback.",
+      "id": 30
+    },
+    {
+      "question": "عند إجراء نسخة احتياطية تفاضلية لقاعدة البيانات، ما هي العبارة التي يجب استخدامها في أمر `Backup database`؟",
+      "options": [
+        "`with full`",
+        "`with differential`",
+        "`with log`",
+        "`with recovery`"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "عند أخذ نسخة احتياطية تفاضلية، يجب إضافة العبارة `with differential` إلى أمر النسخ الاحتياطي. هذا يضمن أن عملية النسخ لا تأخذ جميع البيانات مرة أخرى، بل تركز فقط على التغييرات التي حدثت منذ آخر نسخة كاملة أو تفاضلية سابقة.",
+      "id": 31
+    },
+    {
+      "question": "ما هي الصيغة الصحيحة لأخذ نسخة احتياطية لسجل المعاملات لقاعدة بيانات معينة؟",
+      "options": [
+        "`Backup database svu to disk='path\\L1.bak' with log`",
+        "`Backup log database svu to disk='path\\L1.bak'`",
+        "`Backup transaction log svu to disk='path\\L1.bak'`",
+        "`Restore log database svu from disk='path\\L1.bak'`"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "لأخذ نسخة احتياطية لسجل المعاملات، يجب استخدام الأمر المخصص لذلك وهو `Backup log database`. هذا يضمن أن يتم نسخ سجل التغييرات فقط، مما يسمح باستعادة العمليات التي تمت بين النسخ الاحتياطية الكبيرة.",
+      "id": 32
+    },
+    {
+      "question": "عند استعادة قاعدة بيانات باستخدام عدة نسخ احتياطية (مثل F1, D1, L1)، ما هو الخيار الذي يجب استخدامه في أمر `Restore database` لجميع النسخ باستثناء آخر عملية استعادة؟",
+      "options": [
+        "استخدام خيار `with recovery`",
+        "استخدام خيار `with norecovery`",
+        "استخدام خيار `with differential`",
+        "لا يتطلب أي خيار خاص بالاستعادة"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "عند استعادة سلسلة من النسخ الاحتياطية، يجب أن يتم وضع كل نسخة باستثناء الأخيرة في حالة \"غير مستعادتة\" باستخدام الخيار `with norecovery`. هذا يمنع النظام من محاولة إعادة تشغيل قاعدة البيانات بشكل كامل قبل تطبيق آخر سجل معاملات.",
+      "id": 33
+    },
+    {
+      "question": "بعد إجراء عمليات الاستعادة المتعددة بنجاح، ما هو الخيار الذي يجب استخدامه في عملية الاستعادة الأخيرة لإعادة قاعدة البيانات إلى وضع التشغيل الكامل؟",
+      "options": [
+        "استخدام خيار `with norecovery`",
+        "عدم استخدام أي خيارات إضافية",
+        "استخدام خيار `with recovery`",
+        "استخدام أمر `Use master` فقط"
+      ],
+      "correctIndex": 2,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "لإنهاء عملية الاستعادة وإجبار قاعدة البيانات على تطبيق جميع التغييرات المتبقية وجعلها جاهزة للاستخدام، يجب استخدام الخيار `with recovery`. هذا ينهي وضع التعليق ويضع قاعدة البيانات في حالة التشغيل العادية.",
+      "id": 34
+    },
+    {
+      "question": "إذا أردنا استعادة قاعدة بيانات (svu) باستخدام نسخة كاملة (F1)، ثم نسخة تفاضلية (D1)، وأخيراً سجل معاملات (L2)، فما هو الترتيب الصحيح لأوامر الاستعادة؟",
+      "options": [
+        "`Restore F1 with norecovery`، ثم `Restore D1 with recovery`، ثم `Restore L2 with recovery`",
+        "`Restore F1 with norecovery`، ثم `Restore D1 with norecovery`، ثم `Restore L2 with recovery`",
+        "`Restore F1 with recovery`، ثم `Restore D1 with norecovery`، ثم `Restore L2 with recovery`",
+        "يجب استخدام أمر `Use master` قبل أي عملية استعادة"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "عند إعادة بناء قاعدة البيانات، تبدأ العملية باستعادة النسخة الكاملة باستخدام `with norecovery`. تتبعها جميع النسخ التكميلية (التفاضلية وسجلات المعاملات) بنفس الخيار `with norecovery` حتى تصل إلى آخر نسخة. أما النسخة الأخيرة فتستخدم `with recovery` لإكمال عملية الاستعادة وجعل قاعدة البيانات متاحة للعمل.",
+      "id": 35
+    },
+    {
+      "question": "Which recovery model allows a database to recover to an arbitrary point in time?",
+      "options": [
+        "Simple",
+        "Full",
+        "Bulk logged",
+        "No log backups"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The Full recovery model is designed to provide the highest level of data protection, allowing administrators to restore the database to a specific moment in time. This capability ensures that work loss due to user error or application issues can be minimized by restoring the data right before the incident occurred.",
+      "id": 36
+    },
+    {
+      "question": "What is the primary limitation regarding log space management under the Simple recovery model?",
+      "options": [
+        "It requires continuous manual intervention to manage transaction logs.",
+        "It automatically reclaims log space, eliminating the need for explicit log space management.",
+        "It only supports log backups if the database size exceeds 10GB.",
+        "It prevents any form of point-in-time recovery, regardless of backup completeness."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The Simple recovery model is efficient because it automatically reclaims transaction log space after a successful backup. This feature simplifies maintenance by eliminating the need for administrators to manually manage and archive the transaction log files.",
+      "id": 37
+    },
+    {
+      "question": "Which statement accurately describes the work loss exposure when using the Full recovery model?",
+      "options": [
+        "Work loss is guaranteed if the tail of the log is damaged, requiring manual data entry.",
+        "Work loss is normally none, but changes since the most recent log backup must be redone if the tail of the log is damaged.",
+        "The Simple recovery model guarantees zero work loss exposure regardless of backups.",
+        "Work loss only occurs if the database file itself is physically lost or corrupted."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "While the Full recovery model offers minimal work loss, it is important to understand its dependency on log integrity. If the tail portion of the transaction log becomes damaged, any changes recorded since the last successful log backup cannot be recovered and must be manually redone.",
+      "id": 38
+    },
+    {
+      "question": "Which set of features or operations are explicitly unsupported when using the Simple recovery model?",
+      "options": [
+        "Standard full backups and differential backups.",
+        "Log shipping, Always On/Database mirroring, and Point-in-time restores.",
+        "Basic database restoration and point-in-time recovery to the end of a backup.",
+        "Creating log backups and performing media recovery without data loss."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The Simple recovery model is restrictive in its capabilities because it does not support advanced high availability or granular recovery methods. Specifically, features like Log shipping, Always On/Database mirroring, and the ability to restore to an arbitrary point in time require the more robust Full recovery model.",
+      "id": 39
+    },
+    {
+      "question": "What defines a restore scenario in SQL Server?",
+      "options": [
+        "The process of applying all available backups sequentially without recovery steps.",
+        "The process of restoring data from one or more backups and then recovering the database.",
+        "A procedure used only when restoring an entire database instance.",
+        "Simply copying data files to a new location while keeping the original online."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "A restore scenario is defined as the comprehensive process that involves two main steps: first, retrieving and applying data from one or more backups, and second, executing recovery operations on the restored data to bring the database back to a usable state.",
+      "id": 40
+    },
+    {
+      "question": "When performing a file restore in SQL Server, what happens automatically to the filegroups containing the files being restored?",
+      "options": [
+        "They remain online but are marked as read-only until verification is complete.",
+        "They are automatically offline for the duration of the restore operation.",
+        "They become temporarily available and require manual re-initialization.",
+        "Their status changes to 'pending' and must be manually brought back online."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "During a file restore, the system automatically takes protective measures by setting the filegroups that contain the files being restored to an offline state. This ensures data integrity and prevents accidental access or modification while the restoration process is underway.",
+      "id": 41
+    },
+    {
+      "question": "Which statement accurately describes the Bulk-logged Recovery Model?",
+      "options": [
+        "It allows recovery to a point in time regardless of any bulk copy operations performed.",
+        "It permits high-performance bulk copy operations and reduces log space usage by using minimal logging.",
+        "It is only suitable for restoring entire databases, not individual data files or pages.",
+        "It requires that all subsequent backups must be full backups to maintain functionality."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The Bulk-logged Recovery Model is an enhancement of the standard full recovery model designed specifically to handle high-performance bulk copy operations efficiently. By using minimal logging for these large data transfers, it significantly reduces the amount of space consumed in the transaction log.",
+      "id": 42
+    },
+    {
+      "question": "When a whole database is restored and recovered, what status does the database enter for the duration of the operation?",
+      "options": [
+        "It enters a 'read-only' state until all filegroups are verified.",
+        "The database is offline for the entire duration of the restore and recovery operations.",
+        "It remains online but cannot be accessed by any user application.",
+        "It transitions to an 'unavailable' status, requiring manual administrator intervention before use."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Because restoring a whole database is a comprehensive process involving multiple steps of data retrieval and recovery, the system must take the database offline for its entire duration. This prevents any user or application from accessing potentially inconsistent data during the critical restoration phase.",
+      "id": 43
+    },
+    {
+      "question": "What is the basic strategy for a complete database restore under a full or bulk-logged recovery model?",
+      "options": [
+        "Restoring only the last Full backup plus any Differential backup.",
+        "Restoring a full database backup, optionally followed by a differential backup, and then all subsequent log backups in sequence.",
+        "Simply restoring the latest available Full backup without considering logs.",
+        "Using only File restore commands to recover damaged pages incrementally."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "A complete database restore under full or bulk-logged recovery models is a comprehensive process that requires starting with a full database backup, optionally applying a differential backup if available, and critically, restoring all subsequent transaction log backups in the exact sequence they were created. This entire process must conclude by recovering the last log backup using `RESTORE WITH RECOVERY`.",
+      "id": 44
+    },
+    {
+      "question": "Under which recovery model is a complete database restore limited to restoring only the last Full backup plus any Differential backup?",
+      "options": [
+        "Under full/bulk-logged recovery models.",
+        "Under simple recovery model.",
+        "When performing a File restore operation.",
+        "When using `RESTORE WITH RECOVERY`."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The simple recovery model is the most restrictive regarding restoration; therefore, a complete database restore under this model only involves restoring the last Full backup and, if it exists, any Differential backup. This contrasts sharply with full/bulk-logged models which require sequential log backups.",
+      "id": 45
+    },
+    {
+      "question": "What is the primary purpose of performing a File restore in SQL Server?",
+      "options": [
+        "To recover an entire database that has lost its transaction logs.",
+        "To restore one or more damaged read-only files without restoring the entire database.",
+        "To perform routine maintenance and check for data corruption using `DBCC CHECKDB`.",
+        "To convert a simple recovery model to a full/bulk-logged recovery model."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "File restore is a specialized function designed for granular recovery, allowing administrators to repair specific damaged files or filegroups that are read-only in nature. This process is valuable because it enables the restoration of only parts of the database without needing to restore the entire database structure.",
+      "id": 46
+    },
+    {
+      "question": "When performing a File restore using full/bulk-logged recovery models, what must be true about the filegroups containing the files being restored?",
+      "options": [
+        "They must remain online throughout the entire process.",
+        "They are always placed into an offline state during the restoration.",
+        "The database must first be set to a simple recovery model.",
+        "Only read-write filegroups can undergo File restore operations."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "During any File restore operation, regardless of whether the overall database remains online or offline, the specific filegroups that contain the files currently being restored are always placed into an offline state to ensure data integrity during the repair process.",
+      "id": 47
+    },
+    {
+      "question": "ما هي الخطوة الأولى الأساسية لاستعادة قاعدة البيانات باستخدام SSMS؟",
+      "options": [
+        "النقر بزر الماوس الأيمن على خادم SQL Server واختيار \"Restore\".",
+        "الاتصال بمثيل (instance) مناسب لـ SQL Server في Object Explorer.",
+        "تشغيل أمر `RESTORE DATABASE` مباشرةً من نافذة الأوامر.",
+        "تحديد قاعدة البيانات المراد استعادتها أولاً."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "قبل البدء بعملية الاستعادة، يجب عليك أولاً الاتصال بمثيل SQL Server المناسب ضمن Object Explorer في SSMS. هذه الخطوة تضمن أنك تعمل على البيئة الصحيحة التي تحتوي على قاعدة البيانات المستهدفة أو الخادم الذي سيستضيفها.",
+      "id": 48
+    },
+    {
+      "question": "عند تحديد صفحة معينة (page) لاستعادتها باستخدام أمر `RESTORE DATABASE`، ما هي المعلومات الضرورية التي يجب توفيرها؟",
+      "options": [
+        "اسم الملف (`FILE NAME`) ورقم الصفحة (`PAGE ID`).",
+        "رقم ملف الصفحة (`FILE ID`) ورقم الصفحة (`PAGE ID`).",
+        "معرف قاعدة البيانات (`DATABASE ID`) ومعرف الخادم (`SERVER ID`).",
+        "تاريخ ووقت النسخة الاحتياطية (`BACKUP DATE` و `TIME`)."
+      ],
+      "correctIndex": 1,
+      "page": "35",
+      "section": null,
+      "hint": "راجع الصفحة 35",
+      "explanation": "لتحديد صفحة معينة في أمر استعادة قاعدة البيانات، يجب عليك تحديد موقعها بدقة. يتطلب الأمر توفير رقم ملف الصفحة (FILE ID) الذي يحدد الملف المادي الذي يحتوي على البيانات، بالإضافة إلى رقم الصفحة (PAGE ID) داخل ذلك الملف.",
+      "id": 49
+    },
+    {
+      "question": "ماذا يعني استخدام الخيار `WITH NORECOVERY` عند استعادة نسخة احتياطية لقاعدة البيانات؟",
+      "options": [
+        "أن عملية الاستعادة قد اكتملت بالكامل ولا تحتاج لأي خطوات أخرى.",
+        "أن عملية الاستعادة لم تكتمل بعد، ويجب إجراء عمليات استعادة إضافية (مثل سجل المعاملات).",
+        "أنه يجب تجاهل أي بيانات سابقة في قاعدة البيانات المستهدفة.",
+        "أن النسخة الاحتياطية المستخدمة هي نسخة غير موثوق بها."
+      ],
+      "correctIndex": 1,
+      "page": "35",
+      "section": null,
+      "hint": "راجع الصفحة 35",
+      "explanation": "يشير استخدام الخيار `WITH NORECOVERY` إلى أن عملية الاستعادة لا تزال قيد التقدم وليست نهائية. هذا يعني أن قاعدة البيانات في حالة \"غير مستردة\" ويجب عليك تطبيق عمليات استعادة أخرى، مثل سجل المعاملات (transaction log)، لإكمال العملية بنجاح.",
+      "id": 50
+    },
+    {
+      "question": "ما هو الترتيب الصحيح لاستعادة قاعدة البيانات باستخدام T-SQL عند توفر نسخ احتياطية متعددة؟",
+      "options": [
+        "النسخة التفاضلية (`DIFF`) -> سجل المعاملات (`LOG`) -> النسخة الكاملة (`FULL`).",
+        "النسخة الكاملة (`FULL`) -> النسخة التفاضلية (`DIFF`) -> سجل المعاملات (`LOG`).",
+        "سجل المعاملات (`LOG`) -> النسخة الكاملة (`FULL`) -> النسخة التفاضلية (`DIFF`).",
+        "النسخة الكاملة (`FULL`) -> سجل المعاملات (`LOG`) -> النسخة التفاضلية (`DIFF`)."
+      ],
+      "correctIndex": 1,
+      "page": "35",
+      "section": null,
+      "hint": "راجع الصفحة 35",
+      "explanation": "لضمان استعادة البيانات بشكل سليم ومتسلسل، يجب البدء دائمًا بالنسخة الاحتياطية الكاملة (FULL). بعد ذلك، يتم تطبيق أي نسخ احتياطية تفاضلية (DIFF)، وأخيرًا، يتم استخدام سجل المعاملات (LOG) لتغطية التغييرات التي حدثت بين آخر نسخة احتياطية وتاريخ الفشل.",
+      "id": 51
+    },
+    {
+      "question": "ما هو الأمر المستخدم لاستعادة سجل المعاملات (transaction log) بعد استعادة النسخة الكاملة أو التفاضلية؟",
+      "options": [
+        "`RESTORE DATABASE <database> FROM '<backup_log>' WITH NORECOVERY;`",
+        "`RESTORE LOG <database> FROM '<backup_log>' WITH NORECOVERY;`",
+        "`SELECT * FROM <database>.dbo.suspect_pages;`",
+        "`USE master; RESTORE DATABASE <database> WITH NORECOVERY;`"
+      ],
+      "correctIndex": 1,
+      "page": "35",
+      "section": null,
+      "hint": "راجع الصفحة 35",
+      "explanation": "لاستعادة سجل المعاملات، يجب استخدام الأمر `RESTORE LOG`. هذا الأمر يحدد أنك تستعيد السجل وليس قاعدة البيانات بأكملها. ويجب دائمًا تضمين الخيار `WITH NORECOVERY` لضمان إمكانية تطبيق عمليات استعادة لاحقة على نفس قاعدة البيانات.",
+      "id": 52
+    },
+    {
+      "question": "ما هو الموضوع الرئيسي الذي يتناوله الفصل الدراسي؟",
+      "options": [
+        "إدارة المستخدمين في MS SQL Server",
+        "النسخ الاحتياطي والاستعادة (Backup & Restore) في MS SQL Server",
+        "تصميم مخططات قواعد البيانات المتقدمة",
+        "تحسين أداء الشبكة وقواعد البيانات"
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "الفصل الدراسي يركز على عملية النسخ الاحتياطي واستعادة البيانات في بيئة MS SQL Server، وهي إجراءات حيوية لضمان استمرارية وتوافر البيانات عند حدوث أي فشل أو فقدان.",
+      "id": 53
+    },
+    {
+      "question": "ماذا تعني عملية الاستعادة التي تتضمن استعادة المكونات بشكل فردي؟",
+      "options": [
+        "Full restore (الاستعادة الكاملة)",
+        "Piecemeal restores (الاستعادة الجزئية/المُقسّمة)",
+        "Differential backup (النسخ الاحتياطي التفاضلي)",
+        "Point-in-time recovery (الاستعادة في نقطة زمنية محددة)"
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "تشير عملية Piecemeal restores إلى استعادة قاعدة البيانات أو مكوناتها بشكل تدريجي وفردي، مما يسمح باسترجاع أجزاء معينة من النظام دون الحاجة لاستعادة القاعدة بأكملها دفعة واحدة.",
+      "id": 54
+    },
+    {
+      "question": "في مثال استعادة قاعدة البيانات الجزئية (Partial database restore)، أي نموذج الاسترداد يُستخدم عادةً؟",
+      "options": [
+        "Full recovery model",
+        "Simple recovery model",
+        "Bulk-logged recovery model",
+        "Enterprise recovery model"
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "عند إجراء استعادة جزئية لقاعدة البيانات، خاصة في سياق استخدام نموذج الاسترداد البسيط (Simple recovery model)، يتم تحديد نطاق الاستعادة لضمان عدم التأثير على أجزاء أخرى من النظام.",
+      "id": 55
+    },
+    {
+      "question": "ما هو نموذج الاسترداد الذي يُستخدم مع مثال استعادة قاعدة البيانات الكاملة بشكل جزئي؟",
+      "options": [
+        "Simple recovery model",
+        "Full recovery model",
+        "Basic recovery model",
+        "Minimal recovery model"
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "يتطلب التعامل مع سيناريوهات الاستعادة المعقدة، مثل استعادة قاعدة بيانات كاملة بشكل جزئي، استخدام نموذج الاسترداد الكامل (Full recovery model)، لأنه يوفر أعلى مستوى من التحكم والتفاصيل حول سجلات المعاملات.",
+      "id": 56
+    }
+  ]
+}

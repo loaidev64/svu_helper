@@ -1,0 +1,145 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is the title of Chapter Seven?",
+      "a": "Maintenance in MS SQL Server (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "According to the Table of Contents, what is the first major section discussed?",
+      "a": "Managing Indexes (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "What task is listed second in the contents for database maintenance?",
+      "a": "Check Database Integrity Task (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "If an index has high fragmentation, what percentage should prompt rebuilding it?",
+      "a": "About 30% or more (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هي الاستعلامة المستخدمة لقياس تفتت الفهرس (Fragmentation)؟",
+      "a": "`Select avg_fragmentation_in_percent, fragment_count_from sys.dm_db_index_physical_stats(DB_ID('DatabaseName'), OBJECT_ID('IndexName'), 1, null, 'Limited');` (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "ما هي أفضل الممارسات لتحديد ما إذا كان يجب إعادة تنظيم الفهرس (Reorganize) أو إعادة بنائه (Rebuild)؟",
+      "a": "إذا كانت نسبة التفتت حوالي 30%، يمكن إعادة تنظيمه؛ أما إذا تجاوزت ذلك، يوصى بإعادة بنائه. (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "عند إعادة بناء الفهرس (index will be rebuilt)، ما هي السمات التي يتم الحفاظ عليها؟",
+      "a": "الأعمدة نفسها، ونوع الفهرس، وسمة التفرد (uniqueness attribute)، وترتيب الفرز (sort order). (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "ما هو التنسيق العام لأمر إدارة الفهارس باستخدام `ALTER INDEX`؟",
+      "a": "`ALTER INDEX {index_name | ALL} ON [{database_name.[schema_name]. | schema_name.}] {table_or_view_name} { REBUILD [...] REORGANIZE [...] }` (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "ما الذي تتحقق منه مهمة Check Database Integrity؟",
+      "a": "تتحقق من التخصيص والسلامة الهيكلية لجميع الكائنات في قاعدة البيانات المحددة. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "ما هي التعليمية التي تُجسد مهمة التحقق من سلامة قاعدة البيانات (Check Database Integrity task)؟",
+      "a": "تعليمية DBCC CHECKDB. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "ما الهدف من عملية ال Shrinking لقاعدة البيانات؟",
+      "a": "تهدف لتقليص مساحتها المستخدمة. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "متى يُنصح بإجراء عملية Index Rebuild؟",
+      "a": "في فترات الليل بعد الدوام، حيث سينخفض الأداء كثيرا بسبب استهلاك الموارد. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "ما هي وظيفة \"Shrinking data files\"؟",
+      "a": "تستعيد مساحة عن طريق نقل صفحات البيانات من نهاية الملف إلى المساحة غير المشغولة الأقرب إلى مقدمة الملف. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "متى يمكن إلغاء تخصيص صفحات البيانات في ملف قاعدة البيانات؟",
+      "a": "عندما يتم إنشاء مساحة خالية كافية في نهاية الملف، يمكن إلغاء تخصيص صفحات البيانات الموجودة في نهاية الملف وإعادتها إلى نظام الملفات. (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "ما هو المكان الذي يُظهر فيه تطبيق \"Shrinking\" أكبر فائدة؟",
+      "a": "ملفات الـ Log. (الصفحة 10)"
+    },
+    {
+      "id": 16,
+      "q": "ماذا يحدث عند تقليص قاعدة البيانات فيما يتعلق بزيادة التجزئة؟",
+      "a": "عند تقليص قاعدة البيانات، يتم زيادة التجزئة في الـ Indexes داخلها. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What does the SUSPECT state indicate regarding a database?",
+      "a": "The database is suspected of being damaged, and read-only access may be granted to allow system administrators to perform troubleshooting. (الصفحة 13)"
+    },
+    {
+      "id": 18,
+      "q": "Who can set a database to the EMERGENCY state?",
+      "a": "Only members of the sysadmin fixed server role can set a database to the EMERGENCY state. (الصفحة 13)"
+    },
+    {
+      "id": 19,
+      "q": "What is the minimum size constraint when shrinking a database?",
+      "a": "The database cannot be made smaller than the minimum size specified when it was originally created, or the last explicit size set by using DBCC SHRINKFILE. (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "If a database is in SUSPECT mode, what are the steps to bring it back online?",
+      "a": "First, try running `ALTER DATABASE DBname SET ONLINE`. If this fails, run `DBCC CHECKDB ('DBname', REPAIR_ALLOW_DATA_LOSS) WITH ALL_ERRORMSGS, NO_INFOMSGS;` (الصفحة 15)"
+    },
+    {
+      "id": 21,
+      "q": "What does statistical information help the SQL Server Query Optimizer estimate?",
+      "a": "The cardinality, or number of rows, in the query result to be returned (Page 18)"
+    },
+    {
+      "id": 22,
+      "q": "When is a shrink operation most effective?",
+      "a": "After an operation that creates lots of unused space, such as a truncate table or a drop table operation (Page 16)"
+    },
+    {
+      "id": 23,
+      "q": "Why should one avoid repeatedly shrinking the database?",
+      "a": "It increases fragmentation and is often a wasted operation because the shrunk space might be required for regular day-to-day operations (Page 16)"
+    },
+    {
+      "id": 24,
+      "q": "When is it preferable to perform Update Statistics?",
+      "a": "In holidays or spaced out periods because they consume a lot of resources and run the tempdb frequently (Page 17)"
+    },
+    {
+      "id": 25,
+      "q": "In SSMS, what stored procedure can be used to view the results of maintenance plans?",
+      "a": "`sysmntplan_logdetail` (الصفحة 19)"
+    },
+    {
+      "id": 26,
+      "q": "What types of support can maintenance plans offer regarding structure and scope?",
+      "a": "Conceptual hierarchies, multi-server plans, and logging plan history (الصفحة 19)"
+    },
+    {
+      "id": 27,
+      "q": "According to the text, what is the purpose of updating index statistics?",
+      "a": "To make better judgments about the best way to access data (الصفحة 19)"
+    },
+    {
+      "id": 28,
+      "q": "What component can be used to create jobs that perform a variety of actions and run maintenance plans?",
+      "a": "Running SQL Server Agent jobs (الصفحة 19)"
+    }
+  ]
+}

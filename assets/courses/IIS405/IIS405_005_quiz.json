@@ -1,0 +1,740 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What overall subject does Chapter 5 cover?",
+      "options": [
+        "Data File Management Systems",
+        "Tablespaces and Data Files",
+        "Database Administration Basics",
+        "Oracle Query Language (SQL)"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter title explicitly states that the material covered in this section is focused on the relationship between tablespaces and data files within the context of Oracle Database Administration.",
+      "id": 1
+    },
+    {
+      "question": "What fundamental concept does Chapter 5 address?",
+      "options": [
+        "Network Connectivity Protocols",
+        "Tablespace Management",
+        "Indexing Strategies for Performance Tuning",
+        "User Authentication Methods"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The Table of Contents clearly indicates that the first major topic covered in Chapter 5 is \"What is a tablespace?\", establishing it as the fundamental concept of the chapter.",
+      "id": 2
+    },
+    {
+      "question": "According to the learning objectives, how should the student be able to describe data storage?",
+      "options": [
+        "How to optimize network bandwidth usage.",
+        "The storage of table row data in blocks.",
+        "Methods for securing user passwords.",
+        "Procedures for backing up entire database instances."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "One of the primary objectives listed at the beginning of the chapter is to describe how table row data is stored specifically within data blocks, which is a core concept in understanding physical storage organization.",
+      "id": 3
+    },
+    {
+      "question": "What is a tablespace?",
+      "options": [
+        "A physical file on disk that stores all database data.",
+        "A logical container that allows you to manage groups of data files.",
+        "The smallest unit of storage allocated by the operating system.",
+        "Any individual database object created within the schema."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "A tablespace acts as a high-level organizational structure, grouping related physical data files together. It provides a logical boundary that allows administrators to manage and allocate space for various groups of database objects efficiently.",
+      "id": 4
+    },
+    {
+      "question": "Which entity represents any database object that stores data and requires space within a tablespace?",
+      "options": [
+        "Datafile",
+        "Segment",
+        "Extent",
+        "Block"
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "A segment is the specific structure used by Oracle to store the actual data for a particular database object, such as a table or an index. It is contained within a tablespace and consumes space from it.",
+      "id": 5
+    },
+    {
+      "question": "How is storage allocated in an Oracle database?",
+      "options": [
+        "Storage is allocated directly by the operating system blocks.",
+        "Storage is allocated by extents, which are sets of consecutively numbered blocks.",
+        "Storage is allocated only when a new tablespace is created.",
+        "Storage is allocated based on the size of the database object itself."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Oracle manages storage allocation using extents. An extent is defined as a collection of contiguous data blocks; therefore, when an object needs space, it requests an entire extent rather than individual blocks.",
+      "id": 6
+    },
+    {
+      "question": "What physically makes up a datafile?",
+      "options": [
+        "A logical container managed by the database administrator.",
+        "A number of operating system blocks.",
+        "A collection of segments belonging to one tablespace.",
+        "The smallest unit of data storage used by the database."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "From a physical perspective, a datafile is simply a file residing on the disk. It is composed entirely of multiple operating system blocks, which are the fundamental units of I/O operations.",
+      "id": 7
+    },
+    {
+      "question": "What is the smallest unit of data used by a database?",
+      "options": [
+        "Tablespace",
+        "Segment",
+        "Data Block",
+        "Extent"
+      ],
+      "correctIndex": 2,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The data block represents the minimum amount of space that can be read or written to the disk. All other storage units, such as extents and segments, are composed of one or more of these fundamental blocks.",
+      "id": 8
+    },
+    {
+      "question": "What is the primary definition of a tablespace in an Oracle database?",
+      "options": [
+        "It is a physical file that must be viewed using OS utilities like `ls` or `dir`.",
+        "It is a logical container used to manage groups of data files, which are the physical files on disk.",
+        "It is a temporary storage area reserved only for undo operations during transactions.",
+        "It represents the entire database structure visible through the operating system file explorer."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A tablespace serves as an organizational unit within the database architecture. Conceptually, it is a logical container that groups together one or more physical data files. These data files are what actually consume space on the disk and hold the database objects like tables and indexes.",
+      "id": 9
+    },
+    {
+      "question": "Which statement accurately describes the persistence of data files compared to tablespaces?",
+      "options": [
+        "Both data files and tablespaces must exist while the database is running to function correctly.",
+        "Data files persist whether the database is open or closed, whereas tablespaces only exist while the database is up and running.",
+        "Tablespaces are physical entities that can be viewed outside the database using OS utilities.",
+        "Data files cease to exist if the associated tablespace is dropped from the data dictionary view."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "There is a key difference in persistence between these two components. Data files are physical objects on the disk, meaning they maintain their existence regardless of whether the database instance is currently running or not. Conversely, tablespaces are logical constructs that only exist within the operational context of the running database.",
+      "id": 10
+    },
+    {
+      "question": "How can a user manage and view information about tablespaces?",
+      "options": [
+        "Tablespaces can only be managed by directly manipulating the physical files using OS commands.",
+        "They are visible through data dictionary views (such as DBA_TABLESPACES) and managed via tools like SQL*Plus or graphical interfaces.",
+        "Management is restricted solely to specialized database administrators who have direct access to the operating system kernel.",
+        "Tablespaces must be viewed by connecting directly to the underlying file system path of the data files."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Because a tablespace is a logical concept, its management and visibility are handled through internal database mechanisms. Users interact with it using SQL commands within tools like SQL*Plus or graphical administration tools, and this information is exposed via specific views in the data dictionary.",
+      "id": 11
+    },
+    {
+      "question": "What characteristic distinguishes physical data files from the abstract concept of a tablespace?",
+      "options": [
+        "Data files are always managed by the SYSTEM tablespace.",
+        "Data files have a physical presence that allows them to be viewed outside the database using operating system utilities (like `ls` or `dir`).",
+        "Data files can only store data for indexes and cannot hold table data.",
+        "They are inherently logical containers and do not consume actual disk space."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The defining characteristic of a physical data file is its tangible existence on the storage medium. This means that system administrators can bypass the database software layer and use standard operating system commands to list and view these files, confirming their physical presence.",
+      "id": 12
+    },
+    {
+      "question": "What is the primary function or purpose of the SYSAUX tablespace?",
+      "options": [
+        "It stores all user data objects (tables and indexes) created by application users.",
+        "It provides storage for various administrative components and auxiliary data required by Oracle, such as Enterprise Manager.",
+        "It is a temporary space used exclusively to hold transaction rollback information during database operations.",
+        "It holds the core metadata necessary for the entire database structure to function (the primary dictionary)."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "The SYSAUX tablespace is designed to house auxiliary data and components that support the overall operation of the database, but which are separate from the core system dictionary. This allows administrative tools and monitoring features, such as Enterprise Manager, to function without cluttering the primary SYSTEM space.",
+      "id": 13
+    },
+    {
+      "question": "What are tablespaces in a database environment?",
+      "options": [
+        "Physical containers made up of operating system blocks on disk.",
+        "Logical storage units into which a database is divided, used for controlling space and availability.",
+        "The smallest physical unit of data managed by the operating system.",
+        "A type of segment that holds only index information."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Tablespaces are logical divisions within a database structure. They allow the Database Administrator (DBA) to manage resources effectively, enabling them to control disk space allocation, assign specific quotas to users, and even take individual sections of data online or offline for maintenance.",
+      "id": 14
+    },
+    {
+      "question": "In the context of Oracle storage architecture, what does the segment entity represent?",
+      "options": [
+        "The physical grouping of blocks that constitutes a datafile.",
+        "Any database object that stores data and therefore requires space within a tablespace.",
+        "The smallest unit of I/O transfer for the underlying file system.",
+        "A set of consecutively numbered operating system blocks."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "A segment is the abstract representation of any database object that actually holds data, such as a table or an index. While tablespaces are the logical containers, segments define where the actual stored data resides within those containers.",
+      "id": 15
+    },
+    {
+      "question": "How is storage allocation managed in relation to blocks and files?",
+      "options": [
+        "Storage is allocated directly by operating system blocks across multiple datafiles.",
+        "Storage is allocated by extents, which are sets of consecutively numbered Oracle blocks contained within a single datafile.",
+        "The segment itself dictates the physical boundaries, requiring its own dedicated datafile.",
+        "Data files allocate space based on the size of the row data, ignoring block structure."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Storage management uses a hierarchical approach: A datafile is physically large, but storage allocation happens at the extent level. An extent is defined as a group of consecutive blocks within one datafile, ensuring that space is managed efficiently and in predictable chunks.",
+      "id": 16
+    },
+    {
+      "question": "What defines the smallest unit of data used by an Oracle database?",
+      "options": [
+        "The operating system block, which is the unit of I/O for the file system.",
+        "The data block, whose size is controlled by the parameter DB_BLOCK_SIZE and cannot be changed after creation.",
+        "The segment, as it represents the minimum logical grouping of stored information.",
+        "The extent, because it dictates the smallest unit of storage allocation."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The data block is the fundamental physical unit that the database uses to store and manage all data. Its size is fixed at creation time by the `DB_BLOCK_SIZE` parameter, making it the definitive minimum unit for data handling within the database system.",
+      "id": 17
+    },
+    {
+      "question": "When a table is created within a database, what specific object is generated to physically hold all of its data?",
+      "options": [
+        "A tablespace",
+        "A segment",
+        "A block",
+        "A row piece"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When you create a table, the Oracle server automatically creates an associated segment. This segment acts as the container that holds all the data pieces belonging to that specific table.",
+      "id": 18
+    },
+    {
+      "question": "What term is used to describe the fundamental unit in which a row's values are ultimately stored within a database block?",
+      "options": [
+        "A column value",
+        "A row piece",
+        "A segment entry",
+        "A data record"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Although conceptually we think of a whole row, physically, the unit that stores the actual data is called a row piece. This term acknowledges that sometimes an entire logical row might not fit into one physical location or block.",
+      "id": 19
+    },
+    {
+      "question": "Which combination of events can cause an existing row to be stored across multiple pieces (chained or migrated)?",
+      "options": [
+        "The table has fewer than 255 columns, and the block is full.",
+        "An inserted row is too large for a single block, or an update causes it to outgrow available free space.",
+        "The tablespace runs out of disk space, forcing data migration.",
+        "The user manually deletes all rows, causing fragmentation."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "A row may be split into multiple pieces if the inserted data is too large to fit entirely within one block (a chained row), or if an update operation causes the existing row to exceed the available free space in its current block (a migrated row).",
+      "id": 20
+    },
+    {
+      "question": "What type of chaining occurs when a table has more than 255 columns, and multiple row pieces are stored together within the same physical database block?",
+      "options": [
+        "Chained row storage",
+        "Intrablock chaining",
+        "Migrated row storage",
+        "Segment overflow"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Intrablock chaining is a mechanism used when a table has an excessive number of columns (more than 255). In this scenario, the individual pieces of data for that single row can be stored together within the same physical block.",
+      "id": 21
+    },
+    {
+      "question": "When a database is created using the CREATE DATABASE statement, which five tablespaces are typically generated?",
+      "options": [
+        "SYSTEM, TEMP, USERS, SYSAUX, DATA",
+        "SYSTEM, SYSAUX, UNDO, TEMP, USERS",
+        "SYS, USERDATA, TEMPORARY, ARCHIVELOG, SYSTEM",
+        "SYSAUX, UNDO, TEMP, USERS, CONTROL"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "When a database is initialized, the system automatically creates five core tablespaces: SYSTEM, SYSAUX, UNDO, TEMP, and USERS. These foundational tablespaces provide necessary storage for dictionary objects, auxiliary tools, transaction rollback data, temporary segments, and user-owned data, respectively.",
+      "id": 22
+    },
+    {
+      "question": "What primary function does the SYSTEM tablespace serve within the Oracle database?",
+      "options": [
+        "Storing all temporary segment information required during complex queries.",
+        "Providing storage for the Oracle data dictionary objects and objects owned by the SYS user.",
+        "Acting as a repository for logs collected by monitoring tools like Statspack.",
+        "Holding the necessary records to reverse changes made during a transaction rollback."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The SYSTEM tablespace is crucial because it holds the Oracle data dictionary objects, which contain metadata about all other database components. Furthermore, any object created and owned by the SYS user must reside within this specific tablespace.",
+      "id": 23
+    },
+    {
+      "question": "Which tablespace acts as an auxiliary repository for various Oracle database tools?",
+      "options": [
+        "UNDO, storing rollback information.",
+        "SYSTEM, storing dictionary objects.",
+        "SYSAUX, used by tools like Enterprise Manager and Statspack.",
+        "USERS, used for general user data storage."
+      ],
+      "correctIndex": 2,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The SYSAUX tablespace is designed to be an auxiliary repository. It collects data and provides space for various Oracle database management tools, such as Enterprise Manager and Statspack, allowing these utilities to function without cluttering the primary system dictionary objects.",
+      "id": 24
+    },
+    {
+      "question": "What information does the UNDO tablespace store?",
+      "options": [
+        "The definitions of all user-created indexes and constraints.",
+        "Information required to undo the effects of a transaction (like updates or deletes).",
+        "Temporary data segments used for sorting operations during queries.",
+        "Metadata regarding which users own objects within the database."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The UNDO tablespace is essential for maintaining data integrity. It stores records detailing changes made to data—such as inserts, updates, or deletes—which allows the database to successfully roll back a transaction if it needs to be undone by a user or application.",
+      "id": 25
+    },
+    {
+      "question": "What is the primary function of a TEMP tablespace in Oracle?",
+      "options": [
+        "Storing permanent database objects like user tables.",
+        "Serving as the default location for newly created indexes.",
+        "Providing temporary storage, primarily used for sorting query results or rebuilding indexes.",
+        "Holding historical data that is needed for Flashback Query functionality."
+      ],
+      "correctIndex": 2,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The TEMP tablespace is designed to handle transient data required during database operations. It is specifically utilized by Oracle when statements require a sort area, such as sorting query results or when creating/rebuilding indexes, ensuring that the space used is temporary for the session.",
+      "id": 26
+    },
+    {
+      "question": "Which statement accurately describes what can and cannot be stored in a TEMP tablespace?",
+      "options": [
+        "It can store permanent objects if they are created by an administrator.",
+        "The space is only meant for transient data and cannot contain permanent database objects like tables.",
+        "It is suitable for storing historical records needed for compliance auditing.",
+        "Permanent objects must be stored in the USERS tablespace, regardless of size."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The TEMP tablespace is strictly limited to temporary data used during active sessions. Because it is designed only for transient operations like sorting, it cannot store permanent database objects such as user-defined tables or indexes.",
+      "id": 27
+    },
+    {
+      "question": "What role does the USERS tablespace typically play in a database environment?",
+      "options": [
+        "It acts as the dedicated storage area for temporary sort files and index structures.",
+        "It is often used as the default permanent tablespace for storing table and index data belonging to users.",
+        "It is mandatory for all databases and cannot be omitted during setup.",
+        "Its primary function is solely to manage undo information for read consistency."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The USERS tablespace serves as a common default location for user data. When users create objects like tables or indexes, if they do not specify a particular tablespace, the object will typically be created within this default permanent storage area.",
+      "id": 28
+    },
+    {
+      "question": "If a user attempts to create an object (like a table) without specifying a tablespace during creation, where will that object be placed by default?",
+      "options": [
+        "It will fail and require manual specification of a tablespace.",
+        "It will automatically be stored in the TEMP tablespace until manually moved.",
+        "By default, it will be created in the database's designated default permanent tablespace.",
+        "It will be placed in the USERS tablespace only if that tablespace is full."
+      ],
+      "correctIndex": 2,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "When an object creation command does not specify a target tablespace, Oracle follows a rule to place the object into the designated default permanent tablespace for consistency and ease of use across the database environment.",
+      "id": 29
+    },
+    {
+      "question": "Historically, what was a primary reason for Database Administrators (DBAs) to separate table and index data into different tablespaces?",
+      "options": [
+        "To enforce stricter security policies on sensitive index data.",
+        "To reduce input/output (I/O) contention by placing data files on different disks with separate controllers.",
+        "Because indexes always require a smaller storage footprint than the actual table data.",
+        "To ensure that all backup operations could be performed simultaneously from a single location."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Historically, separating tablespace data was done to improve performance by reducing I/O contention. By placing the data files for tables and indexes on separate physical disks, each with its own controller, the system could manage read/write operations more efficiently, thereby improving overall database throughput.",
+      "id": 30
+    },
+    {
+      "question": "Which of the following is a valid reason for creating multiple tablespaces for table and index data in modern database environments?",
+      "options": [
+        "It is mandatory to create separate tablespaces every time an application is deployed.",
+        "To simplify management by logically grouping related tables and indexes separately, or because backup/recovery requirements may differ.",
+        "Because the operating system requires that all object types must reside in their own dedicated storage area.",
+        "Only to accommodate extremely large objects (LOBs) which cannot coexist with regular table data."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "While modern storage configurations make performance gains from separation debatable, there are still valid management reasons for using multiple tablespaces. These include having different backup and recovery requirements for indexes versus tables, managing objects by logically grouping them, or accommodating differing storage needs between the two object types.",
+      "id": 31
+    },
+    {
+      "question": "When might a DBA choose to separate a Large Object (LOB) column into its own dedicated tablespace?",
+      "options": [
+        "If the LOB data is expected to exceed the total capacity of all other existing tablespaces combined.",
+        "When they need to manage the storage characteristics of the LOB tablespace differently from the regular table data.",
+        "Because LOB columns are inherently less stable and require isolation for integrity purposes.",
+        "If the application uses multiple types of binary large object (BLOB) data, one per tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Separating a LOB column into its own tablespace gives the DBA granular control over how that specific type of storage is managed. This allows them to apply unique storage characteristics or management policies to the LOB data without affecting the regular table data stored elsewhere in the database.",
+      "id": 32
+    },
+    {
+      "question": "How does grouping objects into separate tablespaces assist with space management, even when using Automatic Segment Space Management (ASSM)?",
+      "options": [
+        "It automatically prevents any user from modifying the object structure within that tablespace.",
+        "The logical grouping assists both in the overall management of the objects and in the automated space management process itself.",
+        "ASSM will only function correctly if all related objects are housed within a single, dedicated tablespace.",
+        "It guarantees that the physical disk allocation for the object will be optimized regardless of the underlying storage hardware."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Even when using advanced features like Automatic Segment Space Management (ASSM), which handles space allocation automatically, grouping objects into separate tablespaces remains beneficial. This logical separation assists both database administrators in managing the structure and helps the automated system manage the allocated space more efficiently.",
+      "id": 33
+    },
+    {
+      "question": "What are the three essential pieces of information that must be entered on the \"Basic Info\" page when creating a tablespace using Toad for Oracle?",
+      "options": [
+        "The storage location, its size, and its owner name.",
+        "A name for the new tablespace, its type, and the Extent Management setting.",
+        "The associated schema, the compression level, and the retention period.",
+        "The database version, the required user roles, and the backup frequency."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "When creating a tablespace in Toad for Oracle, the \"Basic Info\" page requires users to define three core elements: a unique name for the new tablespace, its functional type (such as Permanent, Temporary, or Undo), and how the extent management will be handled.",
+      "id": 34
+    },
+    {
+      "question": "According to the material, what is the recommended choice for Extent Management when creating a new tablespace?",
+      "options": [
+        "Dictionary Managed",
+        "Allocated Managed",
+        "Auto Segment Space Management",
+        "Uniformly Managed"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "While \"Dictionary Managed\" was an option, the material explicitly recommends using \"Allocated Managed\" for Extent Management when setting up a new tablespace because it provides better control and performance management.",
+      "id": 35
+    },
+    {
+      "question": "Which of the following are possible types that determine the content or function of a newly created tablespace?",
+      "options": [
+        "System, Application, and User",
+        "Permanent, Temporary, and Undo",
+        "Data, Index, and Log",
+        "Primary, Secondary, and Tertiary"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "A tablespace must be assigned a type that dictates its purpose within the database. The possible types listed are Permanent, which holds general data; Temporary, used for operations like sorting; and Undo, which manages rollback information.",
+      "id": 36
+    },
+    {
+      "question": "When determining allocation size and segment management for a new tablespace, what options can be selected?",
+      "options": [
+        "Fixed Extent Size, Variable Segment Space Management, and Manual Allocation.",
+        "Auto Allocate Extent Sizes, Uniform Extent Sizes, and Auto Segment Space Management.",
+        "Maximum Capacity Limit, Minimum Block Size, and Reserved Quota.",
+        "Dictionary Managed, Allocated Managed, and System Default."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The allocation size options allow the user to choose between automatically allocating extent sizes or using uniform extent sizes. Furthermore, segment management can be set using Auto Segment Space Management.",
+      "id": 37
+    },
+    {
+      "question": "When creating a datafile, which set of parameters must be entered along with the Datafile name and its full path?",
+      "options": [
+        "Only the initial size of the datafile.",
+        "The initial datafile size, whether it is Auto Extent, and if it has a maximum size limit.",
+        "The required number of segments within the tablespace.",
+        "A unique identifier for the owner user."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "When defining a new datafile, the system requires more than just the name and path. Users must specify the initial size allocated to the file, determine if it uses Auto Extent functionality (and thus allocate additional space), and define whether or not there is a maximum size limit for growth.",
+      "id": 38
+    },
+    {
+      "question": "In tablespace management, what does 'Automatic' extent allocation ('autoallocate') specify?",
+      "options": [
+        "That the tablespace must be managed with fixed, uniform extents of a specified size.",
+        "That the sizes of the extents within the tablespace are system managed.",
+        "That the tablespace can only store undo segments and no other objects.",
+        "That the datafile must use the DATAFILE and EXTENT MANAGEMENT clauses."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Automatic extent allocation, also known as autoallocate, is a system management feature. It dictates that the database system itself handles and manages the sizes of the extents allocated within the tablespace, relieving the administrator from manually specifying every size increment.",
+      "id": 39
+    },
+    {
+      "question": "Which statement accurately describes an Undo Tablespace?",
+      "options": [
+        "It can store various types of objects alongside undo segments.",
+        "It is used specifically to store undo segments and cannot contain any other objects.",
+        "It must use Uniform extent allocation regardless of the database version.",
+        "It does not require specifying a maximum size limit during creation."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "An Undo Tablespace has a highly specialized function: storing undo segments. Due to this specific role, it is restricted from holding any other types of objects within the database structure.",
+      "id": 40
+    },
+    {
+      "question": "According to the rules for extent allocation, which type of tablespace cannot be specified with 'Automatic' extent allocation?",
+      "options": [
+        "A standard user tablespace.",
+        "An undo tablespace.",
+        "A temporary tablespace.",
+        "Any locally managed tablespace."
+      ],
+      "correctIndex": 2,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The material specifies that while Automatic allocation is a common feature, it cannot be applied to all types of tablespaces. Specifically, temporary tablespaces are excluded from using the automatic extent allocation method.",
+      "id": 41
+    },
+    {
+      "question": "What is a primary advantage of using the bigfile feature when creating a tablespace?",
+      "options": [
+        "It allows multiple data files to be associated with the tablespace.",
+        "It has the potential to create extremely large data files, such as up to 128TB.",
+        "It automatically manages all segment space management for the user.",
+        "It requires fewer administrative privileges than standard tablespaces."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The bigfile feature is designed to overcome size limitations by allowing administrators to create data files that can reach massive capacities, such as up to 128TB when using a 32KB block size. This potential for large file creation is its main benefit.",
+      "id": 42
+    },
+    {
+      "question": "What is a potential disadvantage of utilizing a bigfile tablespace?",
+      "options": [
+        "It requires the use of the `BIGFILE` clause, which can be cumbersome.",
+        "If the underlying file system runs out of space, the size of the tablespace cannot be expanded.",
+        "It limits the number of users who can access data stored within it.",
+        "It prevents the addition of any secondary indexes to the tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "A significant drawback of bigfile tablespaces is their dependency on the file system's available space. If the operating system cannot provide more physical disk space for the associated data file, the tablespace size cannot be increased, even if the database itself has capacity.",
+      "id": 43
+    },
+    {
+      "question": "Who automatically owns the undo segments created within an instance?",
+      "options": [
+        "The user who executes the `CREATE UNDO TABLESPACE` command.",
+        "SYS.",
+        "The DBA account responsible for maintenance.",
+        "The owner of the schema that requires rollback capability."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Undo segments are critical components for maintaining transaction history and enabling rollbacks. These segments are automatically created and always owned by the system user SYS, ensuring proper management regardless of which user performs transactions.",
+      "id": 44
+    },
+    {
+      "question": "Which statement accurately describes a structural limitation of a bigfile tablespace?",
+      "options": [
+        "It must be placed on a separate mount point from other data files.",
+        "A bigfile tablespace is restricted to having only one associated data file.",
+        "It cannot store any type of segment, only table data.",
+        "It requires the use of extent management for all segments within it."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Unlike standard tablespaces which can manage multiple data files, a bigfile tablespace is structurally limited to being associated with just one single data file. This constraint must be kept in mind when designing storage architecture.",
+      "id": 45
+    },
+    {
+      "question": "What are temporary tablespaces primarily designed to handle within an Oracle database?",
+      "options": [
+        "Storing permanent user data objects",
+        "Managing space required for sort operations",
+        "Holding archived redo log files",
+        "Defining metadata for indexes"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "Temporary tablespaces are specifically designed to manage the temporary segments created during large database operations, most notably sort operations. These spaces provide performance improvements when multiple sorts exceed available memory.",
+      "id": 46
+    },
+    {
+      "question": "Which of the following statements accurately describes what can be stored in a temporary tablespace?",
+      "options": [
+        "It must contain permanent schema objects for data integrity.",
+        "It cannot contain any permanent schema objects.",
+        "It is required to store all user-defined indexes.",
+        "It serves as the primary storage location for application logs."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "Temporary tablespaces are strictly limited in their contents; they are used only for temporary work and cannot house any permanent schema objects. This restriction ensures that data intended to persist is stored in appropriate, dedicated tablespaces.",
+      "id": 47
+    },
+    {
+      "question": "If a database is created without explicitly defining a default temporary tablespace, which system tablespace will be assigned by default to new users?",
+      "options": [
+        "TEMP_DEFAULT",
+        "SYSTEM_TEMP",
+        "SYSTEM",
+        "UNDO"
+      ],
+      "correctIndex": 2,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "When no specific default temporary tablespace is set during database creation, the system defaults to using the SYSTEM tablespace for any user created without a TEMPORARY TABLESPACE clause.",
+      "id": 48
+    },
+    {
+      "question": "What sequence of commands must be executed to designate an existing temporary tablespace as the default for the entire database?",
+      "options": [
+        "CREATE TEMP_TABLESPACE temp; ALTER DATABASE SET DEFAULT TEMP = temp;",
+        "ALTER USER default TEMP = temp; CREATE TEMPORARY TABLESPACE temp;",
+        "Create the temporary tablespace, then use ALTER DATABASE DEFAULT TEMPORARY TABLESPACE temp.",
+        "DROP TEMPORARY TABLESPACE old_temp; CREATE TEMPORARY TABLESPACE new_temp;"
+      ],
+      "correctIndex": 2,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "To change the default temporary tablespace for a database, two steps are necessary: first, the temporary tablespace must be created using `CREATE TEMPORARY TABLESPACE`, and second, the database setting must be updated using `ALTER DATABASE DEFAULT TEMPORARY TABLESPACE`.",
+      "id": 49
+    }
+  ]
+}

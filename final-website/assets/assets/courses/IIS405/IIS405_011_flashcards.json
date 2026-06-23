@@ -1,0 +1,225 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو عنوان الفصل الذي يتناوله الكتاب؟",
+      "a": "Chapter 11: Large Objects (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هي الأنواع التي يتم تناولها في أول هدف من أهداف الفصل؟",
+      "a": "LOB Types (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "كيف يمكن إنشاء جدول يحتوي على عمود LOB؟",
+      "a": "Creating a Table with a LOB Column (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما الموضوع المتعلق بقراءة الملفات الخارجية المذكور في محتويات الفصل؟",
+      "a": "Reading BFILEs (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هو الموضوع الذي يغطيه الهدف الأول المتعلق بالـ LOBs؟",
+      "a": "أنواع الـ LOB (LOB Types) (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "ما هي العناصر التي يتم توضيحها في الهدف الثاني المتعلق بـ LOBs؟",
+      "a": "مؤشرات ومفهرسات وقطع الـ LOB (Illustrating LOB Locators, Indexes, and Chunks) (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "ما الذي يغطيه الهدف الثالث فيما يتعلق بالـ LOBs؟",
+      "a": "جدول يحتوي على عمود LOB (Table with a LOB Column) (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "ما هو الموضوع الذي يتناوله الهدف الرابع في سياق الـ LOBs؟",
+      "a": "قياس المساحة المستهلكة من الـ LOB (Measuring LOB Space Consumed) (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What type of data are LOBs suited to storing?",
+      "a": "Large and unstructured data, such as text, log, image, video, sound, and spatial data (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "Which LOB type is used for storing character documents like big text files or XML files?",
+      "a": "CLOB (Character large object) (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What distinguishes the BFILE data type from other LOBs?",
+      "a": "It stores binary file large object on the filesystem outside of the database; it is read-only and not covered by Oracle security, backup, or recovery mechanisms (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What are examples of semi-structured data mentioned in the text?",
+      "a": "Document files such as json, XML documents or word processor, and log files (الصفحة 9)"
+    },
+    {
+      "id": 13,
+      "q": "What SQL data types are ideal for storing large amounts of unstructured binary data?",
+      "a": "The BLOB data type (Binary Large Object) and the BFILE data type (Binary File object). (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "In Internal LOBs, what is the smallest unit of allocation for a LOB, which is made up of one or more database blocks?",
+      "a": "A chunk. (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "When querying a table with an Internal LOB, what components does the database use to locate the appropriate LOB chunks?",
+      "a": "The LOB locator and associated LOB index. (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "What information does the LOB locator for a BFILE store in an External LOB setup?",
+      "a": "The directory path and file name on the OS. (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "When is it recommended to create a Secure File LOB in a separate tablespace from the table data?",
+      "a": "If the LOB segment will require different storage characteristics such as size and growth patterns (الصفحة 13)"
+    },
+    {
+      "id": 18,
+      "q": "What are the benefits of partitioning a LOB?",
+      "a": "Partitioning helps with balancing I/O, maintenance, and backup operations (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "Which SQL statement is used to modify the storage characteristics of a partitioned LOB?",
+      "a": "ALTER TABLE ... MODIFY PARTITION (الصفحة 15)"
+    },
+    {
+      "id": 20,
+      "q": "What are the methods mentioned for partitioning a LOB table?",
+      "a": "Partitioning can be done by LIST, RANGE, or HASH (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What are the two types of underlying LOB architecture that Oracle distinguishes between?",
+      "a": "Basic Files and Secure Files (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "Name three enhancements included in Secure Files compared to Basic Files LOBs.",
+      "a": "Encryption, Compression, and Deduplication (الصفحة 16)"
+    },
+    {
+      "id": 23,
+      "q": "What must a Secure Files LOB be stored in?",
+      "a": "A tablespace using ASSM (Automatic Segment Space Management) (الصفحة 16)"
+    },
+    {
+      "id": 24,
+      "q": "Which database parameter controls whether a Secure Files file can be used and defines the default LOB architecture for your database?",
+      "a": "DB_SECUREFILE (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What underlying LOB architecture is the default, and what is recommended for creating a LOB?",
+      "a": "The default underlying LOB architecture is Secure Files; it is recommended to create a LOB as a Secure Files. (Page 20)"
+    },
+    {
+      "id": 26,
+      "q": "Prior to Oracle Database 12c, what two components are created for each LOB column?",
+      "a": "A LOB segment and a LOB index. (Page 20)"
+    },
+    {
+      "id": 27,
+      "q": "What is the \"deferred segment creation feature\" regarding LOBs?",
+      "a": "The LOB segment and index are not created until a record is inserted into the table. (Page 20)"
+    },
+    {
+      "id": 28,
+      "q": "Which view can be used to verify if a LOB is stored in-row?",
+      "a": "The USER_LOBs view. (Page 21)"
+    },
+    {
+      "id": 29,
+      "q": "When Oracle creates a LOB column, what two main structures does it create?",
+      "a": "A LOB segment (which stores the data) and a LOB index (which keeps track of where the chunks of LOB data are physically stored). (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "According to the text, when is an initial segment for a table or LOB column created?",
+      "a": "An initial segment is not created until you insert a row into the table (deferred segment creation). (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What clause must be used in the CREATE TABLE statement to specify a separate tablespace for a LOB segment?",
+      "a": "The `LOB...STORE AS` clause. (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "Which view can be queried to display information regarding LOB segments and LOB index names?",
+      "a": "`user_lobs` (or DBA/ALL/USER_LOBS). (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "If an LOB segment requires different storage characteristics (such as size and growth patterns), what is recommended to manage its storage?",
+      "a": "Create the LOB in a separated tablespace from that of the table data. (الصفحة 25)"
+    },
+    {
+      "id": 34,
+      "q": "What must be true about the tablespace containing the Secure File LOB, and what is the default LOB architecture?",
+      "a": "The tablespace must be ASSM managed; the default LOB architecture is Secure Files. (الصفحة 25)"
+    },
+    {
+      "id": 35,
+      "q": "What SQL command creates a table with a Secure Files LOB column named `patch_desc` in the `lob_data` tablespace?",
+      "a": "`SQL> create table patchmain( patch_id number ,patch_desc clob) lob(patch_desc) store as securefile (tablespace lob_data);` (الصفحة 25)"
+    },
+    {
+      "id": 36,
+      "q": "Which view can be queried to verify a LOB's architecture?",
+      "a": "The `USER_SEGMENTS` view, by querying segment_name, segment_type, and segment_subtype. (الصفحة 25)"
+    },
+    {
+      "id": 37,
+      "q": "With the SecureFiles architecture, what options are no longer needed to be specified when creating LOBs?",
+      "a": "CHUNK, PCTVERSION, FREEPOOLS, FREELIST, and FREELIST GROUPS. (الصفحة 28)"
+    },
+    {
+      "id": 38,
+      "q": "What is the benefit of using a partitioned table that has a LOB column?",
+      "a": "It lets you spread a LOB across multiple tablespaces, helping with balancing I/O, maintenance, and backup and recovery operations. (الصفحة 28)"
+    },
+    {
+      "id": 39,
+      "q": "What statement is used to change the storage characteristics of a partitioned LOB column after it is created?",
+      "a": "ALTER TABLE ... MODIFY PARTITION statement. (الصفحة 29)"
+    },
+    {
+      "id": 40,
+      "q": "Which edition is required for Partitioning and Advanced Compression?",
+      "a": "Oracle Enterprise Edition. (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "If a table is created with a LOB column and no tablespace is specified, where is the LOB created by default?",
+      "a": "In the same tablespace as its table. (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "What statement can be used to move a LOB column to a tablespace separate from that of the table?",
+      "a": "`ALTER TABLE...MOVE...STORE AS` statement. (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "What is the basic syntax for moving a LOB column to a new tablespace?",
+      "a": "`alter table <table_name> move lob(<lob_name>) store as (tablespace <new_tablespace>);` (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "Why is it recommended to store the LOB in a separate tablespace from the rest of the table data?",
+      "a": "Because the LOB data have different growth and storage requirements and are best maintained in their own tablespace. (الصفحة 32)"
+    }
+  ]
+}

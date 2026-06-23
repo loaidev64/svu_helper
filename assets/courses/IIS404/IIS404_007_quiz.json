@@ -1,0 +1,425 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the main topic covered in Chapter Seven of the textbook?",
+      "options": [
+        "Database Security Protocols",
+        "Maintenance in MS SQL Server",
+        "Advanced Query Optimization Techniques",
+        "Network Connectivity Troubleshooting"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter Seven focuses specifically on various procedures and tasks required to maintain the optimal performance and integrity of an MS SQL Server database. These maintenance activities ensure that the database remains efficient over time.",
+      "id": 1
+    },
+    {
+      "question": "According to the Table of Contents, what is the second major task listed for database maintenance after managing indexes?",
+      "options": [
+        "Shrink a Database",
+        "Check Database Integrity Task",
+        "Update statistics",
+        "Fixing Database States"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The contents outline a structured approach to database care. After the initial section on Managing Indexes, the next critical step listed is performing the Check Database Integrity Task to ensure that all data structures are sound and consistent.",
+      "id": 2
+    },
+    {
+      "question": "If an index exhibits high fragmentation, what percentage threshold generally recommends rebuilding it?",
+      "options": [
+        "About 10% or more",
+        "About 30% or more",
+        "Exactly 50%",
+        "Only when performance drops significantly"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "When monitoring index fragmentation, a common guideline suggests that if the level of fragmentation reaches about 30% or higher, it is advisable to rebuild the index. Rebuilding helps restore the physical order of data and improves query efficiency.",
+      "id": 3
+    },
+    {
+      "question": "What query is used to measure index fragmentation percentage?",
+      "options": [
+        "`SELECT avg_fragmentation_in_percent FROM sys.dm_db_index_stats('DatabaseName', 'IndexName');`",
+        "`Select avg_fragmentation_in_percent, fragment_count_from sys.dm_db_index_physical_stats(DB_ID('DatabaseName'), OBJECT_ID('IndexName'), 1, null, 'Limited');`",
+        "`SELECT fragmentation_level FROM sys.indexes WHERE name = 'IndexName';`",
+        "`EXEC sp_helpindex @database='DatabaseName', @index='IndexName';`"
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "To accurately measure the degree of index fragmentation, you must use the system function `sys.dm_db_index_physical_stats`. This specific query allows you to retrieve both the average fragmentation percentage and the count of fragmented pages for a given database and index name.",
+      "id": 4
+    },
+    {
+      "question": "According to best practices, what is the recommended action if an index's fragmentation level exceeds 30%?",
+      "options": [
+        "Reorganize the index using `ALTER INDEX ... REORGANIZE`.",
+        "Rebuild the index using `ALTER INDEX ... REBUILD`.",
+        "Ignore the fragmentation as long as it is below 50%.",
+        "Update statistics instead of rebuilding or reorganizing."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The material suggests that if the measured fragmentation level is around 30%, reorganization is sufficient. However, if the fragmentation exceeds this threshold, rebuilding the index is recommended because it performs a more thorough restructuring of the data pages.",
+      "id": 5
+    },
+    {
+      "question": "When an index is rebuilt using `ALTER INDEX ... REBUILD`, which attributes are preserved?",
+      "options": [
+        "The statistics, the unique constraints, and the sort order.",
+        "The same columns, index type, uniqueness attribute, and sort order.",
+        "Only the column names and the database schema.",
+        "The physical location of the data pages and the fragmentation count."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Rebuilding an index is a comprehensive operation that recreates the index structure while preserving key metadata. Specifically, it maintains the original columns, the type of index (e.g., clustered or non-clustered), whether it enforces uniqueness, and the defined sort order.",
+      "id": 6
+    },
+    {
+      "question": "Which statement represents the general syntax for managing indexes using `ALTER INDEX`?",
+      "options": [
+        "`UPDATE INDEX {index_name} ON [{database_name}.[schema_name].] {table_or_view_name} SET REBUILD;`",
+        "`MANAGE INDEX {index_name | ALL} ON [{database_name].[schema_name]. | schema_name.}] {table_or_view_name} {REBUILD [...] REORGANIZE [...]};`",
+        "`ALTER INDEX {index_name | ALL} ON [{database_name.[schema_name]. | schema_name.}] {table_or_view_name} { REBUILD [...] REORGANIZE [...] };`",
+        "`EXECUTE ALTERINDEX {index_name} FOR TABLE {table_or_view_name};`"
+      ],
+      "correctIndex": 2,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The standard T-SQL command for managing indexes is `ALTER INDEX`. This statement requires specifying the index name or all indexes (`{index_name | ALL}`), the location using `ON`, and finally, the action to be taken, such as `REBUILD` or `REORGANIZE`.",
+      "id": 7
+    },
+    {
+      "question": "ما الذي تتحقق منه مهمة Check Database Integrity؟",
+      "options": [
+        "سلامة التخزين المؤقت للبيانات في الذاكرة.",
+        "التخصيص والسلامة الهيكلية لجميع الكائنات في قاعدة البيانات المحددة.",
+        "أداء الاستعلامات المعقدة وتحديد الاختناقات.",
+        "صلاحيات المستخدمين وأذونات الوصول إلى الجداول."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "مهمة Check Database Integrity تقوم بفحص التخصيص والسلامة الهيكلية لجميع الكائنات الموجودة داخل قاعدة البيانات المحددة، مما يضمن أن البنية الداخلية لقاعدة البيانات سليمة وغير تالفة.",
+      "id": 8
+    },
+    {
+      "question": "ما هو الحد الأدنى لحجم قاعدة البيانات الذي لا يمكن تجاوزه عند إجراء عملية تقليص (Shrinking)؟",
+      "options": [
+        "الحجم الأولي الذي تم إنشاؤه به القاعدة.",
+        "أصغر من حجمها الأدنى المحدد.",
+        "مساحة التخزين المتاحة على القرص الصلب.",
+        "النسبة المئوية لاستخدام البيانات الفعلية."
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "لا يمكن جعل قاعدة البيانات أصغر من الحد الأدنى لحجمها، حيث أن هذا الحجم يمثل أقل مساحة ممكنة لها بناءً على كيفية إنشائها أو التغييرات التي طرأت عليها في الماضي.",
+      "id": 9
+    },
+    {
+      "question": "متى يُنصح بإجراء عملية Index Rebuild؟",
+      "options": [
+        "خلال ساعات الذروة لضمان أقصى قدر من الأداء.",
+        "في فترات الليل بعد الدوام، لتجنب التأثير على العمليات اليومية.",
+        "فور اكتشاف أي بطء في استعلام معين.",
+        "قبل إجراء عملية حذف كبيرة للبيانات."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "يُنصح بإجراء عملية إعادة بناء الفهارس (Index Rebuild) خلال فترات الليل بعد الدوام، وذلك لأن هذه العملية تستهلك موارد النظام بشكل كبير وقد تؤدي إلى انخفاض ملحوظ في أداء قاعدة البيانات أثناء ساعات العمل.",
+      "id": 10
+    },
+    {
+      "question": "ما الهدف الأساسي من تحديث الإحصائيات (Updating Statistics)؟",
+      "options": [
+        "حذف الفهارس القديمة التي لم تعد مستخدمة.",
+        "تزويد مُحسِّن الاستعلام (Query Optimizer) بالمعلومات اللازمة لتقدير التوزيعات والعددية.",
+        "تغيير هيكل الجداول لتحسين سرعة الكتابة.",
+        "إجراء فحص شامل للتأكد من سلامة الذاكرة المستخدمة."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "تحديث الإحصائيات يهدف إلى تزويد مُحسِّن الاستعلام بالمعلومات الإحصائية حول توزيع القيم في الأعمدة، مما يساعده على إنشاء خطة تنفيذ مثالية ومُحسَّنة لأداء الاستعلامات.",
+      "id": 11
+    },
+    {
+      "question": "ما هي الآلية التي تستخدمها عملية \"Shrinking data files\" لاستعادة المساحة؟",
+      "options": [
+        "عن طريق حذف جميع البيانات القديمة من نهاية الملف.",
+        "عن طريق نقل صفحات البيانات من نهاية الملف إلى مساحة غير مشغولة أقرب إلى مقدمة الملف.",
+        "عن طريق إعادة تهيئة نظام الملفات بالكامل لإزالة التجزئة.",
+        "عن طريق إلغاء تخصيص جميع الصفحات بشكل عشوائي في قاعدة البيانات."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "تستعيد عملية \"Shrinking data files\" المساحة من خلال تحريك صفحات البيانات الموجودة في نهاية الملف إلى مساحة خالية غير مشغولة تقع بالقرب من بداية الملف، مما يقلص الحجم الكلي للملف ويستعيد المساحة المهدرة.",
+      "id": 12
+    },
+    {
+      "question": "ما هي النتيجة السلبية (التكلفة) التي يجب أخذها في الاعتبار عند تقليص قاعدة البيانات؟",
+      "options": [
+        "زيادة تعقيد الاستعلامات بشكل كبير.",
+        "زيادة التجزئة (Fragmentation) داخل الـ Indexes.",
+        "فقدان الاتصال بقاعدة البيانات مؤقتًا أثناء العملية.",
+        "الحاجة إلى إعادة تشغيل الخادم بالكامل لإتمام العملية."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "على الرغم من أن تقليص قاعدة البيانات يستعيد المساحة، إلا أنه يؤدي إلى زيادة التجزئة في الـ Indexes داخلها؛ ولذلك يجب الموازنة بين استعادة الحجم وزيادة التجزئة عند اتخاذ قرار التقليص.",
+      "id": 13
+    },
+    {
+      "question": "في أي نوع من الملفات يُظهر تطبيق \"Shrinking\" أكبر فائدة؟",
+      "options": [
+        "ملفات المستخدمين (User files).",
+        "ملفات الـ Log.",
+        "جداول البيانات الرئيسية (Master tables).",
+        "سجلات النظام العامة (General system logs)."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "يُلاحظ أن تطبيق عملية \"Shrinking\" يحقق أكبر فائدة عند استخدامه على ملفات الـ Log، مما يشير إلى أنها المنطقة التي يمكن فيها استعادة المساحة بكفاءة عالية.",
+      "id": 14
+    },
+    {
+      "question": "متى يمكن إلغاء تخصيص صفحات البيانات الموجودة في نهاية الملف بعد إجراء Shrinking؟",
+      "options": [
+        "بمجرد تشغيل عملية التقليص بنجاح بغض النظر عن حالة المساحة الحرة.",
+        "عندما يتم إنشاء مساحة خالية كافية في نهاية الملف.",
+        "عند إعادة تشغيل نظام التشغيل الذي يستضيف قاعدة البيانات.",
+        "إذا كانت هناك أوامر صريحة لإلغاء التخصيص من قبل المستخدم."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "لا يمكن إلغاء تخصيص صفحات البيانات الموجودة في نهاية الملف وإعادتها إلى نظام الملفات إلا بعد أن تكون عملية التقليص قد نجحت في إنشاء مساحة خالية كافية في تلك المنطقة.",
+      "id": 15
+    },
+    {
+      "question": "What does a database in the SUSPECT state indicate?",
+      "options": [
+        "The database has been permanently deleted and requires restoration from backup.",
+        "The database is suspected of being damaged, allowing read-only access for troubleshooting.",
+        "The database is undergoing routine maintenance and cannot be accessed by users.",
+        "The database connection string needs to be updated before any operations can proceed."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "When a database enters the SUSPECT state, it means that potential damage has been detected. To allow system administrators to investigate and perform troubleshooting without risking further corruption, read-only access is granted while the database remains in this restricted state.",
+      "id": 16
+    },
+    {
+      "question": "Who possesses the authority to set a database into the EMERGENCY state?",
+      "options": [
+        "Any user with `db_owner` permissions on the specific database.",
+        "Only members of the Database Administrator (DBA) role.",
+        "Only members of the sysadmin fixed server role.",
+        "The system service account running the SQL Server instance."
+      ],
+      "correctIndex": 2,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "Setting a database to the EMERGENCY state is a highly restrictive action that signals severe unavailability. Due to the critical nature of this change, only users belonging to the sysadmin fixed server role are authorized to perform this operation.",
+      "id": 17
+    },
+    {
+      "question": "What constraint governs the minimum size when shrinking a database?",
+      "options": [
+        "The database must always be shrunk to at least 10% of its current used space.",
+        "It cannot be made smaller than the original size specified or the last explicit size set by `DBCC SHRINKFILE`.",
+        "Shrinking is limited only by the physical disk capacity available on the server.",
+        "The minimum size is determined dynamically based on the transaction log usage at the time of shrinking."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When performing a file-size-changing operation like shrinking, SQL Server enforces a critical constraint to prevent data loss or corruption. A database cannot be reduced in size below the minimum size that was initially set when it was created, or any subsequent explicit size limit established by `DBCC SHRINKFILE`.",
+      "id": 18
+    },
+    {
+      "question": "If a database is found to be in SUSPECT mode, what is the recommended initial step for recovery?",
+      "options": [
+        "Immediately running `DBCC CHECKDB ('DBname', REPAIR_ALLOW_DATA_LOSS)`.",
+        "Changing the service account credentials and restarting the SQL Server service.",
+        "Attempting to bring the database online using `ALTER DATABASE DBname SET ONLINE`.",
+        "Running a full backup of all associated system tables before attempting any repair commands."
+      ],
+      "correctIndex": 2,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "When recovering a SUSPECT database, the process should start with the least invasive method. The first recommended step is to execute `ALTER DATABASE DBname SET ONLINE`. This command attempts to restore normal operation and only proceeds to more drastic measures like running `DBCC CHECKDB` if this initial attempt fails.",
+      "id": 19
+    },
+    {
+      "question": "When is a database shrink operation most effective?",
+      "options": [
+        "When the database has been running normally for several weeks.",
+        "After an operation that creates lots of unused space, such as a truncate table or a drop table operation.",
+        "Immediately after creating new indexes to optimize performance.",
+        "Before performing any major data deletion process."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "A shrink operation is most beneficial when there has been a significant reduction in the amount of data, such as following a `TRUNCATE TABLE` or `DROP TABLE` command. These operations release large amounts of unused space that can then be reclaimed by shrinking the database file size.",
+      "id": 20
+    },
+    {
+      "question": "What is a primary reason to avoid repeatedly shrinking a database?",
+      "options": [
+        "It requires excessive system permissions, which are difficult to obtain.",
+        "It increases fragmentation and may be a wasted operation if the shrunk space is needed for regular day-to-day operations.",
+        "The process itself can cause temporary service interruptions that affect users.",
+        "Shrinking repeatedly forces the database engine to rebuild all indexes unnecessarily."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Repeatedly shrinking a database is discouraged because it increases fragmentation, which degrades performance over time. Furthermore, if the space removed is required for normal daily operations, the effort of shrinking is wasted as the database size will likely grow again soon after.",
+      "id": 21
+    },
+    {
+      "question": "The SQL Server Query Optimizer uses statistical information primarily to estimate what?",
+      "options": [
+        "The total CPU usage required by a query plan.",
+        "The cardinality, or number of rows, in the query result to be returned.",
+        "The optimal index type (clustered vs. non-clustered) for the entire table.",
+        "The maximum memory allocation needed during query execution."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Statistical information provides crucial data about the distribution of values within columns or indexes. By analyzing this data, the Query Optimizer can accurately estimate the cardinality—the number of rows that a specific query will return—which allows it to select the most efficient execution plan.",
+      "id": 22
+    },
+    {
+      "question": "According to the material, when is it preferable to perform updating statistics?",
+      "options": [
+        "During peak business hours when system resources are abundant.",
+        "In holidays or spaced out periods because they consume a lot of resources and run the tempdb frequently.",
+        "Immediately after running a large batch update job that modifies many records.",
+        "Whenever performance monitoring tools indicate any slight degradation in query speed."
+      ],
+      "correctIndex": 1,
+      "page": "17",
+      "section": null,
+      "hint": "راجع الصفحة 17",
+      "explanation": "Updating statistics is resource-intensive because it consumes significant system resources and heavily utilizes the `tempdb`. Therefore, it is best practice to schedule these updates during low-activity periods, such as holidays or spaced out intervals, to minimize impact on daily operations.",
+      "id": 23
+    },
+    {
+      "question": "In SQL Server Management Studio (SSMS), which stored procedure should be used to view the results generated by maintenance plans?",
+      "options": [
+        "`sp_help_maintenance`",
+        "`sysmntplan_logdetail`",
+        "`EXECUTE MAINTENANCE HISTORY`",
+        "`VIEWPLAN_RESULTS`"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "The stored procedure `sysmntplan_logdetail` is specifically designed to retrieve and display the detailed results of maintenance plans that have been executed within SQL Server Management Studio. This allows administrators to review the outcomes and performance metrics of past maintenance activities.",
+      "id": 24
+    },
+    {
+      "question": "Which combination accurately describes the types of support offered by maintenance plans regarding structure and scope?",
+      "options": [
+        "Single-server execution, conceptual hierarchies, and basic logging.",
+        "Conceptual hierarchies, multi-server plans, and logging plan history.",
+        "Only full backups, single-database focus, and manual logging.",
+        "Transaction log support, limited server scope, and no historical tracking."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "Maintenance plans are highly versatile tools that offer comprehensive support. They can manage conceptual hierarchies of tasks, execute across multiple servers simultaneously using multi-server plans, and maintain a detailed record of execution through logging plan history.",
+      "id": 25
+    },
+    {
+      "question": "What is the primary purpose of updating index statistics within the context of database maintenance?",
+      "options": [
+        "To physically rebuild indexes to improve storage efficiency.",
+        "To enable the query optimizer to make better judgments about data access paths.",
+        "To automatically perform full backups and restore points.",
+        "To encrypt sensitive data stored in the index structure."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "Index statistics provide crucial information to the SQL Server query optimizer. By keeping these statistics up-to-date, the optimizer can accurately estimate data distribution and choose the most efficient execution plan, thereby improving overall query performance.",
+      "id": 26
+    },
+    {
+      "question": "Which component is responsible for creating jobs that perform a variety of actions and run maintenance plans automatically?",
+      "options": [
+        "SQL Server Agent Monitor",
+        "Running SQL Server Agent jobs",
+        "Database Backup Utility",
+        "SSMS Maintenance Wizard"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "To automate the execution of routine tasks, such as running maintenance plans, administrators utilize SQL Server Agent jobs. These jobs allow for scheduling and orchestration of various database actions without manual intervention.",
+      "id": 27
+    },
+    {
+      "question": "When performing database backups, which type of backup is necessary to capture all transactions that occurred since the last full or differential backup?",
+      "options": [
+        "Full backup",
+        "Differential backup",
+        "Transaction log backup",
+        "Conceptual hierarchy backup"
+      ],
+      "correctIndex": 2,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "A transaction log backup captures every single change made to the database since the last successful backup. This is essential because it allows recovery up to a specific point in time, ensuring minimal data loss following an incident.",
+      "id": 28
+    }
+  ]
+}

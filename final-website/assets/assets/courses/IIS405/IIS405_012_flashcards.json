@@ -1,0 +1,265 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "Chapter 12 का शीर्षक क्या है?",
+      "a": "Moving Data: Data Pump, SQL*Loader (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "डेटा मूव करने के लिए उपयोग किए जाने वाले दो मुख्य उपकरण कौन से हैं?",
+      "a": "Data Pump और SQL*Loader (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "Data Pump का उपयोग करने से पहले क्या बनाना आवश्यक है?",
+      "a": "Directory Objects (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "डेटा पंप के मुख्य कार्य कौन से हैं?",
+      "a": "Taking an Export/Import, Performing a Data Pump Export, और Performing a Data Pump Import (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What is one of the objectives regarding data movement covered in the textbook?",
+      "a": "Data Pump Architecture (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "Besides general data movement, what advanced concept involving exporting and importing is a key objective?",
+      "a": "Exporting and Importing with Granularity (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "Which tool's usage for loading data from non-Oracle databases is listed as an objective?",
+      "a": "Use SQL*Loader to load data (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "What technique is covered for unloading and loading data?",
+      "a": "Unloading and Loading Data Using an External Table (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What API contains utilities for high-speed export and import of bulk data and metadata movement?",
+      "a": "DBMS_DATAPUMP (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "Which Oracle Database interface minimizes data conversion and parsing at both unload and load time?",
+      "a": "Direct Path API (DPAPI) (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What utility is used for unloading data and metadata into a set of operating system files called dump file sets?",
+      "a": "Data Pump Export (الصفحة 9)"
+    },
+    {
+      "id": 12,
+      "q": "What table, created in the schema of the user running the Data Pump job, contains all aspects of the job?",
+      "a": "Master Table (MT) (الصفحة 9)"
+    },
+    {
+      "id": 13,
+      "q": "What is Oracle Data Pump?",
+      "a": "A server-based facility for high-speed data and metadata movement (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What are the command-line export and import clients used with Data Pump?",
+      "a": "expdp and impdp (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "When does Data Pump use external tables rather than direct path for data movement?",
+      "a": "If there are clustered tables, referential integrity constraints, or encrypted columns (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "Name one benefit of using Oracle Data Pump.",
+      "a": "Fine-grained object and data selection, parallel execution, or network mode in a distributed environment (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "ما هي كائنات الدليل (Directory objects) في Data Pump؟",
+      "a": "هياكل منطقية تمثل دليلًا ماديًا على نظام ملفات الخادم، وتسمح باستخدام اسم الكائن بدلاً من تحديد مسار الدليل بشكل ثابت (الصفحة 15)."
+    },
+    {
+      "id": 18,
+      "q": "ما هو الغرض من استخدام المعامل COMPRESSION في Data Pump؟",
+      "a": "لتحديد ما إذا كان يجب ضغط البيانات الوصفية (metadata) في ملف التصدير، مما يقلل من مساحة القرص واستهلاكها (الصفحة 14)."
+    },
+    {
+      "id": 19,
+      "q": "ما هو المعامل المستخدم لتقدير المساحة التي سيستهلكها تصدير البيانات دون إجراء التصدير الفعلي؟",
+      "a": "ESTIMATE_ONLY (الصفحة 14)."
+    },
+    {
+      "id": 20,
+      "q": "ما هو المعامل الذي يحدد الحد الأقصى لعدد خيوط خوادم التنفيذ النشطة التي تعمل نيابة عن مهمة التصدير؟",
+      "a": "PARALLEL (الصفحة 14)."
+    },
+    {
+      "id": 21,
+      "q": "What utility is used for unloading data and metadata into a set of operating system files called dump file sets?",
+      "a": "Data Pump Export (الصفحة 18)"
+    },
+    {
+      "id": 22,
+      "q": "Which utility is used to load metadata and data stored in an export dump file set into a target system?",
+      "a": "Data Pump Import (الصفحة 18)"
+    },
+    {
+      "id": 23,
+      "q": "Why are Directory Objects required when specifying file locations for Data Pump?",
+      "a": "Because it accesses files on the server rather than on the client. (الصفحة 16)"
+    },
+    {
+      "id": 24,
+      "q": "What is the Master Table (MT) in a Data Pump operation, and what does it maintain?",
+      "a": "A table created in the schema of the user running the Data Pump job that maintains all aspects of the job. (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What are the interfaces used to interact with Data Pump Export and Import?",
+      "a": "Command-line interface, Parameter file interface, Interactive–command interface, and Enterprise Manager Cloud Control/Toad for Oracle. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "List the different modes of Data Pump Export and Import.",
+      "a": "Full, Schema, Table, Tablespace, Transportable tablespace, and Transportable database. (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "What does the Command-line interface enable for Data Pump?",
+      "a": "Specifying most of the export parameters directly on the command line. (الصفحة 21)"
+    },
+    {
+      "id": 28,
+      "q": "According to the text, what is the function of the Parameter file interface in Data Pump?",
+      "a": "It enables specifying all command–line parameters in a parameter file; the only exception is the PARFILE parameter. (الصفحة 21)"
+    },
+    {
+      "id": 29,
+      "q": "What tools can be used to make a Data Pump export?",
+      "a": "Using Enterprise Manager Cloud Control or Toad for Oracle (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "From which menu should a user begin to perform a Data Pump export session using the GUI?",
+      "a": "Expand the Schema menu, select Database Export/Import (الصفحة 24)"
+    },
+    {
+      "id": 31,
+      "q": "If a privileged user is connected to the database instance, what are the available export types in Data Pump?",
+      "a": "Database, Schemas, Tables, and Tablespace (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "Which utility is illustrated for performing a Data Pump import using the command line?",
+      "a": "The `impdp` utility (الصفحة 24)"
+    },
+    {
+      "id": 33,
+      "q": "What makes it easy to apply transformations when DDL is being formed during Data Pump Import?",
+      "a": "Object metadata is stored as XML in the dump file set. (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "When is `REMAP_DATAFILE` useful?",
+      "a": "It is useful when moving databases across platforms that have different file-system semantics. (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "What capability does `REMAP_SCHEMA` provide?",
+      "a": "It provides the old FROMUSER /TOUSER capability to change object ownership. (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "Which transformation provides the ability to rename entire tables?",
+      "a": "REMAP_TABLE. (الصفحة 26)"
+    },
+    {
+      "id": 37,
+      "q": "What is the primary function of SQL\\*Loader?",
+      "a": "Loads data from external files into tables of an Oracle database using a powerful data parsing engine. (الصفحة 28)"
+    },
+    {
+      "id": 38,
+      "q": "Name three possible record formats for a data file read by SQL\\*Loader.",
+      "a": "Fixed record format, variable record format, or stream record format. (الصفحة 28)"
+    },
+    {
+      "id": 39,
+      "q": "What are the three sections that constitute a control file?",
+      "a": "Session-wide information (Global options), INTO TABLE blocks (containing table and column info), and optionally, input data log file. (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "How does SQL\\*Loader determine if a record goes into the \"Bad file\" versus being filtered to the \"Discard file\"?",
+      "a": "The bad file contains records rejected due to invalid input format or determined invalid by the Oracle database; the discard file contains records filtered out because they do not match any record-selection criteria. (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "What aspects does the SQL*Loader control file instruct about?",
+      "a": "Location of the data to be loaded, Data format, Configuration details, Memory management, Record rejection, Interrupted load handling details, and Data manipulation details (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "What type of language does the SQL*Loader control file contain instructions in?",
+      "a": "Data definition language (DDL) (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "Name three aspects controlled by the SQL*Loader control file regarding configuration.",
+      "a": "Memory management, selection and rejection criteria, and interrupted load handling (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "What is the purpose of the SQL*Loader control file?",
+      "a": "It is a text file that contains DDL instructions used to control various aspects of a SQL*Loader session (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "Which path load uses COMMIT?",
+      "a": "Conventional Load (الصفحة 36)"
+    },
+    {
+      "id": 46,
+      "q": "Which path load provides data saves, resulting in a faster operation?",
+      "a": "Direct Path Load (الصفحة 36)"
+    },
+    {
+      "id": 47,
+      "q": "Which path load fires INSERT triggers?",
+      "a": "Conventional Load (الصفحة 36)"
+    },
+    {
+      "id": 48,
+      "q": "How does Direct Path Load merge new index entries?",
+      "a": "Merges new index entries at the end of the load (الصفحة 36)"
+    },
+    {
+      "id": 49,
+      "q": "What method executes SQL INSERT statements to populate tables in an Oracle database?",
+      "a": "A conventional path load (الصفحة 38)"
+    },
+    {
+      "id": 50,
+      "q": "How does a direct path load eliminate overhead when writing data blocks?",
+      "a": "By formatting Oracle data blocks and writing the data blocks directly to the database files (الصفحة 38)"
+    },
+    {
+      "id": 51,
+      "q": "What is one key difference between a data save and a COMMIT operation regarding transactions?",
+      "a": "A data save does not end the transaction, while conventional path loads use a database COMMIT operation for saving data (الصفحة 38)"
+    },
+    {
+      "id": 52,
+      "q": "After a data save, what happens to the High-Water Mark (HWM)?",
+      "a": "The HWM is moved (الصفحة 38)"
+    }
+  ]
+}

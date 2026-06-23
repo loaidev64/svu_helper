@@ -1,0 +1,950 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "When creating and managing database user accounts, what essential element must be assigned in addition to the account itself?",
+      "options": [
+        "A unique role identifier",
+        "Default storage areas (tablespaces)",
+        "System administrator credentials",
+        "Network connection parameters"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "When a user account is created, it must be associated with default storage areas, known as tablespaces. These tablespaces dictate where the data belonging to that specific user will physically reside within the database structure.",
+      "id": 1
+    },
+    {
+      "question": "Which of the following actions represents a core objective related to controlling permissions in Oracle Database Administration?",
+      "options": [
+        "Creating new system administrators",
+        "Granting and revoking privileges",
+        "Deleting entire tablespaces",
+        "Modifying the database kernel version"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "A fundamental aspect of managing user access is controlling what actions they can perform. This control is achieved by explicitly granting specific permissions (privileges) to users and revoking them when those permissions are no longer needed.",
+      "id": 2
+    },
+    {
+      "question": "What two key areas do the objectives cover regarding enhancing security and resource management for users?",
+      "options": [
+        "Creating new tablespaces and managing roles",
+        "Implementing standard password security features and controlling resource usage by users",
+        "Assigning default accounts and modifying user passwords",
+        "Revoking privileges and creating system backups"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The objectives highlight that robust security involves two main components: first, enforcing strong standards for user authentication through password security features, and second, limiting what users can access or consume by controlling their usage of database resources.",
+      "id": 3
+    },
+    {
+      "question": "What is the primary focus of Chapter 7 in Oracle Database Administration?",
+      "options": [
+        "Advanced network configuration",
+        "Users and Basic Security",
+        "System backup and recovery procedures",
+        "Developing stored procedures and triggers"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter 7, titled \"Users and Basic Security,\" covers the foundational concepts necessary for managing user identities, controlling their access rights, and ensuring the overall security integrity of the Oracle database.",
+      "id": 4
+    },
+    {
+      "question": "What are the four primary administrative tasks covered when managing database users, according to the objectives?",
+      "options": [
+        "Managing network connections and user hardware access.",
+        "Creating/managing user accounts, granting/revoking privileges, creating/managing roles, and managing profiles.",
+        "Implementing backups and disaster recovery procedures.",
+        "Configuring operating system security patches for the database server."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The objectives outline that administrators must be able to perform four key functions: establishing user accounts, controlling specific permissions through privileges, grouping these permissions using roles, and setting overall rules via profiles.",
+      "id": 5
+    },
+    {
+      "question": "What two main areas do profiles help control for database users?",
+      "options": [
+        "Database connection limits and network bandwidth usage.",
+        "Implementing standard password security features and controlling resource usage by users.",
+        "The physical location of the user's data files and tablespaces.",
+        "The specific operating system permissions required to run SQL queries."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Profiles are crucial administrative tools that govern how users interact with the database. They manage both security aspects, such as password complexity and expiration, and resource management by limiting usage.",
+      "id": 6
+    },
+    {
+      "question": "Which of the following best describes the relationship between roles and privileges?",
+      "options": [
+        "Roles are physical containers for data, while privileges are access rights.",
+        "A role is a named group that bundles together multiple privileges to simplify permission assignment.",
+        "Privileges must be granted directly to users; roles cannot contain them.",
+        "Roles define the database structure, and privileges allow modification of that structure."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "A role acts as a logical grouping mechanism for permissions. Instead of granting dozens of individual privileges to every user, an administrator can grant one or more roles, which automatically assigns all bundled privileges to the user.",
+      "id": 7
+    },
+    {
+      "question": "When creating and managing database user accounts, what two fundamental tasks must be addressed?",
+      "options": [
+        "Defining the physical server location and setting up network firewalls.",
+        "Authenticating users and assigning default storage areas (tablespaces).",
+        "Writing stored procedures and defining views for data access.",
+        "Configuring backup schedules and retention policies."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The initial steps in managing a user account involve ensuring the system can verify who the user is (authentication) and determining where that user's data will be stored by assigning them a default tablespace.",
+      "id": 8
+    },
+    {
+      "question": "What is a named group of related privileges that can be granted to users or other roles?",
+      "options": [
+        "A quota",
+        "A role",
+        "A profile",
+        "An account password"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A role serves as a container for multiple privileges. Instead of granting each individual right to every user, administrators can group related rights into a role and then grant that single role to the users, simplifying management and ensuring consistency across the database.",
+      "id": 9
+    },
+    {
+      "question": "In an Oracle database context, what defines a privilege?",
+      "options": [
+        "A space allowance within a specific tablespace.",
+        "The ability to manage account status and password rules.",
+        "A right to execute a particular type of SQL statement or access another user's object.",
+        "A named set of resource limits imposed on database usage."
+      ],
+      "correctIndex": 2,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A privilege is the fundamental permission unit in the database, granting specific rights. These rights can range from executing certain types of commands (like creating a table) to accessing data owned by another user account.",
+      "id": 10
+    },
+    {
+      "question": "What are Profiles primarily used for in database administration?",
+      "options": [
+        "Defining the maximum amount of storage space a user can consume in a tablespace.",
+        "Imposing named sets of resource limits and managing account status/password rules.",
+        "Grouping related privileges that can be assigned to users.",
+        "Providing authentication credentials for database access."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Profiles are comprehensive tools used by administrators to govern user behavior and resource consumption. They allow the setting of limits on resources like CPU time or connections, while also enforcing policies related to password complexity and account expiration.",
+      "id": 11
+    },
+    {
+      "question": "Which privilege allows an administrator to connect to the SYS account regardless of other security settings?",
+      "options": [
+        "SYSDGBA",
+        "SYSOPER",
+        "SYSDBA",
+        "SYSTEM"
+      ],
+      "correctIndex": 2,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "The SYSDBA privilege is a highly powerful administrative right. It grants the user the ability to connect and perform critical tasks by using the AS SYSDBA clause, allowing them to manage the database at its deepest level.",
+      "id": 12
+    },
+    {
+      "question": "What mechanism controls the amount of storage space that a user can consume within a specific tablespace?",
+      "options": [
+        "Role",
+        "Quota",
+        "Profile",
+        "Privilege"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A quota is specifically defined as a space allowance. When an administrator wants to limit how much physical storage a user can use within a given tablespace, they assign that user a quota. This mechanism controls resource usage at the storage level.",
+      "id": 13
+    },
+    {
+      "question": "What is defined as a collection of database objects that are owned by a database user and shares the same name as the user account?",
+      "options": [
+        "A temporary namespace",
+        "A schema",
+        "An initial consumer group",
+        "A default namespace"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "A schema is essentially the logical structure within the database that groups together all the objects—such as tables, views, and sequences—that belong to a specific user account. It serves as the primary identifier for the data owned by that user.",
+      "id": 14
+    },
+    {
+      "question": "Which component assigns resource and password restrictions to a user?",
+      "options": [
+        "The default namespace",
+        "A user profile",
+        "An initial consumer group",
+        "The temporary namespace"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "A user profile acts as a set of rules governing how a user interacts with the database. It controls various aspects, including resource limits and password complexity or expiration policies, ensuring that the user adheres to defined security standards.",
+      "id": 15
+    },
+    {
+      "question": "If an account status is EXPIRED, what must happen before any user can connect to it?",
+      "options": [
+        "The DBA must manually change the account's lock status.",
+        "The password must be reset.",
+        "The temporary namespace quota must be increased.",
+        "The default namespace must be reassigned."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "An EXPIRED account indicates that its associated lifetime has passed, meaning the credentials are no longer valid for connection. To restore access, the password must be reset by an administrator or authorized user.",
+      "id": 16
+    },
+    {
+      "question": "According to Oracle Database standards, what constraints apply to a unique username?",
+      "options": [
+        "It can contain special characters but cannot exceed 50 bytes.",
+        "It cannot exceed 30 bytes, cannot contain special characters, and must start with a letter.",
+        "It must be all uppercase letters and cannot exceed 10 bytes.",
+        "It can contain numbers and symbols as long as it is unique across the database."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Usernames in Oracle Database are subject to strict naming conventions for consistency and security. They have a maximum length of 30 bytes, must begin with an alphabetical character, and cannot include special characters.",
+      "id": 17
+    },
+    {
+      "question": "What is the primary function of a temporary namespace?",
+      "options": [
+        "It is where users create objects if they do not specify another location.",
+        "It is reserved for creating temporary objects, such as sorts and temporary tables, on behalf of the user by the instance.",
+        "It holds all schema objects that are owned by the database user.",
+        "It manages resource restrictions and password policies for the account owner."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The temporary namespace is a dedicated area used by the database instance to store transient data, such as results from sorting operations or intermediate tables created during complex queries. This space does not require quota management.",
+      "id": 18
+    },
+    {
+      "question": "What are the primary responsibilities and ownership of the SYS account?",
+      "options": [
+        "It owns the data dictionary and facilitates Oracle Data Guard operations.",
+        "It owns the data dictionary and the Automatic Workload Repository (AWR), and is used for startup and shutdown of the database instance.",
+        "It manages backup and recovery using Oracle Recovery Manager (RMAN).",
+        "It handles Transparent Data Encryption wallet operations."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The SYS account is crucial because it owns both the data dictionary and the Automatic Workload Repository (AWR). Furthermore, its primary function includes facilitating the startup and shutdown processes for the database instance itself.",
+      "id": 19
+    },
+    {
+      "question": "Which administrative account is specifically designed to facilitate Oracle Recovery Manager (RMAN) backup and recovery operations?",
+      "options": [
+        "SYSDG",
+        "SYSBACKUP",
+        "SYSTEM",
+        "SYSKM"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The SYSBACKUP account was created with the specific purpose of facilitating Oracle Recovery Manager (RMAN). This dedicated role ensures that backup and recovery operations can be performed efficiently using this specialized administrative account.",
+      "id": 20
+    },
+    {
+      "question": "To connect to a database instance as the SYS account, which clause must be used?",
+      "options": [
+        "AS SYSTEMDBA",
+        "AS SYSDBA",
+        "AS ADMINSYS",
+        "AS ASMUSER"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When connecting to a standard database instance and needing the privileges of the SYS account, one must use the `AS SYSDBA` clause. This clause grants the necessary high-level administrative rights required for connection and management tasks.",
+      "id": 21
+    },
+    {
+      "question": "Which set of privileges are required for users to be allowed to start up and shut down database instances?",
+      "options": [
+        "DBA, SYSTEM, or ADMINSYS",
+        "SYSDBA, SYSOPER, or SYSASM",
+        "OSADMIN, RMAN, or ASMUSER",
+        "SELECT ANY DICTIONARY, CREATE USER, or ALTER SESSION"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Only users who possess the elevated privileges of SYSDBA, SYSOPER, or SYSASM are authorized to perform critical operations such as starting up and shutting down database instances. These roles grant the necessary system-level control.",
+      "id": 22
+    },
+    {
+      "question": "Which authentication method relies on an external directory service like LDAP for user validation?",
+      "options": [
+        "Operating system authentication",
+        "External authentication",
+        "Password file authentication",
+        "Global authentication"
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "External authentication is the mechanism that integrates with a directory service, such as LDAP. This allows the database to validate user credentials against an external source rather than relying solely on local password files or operating system accounts.",
+      "id": 23
+    },
+    {
+      "question": "Which accounts are considered required in the database and cannot be dropped?",
+      "options": [
+        "SYSADMIN",
+        "SYS and SYSTEM",
+        "DBAUSER",
+        "ROOT"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The SYS and SYSTEM accounts are fundamental to the operation of the Oracle database. They are required system accounts that administrators cannot drop, ensuring core administrative functions remain available even if other user accounts are managed or deleted.",
+      "id": 24
+    },
+    {
+      "question": "Which set of users is created specifically to facilitate separation of duties for database administrators?",
+      "options": [
+        "SYSADMIN, SYSTEM, and DBAUSER",
+        "SYSBACKUP, SYSDG, and SYSKM",
+        "OPERATOR, BACKUP, and MONITOR",
+        "ADMIN, SECURITY, and DATA"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "To enforce the principle of separation of duties among database administrators, Oracle provides specialized users like SYSBACKUP, SYSDG, and SYSKM. Each user is designed to handle a specific administrative function, preventing any single administrator from having total control over all aspects of the database.",
+      "id": 25
+    },
+    {
+      "question": "What primary capability does the SYSDEA privilege grant?",
+      "options": [
+        "Managing Transparent Data Encryption wallet operations (TDE)",
+        "Performing standard database operations like starting and shutting down the instance",
+        "Executing Oracle Recovery Manager (RMAN) backup and recovery tasks",
+        "Handling Data Guard operations via DGMRL"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The SYSDEA privilege is designed to allow users to perform general, standard database operations. This includes critical maintenance tasks such as starting or shutting down the database instance and managing server parameters like SPFILEs.",
+      "id": 26
+    },
+    {
+      "question": "According to security best practices when securing a new database, what should be done minimally?",
+      "options": [
+        "Granting all users the DBA role immediately for convenience.",
+        "Changing the password for every default account and locking any unused accounts.",
+        "Creating a dedicated OS user for every single application connection.",
+        "Allowing all administrators to use the AS SYSDBA clause without restriction."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "To establish a strong security posture, it is crucial to follow best practices by first changing the passwords on all default accounts and then locking any accounts that are not actively needed. This minimizes the attack surface and prevents unauthorized access through forgotten or unused credentials.",
+      "id": 27
+    },
+    {
+      "question": "After creating a new database, what is the recommended security practice for default user accounts?",
+      "options": [
+        "Immediately change all usernames to prevent unauthorized access.",
+        "Lock every default account and change their passwords; only unlock them when necessary.",
+        "Keep default accounts active but require complex passwords upon creation.",
+        "Only change the passwords of administrative users, leaving default accounts untouched."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "After establishing a database, it is crucial to enhance security by locking all default user accounts and changing their initial passwords. Default users should only be unlocked when specific access is required for operational purposes.",
+      "id": 28
+    },
+    {
+      "question": "Which SQL command must be executed to restore access to a user account that has been locked?",
+      "options": [
+        "alter user <username> password unlock;",
+        "alter user outlin account unlock;",
+        "select * from dba_users where status = 'LOCKED';",
+        "grant connect on user <username>;"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "To regain access to a locked user account, the `ALTER USER` command must be used specifically with the syntax `alter user outlin account unlock;`. This action changes the status of the account from locked to active.",
+      "id": 29
+    },
+    {
+      "question": "When does Oracle prompt a user for a new password if their current one has expired?",
+      "options": [
+        "Only when the user attempts to connect using an administrative account.",
+        "When the user first connects to the database while connecting as that specific user.",
+        "The system prompts the user only upon running a specific SQL query.",
+        "It requires manual intervention by a DBA before any connection attempt is made."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "If a user's password has expired, Oracle automatically detects this condition and will prompt the user to set a new password immediately upon their first successful connection attempt to the database using that account.",
+      "id": 30
+    },
+    {
+      "question": "To check if any accounts within the database are still utilizing default passwords, which view should be queried?",
+      "options": [
+        "DBA_USERS;",
+        "USER_DEFAULT_PASSWORDS;",
+        "DBA_USERS_WITH_DEFPWD;",
+        "ALL_ACCOUNTS_STATUS;"
+      ],
+      "correctIndex": 2,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The `DBA_USERS_WITH_DEFPWD` view is the specific resource that must be queried to determine if any Oracle-created user accounts are still configured with their original, default passwords.",
+      "id": 31
+    },
+    {
+      "question": "When creating a new user account in an Oracle database environment, which set of factors must be considered?",
+      "options": [
+        "Only the username and authentication method are required.",
+        "Username and authentication method, Basic privileges, Default permanent tablespace and space quotas, and Default temporary tablespace",
+        "The user's job role and department ID.",
+        "Only the default permanent tablespace is necessary for setup."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "When setting up a new user account, it is crucial to consider several factors beyond just the name and login credentials. These include defining basic privileges, assigning a default permanent tablespace along with space quotas, and specifying a default temporary tablespace to ensure the user has all necessary resources to operate correctly within the database structure.",
+      "id": 32
+    },
+    {
+      "question": "In pluggable database environments, how do common users and local users differ?",
+      "options": [
+        "Common users are only used in single PDBs, while local users span multiple PDBs.",
+        "Common users span all pluggable databases within a container database; local users exist within one pluggable database.",
+        "Both common and local users have identical scope across the entire CDB.",
+        "Local users are managed by the Container Database, while common users are isolated to single PDBs."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The distinction between user types relates to their scope within a pluggable database environment. Common users are designed to be accessible across all pluggable databases housed within a container database. Conversely, local users are confined and exist only within the boundaries of a single specific pluggable database.",
+      "id": 33
+    },
+    {
+      "question": "What essential data must be entered when performing the initial steps to create a new user account?",
+      "options": [
+        "The default permanent tablespace and quota limits.",
+        "User name, authentication method, and profile.",
+        "The list of all basic privileges the user requires.",
+        "The specific job role and department assignment for the user."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "When following the initial steps to create a new user account, the system requires entering three core pieces of information: the unique user name, the chosen authentication method for logging in, and an associated profile that dictates various security parameters and resource limits.",
+      "id": 34
+    },
+    {
+      "question": "Besides defining the username and authentication details, what storage assignments are required when setting up a new user?",
+      "options": [
+        "Only assigning a default temporary tablespace is sufficient.",
+        "Default permanent tablespace and space quotas, and Default temporary tablespace.",
+        "The user must be assigned to a specific schema owner.",
+        "Assigning basic privileges automatically handles all storage requirements."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "To ensure the new user has adequate resources for data storage and operations, two key types of assignments are necessary: defining the default permanent tablespace along with associated space quotas for persistent data, and setting a default temporary tablespace for operational use during transactions.",
+      "id": 35
+    },
+    {
+      "question": "What mechanism is used to assign a collection of predefined permissions to a user account?",
+      "options": [
+        "Granting system privileges",
+        "Granting roles",
+        "Granting object privileges",
+        "Creating database users"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "Roles are containers that group multiple privileges together. By granting a role, an administrator can assign a set of permissions to a user without having to list every single privilege individually, simplifying management and ensuring consistency across the database.",
+      "id": 36
+    },
+    {
+      "question": "Which type of privilege grants permission to perform actions that affect the entire database system, regardless of specific tables or schemas?",
+      "options": [
+        "Object privileges",
+        "System privileges",
+        "Roles",
+        "Schema privileges"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "System privileges are high-level permissions granted at the database level. They allow users to perform administrative tasks or access resources across the entire system, such as creating tablespaces or connecting to the database, rather than just on a single object.",
+      "id": 37
+    },
+    {
+      "question": "If an administrator needs to grant permission for a user to read data from a specific table named 'EMPLOYEES', what type of privilege must be used?",
+      "options": [
+        "System privileges",
+        "Object privileges",
+        "Roles",
+        "Profile privileges"
+      ],
+      "correctIndex": 1,
+      "page": "27",
+      "section": null,
+      "hint": "راجع الصفحة 27",
+      "explanation": "Object privileges are permissions granted on specific database objects, such as tables, views, or sequences. To allow a user to perform an action like selecting data from the 'EMPLOYEES' table, the administrator must explicitly grant that object privilege.",
+      "id": 38
+    },
+    {
+      "question": "What is the primary purpose of using profiles in Oracle database administration?",
+      "options": [
+        "To define new roles for users to adopt.",
+        "To impose a named set of resource limits and manage account security settings for users.",
+        "To restrict access only to system administrators.",
+        "To automatically revoke all privileges when a user logs out."
+      ],
+      "correctIndex": 1,
+      "page": "27",
+      "section": null,
+      "hint": "راجع الصفحة 27",
+      "explanation": "Profiles are crucial administrative tools that allow database administrators to control how users interact with the system. They manage resource consumption, enforce password complexity and expiration rules, and set limits on various aspects of a user's account.",
+      "id": 39
+    },
+    {
+      "question": "What is the primary function of an authentication method in a database?",
+      "options": [
+        "To manage user quotas and tablespaces.",
+        "To determine if a user attempting to create a session is allowed to connect to the account.",
+        "To enforce password aging policies for users.",
+        "To assign specific roles and privileges to administrators."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "An authentication method serves as the mechanism by which the database verifies the identity of a user attempting to establish a connection, thereby determining if they are authorized to access the system resources.",
+      "id": 40
+    },
+    {
+      "question": "Which two types of authentication methods are exclusively used for administrators logging in as SYSDBA or SYSOPER?",
+      "options": [
+        "Password authentication and Global authentication.",
+        "Operating System Authentication and Password file Authentication.",
+        "External authentication and Password authentication.",
+        "Operating System Authentication and Password aging."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The text specifies that the first two techniques, Operating System Authentication and Password file Authentication, are utilized only by administrators who log in using the SYSDBA or SYSOPER roles.",
+      "id": 41
+    },
+    {
+      "question": "If a database needs to implement External authentication or Global authentication for users, what external component is required?",
+      "options": [
+        "A dedicated OSDBA group membership.",
+        "An LDAP directory server, such as the Oracle Internet Directory.",
+        "Manual configuration of user passwords in the password file.",
+        "The use of local access control lists (ACLs)."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Both External and Global authentication types require integration with an external LDAP directory server, specifically mentioning the Oracle Internet Directory, to manage user credentials centrally.",
+      "id": 42
+    },
+    {
+      "question": "Which of the following is NOT listed as one of the five available authentication types for a user account?",
+      "options": [
+        "Password file authentication.",
+        "Quota assignment authentication.",
+        "External authentication.",
+        "Global authentication."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The material lists Operating system, Password file, Password, External, and Global as the five types of authentication methods; quota assignment is a separate database management function.",
+      "id": 43
+    },
+    {
+      "question": "What type of administrator authentication requires users to know their Oracle username and password and logs in as SYSDBA or as SYSOPER?",
+      "options": [
+        "Schema Only Account Authentication",
+        "Password File Authentication",
+        "OS Authentication",
+        "Default User Authentication"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Password File Authentication is the method used for administrators who log in using their specific Oracle username and password while possessing SYSDBA or SYSOPER privileges. This type of authentication requires users to remember multiple credentials, which can pose a security risk if passwords are stored in an encrypted operating system file.",
+      "id": 44
+    },
+    {
+      "question": "To enable Password File Authentication for remote database access, what command must be set?",
+      "options": [
+        "SET REMOTE_LOGIN_PASSWORDFILE = SHARED",
+        "SET REMOTE_LOGIN_PASSWORDFILE = EXCLUSIVE (or SHARED if database is part of distributed system)",
+        "SET REMOTE_LOGIN_PASSWORDFILE = NONE",
+        "SET REMOTE_LOGIN_PASSWORDFILE = ADMIN"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "To allow users to log in remotely using the Password File Authentication method, the `REMOTE_LOGIN_PASSWORDFILE` parameter must be set. Setting it to EXCLUSIVE or SHARED enables this functionality and dictates how password management is handled across distributed systems.",
+      "id": 45
+    },
+    {
+      "question": "After creating a new Oracle user, how are SYSDBA or SYSOPER privileges assigned to that user?",
+      "options": [
+        "GRANT sysdba TO student;",
+        "GRANT sysdba TO student;",
+        "ALTER USER student ADD ROLE SYSDBA;",
+        "CONNECT student AS SYSDBA;"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "To grant high administrative privileges like SYSDBA or SYSOPER to a newly created user, the `GRANT` statement is used. For example, running `GRANT sysdba TO student;` assigns these powerful roles, which are automatically updated when the user changes their password.",
+      "id": 46
+    },
+    {
+      "question": "What is the primary characteristic of a \"Schema Only Account\"?",
+      "options": [
+        "They can log into the database directly using standard credentials.",
+        "They allow users to perform DDL statements in other accounts but cannot log into the database directly.",
+        "They are only usable by system administrators and require SYSDBA privileges.",
+        "They automatically inherit all administrative privileges from the DBA role."
+      ],
+      "correctIndex": 1,
+      "page": "33",
+      "section": null,
+      "hint": "راجع الصفحة 33",
+      "explanation": "Schema Only Accounts are designed for specific operational tasks where a user needs to execute Data Definition Language (DDL) statements in other accounts without needing direct, full login access to the database itself. This separation enhances security by limiting connectivity options.",
+      "id": 47
+    },
+    {
+      "question": "System privileges primarily apply to which types of actions within an Oracle database?",
+      "options": [
+        "Performing DML operations like SELECT, INSERT, UPDATE, or DELETE against tables.",
+        "Actions that affect the data dictionary or the overall instance structure.",
+        "Executing PL/SQL objects stored in user schemas.",
+        "Passing object privileges to a third party using the GRANT OPTION."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "System privileges are broad permissions that govern actions affecting the database structure itself, such as creating users or tablespaces, and they often relate to modifying the data dictionary. Object privileges, conversely, restrict actions like SELECT or INSERT on specific user-created objects.",
+      "id": 48
+    },
+    {
+      "question": "Which of the following statements accurately describes the function of object privileges?",
+      "options": [
+        "They are used exclusively by DBAs (SYS and SYSTEM) to manage global database settings.",
+        "They grant the ability to perform DML operations (SELECT, INSERT, UPDATE, DELETE) on specific tables or views.",
+        "They allow a user to connect to the database without needing any password credentials.",
+        "They are required for performing actions that affect the instance parameters, such as adjusting memory allocation."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "Object privileges grant permissions specifically on defined database objects like tables and views. These privileges enable users to execute standard data manipulation language (DML) commands—SELECT, INSERT, UPDATE, or DELETE—against those particular objects.",
+      "id": 49
+    },
+    {
+      "question": "How are user privileges managed within an Oracle database environment?",
+      "options": [
+        "They must be manually reset by the DBA every time a new feature is implemented.",
+        "They are assigned to user accounts using the GRANT command and can be removed using REVOKE.",
+        "They are automatically revoked if the user fails to log in for more than 30 days.",
+        "They require the use of the CASCADE clause when modifying the user's account status."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "In an Oracle database, access control is managed through explicit commands. Privileges are granted to users using the GRANT command, and if those permissions need to be taken away or restricted, they must be withdrawn using the REVOKE command.",
+      "id": 50
+    },
+    {
+      "question": "Which authentication method allows a user to connect without needing both a username and password?",
+      "options": [
+        "Password Authentication by the Oracle database.",
+        "External Authentication.",
+        "Global Authentication.",
+        "OS_AUTHENT_PREFIX authentication."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "External Authentication delegates user verification to an external service, which allows users to connect using credentials managed outside of the core Oracle database system. This mechanism enables connection without requiring a traditional username and password stored within the database itself.",
+      "id": 51
+    },
+    {
+      "question": "What SQL statement is required to revoke system privileges that were granted directly?",
+      "options": [
+        "GRANT SQL statement",
+        "REVOKE SQL statement",
+        "ALTER SQL statement",
+        "DROP SQL statement"
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "The REVOKE SQL statement must be used when a user wishes to take back system privileges that were previously granted using the GRANT command. This statement is specifically designed for removing existing permissions from database users.",
+      "id": 52
+    },
+    {
+      "question": "Which condition allows a user to revoke a system privilege from any other database user?",
+      "options": [
+        "The revoker must be the original grantor of the privilege.",
+        "The revoker must possess ADMIN OPTION for that specific system privilege.",
+        "The revocation must occur during a transaction commit.",
+        "The revoker must have DBA privileges on the entire database."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "Users who hold the ADMIN OPTION for a particular system privilege are empowered to revoke that privilege from any other database user, regardless of who originally granted it. This option grants significant control over permission management.",
+      "id": 53
+    },
+    {
+      "question": "When revoking a system privilege, what relationship must exist between the revoker and the original grantor?",
+      "options": [
+        "The revoker must be the same user who initially granted the privilege.",
+        "The revoker does not have to be the same user who originally granted the privilege.",
+        "The revoker must belong to a higher security role than the grantor.",
+        "The revocation requires explicit permission from the original grantor."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A key feature of system privilege revocation is that the person performing the revocation does not need to be the same user who originally granted the privilege. This separation allows for administrative control even if the initial granting user is unavailable or has left the organization.",
+      "id": 54
+    },
+    {
+      "question": "What is true regarding cascading effects when a system privilege is revoked?",
+      "options": [
+        "Cascading effects occur only if the ADMIN OPTION was used during the grant.",
+        "There are no cascading effects when a system privilege is revoked, regardless of whether it was given the ADMIN OPTION.",
+        "The revocation will automatically remove all related object privileges.",
+        "Cascading effects always require explicit confirmation from the database administrator."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "When a system privilege is revoked using the REVOKE statement, there are no cascading effects. This means that revoking the system privilege does not automatically affect or remove any related object privileges associated with it.",
+      "id": 55
+    },
+    {
+      "question": "What is the correct SQL syntax structure for revoking a system privilege?",
+      "options": [
+        "REVOKE <grantee clause> FROM <system_privilege>",
+        "REVOKE <system_privilege> FROM <grantee clause>",
+        "REVOKE FROM <grantee clause> <system_privilege>",
+        "GRANT REVOKE <system_privilege> TO <grantee clause>"
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "The proper syntax for revoking a system privilege involves the keywords REVOKE, followed by the name of the specific system privilege being removed, then the FROM keyword, and finally specifying the user or role from whom the privilege is being revoked.",
+      "id": 56
+    },
+    {
+      "question": "If a user has created stored procedures that use a specific table, what must happen if the system privilege related to that table is revoked?",
+      "options": [
+        "The DBA must manually delete all dependent procedures.",
+        "All procedures contained in the user's schema must be recompiled before they can be used again.",
+        "Only the original owner of the procedure needs to perform recompilation.",
+        "No action is required, as Oracle handles dependency updates automatically."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "When a system privilege that supports a Data Manipulation Language (DML) operation is revoked, and if user-created procedures rely on that underlying capability, the dependent code must be recompiled. This ensures that the stored procedures remain valid and functional despite the change in privileges.",
+      "id": 57
+    },
+    {
+      "question": "When revoking an object privilege that was originally granted with the GRANT OPTION, who is authorized to perform the revocation?",
+      "options": [
+        "Only the Database Administrator (DBA) has the authority to revoke such privileges.",
+        "The grantee or a user possessing the privilege called GRANT ANY OBJECT PRIVILEGE can revoke it.",
+        "Only the original grantor of the object privilege can initiate the revocation process.",
+        "Any other user who has been granted SELECT on that object can revoke the privilege."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "The ability to revoke an object privilege depends on how it was originally granted. If a privilege is given with the GRANT OPTION, only the person who received that privilege (the grantee) or a user holding the powerful system privilege of GRANT ANY OBJECT PRIVILEGE can successfully perform the revocation.",
+      "id": 58
+    },
+    {
+      "question": "According to the material, what accurately defines a role in an Oracle database?",
+      "options": [
+        "A type of account used exclusively by administrators for maintenance tasks.",
+        "A named group of related privileges that are granted to users or to other roles.",
+        "A container object that holds all system and object privileges within a specific schema.",
+        "A mechanism that allows temporary access rights without requiring explicit user assignment."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "A role serves as an organizational tool for managing permissions. It is defined as a named collection or group of related privileges, which can then be assigned to individual users or even granted to other roles, simplifying the administration process significantly.",
+      "id": 59
+    },
+    {
+      "question": "Which statement accurately describes the ownership and location of roles in an Oracle database?",
+      "options": [
+        "Roles are owned by the DBA and must reside within a specific schema for management.",
+        "Roles can only be created and managed within user schemas.",
+        "Roles are not owned by anyone, and they are not located within any single schema.",
+        "Roles require ownership by at least one user to function correctly."
+      ],
+      "correctIndex": 2,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "Unlike users or objects which belong to a specific owner/schema, roles exist independently of any single schema or owner. They are global constructs designed purely for grouping and managing sets of privileges across the database environment.",
+      "id": 60
+    },
+    {
+      "question": "What is the primary URL provided for general Oracle database documentation?",
+      "options": [
+        "https://docs.oracle.com/en/database/oracle/oracle-database/19/whats-new.html",
+        "https://docs.oracle.com/database",
+        "http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html",
+        "oracleuniversity.com/documentation"
+      ],
+      "correctIndex": 1,
+      "page": "43",
+      "section": null,
+      "hint": "راجع الصفحة 43",
+      "explanation": "The URL `https://docs.oracle.com/database` is listed as the main and general documentation site for Oracle database information, making it the primary resource for users seeking comprehensive guides and details about the product.",
+      "id": 61
+    },
+    {
+      "question": "Which book focuses on managing an Oracle Database specifically within a cloud environment?",
+      "options": [
+        "Oracle Database Administrator's Guide, 18c (Oracle University)",
+        "The Cloud DBA- Oracle: Managing Oracle Database in the Cloud – First Edition",
+        "database-new-features-guide (Oracle University)",
+        "Advanced Topics in Oracle Management"
+      ],
+      "correctIndex": 1,
+      "page": "43",
+      "section": null,
+      "hint": "راجع الصفحة 43",
+      "explanation": "The book titled *The Cloud DBA- Oracle: Managing Oracle Database in the Cloud – First Edition* is specifically dedicated to covering best practices and techniques for managing an Oracle database when it is deployed in a cloud setting.",
+      "id": 62
+    },
+    {
+      "question": "If a user wants to check documentation regarding new features released in version 19 of the Oracle database, which web site link should they use?",
+      "options": [
+        "https://docs.oracle.com/database",
+        "https://docs.oracle.com/en/database/oracle/oracle-database/19/whats-new.html",
+        "http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html",
+        "oracleuniversity.com/guides/newfeatures"
+      ],
+      "correctIndex": 1,
+      "page": "43",
+      "section": null,
+      "hint": "راجع الصفحة 43",
+      "explanation": "The specific URL `https://docs.oracle.com/en/database/oracle/oracle-database/19/whats-new.html` is the designated resource for users to view detailed information about \"what's new\" features within the Oracle database version 19 documentation.",
+      "id": 63
+    }
+  ]
+}

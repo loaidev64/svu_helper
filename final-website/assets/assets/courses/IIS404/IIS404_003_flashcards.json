@@ -1,0 +1,280 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "كيف يمكن قياس التوافرية (Availability)؟",
+      "a": "يمكن قياسها بالنسبة لـ \"100% operational\". (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "ما هو تعريف هدف نقطة الاسترداد (Recovery Point Objective - RPO)؟",
+      "a": "كم من البيانات أنت مستعد لخسارتها؟ (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "ما هو تعريف هدف وقت الاسترداد (Recovery Time Objective - RTO)؟",
+      "a": "مقدار الوقت المتاح لإعادة النظام إلى حالة معروفة وقابلة للاستخدام بعد الفشل. (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "عند التخطيط لحلول عالية التوافرية، ما هو الشيء الذي يجب أخذه في الاعتبار؟",
+      "a": "المقايضة بين الميزانية والموارد والمعدات والأشخاص والمال والحل التقني. (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ماذا يتناسب الحل عالي التوافرية بشكل غير مباشر مع؟",
+      "a": "مقدار فقدان البيانات المقبول وطول فترة التوقف عن العمل. (الصفحة 3)"
+    },
+    {
+      "id": 6,
+      "q": "What is the Recovery Point Objective (RPO)?",
+      "a": "How much data are you prepared to lose? (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "What does the Recovery Time Objective (RTO) define?",
+      "a": "How much time is available to bring the environment up to a known and usable state after a failure. (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "According to HA/DR planning, what relationship exists between money available, acceptable data loss, and length of downtime?",
+      "a": "The amount of money available is inversely proportional to the amount of acceptable data loss and length of downtime. (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What widely-held standard of availability is known as \"five 9s\"?",
+      "a": "99.999 percent availability. (الصفحة 6)"
+    },
+    {
+      "id": 10,
+      "q": "Which two values do businesses use to drive the HA/DR strategy?",
+      "a": "Recovery Point Objective (RPO) and Recovery Time Objective (RTO). (الصفحة 6)"
+    },
+    {
+      "id": 11,
+      "q": "What are the two metrics that must be taken into account when considering High Availability (HA) vs. Disaster Recovery (DR)?",
+      "a": "RTO (Recovery Time Objective) and RPO (Recovery Point Objective) (Page 8)"
+    },
+    {
+      "id": 12,
+      "q": "How is HA described in relation to its function?",
+      "a": "HA is a preventative idea that relies on keeping the server Online as much as possible (Available). (Page 8)"
+    },
+    {
+      "id": 13,
+      "q": "What kind of concept is DR, and what does it deal with?",
+      "a": "DR is a curative idea; it deals with situations when a system needs to be recovered after a disaster. (Page 8)"
+    },
+    {
+      "id": 14,
+      "q": "What is the goal of HA, and how does it differ from the scope of DR?",
+      "a": "The HA goal is to mitigate the downtime of the system; whereas DR deals with situations when a system needs to be recovered after a disaster. (Page 8)"
+    },
+    {
+      "id": 15,
+      "q": "What relationship exists between cost and RPO in High Availability?",
+      "a": "HA costs more money, the shorter the RPO. (Page 8)"
+    },
+    {
+      "id": 16,
+      "q": "ما هي فكرة عمل الـ Log Shipping؟",
+      "a": "تعتمد على أن السيرفر الأول (Primary) يتم أخذ نسخة احتياطية من ملفات السجل (Log file) ونسخها إلى مجلد مشترك ليتمكن سيرفر آخر من استعادة البيانات منه. (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "ما هي الخطوات الأساسية لعملية الـ Log Shipping التي يقوم بها SQL Agent؟",
+      "a": "نقل الباكاب من السيرفر الأول لمجلد مشترك، ثم نقلها إلى مجلد مشترك للسيرفر الثاني، وأخيراً الاستعادة على السيرفر المستهدف. (الصفحة 12)"
+    },
+    {
+      "id": 18,
+      "q": "ما هو نوع الاسترداد الذي لا يعمل مع الـ Log Shipping؟",
+      "a": "Simple Recovery. (الصفحة 12)"
+    },
+    {
+      "id": 19,
+      "q": "كيف يتم الانتقال إلى السيرفر الثاني أو الثالث في حالة وقوع السيرفر الأساسي باستخدام Log Shipping؟",
+      "a": "يكون انتقالاً يدوياً ويطلق عليه Failover. (الصفحة 12)"
+    },
+    {
+      "id": 20,
+      "q": "ما هي الخيارات المتاحة للسيرفر الثانوي (Secondary Server) أثناء عملية الـ Log Shipping؟",
+      "a": "يمكن استخدامه للـ Read-Only أو يكون جاهزاً للعمل في حالة وقوع السيرفر الأساسي (Standby). (الصفحة 12)"
+    },
+    {
+      "id": 21,
+      "q": "ما الأمر المستخدم لاستعادة قاعدة البيانات وتحديد أنها ليست في وضع الاسترداد؟",
+      "a": "`Restore Database ShipDB from Disk = 'E:\\svu\\bait\\Demo\\...\\ShipDBFB.bak ' with norecovery` (الصفحة 13)"
+    },
+    {
+      "id": 22,
+      "q": "ما المكون المسؤول عن أتمتة وجدولة العمليات مثل عمل النسخ الاحتياطي؟",
+      "a": "Job في SQL Server Agent (الصفحة 13)"
+    },
+    {
+      "id": 23,
+      "q": "عند الوصول إلى خطوة الـ Restore من طريق الـ GUI، ما هما الوضعان المتاحان لتحديد وضع قاعدة البيانات؟",
+      "a": "No Recovery mode و Standard by mode (الصفحة 13)"
+    },
+    {
+      "id": 24,
+      "q": "ما الأوامر المستخدمة لنقل ملفات قاعدة البيانات بعد عملية الاستعادة على السيرفر الثاني؟",
+      "a": "`Move \"ShipDB_Data' to 'G:\\new_DB\\...\\ShipDB_mirror_data.mdf', Move \"ShipDB_Data' to 'G:\\new_DB\\...\\ShipDB_mirror_log.ldf'` (الصفحة 13)"
+    },
+    {
+      "id": 25,
+      "q": "ما الغرض من الأمر `Insert into shiptable values (1000)`؟",
+      "a": "إدخال بعض المعلومات إلى قاعدة البيانات في السيرفر الأول (الصفحة 13)"
+    },
+    {
+      "id": 26,
+      "q": "What technology provides an inexpensive and easily managed HA and DR solution at the database level?",
+      "a": "SQL Server Transaction Log Shipping (الصفحة 16)"
+    },
+    {
+      "id": 27,
+      "q": "For log shipping, what recovery model must a primary database be in?",
+      "a": "Full or Bulk Logged recovery model (الصفحة 16)"
+    },
+    {
+      "id": 28,
+      "q": "What is the general principle of SQL Server Transaction Log Shipping?",
+      "a": "A primary database takes regular transaction log backups, which are transferred to a shared network location where secondary servers restore them to a standby database (الصفحة 16)."
+    },
+    {
+      "id": 29,
+      "q": "If a log shipping configuration fails over, what is the process for ensuring zero data loss of committed transactions?",
+      "a": "The tail of the log on the primary server is backed up, transferred to the shared location, and restored after the latest regular transaction logs (الصفحة 18)."
+    },
+    {
+      "id": 30,
+      "q": "When building a custom log shipping solution, what specific commands or modes must be used for restoration?",
+      "a": "Use the RESTORE feature with NORECOVERY, or RESTORE with STANDBY (الصفحة 16)"
+    },
+    {
+      "id": 31,
+      "q": "What is Replication?",
+      "a": "A set of technologies for copying and distributing data and database objects from one database to another and then synchronizing between databases to maintain consistency. (Page 20)"
+    },
+    {
+      "id": 32,
+      "q": "How can Log Shipping minimize data loss during failover?",
+      "a": "The environment can be back up again with zero data loss or minimal data loss (only the latest shipped transaction log was restored). (Page 20)"
+    },
+    {
+      "id": 33,
+      "q": "In Replication, where is the Publisher located and what role does the Distributor play?",
+      "a": "The Publisher is located at the Master Database, and the Distributor is created when Subscribers are established in other branches/customers. (Page 20)"
+    },
+    {
+      "id": 34,
+      "q": "What process characterizes Snapshot Replication?",
+      "a": "It involves transferring all data from the Publisher to the Subscriber. (Page 20)"
+    },
+    {
+      "id": 35,
+      "q": "Name the three types of replication mentioned in the text.",
+      "a": "Snapshot Replication, Transactional Replication, and Merge Replication. (Page 20)"
+    },
+    {
+      "id": 36,
+      "q": "What does Snapshot Replication provide?",
+      "a": "The initial data set for transactional and merge replication; It can also be used when complete refreshes of data are appropriate. (الصفحة 22)"
+    },
+    {
+      "id": 37,
+      "q": "When is using snapshot replication by itself most appropriate?",
+      "a": "When data changes infrequently, when it is acceptable to have copies of data that are out of date with respect to the Publisher for a period of time, when replicating small volumes of data, or when a large volume of changes occurs over a short period of time. (الصفحة 22)"
+    },
+    {
+      "id": 38,
+      "q": "Where is Transactional Replication typically applied?",
+      "a": "Applied where high latency is not allowed, such as an OLTP system for a bank, because you always need real-time updates of cash or stocks. (الصفحة 24)"
+    },
+    {
+      "id": 39,
+      "q": "What are the key characteristics of Merge Replication?",
+      "a": "It is two-directional; it accepts lack of PK for each table (GUID will be created); and both Publisher and Subscriber remain active as Subscriber and Publisher respectively. (الصفحة 24)"
+    },
+    {
+      "id": 40,
+      "q": "Name four scenarios where Transactional Replication is typically used?",
+      "a": "Improving scalability and availability, data warehousing and reporting, integrating data from multiple sites, or integrating heterogeneous data. (الصفحة 24)"
+    },
+    {
+      "id": 41,
+      "q": "What initial step must be performed when using the Cluster Wizard?",
+      "a": "Select Servers (الصفحة 13)"
+    },
+    {
+      "id": 42,
+      "q": "Before proceeding with cluster creation, what warning/check is displayed regarding validation?",
+      "a": "Validation Warning (الصفحة 14)"
+    },
+    {
+      "id": 43,
+      "q": "What information must be entered in the \"Access Point for Administering the Cluster\" step?",
+      "a": "The name you want to use when administering the cluster, along with its IP address. (الصفحة 15)"
+    },
+    {
+      "id": 44,
+      "q": "During the validation process, what is checked regarding connectivity and resources?",
+      "a": "Connectivity and resource availability for all nodes in the Validate a Configuration Wizard step. (الصفحة 13)"
+    },
+    {
+      "id": 45,
+      "q": "What does the Confirmation screen allow the user to do before finalizing cluster creation?",
+      "a": "Review all settings, including the Cluster Name, IP Address, and listed nodes. (الصفحة 15)"
+    },
+    {
+      "id": 46,
+      "q": "What feature in MS SQL Server provides high availability and disaster recovery?",
+      "a": "AlwaysOn High Availability (الصفحة 29)"
+    },
+    {
+      "id": 47,
+      "q": "What is the container used to group databases for high availability and disaster recovery?",
+      "a": "Availability Group (الصفحة 30)"
+    },
+    {
+      "id": 48,
+      "q": "Which wizard guides the user through setting up an AlwaysOn High Availability Group?",
+      "a": "AlwaysOn High Availability Group Wizard (الصفحة 28)"
+    },
+    {
+      "id": 49,
+      "q": "Before creating a new availability group, what must be done in SQL Server Management Studio?",
+      "a": "Enable AlwaysOn High Availability (الصفحة 29)"
+    },
+    {
+      "id": 50,
+      "q": "When specifying an availability group name, what information is required by the wizard?",
+      "a": "The name of the availability group (الصفحة 30)"
+    },
+    {
+      "id": 51,
+      "q": "What is the primary purpose of using an Availability Group in MS SQL Server?",
+      "a": "To provide high availability and disaster recovery for databases by maintaining multiple copies (replicas) of the data (الصفحة 20)"
+    },
+    {
+      "id": 52,
+      "q": "In the context of data synchronization, what does \"Synchronous\" replication ensure between replicas?",
+      "a": "That all transactions are committed to both the primary and secondary replica before being acknowledged (الصفحة 19)"
+    },
+    {
+      "id": 53,
+      "q": "What is the initial step required when configuring a new Availability Group or adding a secondary replica?",
+      "a": "Specifying which databases will be included in the availability group (الصفحة 19)"
+    },
+    {
+      "id": 54,
+      "q": "When viewing the status of replicas, what does it mean if a replica shows \"Not Connected\"?",
+      "a": "The replica is currently not communicating or connected to the primary replica (الصفحة 20)"
+    },
+    {
+      "id": 55,
+      "q": "What action must be taken before specifying the connection for a secondary replica?",
+      "a": "Specifying the data synchronization preference for that replica (الصفحة 19)"
+    }
+  ]
+}

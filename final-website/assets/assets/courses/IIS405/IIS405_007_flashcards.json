@@ -1,0 +1,305 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو موضوع الفصل السابع في إدارة قواعد بيانات أوراكل؟",
+      "a": "المستخدمون والأمن الأساسي (Users and Basic Security) (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "عند إنشاء وإدارة حسابات مستخدم قاعدة البيانات، ما الذي يجب تعيينه بالإضافة إلى الحساب نفسه؟",
+      "a": "مناطق التخزين الافتراضية (tablespaces) (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "اذكر أحد الأهداف المتعلقة بإدارة الصلاحيات في قواعد بيانات أوراكل.",
+      "a": "منح وإلغاء الامتيازات (Grant and revoke privileges) (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما هي الإجراءات التي تهدف إلى تعزيز الأمن والتحكم في استخدام الموارد للمستخدمين؟",
+      "a": "تطبيق ميزات أمن كلمة المرور القياسية، أو التحكم في استخدام الموارد بواسطة المستخدمين (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What key tasks are involved in creating and managing database user accounts?",
+      "a": "Authenticating users and assigning default storage areas (tablespaces). (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "What administrative functions relate to controlling database permissions?",
+      "a": "Granting and revoking privileges, and creating and managing roles. (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "What two main areas do profiles help control for database users?",
+      "a": "Implementing standard password security features and controlling resource usage by users. (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "Name the four key administrative tasks covered when managing database users.",
+      "a": "Creating/managing user accounts; granting/revoking privileges; creating/managing roles; and creating/managing profiles. (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What is a privilege in an Oracle database?",
+      "a": "A right to execute a particular type of SQL statement or to access another user's object. (Page 9)"
+    },
+    {
+      "id": 10,
+      "q": "How is a role defined regarding privileges?",
+      "a": "A named group of related privileges that are granted to users or to other roles. (Page 9)"
+    },
+    {
+      "id": 11,
+      "q": "What does the SYSDBA privilege allow an administrator to do?",
+      "a": "It allows an administrator to connect to the SYS account by using the AS SYSDBA clause. (Page 7)"
+    },
+    {
+      "id": 12,
+      "q": "What are Profiles used for in database administration?",
+      "a": "They impose a named set of resource limits on database usage and instance resources, and manage account status and password management rules. (Page 9)"
+    },
+    {
+      "id": 13,
+      "q": "What is a schema in a database?",
+      "a": "A collection of database objects that are owned by a database user and has the same name as the user account. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What does a user profile assign to a user?",
+      "a": "A set of resource and password restrictions assigned to the user. (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "Which account status indicates that the lifetime has expired, preventing connection until the password is reset?",
+      "a": "EXPIRED (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "What are the constraints for a unique username in Oracle Database?",
+      "a": "Usernames cannot exceed 30 bytes, cannot contain special characters, and must start with a letter. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What does the SYS account own and what is it used for?",
+      "a": "It owns the data dictionary and the Automatic Workload Repository (AWR), and is used for startup and shutdown of the database instance. (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "Which predefined administrative accounts facilitate specific operations?",
+      "a": "SYSBACKUP facilitates Oracle Recovery Manager (RMAN) backup and recovery operations, SYSDG facilitates Oracle Data Guard operations, and SYSKM facilitates Transparent Data Encryption wallet operations. (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "To connect to the SYS account, what clauses must be used for a database instance and an Automatic Storage Management (ASM) instance?",
+      "a": "AS SYSDBA clause for a database instance and AS SYSASM for an Automatic Storage Management (ASM) instance. (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "Which \"privileged\" users are allowed to start up and shut down instances?",
+      "a": "Only users who are granted the SYSDBA, SYSOPER, or SYSASM privileges. (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What accounts are required in the database and cannot be dropped?",
+      "a": "The SYS and SYSTEM accounts (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "Which users are created to facilitate separation of duties for database administrators?",
+      "a": "SYSBACKUP, SYSDG, and SYSKM users (الصفحة 16)"
+    },
+    {
+      "id": 23,
+      "q": "What does the SYSDEA privilege allow for?",
+      "a": "Standard database operations, such as starting and shutting down the database instance, creating the server parameter file (SPFILE), and changing the ARCHIVELOG mode. (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "According to security best practices, what should be done minimally when securing a database?",
+      "a": "Change the password for every default account and then lock any accounts that are not using. (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "After creating a database, what security measures are recommended for default accounts?",
+      "a": "It is better to lock every default account and change their passwords; and to unlock default users only as they are needed. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "What SQL command is used to unlock a locked user account?",
+      "a": "`alter user outlin account unlock` (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "When does Oracle prompt a user for a new password if the current one has expired?",
+      "a": "The user is prompted when first connecting to the database as that user. (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "Which view should be checked to determine whether any accounts are still set to default passwords?",
+      "a": "`DBA_USERS_WITH_DEFPWD` (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "When creating a user, what factors must be considered?",
+      "a": "Username and authentication method, Basic privileges, Default permanent tablespace and space quotas, and Default temporary tablespace (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "In pluggable database environments, how are common users and local users defined?",
+      "a": "Common users span all pluggable databases within a container database. Local users exist within one pluggable database (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What essential data must be entered when creating a new user account?",
+      "a": "User name, authentication method, and profile (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "Besides the username and authentication method, what storage assignments are required for a new user?",
+      "a": "Default permanent tablespace and space quotas, and Default temporary tablespace (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "What process is used to assign roles to a new user?",
+      "a": "Granting roles (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "How are system privileges granted to a new user?",
+      "a": "By granting system privileges (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "What is the procedure for giving specific permissions on an object to a user?",
+      "a": "Granting object privileges (الصفحة 27)"
+    },
+    {
+      "id": 36,
+      "q": "What are profiles used for in Oracle database administration?",
+      "a": "To impose a named set of resource limits on database users and instance resources (الصفحة 27)"
+    },
+    {
+      "id": 37,
+      "q": "What is an authentication method for a user account?",
+      "a": "Some means whereby the database can determine if the user attempting to create a session connecting to the account is allowed to do so. (الصفحة 30)"
+    },
+    {
+      "id": 38,
+      "q": "Which administrators use Operating System Authentication, and what groups control these connections?",
+      "a": "Administrators who log in as SYSDBA or as SYSOPER; the controlling groups are OSDBA and OSOPER. (الصفحة 30)"
+    },
+    {
+      "id": 39,
+      "q": "What is required for External authentication and Global authentication types?",
+      "a": "They require an LDAP directory server, which is the Oracle Internet Directory. (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "Name the five types of authentication methods available to a user account.",
+      "a": "Operating system authentication, Password file authentication, Password authentication, External authentication, and Global authentication. (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "What type of administrator authentication logs in as SYSDBA or as SYSOPER, requiring users to know their Oracle username and password?",
+      "a": "Password File Authentication (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "To enable Password File Authentication for remote login, what command must be set?",
+      "a": "SET REMOTE_LOGIN_PASSWORDFILE = EXCLUSIVE (or SHARED if database is part of distributed system) (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "After creating a new Oracle user, how are SYSDBA or SYSOPER privileges assigned to that user?",
+      "a": "GRANT sysdba TO student; (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "What is the security risk associated with Password File Authentication due to password storage?",
+      "a": "Possible security risk due to storage of passwords in an encrypted operating system file. (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "What do System privileges primarily apply to?",
+      "a": "Actions that affect the data dictionary, such as creating tables or users; or actions affecting the database or the instance (Page 36)"
+    },
+    {
+      "id": 46,
+      "q": "What types of commands can Object privileges grant against tables and related objects?",
+      "a": "SELECT, INSERT, UPDATE, and DELETE commands against tables and related objects, and to execute PL/SQL objects (Page 36)"
+    },
+    {
+      "id": 47,
+      "q": "How are user privileges managed in an Oracle database?",
+      "a": "Privileges are assigned to user accounts with a GRANT command and withdrawn with a REVOKE (Page 34)"
+    },
+    {
+      "id": 48,
+      "q": "What function does the GRANT OPTION provide regarding object privileges?",
+      "a": "It lets a user pass his/her object privilege on to a third party (Page 36)"
+    },
+    {
+      "id": 49,
+      "q": "What SQL statement is used to revoke system privileges that were granted directly?",
+      "a": "REVOKE SQL statement (الصفحة 38)"
+    },
+    {
+      "id": 50,
+      "q": "Which users can revoke a system privilege if they possess ADMIN OPTION?",
+      "a": "Users with ADMIN OPTION for a system privilege can revoke the privilege from any other database user (الصفحة 38)"
+    },
+    {
+      "id": 51,
+      "q": "Must the revoker of a system privilege be the same user who originally granted it?",
+      "a": "No, the revoker does not have to be the same user who originally granted the privilege (الصفحة 38)"
+    },
+    {
+      "id": 52,
+      "q": "What is true regarding cascading effects when a system privilege is revoked?",
+      "a": "There are no cascading effects when a system privilege is revoked, regardless of whether it was given the ADMIN OPTION (الصفحة 38)"
+    },
+    {
+      "id": 53,
+      "q": "When revoking a system privilege related to DML operations, what must happen if a user has created procedures using that table?",
+      "a": "All procedures contained in the user's schema must be recompiled before they can be used again. (الصفحة 40)"
+    },
+    {
+      "id": 54,
+      "q": "When revoking object privileges given with GRANT OPTION, who is authorized to revoke those privileges?",
+      "a": "Only the grantee or a user with the privilege called GRANT ANY OBJECT PRIVILEGE. (الصفحة 40)"
+    },
+    {
+      "id": 55,
+      "q": "What is defined as a role in Oracle databases?",
+      "a": "A named group of related privileges that are granted to users or to other roles. (الصفحة 42)"
+    },
+    {
+      "id": 56,
+      "q": "Regarding their ownership and location, what statement about roles is true?",
+      "a": "Roles are not owned by anyone, and they are not in any schema. (الصفحة 42)"
+    },
+    {
+      "id": 57,
+      "q": "ما هو عنوان دليل مسؤول قاعدة بيانات أوراكل الذي نُشر في مارس 2019؟",
+      "a": "Oracle Database Administrator's Guide, 18c (Oracle University) (الصفحة 43)"
+    },
+    {
+      "id": 58,
+      "q": "ما هو الكتاب الذي يتناول إدارة قاعدة بيانات أوراكل في السحابة؟",
+      "a": "The Cloud DBA- Oracle: Managing Oracle Database in the Cloud – First Edition (الصفحة 43)"
+    },
+    {
+      "id": 59,
+      "q": "اذكر أحد المواقع الإلكترونية الأساسية للتوثيق الخاص بقاعدة بيانات أوراكل.",
+      "a": "https://docs.oracle.com/database (الصفحة 43)"
+    },
+    {
+      "id": 60,
+      "q": "ما هو الرابط المخصص لمعرفة ميزات \"whats-new\" في وثائق قاعدة بيانات أوراكل؟",
+      "a": "https://docs.oracle.com/en/database/oracle/oracle-database/19/whats-new.html (الصفحة 43)"
+    }
+  ]
+}

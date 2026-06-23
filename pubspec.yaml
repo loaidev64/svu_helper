@@ -65,7 +65,11 @@ flutter:
 
   assets:
     - assets/courses/courses_index.json
+    - assets/courses/IIS101/
     - assets/courses/IIS202/
+    - assets/courses/IIS303/
+    - assets/courses/IIS404/
+    - assets/courses/IIS405/
     - assets/courses/INT202/
     - assets/courses/INT203/
 

@@ -1,0 +1,465 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو موضوع الفصل الرابع؟",
+      "a": "Security Fundamentals in MS SQL Server (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما اسم المقرر الدراسي الذي يغطيه هذا المحتوى؟",
+      "a": "MS SQL Server Administration IIS404 (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "لمن مخصص محتوى \"Security Fundamentals in MS SQL Server\"؟",
+      "a": "Bachelor of IT Program BAIT (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "ما هو رقم الفصل الذي يتناوله المحتوى؟",
+      "a": "Chapter four (الصفحة 2)"
+    },
+    {
+      "id": 5,
+      "q": "What is the difference between Authentication and Authorization in SQL Server?",
+      "a": "Authentication is the process of logging on to SQL Server by which a principal requests access; Authorization is the process of determining which securable resources a principal can access. (الصفحة 3)"
+    },
+    {
+      "id": 6,
+      "q": "What security principle dictates that users should only have the minimum permissions necessary?",
+      "a": "The Principle of Least Privilege. (الصفحة 5)"
+    },
+    {
+      "id": 7,
+      "q": "How does Windows Authentication function in SQL Server?",
+      "a": "It relies on Active Directory and integrates with Windows, allowing users to log in using their domain credentials. (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "Where are user names and passwords stored when using SQL Server Authentication?",
+      "a": "They are stored within the master database of the SQL Server instance. (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What security strategy is recommended by SQL Server to counter security threats?",
+      "a": "A defense-in-depth strategy, with overlapping layers of security. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "In the context of SQL Server, what is a \"principal\"?",
+      "a": "An individual, group or process granted access to SQL Server. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What is Authentication in SQL Server?",
+      "a": "The process of logging on to SQL Server by which a principal requests access by submitting credentials that the server evaluates, establishing identity. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What is Authorization in SQL Server?",
+      "a": "The process of determining which securable resources a principal can access, and which operations are allowed for those resources. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "Who generates the SID assigned to a newly created SQL Server-authenticated login?",
+      "a": "The SQL Server. (الصفحة 12)"
+    },
+    {
+      "id": 14,
+      "q": "What is the default SQL Server login name, and what does 'sa' stand for?",
+      "a": "`sa`, which is an abbreviation of \"system administrator\". (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "Name three types of environments where you can use SQL Server Authentication.",
+      "a": "On-premises SQL Server instances, Azure virtual machine-based SQL Server instances, and databases in Azure SQL Database. (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "According to the text, what is preferred regarding authentication methods?",
+      "a": "Other methods of authentication are preferred in all cases. (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "What is an interactive workflow that supports Azure Multi-Factor Authentication (MFA)?",
+      "a": "Active Directory - Universal with MFA (الصفحة 13)"
+    },
+    {
+      "id": 18,
+      "q": "According to the text, what does Azure MFA help safeguard access to?",
+      "a": "Data and applications while meeting user demand for a simple sign-in process (الصفحة 13)"
+    },
+    {
+      "id": 19,
+      "q": "Name some easy verification options delivered by Azure MFA.",
+      "a": "Phone call, text message, smart cards with pin, or mobile app notification (الصفحة 13)"
+    },
+    {
+      "id": 20,
+      "q": "What does Azure MFA deliver?",
+      "a": "Strong authentication with a range of easy verification options (الصفحة 13)"
+    },
+    {
+      "id": 21,
+      "q": "When should Azure Active Directory Password Authentication be used?",
+      "a": "If you are logged in to Windows using credentials from a domain that is not federated with Azure, or when using Azure AD authentication based on initial/client domain. (Page 16)"
+    },
+    {
+      "id": 22,
+      "q": "What condition must be met for Active Directory Integrated Authentication?",
+      "a": "The user must be logged in to Windows using their Azure Active Directory credentials from a federated domain. (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "According to the text, what is \"Federation\"?",
+      "a": "A collection of domains that have established trust. (Page 16)"
+    },
+    {
+      "id": 24,
+      "q": "What are two types of logins aside from Windows or SQL Server authentication?",
+      "a": "A login mapped directly to a certificate, or mapped to an asymmetric key. (Page 18)"
+    },
+    {
+      "id": 25,
+      "q": "متى نستخدم خيار Map to Credential؟",
+      "a": "عندما نريد أن نعطي حساب login معين صلاحيات خارج قاعدة البيانات (على قرص معين مثلا...) (الصفحة 19)"
+    },
+    {
+      "id": 26,
+      "q": "ما هي الطريقة المستخدمة للوصول الآمن لنسخة SQL Server؟",
+      "a": "بواسطة أي عميل يمتلك المفتاح العام للشهادة، باستخدام نقطة نهاية غير افتراضية (nondefault endpoint) يتم إنشاؤها خصيصًا لهذا النوع من الوصول. (الصفحة 19)"
+    },
+    {
+      "id": 27,
+      "q": "ما نوع المصادقة الذي تدعمه ميزة Service Broker في SQL Server؟",
+      "a": "مصادقة قائمة على الشهادات (Certificate-Based Authentication). (الصفحة 19)"
+    },
+    {
+      "id": 28,
+      "q": "عند الاتصال بـ SQL DB موجودة على نظام ويندوز من نظام لينكس، ما هي طريقة المصادقة المستخدمة؟",
+      "a": "طريقة SQL Server Authentication. (الصفحة 19)"
+    },
+    {
+      "id": 29,
+      "q": "What is the purpose of using logins to sign database objects?",
+      "a": "This encrypts the database objects and is common for when the code of a third-party application is proprietary and not intended to be accessible by customers. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "What does \"Mixed mode\" describe in SQL Server?",
+      "a": "A description of a SQL Server that can accept both Windows Authentication and SQL Server Authentication. (الصفحة 24)"
+    },
+    {
+      "id": 31,
+      "q": "According to the DBA, which authentication method is always preferred for connecting to a SQL instance?",
+      "a": "Windows Authentication, via named domain accounts or service accounts. (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "Since what version of SQL Server are user names and passwords of SQL Server-authenticated logins no longer transmitted as plain text during the login process?",
+      "a": "SQL Server 2005. (الصفحة 24)"
+    },
+    {
+      "id": 33,
+      "q": "What is Kerberos?",
+      "a": "A protocol for authenticating service requests between trusted hosts across an untrusted network (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "Where can Kerberos be used?",
+      "a": "Across an untrusted network, such as the internet (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "Name some major operating systems that include Kerberos.",
+      "a": "Microsoft Windows, Apple OS X, FreeBSD and Linux (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "What does Kerberos authenticate?",
+      "a": "Service requests between trusted hosts across an untrusted network (الصفحة 26)"
+    },
+    {
+      "id": 37,
+      "q": "What are double hop issues in SQL Server?",
+      "a": "When a client connects to one SQL Server and that server needs to pull data from another SQL Server. (الصفحة 28)"
+    },
+    {
+      "id": 38,
+      "q": "What is the \"sa\" login?",
+      "a": "A special SQL Server-authenticated login, known member of the sysadmin server role with a unique SID value of 0x01. (الصفحة 28)"
+    },
+    {
+      "id": 39,
+      "q": "Under what condition can DBAs use the sa account?",
+      "a": "If the instance is in mixed mode (in which both Windows Authorization and SQL Server Authentication are turned on). (الصفحة 28)"
+    },
+    {
+      "id": 40,
+      "q": "Who should never use the sa account?",
+      "a": "Applications, application developers, and end users. (الصفحة 28)"
+    },
+    {
+      "id": 41,
+      "q": "What kind of permissions are service accounts usually given?",
+      "a": "The minimal permissions needed to run the services to which they are assigned by SQL Server Configuration Manager. (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "What should one avoid using to change SQL Server feature service accounts?",
+      "a": "The Windows Services (services.msc). (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "What is likely to happen if an instance's service account is changed using the Windows Services administrative page?",
+      "a": "The service will likely fail to start. (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "According to SQL Server Configuration Manager, what determines the permissions for a service account?",
+      "a": "The minimal permissions needed to run the services to which they are assigned. (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "What are Principals in SQL Server?",
+      "a": "Entities that can request permission to SQL Server resources; they are made up of groups, individuals, or processes. (الصفحة 34)"
+    },
+    {
+      "id": 46,
+      "q": "Which account should never be granted additional permissions by default in a SQL Server instance?",
+      "a": "The NT AUTHORITY\\SYSTEM account. (الصفحة 34)"
+    },
+    {
+      "id": 47,
+      "q": "What is the primary advantage of granting permissions to roles rather than directly to users?",
+      "a": "It simplifies security administration, and permission sets assigned to roles are inherited by all members of the role. (الصفحة 36)"
+    },
+    {
+      "id": 48,
+      "q": "List the types of principals scoped at the Windows, SQL Server, and Database levels.",
+      "a": "Windows level: Windows users or groups; SQL Server level: SQL Server logins and server roles; Database level: database users, data roles, and application roles. (الصفحة 34)"
+    },
+    {
+      "id": 49,
+      "q": "What does role-based security allow in SQL Server?",
+      "a": "Assigning permissions to a role, or group of users, instead of to individual users. (الصفحة 39)"
+    },
+    {
+      "id": 50,
+      "q": "What types of fixed roles exist in SQL Server?",
+      "a": "Fixed server and fixed database roles. (الصفحة 39)"
+    },
+    {
+      "id": 51,
+      "q": "When granting permissions, what is the benefit of using the schema level?",
+      "a": "Users automatically inherit permissions on all new objects created in the schema; you do not need to grant permissions as new objects are created. (الصفحة 38)"
+    },
+    {
+      "id": 52,
+      "q": "Name one scenario where creating a Login for a user is unnecessary.",
+      "a": "When linking with the Sysadmin Role, or when its functions are only on the SQL Server and not any DB. (الصفحة 38)"
+    },
+    {
+      "id": 53,
+      "q": "Which fixed server role encompasses all other roles and has unlimited scope, but should not be added to unless highly trusted?",
+      "a": "The sysadmin fixed server role (الصفحة 40)"
+    },
+    {
+      "id": 54,
+      "q": "What specific actions can members of the securityadmin fixed server role perform regarding permissions?",
+      "a": "They can GRANT, DENY, and REVOKE both server-level and database-level permissions (الصفحة 40)"
+    },
+    {
+      "id": 55,
+      "q": "Which fixed server role allows its members to end processes that are running in an instance of SQL Server?",
+      "a": "The processadmin fixed server role (الصفحة 40)"
+    },
+    {
+      "id": 56,
+      "q": "What specific statement can members of the bulkadmin fixed server role run?",
+      "a": "The BULK INSERT statement (الصفحة 42)"
+    },
+    {
+      "id": 57,
+      "q": "To which server role does every SQL Server login belong?",
+      "a": "The public server role (الصفحة 44)"
+    },
+    {
+      "id": 58,
+      "q": "If a server principal has not been granted or denied specific permissions on a securable object, where are the user's permissions inherited from?",
+      "a": "Public (الصفحة 44)"
+    },
+    {
+      "id": 59,
+      "q": "What do fixed database roles provide in SQL Server?",
+      "a": "A pre-defined set of permissions that allow for easy management of groups of permissions (الصفحة 44)"
+    },
+    {
+      "id": 60,
+      "q": "When should public permissions be assigned on any object?",
+      "a": "Only when you want the object to be available to all users (الصفحة 44)"
+    },
+    {
+      "id": 61,
+      "q": "ما هو دور `db_owner`؟",
+      "a": "يمتلك كامل الصلاحيات على مستوى ال DB، ولكنه ليس كصلاحيات ال DB. (الصفحة 48)"
+    },
+    {
+      "id": 62,
+      "q": "ما هي صلاحية `db_securityadmin`؟",
+      "a": "يستطيع تعديل صلاحيات `dbo_owner`. (الصفحة 48)"
+    },
+    {
+      "id": 63,
+      "q": "من هم الأعضاء الذين يمكنهم أداء جميع أنشطة التكوين والصيانة وحذف قاعدة البيانات في SQL Server؟",
+      "a": "أعضاء دور `db_owner` الثابت. (الصفحة 48)"
+    },
+    {
+      "id": 64,
+      "q": "لماذا تعتبر صلاحيات الـ dbo أقوى من ال iba؟",
+      "a": "لأن بعض المهام مثل مهام ال dbo أقوى من ال iba. (الصفحة 48)"
+    },
+    {
+      "id": 65,
+      "q": "ما الذي يمكن لأعضاء دور قاعدة البيانات الثابت `db_securityadmin` القيام به؟",
+      "a": "يمكنهم تعديل عضوية الدور وإدارة الأذونات. (الصفحة 50)"
+    },
+    {
+      "id": 66,
+      "q": "ما هو الخطر المحتمل عند إضافة أفراد (principals) إلى دور `db_securityadmin`؟",
+      "a": "قد يُمكّن ذلك امتيازات غير مقصودة. (الصفحة 50)"
+    },
+    {
+      "id": 67,
+      "q": "ما هي الإجراءات التي يمكن لأعضاء دور قاعدة البيانات الثابت `db_securityadmin` إدارتها؟",
+      "a": "تعديل عضوية الدور وإدارة الأذونات. (الصفحة 50)"
+    },
+    {
+      "id": 68,
+      "q": "ما هو اسم دور قاعدة البيانات الثابت الذي يمنح القدرة على إدارة الأعضاء والأذونات؟",
+      "a": "`db_securityadmin` (الصفحة 50)"
+    },
+    {
+      "id": 69,
+      "q": "After a user is allowed to log in to an instance of SQL Server, what must exist in each database they have to access?",
+      "a": "A separate user account must exist in each database (الصفحة 54)"
+    },
+    {
+      "id": 70,
+      "q": "What does requiring a user account in each database prevent users from doing?",
+      "a": "It prevents users from connecting to an instance of SQL Server and accessing all the databases on a server (الصفحة 54)"
+    },
+    {
+      "id": 71,
+      "q": "Which built-in account circumvents the requirement of having a database user account for every accessed database?",
+      "a": "The guest account (الصفحة 54)"
+    },
+    {
+      "id": 72,
+      "q": "What is the nature of the guest account in SQL Server?",
+      "a": "It is a built-in account in all versions of SQL Server (الصفحة 54)"
+    },
+    {
+      "id": 73,
+      "q": "ما هي التعليمية التي يمكن استخدامها لإلغاء صلاحية الاتصال (CONNECT permission) لمنع مشكلة Orphaned SID؟",
+      "a": "تنفيذ `Transact-SQL REVOKE CONNECT FROM GUEST` (الصفحة 55)"
+    },
+    {
+      "id": 74,
+      "q": "بعد إنشاء المستخدم (User)، كيف يتم منح هذا المستخدم صلاحيات القراءة والكتابة في قاعدة البيانات؟",
+      "a": "عبر إضافة العضوية إلى الـ Roles الخاصة بكل منهما، مثل `Alter role [db-datareader] add member [orphanlogin]` و `Alter role [db-datawriter] add member [orphanlogin]` (الصفحة 56)"
+    },
+    {
+      "id": 75,
+      "q": "ما هي الخطوات الأساسية لإنشاء Login جديد وتعيينه كمستخدم في قاعدة بيانات SQL Server؟",
+      "a": "أولاً: إنشاء الـ login باستخدام `Create login`، ثم: استخدام قاعدة البيانات المستهدفة (`Use [svu1]`)، وأخيراً: إنشاء المستخدم المرتبط بالـ login عبر `Create user` (الصفحة 56)"
+    },
+    {
+      "id": 76,
+      "q": "ما هي الملاحظة المتعلقة باستخدام تعليمية `Use db-name` في SQL Server؟",
+      "a": "يمكن استخدام الحالتين: `use [db_name]` أو `use db-name`. الحالة الثانية أفضل إذا كان اسم قاعدة البيانات يحتوي على فراغات (الصفحة 56)"
+    },
+    {
+      "id": 77,
+      "q": "What is an Orphaned SID?",
+      "a": "A user who is no longer associated with its intended login, meaning the user's SID no longer matches, even if the User Name and Login Name do. (Page 60)"
+    },
+    {
+      "id": 78,
+      "q": "When restoring a noncontained database from one SQL Server to another, what happens to users and logins?",
+      "a": "The database users transfer, but the server logins in the master database do not. (Page 60)"
+    },
+    {
+      "id": 79,
+      "q": "What T-SQL command is used to resolve an Orphaned SID by linking a user to its corresponding login?",
+      "a": "`Alter user [username] with login = [loginname]` (Page 60)"
+    },
+    {
+      "id": 80,
+      "q": "How can one prevent the Orphaned SID problem when creating a new login on a server?",
+      "a": "By specifying the matching SID using `sid='...'` during the `Create login` statement. (Page 60)"
+    },
+    {
+      "id": 81,
+      "q": "ما الأمر المستخدم لإنشاء مستخدم دون تسجيل دخول؟",
+      "a": "Create user [username] without login; (الصفحة 61)"
+    },
+    {
+      "id": 82,
+      "q": "ما الأمر الذي يُستخدم لمنح صلاحية قراءة البيانات من جدول معين؟",
+      "a": "Grant select on sales to Manager; (الصفحة 61)"
+    },
+    {
+      "id": 83,
+      "q": "ما هي الخطوات التي تتبع لإنشاء سياسة أمنية على مخطط (Schema)؟",
+      "a": "Create security policy [PolicyName] On [Table] With (state = ON); (الصفحة 62)"
+    },
+    {
+      "id": 84,
+      "q": "كيف يتم تنفيذ استعلام أو إجراء كأنك مستخدم معين في SQL Server؟",
+      "a": "Execute as user = 'Username'; (الصفحة 63)"
+    },
+    {
+      "id": 85,
+      "q": "What does Transparent Data Encryption (TDE) encrypt?",
+      "a": "Data at rest (الصفحة 64)"
+    },
+    {
+      "id": 86,
+      "q": "Which databases can use Transparent Data Encryption (TDE)?",
+      "a": "SQL Server, Azure SQL Database, and Azure SQL Data Warehouse (الصفحة 64)"
+    },
+    {
+      "id": 87,
+      "q": "What does Always Encrypted protect against?",
+      "a": "System administrators, as it encrypts data in use (الصفحة 65)"
+    },
+    {
+      "id": 88,
+      "q": "At what level is encryption performed when using Always Encrypted?",
+      "a": "The page level (الصفحة 65)"
+    },
+    {
+      "id": 89,
+      "q": "What is the first step in securing a database using encryption, according to the process outlined?",
+      "a": "Create or obtain a certificate protected by the master key. (الصفحة 67)"
+    },
+    {
+      "id": 90,
+      "q": "After creating the Master Key, what component is used to protect the Database Encryption Key?",
+      "a": "A certificate. (الصفحة 67)"
+    },
+    {
+      "id": 91,
+      "q": "What must be created after securing the environment with a master key and certificate?",
+      "a": "A database encryption key, protected by the certificate. (الصفحة 67)"
+    },
+    {
+      "id": 92,
+      "q": "Which command is used to activate encryption on a database once all keys and certificates are set up?",
+      "a": "`ALTER DATABASE [DatabaseName] SET ENCRYPTION ON;` (الصفحة 67)"
+    }
+  ]
+}

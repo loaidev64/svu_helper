@@ -1,0 +1,545 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What academic program does this textbook chapter belong to?",
+      "options": [
+        "Master of Science in Business Intelligence",
+        "Bachelor of IT Program BAIT",
+        "Diploma in Information Technology",
+        "Advanced Studies in Computing"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The title page clearly indicates that the material is associated with the Bachelor of IT Program BAIT, establishing the academic context for this chapter.",
+      "id": 1
+    },
+    {
+      "question": "What specific course is covered by this material?",
+      "options": [
+        "MS Business Intelligence IIS404",
+        "MS SQL Server Administration IIS404",
+        "Bachelor of IT Program BAIT",
+        "Syrian Virtual University Studies"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The title page explicitly names the course as \"MS SQL Server Administration IIS404,\" which identifies the technical focus and code for this module.",
+      "id": 2
+    },
+    {
+      "question": "What is the primary topic covered in Chapter nine?",
+      "options": [
+        "Database Management Systems",
+        "MS Business Intelligence",
+        "Advanced Programming Techniques",
+        "IT Infrastructure Planning"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter title specifies that Chapter nine focuses on \"MS Business Intelligence,\" indicating the core subject matter of the content.",
+      "id": 3
+    },
+    {
+      "question": "Who is listed as the author of this material?",
+      "options": [
+        "Syrian Virtual University Staff",
+        "Eng. Ayham Mohammad",
+        "BAIT Program Coordinator",
+        "Ministry of Higher Education"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The title page credits \"Eng. Ayham Mohammad\" as the author responsible for creating and presenting this material.",
+      "id": 4
+    },
+    {
+      "question": "What is the primary purpose of Business Intelligence (BI)?",
+      "options": [
+        "To store large amounts of raw, unorganized facts for future use.",
+        "To support better business decision making through collection, integration, analysis, and presentation of information.",
+        "To solely manage the physical infrastructure of a company's data systems.",
+        "To replace all human analysts with automated reporting tools."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Business Intelligence refers to technologies, applications, and practices designed specifically for collecting, integrating, analyzing, and presenting business information. Its ultimate goal is to provide actionable insights that support and improve the quality of strategic business decisions.",
+      "id": 5
+    },
+    {
+      "question": "According to the text, which of the following best describes \"Data\"?",
+      "options": [
+        "Processed facts that have been analyzed and structured into reports.",
+        "Raw, unorganized facts such as numbers, texts, images, or symbols representing events or measures.",
+        "The highest level of understanding achieved through deep analysis (Wisdom).",
+        "A comprehensive set of rules used to govern data storage within a database."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Data is defined as the fundamental building block of BI; it consists of raw, unorganized facts. These facts can take many forms—numbers, written texts, pictures, or symbols—and they represent basic events or measurements before any processing takes place.",
+      "id": 6
+    },
+    {
+      "question": "How is \"Information\" derived in the context of Business Intelligence?",
+      "options": [
+        "By simply collecting and storing large volumes of raw data without analysis.",
+        "Through the process of analyzing and processing raw, unorganized data.",
+        "By implementing advanced technologies that automatically generate strategic decisions.",
+        "By compiling a comprehensive list of all available business facts and figures."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Information is not merely data; it is the result of processing data. When raw, unorganized data undergoes analysis and organization, it transforms into information, which provides context and meaning to the original facts.",
+      "id": 7
+    },
+    {
+      "question": "What represents the highest level of understanding achieved through the progression from Data to Wisdom?",
+      "options": [
+        "Information (The processed data).",
+        "Knowledge (Understanding derived from patterns in information).",
+        "Wisdom (The ability to apply knowledge for making sound judgments and decisions).",
+        "Raw Facts (Unorganized, unprocessed inputs)."
+      ],
+      "correctIndex": 2,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The hierarchy of understanding progresses through distinct stages: Data is raw facts; Information is processed data; Knowledge is the pattern recognition derived from information; and Wisdom represents the highest level—the ability to use that knowledge effectively to make sound judgments.",
+      "id": 8
+    },
+    {
+      "question": "ما هي العملية التي تصف نقل البيانات بأشكالها وتنسيقاتها المختلفة إلى مستودع بيانات؟",
+      "options": [
+        "دورة حياة الـ Business Intelligence",
+        "عملية ETL - Extraction Transformation Loading",
+        "Denormalization للبيانات",
+        "تحليل البيانات الشامل"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "عملية ETL هي اختصار لعملية استخراج وتحويل وتحميل البيانات. هذه العملية ضرورية لنقل البيانات من مصادرها المتنوعة وأشكالها المختلفة إلى مستودع بيانات موحد، مما يضمن جاهزيتها للتحليل.",
+      "id": 9
+    },
+    {
+      "question": "ما الذي يتم القيام به خلال عملية ETL؟",
+      "options": [
+        "تحليل البيانات المستخرجة وتخزينها مباشرة في مستودع البيانات.",
+        "استخراج ال Data من بنيتها السابقة وتحويلها لنمط مشترك مع كل ال Data المستخرجة الأخرى، ومن ثم تحميلها إلى مستودع بيانات (Data Warehouse).",
+        "إجراء عملية Denormalization للبيانات فقط دون تحويل النمط.",
+        "إنشاء تقارير تحليلية مباشرة قبل اكتمال التحميل في مستودع البيانات."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "تتضمن عملية ETL ثلاث مراحل رئيسية: الاستخراج (Extraction)، حيث يتم سحب البيانات من مصادرها الأصلية؛ التحويل (Transformation)، حيث يتم تنظيف وتوحيد هذه البيانات لتصبح ذات نمط مشترك وموحد؛ وأخيراً، التحميل (Loading)، حيث تُنقل البيانات المعالجة إلى مستودع البيانات.",
+      "id": 10
+    },
+    {
+      "question": "ما هو تعريف الـ Cube في سياق تخزين البيانات؟",
+      "options": [
+        "عملية تحليلية متقدمة تتطلب أدوات ذكاء الأعمال.",
+        "عملية Denormalization للبيانات.",
+        "مجموعة من التقارير التي يتم إنشاؤها بشكل دوري.",
+        "نظام لإدارة مصادر البيانات المتعددة."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "يُعرّف الـ Cube بأنه نتيجة لعملية Denormalization للبيانات، وهي عملية تبسيط هيكل قاعدة البيانات عن طريق دمج أو تكرار بعض الأعمدة لتسهيل الوصول إلى المعلومات وتحسين أداء الاستعلامات التحليلية.",
+      "id": 11
+    },
+    {
+      "question": "ماذا يصف النص فيما يتعلق بالتحليل الشامل للبيانات؟",
+      "options": [
+        "دورة حياة الـ Business Intelligence",
+        "عملية ETL - Extraction Transformation Loading",
+        "بناء مستودع البيانات (Data Warehouse)",
+        "تقنية Denormalization المتقدمة"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "تشير \"دورة حياة الأعمال الذكية\" إلى الإطار العام والخطوات المتتابعة التي يمر بها تحليل البيانات، بدءاً من جمع المصادر وحتى الوصول إلى اتخاذ القرارات المستنيرة باستخدام الأدوات التحليلية.",
+      "id": 12
+    },
+    {
+      "question": "ما هي الأداة المسؤولة عن التحليل في بيئة SQL Server BI؟",
+      "options": [
+        "SQL Server Integration Service",
+        "SQL Server Analysis Service",
+        "SQL Server Reporting Service",
+        "Power BI Desktop"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "SQL Server Analysis Service (SSAS) is specifically designed and responsible for performing the analysis functions within the SQL Server Business Intelligence environment, allowing users to model and analyze data.",
+      "id": 13
+    },
+    {
+      "question": "على ماذا يعتمد عمل الـ Tabular Model لتحقيق أداء أفضل؟",
+      "options": [
+        "استخدام طريقة Multithreading للقراءة السريعة للبيانات",
+        "Columned-store-index الذي يعمل على الذاكرة",
+        "الاعتماد الكلي على الاتصال المباشر بالخادم الخلفي (Back-end)",
+        "تقنية ETL المعقدة"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The Tabular Model achieves superior performance by utilizing a Columned-store-index that operates directly in memory. This structure allows for highly efficient data compression and rapid retrieval of elements and data points.",
+      "id": 14
+    },
+    {
+      "question": "متى يتم استخدام وضع Direct-Query في Tabular Models؟",
+      "options": [
+        "عندما تكون الذاكرة كبيرة وسريعة جداً لتخزين جميع البيانات",
+        "عند عدم وجود ذاكرة كافية، حيث يستخدم بها طريقة Multithreading للقراءة بسرعة كبيرة بدون نسخ البيانات إلى الذاكرة",
+        "دائماً، لأنه يوفر أسرع وصول للبيانات بغض النظر عن موارد النظام",
+        "عندما يكون الهدف هو إجراء عمليات حسابية معقدة (Measuring)"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Direct-Query mode is employed when the system lacks sufficient memory resources. Instead of copying data into memory, it uses Multithreading to read data quickly directly from the source without needing to store a full copy in RAM.",
+      "id": 15
+    },
+    {
+      "question": "ما هي الميزات التي يدعمها Azure Analysis Services مقارنة بـ SQL Server Analysis Services؟",
+      "options": [
+        "دعم نماذج البيانات متعددة الأبعاد (Multidimensional Models) فقط",
+        "دعم Tabular models عند مستويات التوافق 1200 وما فوق، ويدعم DirectQuery, partitions, row-level security, bi-directional relationships, and translations",
+        "القدرة على العمل مع جميع مستويات التوافق لجميع أنواع النماذج",
+        "الاعتماد فقط على تقنية Columned-store-index"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Azure Analysis Services offers advanced support for Tabular models at compatibility levels 1200 and higher. It supports a comprehensive set of features including DirectQuery, partitions, row-level security, bi-directional relationships, and translations.",
+      "id": 16
+    },
+    {
+      "question": "Which analytics engine delivers fast access to tabular model objects and data?",
+      "options": [
+        "SQL Server Data Tools (SSDT)",
+        "The Analysis Services Vertipaq analytics engine",
+        "Power BI reporting client",
+        "DirectQuery processing mode"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The Analysis Services Vertipaq analytics engine is specifically designed to provide rapid and efficient access to the data contained within tabular model objects, enabling fast performance for client applications.",
+      "id": 17
+    },
+    {
+      "question": "DirectQuery is utilized as an alternative query mode when which of the following conditions are met?",
+      "options": [
+        "The dataset is small enough to fit entirely in memory.",
+        "The model is too large to fit in memory or data volatility prevents a reasonable processing strategy.",
+        "Only when the user requires complex DAX calculations.",
+        "When the schema must be highly normalized (Snowflake)."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "DirectQuery serves as an alternative query mode for models that are either excessively large to be loaded into memory or when the data changes so frequently (high volatility) that a standard in-memory processing strategy would be impractical.",
+      "id": 18
+    },
+    {
+      "question": "What is the primary function of DAX?",
+      "options": [
+        "To define the physical relationships between tables in the model.",
+        "To define custom calculations for Calculated Columns and Measures.",
+        "To manage the ETL process from source systems to the data warehouse.",
+        "To determine if a schema should be Star or Snowflake."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "DAX is a specialized formula language used within the modeling environment. Its primary purpose is allowing users to create custom calculations, which can be implemented either as Calculated Columns or as Measures (calculated fields).",
+      "id": 19
+    },
+    {
+      "question": "Which schema design typically represents a de-normalized solution and connects dimension tables directly to a central fact table?",
+      "options": [
+        "Snowflake Schema",
+        "Star Schema",
+        "Highly Normalized Schema",
+        "DirectQuery Model"
+      ],
+      "correctIndex": 1,
+      "page": null,
+      "section": null,
+      "hint": "",
+      "explanation": "",
+      "id": 20
+    },
+    {
+      "question": "What does an Analysis Services database fundamentally consist of?",
+      "options": [
+        "Only data source views and cubes.",
+        "A collection of data sources, data source views, cubes, dimensions, and roles.",
+        "Custom assemblies and mining structures only.",
+        "SQL Server Management Studio and SSDT integration."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "An Analysis Services database is a comprehensive structure designed to manage various types of analytical components. These core elements include data sources, views derived from those sources, cubes for querying, dimensions that categorize data, roles defining access, and optionally mining structures.",
+      "id": 21
+    },
+    {
+      "question": "According to the process described, when do changes made to objects within an Analysis Services project take effect?",
+      "options": [
+        "Immediately upon saving the object in SQL Server Data Tools (SSDT).",
+        "Only when the project is deployed to a designated Analysis Services instance.",
+        "When the developer manually connects and saves the change directly to the database.",
+        "Changes are always effective regardless of deployment status."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The development workflow requires that changes made within the Analysis Services project, typically using SSDT, must be explicitly deployed to an instance of Analysis Services for those modifications to become active and visible in the target database.",
+      "id": 22
+    },
+    {
+      "question": "What is the primary risk associated with modifying objects directly within an Analysis Services database rather than through the designated project?",
+      "options": [
+        "The changes will automatically overwrite all existing data sources.",
+        "The objects can become out of sync with the original Analysis Services project used for deployment.",
+        "The entire database connection will fail immediately.",
+        "Only roles and partitions can be modified, not other objects."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "When developers bypass the structured project workflow and make changes directly to the live database instance, there is a significant risk that these manual modifications will cause the objects within the database to lose synchronization with the source code or structure defined in the Analysis Services project.",
+      "id": 23
+    },
+    {
+      "question": "After an Analysis Services database has been successfully deployed, which tool is primarily used for administering and making certain changes (like to partitions and roles)?",
+      "options": [
+        "SQL Server Data Tools (SSDT).",
+        "The Analysis Services Project interface.",
+        "SQL Server Management Studio (SSMS).",
+        "A dedicated data mining client application."
+      ],
+      "correctIndex": 2,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "While SSDT is used for the initial development and deployment of the project, once the database exists in an instance, administrators typically use SQL Server Management Studio (SSMS) to manage and administer various aspects of the deployed Analysis Services database, such as roles and partitions.",
+      "id": 24
+    },
+    {
+      "question": "What type of modeling primarily uses Relational Databases as its core data source?",
+      "options": [
+        "Tabular Modeling",
+        "Multidimensional Modeling",
+        "Analysis Services cubes",
+        "Azure DataMarket datasets"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Multidimensional Modeling is designed to work with structured data found in Relational Databases. This structure allows it to manage complex, multi-faceted views of the data efficiently, making relational databases its foundational source.",
+      "id": 25
+    },
+    {
+      "question": "Which modeling approach supports Write Back functionality?",
+      "options": [
+        "Tabular Modeling",
+        "Multidimensional Modeling",
+        "Report Designer",
+        "PerformancePoint dashboard"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Multidimensional Modeling is the type of model that includes support for Write Back. This feature allows users to input or modify data directly into the cube structure, which is a capability not supported by Tabular Modeling.",
+      "id": 26
+    },
+    {
+      "question": "What is the primary query and expression language used in Tabular Modeling?",
+      "options": [
+        "MDX Scripting - Calculations",
+        "DAX - Calculations & Queries",
+        "DMX - Data Mining Queries",
+        "MDX - Queries & Calculations"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Tabular Modeling utilizes the Data Analysis Expressions, or DAX. This language is specifically designed for calculations and queries within a tabular data structure, making it distinct from the MDX used in multidimensional environments.",
+      "id": 27
+    },
+    {
+      "question": "According to the comparison table, what level of data compression can Multidimensional Modeling achieve?",
+      "options": [
+        "10+ times",
+        "3+ times",
+        "Role-based permissions",
+        "Row-level security"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Multidimensional Modeling is noted for its high degree of data compression, achieving a ratio of 3 or more times. This efficiency helps manage large volumes of historical and aggregated data within the cube structure.",
+      "id": 28
+    },
+    {
+      "question": "Which statement accurately describes the data sources available to Tabular Modeling?",
+      "options": [
+        "Only Relational Databases",
+        "A variety including Analysis Services cubes, Excel files, and text files",
+        "Limited strictly to SQL Server Data Tools (SSDT)",
+        "Primarily restricted to Role-based permissions in SSAS"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Tabular Modeling is highly flexible regarding its data ingestion. It can connect to a wide variety of sources, including relational databases, Analysis Services cubes, Excel files, and various text formats, allowing for diverse data integration needs.",
+      "id": 29
+    },
+    {
+      "question": "When should a data warehousing solution primarily consider using a Tabular approach?",
+      "options": [
+        "If the organization requires complex features like Data Mining and Writeback.",
+        "If the development timeline is short, or if users need to query large amounts of detail data from many disparate sources.",
+        "When dealing with multi-terabyte data sources that require pre-aggregation.",
+        "If the primary goal is minimizing network latency by maximizing disk I/O."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The Tabular approach is ideal for scenarios requiring rapid development, handling numerous disconnected data sources, or when end-users need to drill down into massive amounts of granular detail data. This flexibility makes it suitable for modern, diverse data environments.",
+      "id": 30
+    },
+    {
+      "question": "What are the defining characteristics of In-Memory technology in a data warehouse context?",
+      "options": [
+        "It relies heavily on pre-aggregated data stored on disk and requires balanced use of RAM and Disk I/O.",
+        "It utilizes column-based storage, can store large amounts of data without aggregations, and offers high data compression.",
+        "It is best suited for complex data models that require specialized multidimensional features like Actions.",
+        "Its performance relies on maximizing disk input/output while minimizing network latency through relational database structures."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "In-Memory technology fundamentally changes how data is stored and accessed by utilizing column-based storage rather than traditional row-based methods. This architecture allows it to store vast amounts of raw data without needing pre-calculated aggregations, leading to extremely high compression rates.",
+      "id": 31
+    },
+    {
+      "question": "Which statement accurately describes the performance focus of ROLAP compared to MOLAP?",
+      "options": [
+        "ROLAP focuses on a balanced configuration that equally utilizes Disk I/O and RAM through extensive aggregation.",
+        "ROLAP aims to maximize Disk I/O while minimizing network latency by querying data directly from relational sources.",
+        "MOLAP is designed for environments with simple data models, whereas ROLAP handles complex ones.",
+        "Both technologies rely solely on in-memory processing and do not utilize disk storage at all."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "ROLAP (Relational Online Analytical Processing) is optimized to work efficiently with existing relational databases. Its primary goal is performance through maximizing the use of fast disk I/O while simultaneously minimizing any delays caused by network communication, making it excellent for real-time querying.",
+      "id": 32
+    },
+    {
+      "question": "Under what conditions should a data architect consider using a Multidimensional approach?",
+      "options": [
+        "When the development timeline is extremely short and the data model is simple.",
+        "If the organization has a complex data model, requires multi-terabyte sources, or needs specialized multidimensional features like Data Mining.",
+        "When the primary requirement is connecting many disparate data sources that lack a unified schema.",
+        "When the system must prioritize low network latency and fast CPU processing over disk I/O optimization."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The Multidimensional approach excels when dealing with highly complex data structures or massive, multi-terabyte datasets. Furthermore, if advanced analytical features such as Data Mining, Actions, or Writeback are critical requirements, this model is often the preferred choice.",
+      "id": 33
+    },
+    {
+      "question": "What does SSDT represent in the context of Microsoft Business Intelligence?",
+      "options": [
+        "A specific type of data mining service used for predictive analysis.",
+        "The development environment for all Microsoft BI members, including SSIS, SSRS, and SSAS.",
+        "A framework solely dedicated to managing paginated reports within SQL Server.",
+        "An integration layer that connects only multidimensional models to tabular data sources."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "SSDT stands for SQL Server Data Tools and serves as the unified development environment where developers can build and manage various Microsoft Business Intelligence components, such as SSIS (Integration Services), SSRS (Reporting Services), and SSAS (Analysis Services).",
+      "id": 34
+    },
+    {
+      "question": "Which service is specifically used for creating, deploying, and managing mobile-and paginated reports?",
+      "options": [
+        "SQL Server Integration Services (SSIS)",
+        "SQL Server Reporting Services (SSRS)",
+        "SQL Server Analysis Services (SSAS)",
+        "Data Mining Services"
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "SQL Server Reporting Services (SSRS) is the dedicated component within the BI suite responsible for handling all aspects of reporting, including the creation, deployment, and management of both mobile and paginated report formats.",
+      "id": 35
+    },
+    {
+      "question": "Which list accurately describes the types of models or services referenced regarding analysis capabilities?",
+      "options": [
+        "Integration, ETL, Data Warehousing, and Reporting Services.",
+        "Tabular models, multidimensional models, data mining, and integration services.",
+        "SSIS, SSRS, SSAS, and SSDT.",
+        "Paginated reports, mobile dashboards, and query services."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "The material references several specialized analysis capabilities within the BI ecosystem, including Tabular models for modern data structures, multidimensional models for traditional OLAP cubes, Data Mining for pattern detection, and Integration services for connecting disparate data sources.",
+      "id": 36
+    }
+  ]
+}

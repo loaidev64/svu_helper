@@ -1,0 +1,155 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is auditing in the context of SQL Server?",
+      "a": "Tracking events and changes that occur in the Database Engine. (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "Which component allows users to track audit events in SQL Server?",
+      "a": "SQL Server Audit. (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "What is an Audit object?",
+      "a": "A collection of server actions or database actions (these actions might also be grouped together). (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "To keep track of events (called actions), what must be defined when creating an audit?",
+      "a": "A collection, or audit. The actions you want to track are collected according to an audit specification. Recording those actions is done by the target (destination). (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What does auditing give users the ability to do regarding recorded events?",
+      "a": "Track and record those actions at both the instance and database level. (الصفحة 3)"
+    },
+    {
+      "id": 6,
+      "q": "What is Auditing in the context of SQL Server and Azure SQL Database?",
+      "a": "It is the act of tracking and recording events that occur in the Database Engine. (Page 6)"
+    },
+    {
+      "id": 7,
+      "q": "How does SQL Server Audit track actions at both the instance and database level?",
+      "a": "It uses extended events to give you the ability to track and record those actions. (Page 6)"
+    },
+    {
+      "id": 8,
+      "q": "What are the three main components needed to track actions (events)?",
+      "a": "A collection (audit), an audit specification, and a target (destination). (Page 6)"
+    },
+    {
+      "id": 9,
+      "q": "Where are audits logged, and why is the audit target written asynchronously?",
+      "a": "Audits are logged to event logs or audit files; they are written asynchronously for performance reasons. (Page 6)"
+    },
+    {
+      "id": 10,
+      "q": "What does the SQL Server `audit` object represent?",
+      "a": "A collection of server actions or database actions. (Page 6)"
+    },
+    {
+      "id": 11,
+      "q": "What does a Server audit object define?",
+      "a": "The actions to collect at the instance level or database level (for all databases on the instance). (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What must not be monitored in a database audit specification?",
+      "a": "Server-scoped objects. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "Name three possible destinations for sending audit results.",
+      "a": "The Windows Security event log, the Windows Application event log, or an audit file on the file system. (الصفحة 8)"
+    },
+    {
+      "id": 14,
+      "q": "How many database audits can be created per database?",
+      "a": "Only one database audit can be created per database per audit. (الصفحة 8)"
+    },
+    {
+      "id": 15,
+      "q": "What two types of groups can you monitor using audit events?",
+      "a": "Audit events and audit action groups. (الصفحة 8)"
+    },
+    {
+      "id": 16,
+      "q": "To begin creating a server audit in SQL Server Management Studio, where should you look?",
+      "a": "In Object Explorer, expand the Security folder. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "After expanding the Security folder, what action is taken to initiate the creation of an audit?",
+      "a": "Right-click the Audits folder and select a shortcut. (الصفحة 10)"
+    },
+    {
+      "id": 18,
+      "q": "If 'File' is selected in the Audit Destination list box during audit configuration, what must be entered?",
+      "a": "A valid file path. (الصفحة 12)"
+    },
+    {
+      "id": 19,
+      "q": "What is recommended when entering a name into the Audit Name box?",
+      "a": "Choosing an appropriate name, as the default name is based on the current date and time. (الصفحة 12)"
+    },
+    {
+      "id": 20,
+      "q": "Under what condition can an audit specification be created?",
+      "a": "Only if an audit already exists. (الصفحة 10)"
+    },
+    {
+      "id": 21,
+      "q": "In Object Explorer, where do you find the option to create a server audit specification?",
+      "a": "Expand the Security folder, right-click the Server Audit Specification folder, and click New Server Audit Specification (الصفحة 14)"
+    },
+    {
+      "id": 22,
+      "q": "When creating a new server audit specification, what must be selected in the Audit list box?",
+      "a": "The previously created server audit (الصفحة 14)"
+    },
+    {
+      "id": 23,
+      "q": "After creating an audit, what action is necessary to make sure it functions?",
+      "a": "Right-click the newly created audit and click Enable Audit (الصفحة 14)"
+    },
+    {
+      "id": 24,
+      "q": "Besides naming, what can be chosen when setting up a server audit specification?",
+      "a": "One or more audit actions, or audit action groups (الصفحة 14)"
+    },
+    {
+      "id": 25,
+      "q": "What is the first step to begin creating a server audit specification in SQL Server Management Studio?",
+      "a": "In Object Explorer, expand the Security folder (الصفحة 14)"
+    },
+    {
+      "id": 26,
+      "q": "Where is the location of the database audit specification?",
+      "a": "Under the database security context (Page 16)"
+    },
+    {
+      "id": 27,
+      "q": "In Object Explorer, which folder must be expanded to find the Database Audit Specifications?",
+      "a": "The Security folder (Page 16)"
+    },
+    {
+      "id": 28,
+      "q": "What are two ways you can view audit logs?",
+      "a": "SQL Server Management Studio or the Security Log in the Windows Event Viewer (Page 16)"
+    },
+    {
+      "id": 29,
+      "q": "What minimum permission level is required to view or modify the Audit Log?",
+      "a": "Control Server (Page 16)"
+    },
+    {
+      "id": 30,
+      "q": "When creating a database audit specification, what must be remembered regarding its activation?",
+      "a": "To use the context menu to turn it on (Page 16)"
+    }
+  ]
+}

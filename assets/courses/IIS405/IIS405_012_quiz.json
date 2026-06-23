@@ -1,0 +1,890 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary focus of Chapter 12 in Oracle Database Administration?",
+      "options": [
+        "Data Modeling Techniques",
+        "Moving Data: Data Pump, SQL*Loader",
+        "Advanced Indexing Strategies",
+        "Network Security Protocols"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter 12 is dedicated to the process of moving data within and between Oracle databases. The chapter title explicitly names the two main tools covered in this topic: Data Pump and SQL*Loader, which are used for various data migration tasks.",
+      "id": 1
+    },
+    {
+      "question": "Which pair of tools is primarily utilized for moving data in an Oracle database environment?",
+      "options": [
+        "RMAN and Data Guard",
+        "Data Pump and SQL*Loader",
+        "PL/SQL and Triggers",
+        "XMLDB and JSON"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The material introduces two specialized utilities for data movement: Data Pump, which handles export and import operations, and SQL*Loader, which is used specifically to load data from external files into the database.",
+      "id": 2
+    },
+    {
+      "question": "Before performing a Data Pump operation, what object must typically be created within the Oracle database?",
+      "options": [
+        "User Role",
+        "Directory Object",
+        "Sequence Generator",
+        "Synonym"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Data Pump requires access to the physical location where data files are stored. To manage this file system interaction securely, an administrator must first create a Directory Object within the database that points to the necessary operating system path.",
+      "id": 3
+    },
+    {
+      "question": "What is the main function of performing a Data Pump Export?",
+      "options": [
+        "Loading data from external flat files into tables.",
+        "Extracting data and metadata from one schema or database to another.",
+        "Creating backup copies of the entire database structure.",
+        "Monitoring network connectivity between two servers."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Data Pump Export is the process of taking a snapshot of existing data, including both the data itself and its associated metadata, from the source environment so that it can be moved or archived elsewhere.",
+      "id": 4
+    },
+    {
+      "question": "Which tool is specifically designed for loading data into Oracle tables using external flat files?",
+      "options": [
+        "Data Pump Import",
+        "SQL*Loader",
+        "Directory Object Creator",
+        "Database Administrator Utility (DBA_UTIL)"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "While Data Pump handles the import process, SQL*Loader is the dedicated utility used when the source data resides in external files (like CSV or delimited text files). It reads these flat files and maps the contents directly into specified database tables.",
+      "id": 5
+    },
+    {
+      "question": "What is one of the primary high-level objectives covered regarding modern data movement?",
+      "options": [
+        "Using SQL*Loader exclusively for all database transfers.",
+        "Understanding Data Pump Architecture for efficient data transfer.",
+        "Relying solely on manual data entry processes.",
+        "Implementing only direct path loading methods without planning."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The textbook outlines several objectives for mastering data movement, and understanding the overall architecture of Oracle Data Pump is fundamental to performing efficient and robust export and import operations within an Oracle environment.",
+      "id": 6
+    },
+    {
+      "question": "Which tool or technique is specifically designed for loading data into the database from sources that are not native Oracle databases?",
+      "options": [
+        "Using only the standard SQL*Loader utility.",
+        "Utilizing SQL*Loader to load data from non-Oracle databases.",
+        "Relying on manual ETL processes outside of the database.",
+        "Implementing external table population without a loader tool."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The objective list explicitly includes learning how to use SQL*Loader, which is the dedicated utility designed to facilitate the loading of data into Oracle from various sources that may not originate within an Oracle database structure.",
+      "id": 7
+    },
+    {
+      "question": "What technique allows users to handle unloading and loading data by treating external files as if they were actual database tables?",
+      "options": [
+        "Using only Data Pump's standard export/import methods.",
+        "Unloading and Loading Data Using an External Table.",
+        "Implementing direct path loads exclusively.",
+        "Relying on manual SQL scripting for data staging."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The concept of using external tables is a key objective because it provides a mechanism to read data from files stored outside the database and treat that data as if it were residing in an internal table structure, simplifying both loading and unloading processes.",
+      "id": 8
+    },
+    {
+      "question": "Besides general architecture, what advanced capability does Data Pump aim to provide during export and import operations?",
+      "options": [
+        "Limiting all transfers to only single tables.",
+        "Exporting and Importing with Granularity.",
+        "Requiring the use of external staging databases for every transfer.",
+        "Restricting data movement solely to network links."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "A key objective highlighted is mastering exporting and importing with granularity, meaning users can perform highly controlled transfers that allow them to specify exactly which parts or levels of detail within the database need to be moved during the process.",
+      "id": 9
+    },
+    {
+      "question": "Which API provides utilities for high-speed export and import of both bulk data and metadata movement?",
+      "options": [
+        "DBMS_METADATA",
+        "DBMS_DATAPUMP",
+        "Direct Path API (DPAPI)",
+        "Oracle Data Pump Utility"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The DBMS_DATAPUMP package is specifically designed to contain the necessary APIs for performing high-speed utilities required for moving large volumes of data and associated metadata within the database environment.",
+      "id": 10
+    },
+    {
+      "question": "What interface minimizes the need for data conversion and parsing during both the unload and load phases of data movement?",
+      "options": [
+        "DBMS_DATAPUMP",
+        "Direct Path API (DPAPI)",
+        "DBMS_METADATA",
+        "Data Pump Export Utility"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The Oracle Database supports a Direct Path API interface, which is optimized to minimize the overhead associated with data conversion and parsing when moving data both out of (unloading) and into (loading) the database.",
+      "id": 11
+    },
+    {
+      "question": "Which component is utilized by worker processes specifically for handling all metadata unloading and loading operations?",
+      "options": [
+        "DBMS_DATAPUMP",
+        "DBMS_METADATA",
+        "Direct Path API (DPAPI)",
+        "Master Table (MT)"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The DBMS_METADATA package is responsible for managing the metadata aspects of data movement. It stores database object definitions using XML format, which is crucial for worker processes during unloading and loading.",
+      "id": 12
+    },
+    {
+      "question": "What is the primary function of Data Pump Export?",
+      "options": [
+        "To execute complex SQL queries to extract specific records from a table.",
+        "To unload data and metadata into a set of operating system files called dump file sets.",
+        "To directly modify database object definitions using XML scripts.",
+        "To manage the security privileges associated with directory objects."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "Data Pump Export is the utility used to extract data and metadata from the source database. This extracted information is saved into a collection of operating system files, known as dump file sets, which can later be moved or restored.",
+      "id": 13
+    },
+    {
+      "question": "What are Directory Objects primarily used for in the context of Data Pump?",
+      "options": [
+        "Storing the actual bulk data records that are being exported.",
+        "Providing a secure and defined location on the server's file system where dump files are created.",
+        "Defining the structure and schema of tables before export begins.",
+        "Managing user privileges for accessing metadata definitions within the database."
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "Directory objects act as a bridge between the database and the operating system's file system. They specify the physical location on the server where Data Pump utilities will write the resulting dump files.",
+      "id": 14
+    },
+    {
+      "question": "What is Oracle Data Pump primarily described as?",
+      "options": [
+        "A simple utility for running SQL queries against exported data.",
+        "A server-based facility designed for high-speed data and metadata movement.",
+        "An interface used only within the Enterprise Manager Cloud Control GUI.",
+        "A set of drivers that allow reading external tables using standard SELECT statements."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Oracle Data Pump is fundamentally a server-based facility designed to facilitate the rapid movement of both data and metadata within an Oracle database environment, enabling high-speed loading and unloading operations.",
+      "id": 15
+    },
+    {
+      "question": "Which command-line clients are used for performing export and import operations with Data Pump?",
+      "options": [
+        "DBMS_DATAPUMP and DBMS_METADATA",
+        "expdp and impdp",
+        "SQL*Loader and ORACLE_LOADER",
+        "SELECT and INSERT"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The dedicated command-line clients for Data Pump are `expdp` for exporting data and `impdp` for importing data. These tools allow users to manage the entire export/import process from the terminal interface.",
+      "id": 16
+    },
+    {
+      "question": "When does Data Pump typically use external tables rather than relying on direct path methods?",
+      "options": [
+        "When maximum single-stream performance is desired.",
+        "If the database contains clustered tables, referential integrity constraints, or encrypted columns.",
+        "Whenever the job is running in a distributed environment.",
+        "Only when using the GUI interface in Enterprise Manager Cloud Control."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "While Data Pump prefers direct path for maximum performance, it automatically switches to external tables if certain structural complexities exist within the data, such as clustered tables or defined referential integrity constraints, ensuring that the move operation remains successful and consistent.",
+      "id": 17
+    },
+    {
+      "question": "Which of the following is listed as a key benefit or feature of using Oracle Data Pump?",
+      "options": [
+        "It requires manual intervention for every single object export.",
+        "Fine-grained object and data selection.",
+        "It can only be executed by system administrators with DBA privileges.",
+        "It automatically compresses all metadata, regardless of content type."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Data Pump offers numerous advanced features that benefit users, including the ability to perform fine-grained selection of specific objects and data, allowing for highly targeted movement operations within the database.",
+      "id": 18
+    },
+    {
+      "question": "What is the primary function of using the COMPRESSION parameter during a Data Pump export?",
+      "options": [
+        "It specifies the maximum number of threads used for the job execution.",
+        "It indicates whether the metadata should be compressed in the dump file to reduce disk space consumption.",
+        "It allows exporting data from a remote database using a database link.",
+        "It determines the percentage of data that will be sampled and unloaded from the source database."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The COMPRESSION parameter is used during Data Pump export to manage disk space efficiency. By setting this parameter, users can specify whether the metadata included in the dump file should be compressed; if so, it automatically uncompresses during the import process.",
+      "id": 19
+    },
+    {
+      "question": "Which parameter allows a user to estimate the storage space required for an export job without actually performing the data transfer?",
+      "options": [
+        "PARALLEL",
+        "ESTIMATE_ONLY",
+        "VERSION",
+        "SAMPLE"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The ESTIMATE_ONLY parameter is a utility feature that allows database administrators to predict the resource consumption of an export job. Running this command estimates how much space the dump file set would consume without executing the actual data extraction process, which saves time and resources.",
+      "id": 20
+    },
+    {
+      "question": "In Data Pump, what does the PARALLEL parameter control?",
+      "options": [
+        "The percentage of records that are sampled during the export process.",
+        "The maximum number of threads of active execution servers operating on behalf of the export job.",
+        "Whether the metadata should be compressed or not.",
+        "The specific database version required for compatibility with the dump file set."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The PARALLEL parameter is used to optimize the performance of a Data Pump export by specifying how many concurrent threads can operate during the job execution. A higher number can speed up the process, provided the underlying system resources support it.",
+      "id": 21
+    },
+    {
+      "question": "According to the material, what are Directory objects in the context of Data Pump?",
+      "options": [
+        "They are physical directories that must be manually specified with full paths for file management.",
+        "They are logical structures that represent a physical directory on the server's file system.",
+        "They are temporary storage locations used only during the import phase.",
+        "They are user-defined aliases that replace the need for the SYS user ownership."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Directory objects provide flexibility in file management by acting as logical pointers to physical directories on the server's operating system file system. This allows users to reference a directory using its unique object name rather than hard-coding the full, specific path every time they run a job.",
+      "id": 22
+    },
+    {
+      "question": "What capability does Network mode enable during Data Pump operations?",
+      "options": [
+        "It forces all exported data to be compressed automatically regardless of user settings.",
+        "It allows exporting from a remote database directly to a dump file set using a database link.",
+        "It restricts the export job to only handling XML Type data that must be converted to CLOBs.",
+        "It mandates that all exported objects must belong to the SYS user schema for security reasons."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Network mode is a feature designed for remote operations, enabling administrators to export data from a source database that is physically separate or remote. This connection is established and managed using a database link pointing to the source system.",
+      "id": 23
+    },
+    {
+      "question": "What is the primary function of the Data Pump Export utility?",
+      "options": [
+        "To load metadata and data stored in an export dump file set into a target system.",
+        "To unload data and metadata into a set of operating system files called dump file sets.",
+        "To manage user privileges on individual directory objects.",
+        "To create the master table that maintains job aspects during loading."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Data Pump Export is specifically designed to extract or unload data and associated metadata from a database into physical files, which are grouped together as dump file sets. This process allows the data to be moved out of the database environment for later use or transfer.",
+      "id": 24
+    },
+    {
+      "question": "Why are Directory Objects necessary when performing Data Pump operations?",
+      "options": [
+        "Because they allow users to modify tables during load operation.",
+        "Because Data Pump accesses its files on the server rather than on the client.",
+        "They are required only if the source database is read-only.",
+        "They manage all aspects of the job by maintaining a master table."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Directory Objects provide a mechanism for Oracle utilities like Data Pump to locate and access files stored on the server's operating system file system. This capability is crucial because the utility needs direct access to these physical files, regardless of whether the client machine has them locally.",
+      "id": 25
+    },
+    {
+      "question": "What role does the Master Table (MT) play during a Data Pump job?",
+      "options": [
+        "It specifies the name of the directory object used for exporting data.",
+        "It is responsible for enforcing primary keys and unique constraints on the target system.",
+        "It maintains all aspects of the job, being built during export and written to the dump file set last.",
+        "It dictates which user privileges are granted read or write access to the directory object."
+      ],
+      "correctIndex": 2,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The Master Table (MT) acts as a central record for the entire Data Pump operation. During an export job, it tracks and maintains all details regarding the process; consequently, it is one of the final components written into the dump file set.",
+      "id": 26
+    },
+    {
+      "question": "Which mode of Data Pump operations allows exporting data from a read-only source database?",
+      "options": [
+        "Client Mode",
+        "Network Mode",
+        "Local File Mode",
+        "Schema Mode"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Network mode is particularly useful when the source database cannot be modified, such as when it is in a read-only state. This mode allows Data Pump to connect directly from one database instance to another, bypassing the need for intermediate files on the client machine.",
+      "id": 27
+    },
+    {
+      "question": "Which of the following lists all the different operational modes available for Data Pump Export and Import?",
+      "options": [
+        "Full, Schema, Tablespace, Transportable database",
+        "Full, Schema, Table, Tablespace, Transportable tablespace, Transportable database",
+        "Command line, Parameter file, Interactive command line, Enterprise Manager",
+        "Database, User, Object, Schema"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Data Pump supports several modes to define the scope of the export or import operation. These include Full (the entire database), Schema (a specific user's objects), Table, Tablespace, Transportable tablespace, and Transportable database, allowing users granular control over what data is moved.",
+      "id": 28
+    },
+    {
+      "question": "What is the primary function of using the Command-line interface for Data Pump operations?",
+      "options": [
+        "It allows specifying all command-line parameters in a dedicated parameter file.",
+        "It enables specifying most of the export parameters directly on the command line.",
+        "It automatically stops logging to the terminal and displays prompts.",
+        "It is used exclusively for creating transportable tablespaces."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Command-line interface provides a direct way to execute Data Pump commands, allowing users to specify the majority of necessary export parameters immediately when running the command without needing an external file.",
+      "id": 29
+    },
+    {
+      "question": "When using the Parameter file interface for Data Pump, what is the key limitation regarding parameter specification?",
+      "options": [
+        "It cannot be used to specify schema names or table names.",
+        "It enables specifying all command–line parameters except for the PARFILE parameter itself.",
+        "It only allows specifying full database export parameters.",
+        "It requires manual input of every single parameter, making it cumbersome."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Parameter file interface is highly useful because it centralizes all command-line settings into a single file. However, the system makes an exception for the PARFILE parameter itself, which must still be specified directly on the command line.",
+      "id": 30
+    },
+    {
+      "question": "Which action should a user perform to switch Data Pump Export or Import from the Command-line interface or Parameter file interface into the Interactive mode?",
+      "options": [
+        "Clicking the \"Start\" button in Enterprise Manager.",
+        "Running the `CONNECT` command followed by `INTERACTIVE`.",
+        "Pressing Ctrl + C during an active export operation.",
+        "Specifying the `--interactive` flag at the beginning of the command line."
+      ],
+      "correctIndex": 2,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Interactive–command interface is designed for real-time interaction with Data Pump prompts. To activate this mode when starting from a command-line or parameter file execution, the user must press Ctrl + C during the running operation.",
+      "id": 31
+    },
+    {
+      "question": "What tools can be used to perform a Data Pump export procedure?",
+      "options": [
+        "Only using Enterprise Manager Cloud Control.",
+        "Using Enterprise Manager Cloud Control or Toad for Oracle.",
+        "Directly through SQL*Plus commands only.",
+        "Through the Database Export/Import wizard in GUI."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Data Pump export can be initiated using graphical tools such as Enterprise Manager Cloud Control or Toad for Oracle, which provide wizards to guide the user through the entire export and import process.",
+      "id": 32
+    },
+    {
+      "question": "When performing a Data Pump export session via the GUI from the Database home page, what is the correct sequence of menus to follow?",
+      "options": [
+        "Expand Schema menu, then select Export/Import.",
+        "Expand the Schema menu, select Database Export/Import.",
+        "Select Tools menu, and then choose Data Pump Export.",
+        "Click on the 'Export' button directly from the main dashboard."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "To begin a Data Pump export session using the graphical user interface, one must navigate to the Database home page, expand the Schema menu, and then select the Database Export/Import option.",
+      "id": 33
+    },
+    {
+      "question": "If a privileged user is connected to the database instance when performing an export, which of the following options are available for export type selection?",
+      "options": [
+        "Schemas and Tables only.",
+        "Database, Schemas, Tables, and Tablespace.",
+        "Only full Database backup or restore.",
+        "User accounts and Roles."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "A privileged user has access to a comprehensive list of export types, allowing them to select from Database, Schemas, Tables, and Tablespace for the Data Pump operation.",
+      "id": 34
+    },
+    {
+      "question": "Which utility is specifically illustrated in the example command line usage for performing a Data Pump import?",
+      "options": [
+        "`expdp`",
+        "`impdp`",
+        "`sqlldr`",
+        "`dbpump`"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "The `impdp` utility is the command-line client used to perform Data Pump import operations, as demonstrated in the provided example illustrating how to load data into the database.",
+      "id": 35
+    },
+    {
+      "question": "What feature makes it easy to apply transformations when Data Definition Language (DDL) is being formed during a Data Pump Import?",
+      "options": [
+        "The use of SQL scripts for object creation.",
+        "Object metadata is stored as XML in the dump file set.",
+        "Manual modification of the target database schema.",
+        "Running specialized transformation utilities before import."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "Because the object metadata within the dump file set is structured as XML, Data Pump Import can easily read and interpret this information, allowing it to apply necessary transformations automatically when recreating objects using DDL statements.",
+      "id": 36
+    },
+    {
+      "question": "When should a user utilize the `REMAP_DATAFILE` transformation?",
+      "options": [
+        "When changing object ownership from one user to another.",
+        "To rename entire tables during the import process.",
+        "When moving databases across platforms that have different file-system semantics.",
+        "When mapping data columns between source and target tables."
+      ],
+      "correctIndex": 2,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `REMAP_DATAFILE` transformation is specifically designed for scenarios where the database is being migrated to a new platform, particularly those with differing underlying file system structures or semantics.",
+      "id": 37
+    },
+    {
+      "question": "Which Data Pump Import transformation provides the capability to change object ownership?",
+      "options": [
+        "REMAP_TABLE",
+        "REMAP_DATAFILE",
+        "REMAP_SCHEMA",
+        "REMAP_DATA"
+      ],
+      "correctIndex": 2,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `REMAP_SCHEMA` transformation allows users to manage changes in object ownership, providing the functionality to specify an old owner (`FROMUSER`) and a new owner (`TOUSER`).",
+      "id": 38
+    },
+    {
+      "question": "If a user needs to rename an entire table during the Data Pump Import process, which transformation should they use?",
+      "options": [
+        "REMAP_DATAFILE",
+        "REMAP_TABLE",
+        "REMAP_SCHEMA",
+        "REMAP_DATA"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `REMAP_TABLE` transformation is the specific tool used to provide the ability to rename entire tables when moving data or objects between different database environments.",
+      "id": 39
+    },
+    {
+      "question": "What does the `REMAP_DATA` transformation allow a user to do during an import?",
+      "options": [
+        "Change the physical location of the data files.",
+        "Remap data as it is being inserted into the target table.",
+        "Automatically change object ownership between schemas.",
+        "Rename the entire tablespace containing the objects."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `REMAP_DATA` transformation provides granular control over the data itself, enabling users to remap or modify specific data values as they are being inserted into the destination table during the import process.",
+      "id": 40
+    },
+    {
+      "question": "What is the primary function of SQL*Loader when interacting with an Oracle database?",
+      "options": [
+        "It modifies the structure of existing tables to accommodate new data types.",
+        "It loads data from external files into tables of an Oracle database using a powerful data parsing engine.",
+        "It generates complex queries that automatically optimize performance for large datasets.",
+        "It manages user permissions and security roles within the database environment."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "SQL*Loader is specifically designed to facilitate the transfer of data, reading information from external files and efficiently loading it into designated tables within an Oracle database using its robust parsing engine.",
+      "id": 41
+    },
+    {
+      "question": "According to the material, what are the three possible record formats that a data file read by SQL*Loader can utilize?",
+      "options": [
+        "Fixed length format, variable width format, or delimited format.",
+        "Fixed record format, variable record format, or stream record format.",
+        "Structured format, semi-structured format, or JSON format.",
+        "Binary format, text format, or XML format."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "SQL*Loader is flexible in handling external data formats; it can read input files that are organized as fixed records (where each field occupies a set number of characters), variable records, or stream records.",
+      "id": 42
+    },
+    {
+      "question": "Which section does the control file contain information about when defining where and how data should be loaded into tables?",
+      "options": [
+        "The Global options section, which handles session-wide settings.",
+        "The INTO TABLE blocks, which specify table names and column details.",
+        "The Log file section, which summarizes execution results.",
+        "The Input data section, which contains the actual records to be loaded."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The control file is structured into several sections; the INTO TABLE blocks are dedicated to providing detailed information about the target table, including its name and the specific columns that will receive the incoming data.",
+      "id": 43
+    },
+    {
+      "question": "What distinguishes a record placed in the \"Bad file\" from a record filtered out into the \"Discard file\"?",
+      "options": [
+        "The Bad file is used for records rejected by the Oracle database, while the Discard file is only used when no load occurs.",
+        "The Bad file contains records rejected due to invalid input format or determined invalid by the Oracle database; the Discard file holds records that fail selection criteria.",
+        "Both files contain records that are simply too large for the target table, making them indistinguishable.",
+        "The Bad file is created automatically, whereas the Discard file must be manually enabled in the control file."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Records enter the Bad file if they fail validation—either because SQL*Loader finds an invalid input format or because the Oracle database determines that the row data violates a constraint. Conversely, records are placed in the Discard file only if they do not meet any record-selection criteria specified in the control file.",
+      "id": 44
+    },
+    {
+      "question": "What key aspects does the SQL*Loader control file provide instructions regarding?",
+      "options": [
+        "Only the location of the data to be loaded and its format.",
+        "Location of the data, data format, configuration details, memory management, record rejection, interrupted load handling, and data manipulation details.",
+        "Just how the data is formatted and where it resides in the database.",
+        "Only the DDL instructions needed to create the target table structure."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The SQL*Loader control file is comprehensive, instructing the tool on multiple aspects of the loading process. These include not only where the data is located and how it is formatted but also critical operational details like memory management, criteria for rejecting records, handling interruptions, and specific instructions for manipulating the loaded data.",
+      "id": 45
+    },
+    {
+      "question": "What type of language must be used in the SQL*Loader control file?",
+      "options": [
+        "Data manipulation language (DML).",
+        "Data definition language (DDL).",
+        "Procedural language (PL/SQL).",
+        "Structured query language (SQL)."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The SQL*Loader control file is fundamentally a text file that contains instructions written in Data Definition Language (DDL). This DDL is used specifically to control various operational aspects of the SQL*Loader session, such as how data is found and processed.",
+      "id": 46
+    },
+    {
+      "question": "Which of the following is NOT an aspect controlled by the SQL*Loader control file?",
+      "options": [
+        "Selection and rejection criteria for records.",
+        "The physical network connection details between client machines.",
+        "How SQL*Loader handles interrupted load processes.",
+        "Data manipulation instructions during loading."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The control file is designed to manage the data loading process itself, controlling aspects like memory management and rejection criteria. However, it does not dictate the physical network connection details; those are handled by the underlying database environment or client configuration.",
+      "id": 47
+    },
+    {
+      "question": "Which SQL*Loader keyword specifies the name of a file containing data that needs to be loaded?",
+      "options": [
+        "BADFILE",
+        "INFILE",
+        "DISCARDFILE",
+        "APPEND"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The `INFILE` keyword is used within the SQL*Loader control file to explicitly define and specify the name of the data file that contains the records intended for loading into the database tables.",
+      "id": 48
+    },
+    {
+      "question": "If a user wants to load data into an existing table without overwriting the current contents, which keyword should be used in the SQL*Loader control file?",
+      "options": [
+        "INSERT",
+        "APPEND",
+        "WHEN",
+        "INTO TABLE"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The `APPEND` keyword is designed for loading data into a table that already contains records. It adds the new data to the end of the existing data set, whereas `INSERT` is typically used when loading data into an empty table structure.",
+      "id": 49
+    },
+    {
+      "question": "In SQL*Loader, what happens if a record fails to meet specific field conditions defined in the control file?",
+      "options": [
+        "The entire load process stops immediately.",
+        "The rejected record is placed in a designated bad file.",
+        "The record is automatically discarded without logging.",
+        "The system attempts to correct the data and continues loading."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "When records fail validation or encounter errors, the `BADFILE` keyword directs SQL*Loader to place these rejected records into a specified file for later inspection and analysis by the user.",
+      "id": 50
+    },
+    {
+      "question": "Which type of load operation is known for generating data saves, resulting in a faster overall loading process?",
+      "options": [
+        "Conventional Load",
+        "Direct Path Load",
+        "Triggered Load",
+        "Standard Load"
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "The Direct Path Load method is optimized for speed because it generates data saves and bypasses certain overheads associated with the conventional loading process, making it significantly faster.",
+      "id": 51
+    },
+    {
+      "question": "Which statement accurately describes how index entries are handled during a Direct Path Load?",
+      "options": [
+        "It fires INSERT triggers on every record insertion.",
+        "It merges new index entries at the end of the load operation.",
+        "It requires manual creation of all indexes before loading begins.",
+        "It generates redo entries for every single row inserted."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "Unlike conventional loads, which maintain and update index entries on each insert, Direct Path Loads are efficient because they collect all new index entries and merge them into the index structure only once at the conclusion of the entire loading process.",
+      "id": 52
+    },
+    {
+      "question": "Which path load method is guaranteed to fire INSERT triggers when data is loaded?",
+      "options": [
+        "Direct Path Load",
+        "Conventional Load",
+        "Bulk Load",
+        "Fast Load"
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "The Conventional Load method simulates standard database operations, meaning that it executes all associated database logic, including firing any defined `INSERT` triggers on the target table.",
+      "id": 53
+    },
+    {
+      "question": "When comparing Direct Path and Conventional Path Loads, which load type is generally better suited for loading into clustered tables?",
+      "options": [
+        "Conventional Load",
+        "Direct Path Load",
+        "Both types are equally capable of loading into clusters.",
+        "Neither type can load data into clustered tables."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "The Direct Path Load is specifically designed to handle the mechanics required for loading data into clustered tables, a capability that the Conventional Load method does not support.",
+      "id": 54
+    },
+    {
+      "question": "What must be preceded by two hyphens (`--`) in an SQL*Loader control file?",
+      "options": [
+        "A mandatory field definition.",
+        "Any comment text.",
+        "The `LOAD DATA` statement.",
+        "The table name being loaded into."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "In the command section of an SQL*Loader control file, any line intended as a comment must be preceded by two hyphens (`--`). This tells the loader that the text following is explanatory and should be ignored during processing.",
+      "id": 55
+    },
+    {
+      "question": "Which method populates tables in an Oracle database by executing SQL INSERT statements?",
+      "options": [
+        "Direct path load",
+        "Conventional path load",
+        "Data save operation",
+        "High-water mark update"
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A conventional path load relies on the execution of standard SQL INSERT statements to populate tables. This process involves using full SQL processing and requires a database COMMIT operation for saving data, unlike direct path loads which bypass much of this overhead.",
+      "id": 56
+    },
+    {
+      "question": "How does a direct path load achieve faster data loading compared to conventional methods?",
+      "options": [
+        "By requiring the user to manually execute every INSERT statement.",
+        "By formatting Oracle data blocks and writing them directly to the database files, eliminating overhead.",
+        "By forcing the system to update indexes after every single record insertion.",
+        "By only allowing transactions that are committed in large batches of 100 records."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "Direct path loads significantly increase speed by formatting Oracle data blocks and writing these blocks directly to the database files. This method bypasses much of the standard Oracle database overhead, allowing the load process to run at a speed close to disk speed.",
+      "id": 57
+    },
+    {
+      "question": "What is true regarding the relationship between a \"data save\" operation and transactions?",
+      "options": [
+        "A data save always requires a subsequent COMMIT operation to finalize changes.",
+        "A data save does not end the transaction, allowing multiple saves within one unit of work.",
+        "The system must update all indexes immediately after every data save.",
+        "Data saves only write blocks that are smaller than the current High-Water Mark (HWM)."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A key feature differentiating a data save from a COMMIT operation is that a data save does not end the transaction. This allows multiple data saves to occur within the same ongoing transaction, which is efficient for large data loads.",
+      "id": 58
+    },
+    {
+      "question": "What happens to the High-Water Mark (HWM) after a successful data save?",
+      "options": [
+        "The HWM remains unchanged until the next COMMIT operation.",
+        "The HWM is moved upward to reflect the new blocks written to the table.",
+        "The system automatically resets the HWM to zero for security purposes.",
+        "The HWM only moves if the data save involves updating indexes."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "When a data save occurs, it writes full database blocks of data after the current High-Water Mark (HWM). Consequently, the HWM is moved upward to reflect that new space occupied by the written data blocks.",
+      "id": 59
+    }
+  ]
+}

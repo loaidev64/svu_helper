@@ -1,8 +1,28 @@
 {
   "courses": [
     {
+      "code": "IIS101",
+      "title": "IIS101",
+      "totalUnits": 10
+    },
+    {
       "code": "IIS202",
       "title": "Database Architecture And Design",
+      "totalUnits": 12
+    },
+    {
+      "code": "IIS303",
+      "title": "IIS303",
+      "totalUnits": 11
+    },
+    {
+      "code": "IIS404",
+      "title": "IIS404",
+      "totalUnits": 9
+    },
+    {
+      "code": "IIS405",
+      "title": "IIS405",
       "totalUnits": 12
     },
     {

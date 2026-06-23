@@ -1,0 +1,515 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary focus of Chapter 6 in Oracle Database Administration?",
+      "options": [
+        "Managing only Control Files and Online Redo Logs.",
+        "Managing Control Files, Online Redo Logs, and Archive logs.",
+        "Implementing backup strategies for user data tables.",
+        "Configuring network connectivity between database servers."
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter 6 is dedicated to the comprehensive management of three critical components: Control Files, which track database structure; Online Redo Logs, which record changes; and Archive logs, which store historical records of those changes.",
+      "id": 1
+    },
+    {
+      "question": "According to the Table of Contents, what specific type of file management is covered in section 1?",
+      "options": [
+        "Implementing Archive Mode.",
+        "Managing Control Files.",
+        "Dropping Online Redo Log Members.",
+        "Obtaining Online Log File Information."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The Table of Contents clearly indicates that the first major section, labeled \"1. Managing Control Files,\" focuses on the procedures and techniques required to handle these essential database files.",
+      "id": 2
+    },
+    {
+      "question": "Which objective listed in the Table of Contents deals with making log records permanent for historical review?",
+      "options": [
+        "Multilplexing control file.",
+        "Adding Online Redo Log Groups.",
+        "Implementing Archive Mode.",
+        "Understanding log switch operations."
+      ],
+      "correctIndex": 2,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The objective \"Implementing Archive Mode\" is specifically listed in the Table of Contents and refers to the process of archiving redo logs, ensuring that records of database changes are retained for long-term recovery purposes.",
+      "id": 3
+    },
+    {
+      "question": "What is the primary function of a control file in an Oracle database?",
+      "options": [
+        "It stores all user data tablespaces.",
+        "It is a small binary file that describes the structure of the database and is created when the DB is created.",
+        "It acts as the main storage area for online redo logs.",
+        "It manages network connections between client applications and the server."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The control file serves as a critical metadata repository; it is a small binary file that contains essential information describing the overall structure of the database, including details about tablespaces and data files, and this file is generated when the database instance is first created.",
+      "id": 4
+    },
+    {
+      "question": "Why is it recommended to multiplex the control file?",
+      "options": [
+        "To increase the speed at which transactions are committed.",
+        "Because having multiple copies of the same control file in different locations ensures availability if one copy fails or becomes inaccessible.",
+        "To reduce the overall storage footprint required for database metadata.",
+        "It is necessary to comply with specific regulatory requirements that mandate physical separation of data files."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Multiplexing involves maintaining multiple copies of the control file across different locations; this practice significantly enhances database resilience, ensuring that if one physical copy of the control file becomes unavailable or corrupted, the database can still be mounted and recovered using another existing copy.",
+      "id": 5
+    },
+    {
+      "question": "Which of the following components does a control file typically contain information about?",
+      "options": [
+        "The operating system kernel version used by the server.",
+        "Database names, data files, online redo log groups, and checkpoint information.",
+        "User passwords and authentication credentials for all database users.",
+        "Network IP addresses of connected client machines."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The control file is designed to store metadata about the physical structure of the database; specifically, it records details such as the names and locations of data files, online redo log groups, and critical system information like checkpoint records.",
+      "id": 6
+    },
+    {
+      "question": "What is the primary purpose of managing Online Redo Logs?",
+      "options": [
+        "To permanently archive all transaction history for compliance purposes.",
+        "To record all changes made to the database in a sequential manner, ensuring data can be recovered after failure.",
+        "To store temporary session data used only during active user connections.",
+        "To manage the physical storage allocation of tablespaces within the operating system."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Online redo logs are crucial for database recovery; they record every modification made to the database in real time, allowing administrators to use mechanisms like point-in-time recovery or media recovery to restore data to a consistent state following any failure.",
+      "id": 7
+    },
+    {
+      "question": "What is the primary function of a control file in an Oracle database?",
+      "options": [
+        "It stores all user data records.",
+        "It describes the structure of the database and contains metadata about its components.",
+        "It manages transaction commits and rollbacks for online redo logs.",
+        "It holds the actual application code used by stored procedures."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A control file is a critical, small binary file that acts as a blueprint for the database structure. It records essential metadata, such as the names and locations of data files and online redo log files, allowing the Oracle instance to understand how the entire database is organized when it starts up.",
+      "id": 8
+    },
+    {
+      "question": "To minimize the impact if one control file becomes unavailable, what minimum configuration should a database maintain?",
+      "options": [
+        "A single control file stored on the fastest available storage device.",
+        "At least two control files placed on different storage devices.",
+        "Three or more copies of the control file located in the same directory.",
+        "Only one copy, provided it is backed up regularly using RMAN."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Database best practices dictate that a minimum of two control files must be maintained on separate storage devices. This redundancy ensures that if one physical location or file fails, the database can still access enough information to mount and recover using the other available copy.",
+      "id": 9
+    },
+    {
+      "question": "Which of the following entries is typically found within a control file?",
+      "options": [
+        "The contents of all user tablespaces.",
+        "Names and locations of online redo log files.",
+        "Detailed transaction history for every committed change.",
+        "The actual data records stored in the database tables."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A control file contains vital structural information, including the names and physical locations of various components like data files and online redo log files. It does not store the user data itself, nor does it hold transaction history; rather, it points to where that information can be found.",
+      "id": 10
+    },
+    {
+      "question": "When starting a database instance in nonmount mode, how does Oracle determine the location of the control files?",
+      "options": [
+        "By querying the operating system's file directory structure.",
+        "From the `CONTROL_FILES` initialization parameter specified in the spfile or init.ora file.",
+        "By reading a predefined list stored within the memory structures allocated during startup.",
+        "It automatically searches all mounted storage devices for files named \"controlfile\"."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "When an instance starts up without mounting the database, it relies on configuration parameters to know where to look for its structural components. The `CONTROL_FILES` initialization parameter explicitly tells Oracle which physical locations contain the necessary control file information.",
+      "id": 11
+    },
+    {
+      "question": "When is the instance aware of the locations of data files and online redo logs, but before they are opened?",
+      "options": [
+        "After Oracle writes physical modifications to the control files.",
+        "When the database has been successfully mounted.",
+        "Only when the user executes `ALTER DATABASE OPEN;`.",
+        "Immediately after running `SQL> startup nomount;`."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The process of mounting a database makes the instance aware of critical file locations, including data files and online redo logs. This state is achieved when the user successfully executes the `ALTER DATABASE MOUNT` command, indicating that the necessary metadata has been read from the control files but not yet fully opened for use by all processes.",
+      "id": 12
+    },
+    {
+      "question": "What term describes the practice of keeping copies of the same critical file, such as a control file, in different physical locations?",
+      "options": [
+        "Redundancy Management",
+        "Multiplexing",
+        "Data Replication",
+        "File Mirroring"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Multiplexing is the specific term used by Oracle to describe maintaining multiple copies of a critical file, such as the control file. This practice ensures that if one physical location or copy becomes unavailable, the database can still access the necessary information from another copy, ensuring high availability and reliability.",
+      "id": 13
+    },
+    {
+      "question": "According to Oracle recommendations, what is the minimum number of control files required for optimal database operation?",
+      "options": [
+        "A single control file located in a highly available storage area.",
+        "At least two control files.",
+        "The number of control files must match the number of datafiles.",
+        "Only one control file is needed if the database uses an SPFILE."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Oracle strongly recommends using a minimum of two control files because they are critical for database operation. Having multiple copies ensures that the failure or unavailability of a single physical copy will not prevent the instance from starting up or functioning correctly, thereby maintaining high availability.",
+      "id": 14
+    },
+    {
+      "question": "Which view can be queried while the database is mounted or open to retrieve information regarding the names and locations of the control files?",
+      "options": [
+        "V$CONTROLFILE_RECORD_SECTION",
+        "DBA_CONTROL_FILES",
+        "V$CONTROLFILE",
+        "SHOW PARAMETER CONTROL_FILES"
+      ],
+      "correctIndex": 2,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "While `SHOW PARAMETER CONTROL_FILES` displays the configured locations, querying the `V$CONTROLFILE` view is the direct method provided by Oracle to retrieve detailed information about the names and physical locations of all control files that are currently known or accessible to the instance when it is mounted or open.",
+      "id": 15
+    },
+    {
+      "question": "What is the first step in the basic procedure for adding a new control file?",
+      "options": [
+        "Shut down the database using an OS command.",
+        "Copy an existing control file to the new location and name.",
+        "Update the `CONTROL_FILES` initialization parameter with the new location and name.",
+        "Restart the database instance."
+      ],
+      "correctIndex": 2,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Before any physical changes can be made, the database configuration must be updated to acknowledge the existence of the new file. Therefore, the initial step is always modifying the `CONTROL_FILES` initialization parameter to include the intended location and name of the control file that needs to be added.",
+      "id": 16
+    },
+    {
+      "question": "What sequence of actions must be performed after altering the `CONTROL_FILES` parameter with `scope=spfile` to successfully add a new control file?",
+      "options": [
+        "Start up the database immediately, followed by copying the file using OS commands.",
+        "Shut down the database, copy an existing control file to the new location/name via OS command, and then start up the database.",
+        "Only run `show parameter control_files` to verify the change before restarting the instance.",
+        "Run `alter system set control_files...` again with a different scope to force the update."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "Altering the `CONTROL_FILES` parameter only updates the metadata within the SPFILE; it does not physically change the database structure or make the file available. Therefore, the database must be shut down (`shutdown immediate`) so that the new control file can be copied into place using OS commands (like `cp`), and finally, the database must be started up to recognize the updated files.",
+      "id": 17
+    },
+    {
+      "question": "To add a completely new online redo log group named 'Group 3' containing two specific members, which SQL statement syntax should be used?",
+      "options": [
+        "ALTER DATABASE ADD LOGFILE MEMBER '/c:/ORACLE/ORADATA\\u01\\redo0301.log';",
+        "ALTER DATABASE ADD LOGFILE GROUP 3 ('C:\\ORACLE\\ORADATA\\u01\\redo0301.log', 'C:\\ORACLE\\ORADATA\\u01\\redo0302.log') SIZE 1M;",
+        "CREATE REDO LOG GROUP 3 (FILE '/c:/ORACLE/ORADATA\\u01\\redo0301.log');",
+        "ALTER SYSTEM ADD LOGGROUP 3 ('C:\\ORACLE\\ORADATA\\u01\\redo0301.log', 'C:\\ORACLE\\ORADATA\\u01\\redo0302.log') SIZE 1M;"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The `ALTER DATABASE ADD LOGFILE GROUP` statement is specifically designed to create an entire new group of online redo log files simultaneously. This command requires specifying the group number, listing all the desired member file paths within parentheses, and defining a size for the group.",
+      "id": 18
+    },
+    {
+      "question": "When attempting to drop an online redo log member using `ALTER DATABASE DROP LOGFILE MEMBER`, what is a critical prerequisite that must be met?",
+      "options": [
+        "The database must be in NOMOUNT state before executing the command.",
+        "If the member you intend to drop is currently active or part of a group that is required, you cannot proceed with the drop operation.",
+        "You must first run `ALTER DATABASE ADD LOGFILE GROUP` to ensure the group structure exists.",
+        "The operating system file containing the log member must be manually deleted before running the SQL command."
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "Database integrity requires that an online redo log member cannot be dropped if it is currently active or if its removal would compromise the operational status of the group. If a member is required by the database, the system will prevent the drop operation to maintain data consistency and availability.",
+      "id": 19
+    },
+    {
+      "question": "What are the primary purposes served by online redo logs in a database?",
+      "options": [
+        "To store historical data that can be viewed using Oracle LogMiner only.",
+        "To record transactions, enabling recovery after media failure and crash recovery for committed changes.",
+        "To manage the physical location of control files within the operating system.",
+        "To replicate data to external systems like GoldenGate or Streams exclusively."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Online redo logs are critical components that record every transaction that occurs in the database. This mechanism ensures that if a media failure happens, transactions can be recovered, and it also guarantees that committed changes can be recovered even if the instance fails completely (crash recovery).",
+      "id": 20
+    },
+    {
+      "question": "What does multiplexing an online redo log group involve?",
+      "options": [
+        "Setting up multiple control files to manage different database instances.",
+        "Creating a single physical file that is used by all transactions in the database.",
+        "Creating multiple members, which are physical files on disk, within one logical redo log group.",
+        "Using the Oracle LogMiner utility to inspect historical transaction records."
+      ],
+      "correctIndex": 2,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Multiplexing refers to the practice of creating several individual physical files, called members, that all belong to the same online redo log group. This allows for greater redundancy and management flexibility within a single logical grouping of logs.",
+      "id": 21
+    },
+    {
+      "question": "According to best practices, what are the minimum requirements for setting up online redo log groups?",
+      "options": [
+        "A database must have at least one online redo log group with only one member.",
+        "The database is required to have at least two online redo log groups, and each group must contain at least one member.",
+        "It is sufficient to have multiple members in a single group without needing multiple groups.",
+        "Online redo logs are optional and do not require any minimum number of groups or members."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "To maintain proper database functionality, the system requires a minimum structure: at least two distinct online redo log groups must be established, and every single one of those groups must contain at least one physical member file on disk.",
+      "id": 22
+    },
+    {
+      "question": "What are four conditions that cause the log writer process to flush the contents of the redo log buffer?",
+      "options": [
+        "The database instance is shut down.",
+        "A COMMIT is issued, a log switch occurs, three seconds pass, or the redo log buffer is one-third full.",
+        "Only when the system reaches peak I/O capacity.",
+        "When the transaction volume exceeds 10 GB per minute."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The log writer process monitors several conditions to determine when it must flush the contents of the redo log buffer from the SGA to disk. These specific triggers include a COMMIT being issued, a log switch occurring, three seconds passing, or the redo log buffer reaching one-third capacity.",
+      "id": 23
+    },
+    {
+      "question": "In a Container Database (CDB) architecture, how are redo logs managed regarding PDBs?",
+      "options": [
+        "Each Pluggable Database (PDB) maintains its own dedicated set of redo logs for isolation.",
+        "The CDB manages the redo logs; consequently, planning for space and sizing must be done at the CDB level.",
+        "PDBs manage their own redo logs independently, requiring separate capacity planning from the DBA.",
+        "Redo log management is handled by a dedicated service that operates outside of the CDB structure."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "In a Container Database (CDB), the central container database handles the overall management of all redo logs. This means that individual Pluggable Databases (PDBs) do not maintain their own separate redo logs, and therefore, any planning regarding space allocation or sizing must be done at the CDB level to account for all PDB transactions.",
+      "id": 24
+    },
+    {
+      "question": "What event signals that the current online redo log group has filled up?",
+      "options": [
+        "The database automatically initiates a full backup process.",
+        "A log switch occurs, and the log writer begins writing to the next available online redo log group.",
+        "The system throws an immediate error requiring manual intervention.",
+        "The transaction volume drops below a predefined threshold."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "When the current online redo log group reaches its capacity limit, a process called a log switch takes place. This event signals to the log writer that it must stop writing to the full group and instead start writing data sequentially to the next available online redo log group in the sequence.",
+      "id": 25
+    },
+    {
+      "question": "Regarding the operation of the log writer within an active redo log group, which statement is true?",
+      "options": [
+        "The log writer must successfully write to every single member of a redo log group for the database to continue operating.",
+        "The log writer writes simultaneously to all members of a redo log group, but successful writing to at least one member is sufficient for continued operation.",
+        "Writing only occurs sequentially to the current active member until it fills up completely.",
+        "The log writer can only write if the database has been explicitly placed into single-user mode."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The log writer is designed to write simultaneously across all members of a redo log group. While this simultaneous writing occurs, the system only requires successful writes to at least one member within that current group for the database instance to continue operating normally.",
+      "id": 26
+    },
+    {
+      "question": "Why is it necessary to place a database in archivelog mode?",
+      "options": [
+        "Because online redo log groups cannot be overwritten by default.",
+        "To save a history of transaction information since the last backup, as online redo log groups are eventually overwritten.",
+        "Only when the system experiences a failure must it be placed in this mode.",
+        "It is required to ensure that all members of the current online redo log file are archived immediately."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "When an online redo log group fills up, its contents will eventually be overwritten because there is a finite number of groups available. Placing the database in archivelog mode ensures that after every log switch, the contents of the current online redo log file are copied to an archived redo log file, preserving the transaction history for recovery purposes.",
+      "id": 27
+    },
+    {
+      "question": "What is the consequence if all members of the current online redo log file are lost?",
+      "options": [
+        "The database will automatically revert to a read-only state until new logs are created.",
+        "You lose transactions that occurred since those logs were written.",
+        "Only the most recent transactions are lost, and older ones remain recoverable.",
+        "The system will halt operations until the log files can be restored from backup."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The current online redo log files hold transaction information that has not yet been archived. If all members of this set of logs are lost, any transactions recorded within them cannot be recovered, leading to a loss of data history since those specific logs were written.",
+      "id": 28
+    },
+    {
+      "question": "What type of physical storage device is recommended for managing log file redundancy?",
+      "options": [
+        "Standard single hard drives connected in series.",
+        "Redundant devices such as RAID (redundant array of inexpensive disks).",
+        "Network Attached Storage (NAS) units with write caching enabled.",
+        "Any high-speed solid-state drive (SSD) array."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "To ensure the highest level of data protection for critical log files, it is recommended to use physical storage devices that are redundant. RAID (Redundant Array of Inexpensive Disks) achieves this by distributing data across multiple drives, so the failure of one drive does not result in data loss.",
+      "id": 29
+    },
+    {
+      "question": "How should online redo log files be sized and managed?",
+      "options": [
+        "They should be sized to match the total size of the database tablespaces.",
+        "Appropriately sized so that they switch and are archived at regular intervals.",
+        "They must always be kept smaller than the available free disk space on the server.",
+        "Sizing is only necessary when the database is first created, not during operation."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Proper management of log files requires sizing them appropriately so that they switch and are archived at predictable and regular intervals. This systematic process ensures continuous logging and prevents unexpected failures due to full or improperly managed logs.",
+      "id": 30
+    },
+    {
+      "question": "Which initialization parameter can be set to help ensure online redo logs switch at regular intervals?",
+      "options": [
+        "LOG_GROUP_SIZE",
+        "ARCHIVE_LOG_TARGET",
+        "ARCHIVE_LAG_TARGET",
+        "REDO_HISTORY_INTERVAL"
+      ],
+      "correctIndex": 2,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The `ARCHIVE_LAG_TARGET` initialization parameter is specifically mentioned as a mechanism to help manage the online redo logs. By setting this parameter, administrators can ensure that the online redo logs switch at regular and controlled intervals, aiding in consistent data protection.",
+      "id": 31
+    },
+    {
+      "question": "When adding Online Redo Log Groups, what must be specified for the members?",
+      "options": [
+        "Only the name of the log group.",
+        "The name and location of the members with a file specification.",
+        "A unique identifier for each member.",
+        "The physical disk path where the logs will reside."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "To successfully add Online Redo Log Groups, you must provide detailed information about the log group's members. This includes both the name and the specific location of those members, which is done using a file specification to ensure the database knows where to find the necessary files.",
+      "id": 32
+    },
+    {
+      "question": "Which parameter can be selected for each redo log file group when adding online groups?",
+      "options": [
+        "The `LOCATION` parameter.",
+        "The `GROUP` parameter.",
+        "The `SIZE` parameter.",
+        "The `STATUS` parameter."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The `GROUP` parameter is specifically used to assign a group value to each individual redo log file group. This allows database administrators to manage and categorize the different sets of redo logs within the system structure.",
+      "id": 33
+    },
+    {
+      "question": "If the GROUP parameter is omitted during the addition of online groups, who automatically generates its value?",
+      "options": [
+        "The database administrator running the command.",
+        "The Oracle server.",
+        "The operating system's file management service.",
+        "A predefined configuration script."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "If a user chooses not to specify a value for the `GROUP` parameter, the database relies on the built-in intelligence of the Oracle server. The server will automatically generate and assign a suitable group value, ensuring that the log groups are properly defined without manual intervention.",
+      "id": 34
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What program does this textbook chapter belong to?",
+      "a": "Bachelor of IT Program BAIT (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "What course is covered in this material?",
+      "a": "MS SQL Server Administration IIS404 (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "What chapter and topic are presented?",
+      "a": "Chapter nine, MS Business Intelligence (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "Who is the author of this material?",
+      "a": "Eng. Ayham Mohammad (الصفحة 2)"
+    },
+    {
+      "id": 5,
+      "q": "ما هو تعريف Business Intelligence (BI)؟",
+      "a": "هي تقنيات وتطبيقات وممارسات لجمع وتكامل وتحليل وعرض معلومات الأعمال لدعم اتخاذ قرارات العمل الأفضل. (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "ما هو تعريف \"Data\" وفقاً للنص؟",
+      "a": "حقائق خام وغير منظمة تحتاج إلى المعالجة، مثل الأرقام أو النصوص أو الصور أو الرموز التي تمثل أحداثًا أو مقاييس. (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "ما هو تعريف \"Information\" في سياق معالجة البيانات؟",
+      "a": "هي البيانات المعالجة (Processed data). (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "ما هي مستويات الفهم المتصاعدة التي يتم الحصول عليها من تحليل البيانات؟",
+      "a": "Data -> Information -> Knowledge (المعرفة) -> Wisdom (الحكمة). (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "ما هي العملية التي تصف نقل البيانات بأشكالها وتنسيقاتها المختلفة إلى مستودع بيانات؟",
+      "a": "عملية ETL - Extraction Transformation Loading (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "ما الذي يتم القيام به خلال عملية ETL؟",
+      "a": "استخراج ال Data من بنيتها السابقة وتحويلها لنمط مشترك مع كل ال Data المستخرجة الأخرى، ومن ثم تحميلها إلى مستودع بيانات (Data Warehouse) (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "ما هو تعريف الـ Cube؟",
+      "a": "عملية Denormalization للبيانات (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "ماذا يصف النص فيما يتعلق بالتحليل الشامل للبيانات؟",
+      "a": "دورة حياة ال Business Intelligence (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "ما هي الأداة المسؤولة عن التحليل في بيئة SQL Server BI؟",
+      "a": "SQL Server Analysis Service (SSAS) (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "على ماذا يعتمد عمل الـ Tabular Model لتحقيق أداء أفضل؟",
+      "a": "Columned-store-index الذي يعمل على الذاكرة (Page 12)"
+    },
+    {
+      "id": 15,
+      "q": "متى يتم استخدام وضع Direct-Query في Tabular Models؟",
+      "a": "عند عدم وجود ذاكرة كافية، حيث يستخدم بها طريقة Multithreading للقراءة بسرعة كبيرة بدون نسخ البيانات إلى الذاكرة (Page 12)"
+    },
+    {
+      "id": 16,
+      "q": "ما هي الميزات التي يدعمها Azure Analysis Services مقارنة بـ SQL Server Analysis Services؟",
+      "a": "يدعم Tabular models عند مستويات التوافق 1200 وما فوق، ويدعم DirectQuery, partitions, row-level security, bi-directional relationships, and translations (Page 12)"
+    },
+    {
+      "id": 17,
+      "q": "What engine delivers fast access to tabular model objects and data?",
+      "a": "The Analysis Services Vertipaq analytics engine (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "When is DirectQuery used as an alternative query mode for models?",
+      "a": "For models that are either too large to fit in memory, or when data volatility precludes a reasonable processing strategy (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "What formula language can be used to define custom calculations for Calculated Columns and Measures?",
+      "a": "DAX (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "Which tool is used to create Tabular models, providing a design surface for semantic model objects like tables, relationships, measures, and KPIs?",
+      "a": "SQL Server Data Tools (SSDT) using the Tabular model project template (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What is an Analysis Services database?",
+      "a": "A collection of data sources, data source views, cubes, dimensions, and roles (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "When do changes made to objects in the Analysis Services project take effect?",
+      "a": "Only when the project is deployed to an Analysis Services instance (الصفحة 18)"
+    },
+    {
+      "id": 23,
+      "q": "What risk exists if objects in an Analysis Services database are modified directly rather than through a project?",
+      "a": "The objects can become out of sync with the Analysis Services project that was used for its deployment (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "Which tool is used to administer an Analysis Services database after deployment?",
+      "a": "SQL Server Management Studio (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What are the data sources for Multidimensional Modeling?",
+      "a": "Relational Databases (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "Which modeling type supports Write Back support?",
+      "a": "Multidimensional Modeling (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "What is the query and expression language used for Tabular Modeling?",
+      "a": "DAX - Calculations & Queries (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "How much data compression can Multidimensional Modeling achieve?",
+      "a": "3+ times (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "When should one consider using a Tabular approach?",
+      "a": "If you have a short development timeline, if you are working with a plethora of memory, if your data model is simple, if you have many disparate data sources, or if users need to query large amounts of detail data. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "When should one consider using a Multidimensional approach?",
+      "a": "If you are using SQL Server 2008 R2 or earlier, if you have a multi-terabyte data source, if you have a complex data model, or if you need multidimensional only features (Actions, Data Mining, Writeback, etc.). (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What are the key characteristics of In-Memory technology for data warehousing?",
+      "a": "Can store large amounts of data, uses no aggregations, utilizes column-based storage, and offers high data compression (10x). (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "How do MOLAP and ROLAP differ in their performance focus?",
+      "a": "MOLAP focuses on a balanced configuration using Disk I/O & RAM via aggregations; ROLAP aims to maximize Disk I/O while minimizing network latency. (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "What is SSDT in relation to Business Intelligence?",
+      "a": "SSDT is the development environment for all Microsoft Business intelligence members (SSIS, SSRS, and SSAS). (الصفحة 22)"
+    },
+    {
+      "id": 34,
+      "q": "What types of models or services are referenced regarding analysis?",
+      "a": "Tabular models, multidimensional models, data mining, and integration services. (الصفحة 25)"
+    },
+    {
+      "id": 35,
+      "q": "Which service is used for creating, deploying, and managing mobile-and paginated reports?",
+      "a": "SQL Server Reporting Services (SSRS). (الصفحة 25)"
+    },
+    {
+      "id": 36,
+      "q": "What does the designer support in relation to Business Intelligence members?",
+      "a": "It supports SSDT, which is the development environment for all Microsoft Business intelligence members. (الصفحة 22)"
+    }
+  ]
+}

@@ -1,0 +1,1430 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the main subject covered in Chapter four of this material?",
+      "options": [
+        "MS SQL Server Administration IIS404",
+        "Security Fundamentals in MS SQL Server",
+        "Advanced Database Querying Techniques",
+        "Network Protocol Implementation"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter title explicitly states that the content focuses on \"Security Fundamentals in MS SQL Server,\" indicating that the core material addresses various security concepts and best practices within the Microsoft SQL Server environment.",
+      "id": 1
+    },
+    {
+      "question": "This educational module is designed for which specific program?",
+      "options": [
+        "Bachelor of Science in Computer Engineering",
+        "Bachelor of IT Program BAIT",
+        "Master of Business Administration (MBA)",
+        "Diploma in Network Security"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The title page clearly identifies the target audience and academic level, stating that this material is intended for students enrolled in the \"Bachelor of IT Program BAIT.\"",
+      "id": 2
+    },
+    {
+      "question": "According to the table of contents, which security principle dictates granting users only the minimum permissions required to perform their duties?",
+      "options": [
+        "Impersonation",
+        "The Principle of Least Privilege",
+        "Ownership Separation",
+        "Role-Based Permissions"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "\"The Principle of Least Privilege\" is a fundamental security concept listed in the table of contents. It mandates that users and processes should only be granted the minimum set of permissions necessary to perform their specific tasks, thereby limiting potential damage from unauthorized access or malicious activity.",
+      "id": 3
+    },
+    {
+      "question": "Which authentication method allows SQL Server to utilize credentials managed by the underlying operating system?",
+      "options": [
+        "Azure Active Directory Authentication",
+        "Windows authentication",
+        "SQL Server Authentication",
+        "Universal Naming Convention (UNC)"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The table of contents lists \"Windows authentication\" under Section 2.1. This method is designed to integrate the database security with the operating system's existing user management and credential validation mechanisms, making it a primary way users prove their identity within the network environment.",
+      "id": 4
+    },
+    {
+      "question": "What is the fundamental difference between Authentication and Authorization within SQL Server?",
+      "options": [
+        "Authentication determines which resources a user can access, while Authorization verifies who the user is.",
+        "Authentication is the process of logging on by requesting access, whereas Authorization determines what securable resources that principal can actually access.",
+        "Both processes are identical; they both verify the identity of the connecting principal.",
+        "Authorization only applies to server logins, while Authentication applies only to database users."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Authentication is the initial step where a user or application proves its identity by logging into SQL Server and requesting access. Once authenticated, Authorization takes over; it is the process that checks if the now-identified principal has the necessary permissions to interact with specific data or resources within the database.",
+      "id": 5
+    },
+    {
+      "question": "When utilizing SQL Server Authentication for login, where are the user names and passwords stored?",
+      "options": [
+        "They are managed directly by Active Directory and require no local storage.",
+        "They are stored locally within the master database of the SQL Server instance.",
+        "They must be entered into a dedicated security vault external to the SQL Server environment.",
+        "They are derived from the user's Windows domain credentials upon connection."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Unlike methods that rely on Active Directory, which use centralized domain credentials, SQL Server Authentication requires that the system stores and manages the login details—including usernames and passwords—within its own master database instance for verification purposes.",
+      "id": 6
+    },
+    {
+      "question": "Which security principle dictates that users should only be granted the minimum level of permissions required to perform their specific job functions?",
+      "options": [
+        "Principle of Separation of Duties.",
+        "Role-Based Access Control (RBAC).",
+        "The Principle of Least Privilege.",
+        "Ownership Chain Management."
+      ],
+      "correctIndex": 2,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "The Principle of Least Privilege is a foundational security concept that mandates granting users only the bare minimum permissions necessary to perform their duties. This practice minimizes the potential damage if an account is compromised, thereby reducing the overall attack surface area for the system.",
+      "id": 7
+    },
+    {
+      "question": "How does Windows Authentication typically function when connecting to SQL Server?",
+      "options": [
+        "It requires manually entering a unique username and password stored in the master database.",
+        "It relies on Active Directory integration, allowing users to log in using their existing domain credentials.",
+        "It mandates that all user passwords be reset every 30 days regardless of policy.",
+        "It only allows connections from local machines and cannot use network resources."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Windows Authentication leverages the security infrastructure of Active Directory. Instead of managing separate credentials within SQL Server, it trusts the domain's existing authentication mechanisms, allowing users to connect using their established Windows login details without needing a dedicated password stored in the database.",
+      "id": 8
+    },
+    {
+      "question": "What is the recommended security approach that SQL Server utilizes to counter potential security threats?",
+      "options": [
+        "Implementing strict access controls only on databases.",
+        "A defense-in-depth strategy, utilizing overlapping layers of security.",
+        "Relying solely on strong passwords for all users.",
+        "Using a single point of entry authentication mechanism."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "SQL Server recommends adopting a defense-in-depth strategy. This approach involves establishing multiple, overlapping layers of security measures to ensure that if one layer is breached, subsequent layers are in place to counter the threat effectively.",
+      "id": 9
+    },
+    {
+      "question": "In the context of SQL Server security, what term describes an entity that can be granted access rights?",
+      "options": [
+        "Securable object",
+        "Database administrator",
+        "Principal",
+        "Security framework"
+      ],
+      "correctIndex": 2,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A principal is a general term used in SQL Server to identify any entity—whether it is an individual user, a defined group of users, or even an automated process—that requires and is granted access permissions to the database.",
+      "id": 10
+    },
+    {
+      "question": "Which process involves submitting credentials that the server evaluates to establish the identity of a user or process?",
+      "options": [
+        "Authorization",
+        "Authentication",
+        "Securing",
+        "Profiling"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Authentication is the initial step in securing access. It is the mechanism by which a principal proves their identity to SQL Server, typically by submitting credentials that the server must validate before granting any further access.",
+      "id": 11
+    },
+    {
+      "question": "If a user has successfully logged on, what process determines exactly which resources they can access and what operations are permitted for those resources?",
+      "options": [
+        "Authentication",
+        "Authorization",
+        "Credential submission",
+        "Server instance management"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "After a principal's identity is established through authentication, authorization takes over. This process determines the specific permissions and limitations, defining which securable resources the principal can interact with and what actions they are allowed to perform on those resources.",
+      "id": 12
+    },
+    {
+      "question": "Who generates the SID assigned to a newly created SQL Server-authenticated login?",
+      "options": [
+        "The operating system",
+        "The SQL Server",
+        "Azure Active Directory",
+        "The user creating the account"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The SQL Server itself is responsible for generating and assigning the Security Identifier (SID) to any login created using SQL Server Authentication. This internal generation process ensures that even if two logins share the same name, they will have unique SIDs across different instances.",
+      "id": 13
+    },
+    {
+      "question": "What is the default SQL Server login name, and what does 'sa' stand for?",
+      "options": [
+        "system account, which stands for \"service access\"",
+        "sa, which is an abbreviation of \"system administrator\"",
+        "security admin, which stands for \"server authority\"",
+        "service user, which stands for \"system utility\""
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The SQL Server installation comes with a default login named `sa`. This name is an abbreviation that stands for \"system administrator,\" designating the primary administrative account used during setup.",
+      "id": 14
+    },
+    {
+      "question": "According to the text, what is generally recommended regarding authentication methods?",
+      "options": [
+        "Using SQL Server Authentication whenever possible due to its simplicity.",
+        "Other methods of authentication are preferred in all cases.",
+        "Relying solely on Windows Authentication for maximum security.",
+        "Implementing a hybrid mode using only the local machine credentials."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "While SQL Server Authentication can be used across various environments, the documentation emphasizes that other methods of authentication are generally preferred in all cases to enhance overall security posture.",
+      "id": 15
+    },
+    {
+      "question": "Which of the following environments supports using SQL Server Authentication?",
+      "options": [
+        "Only on-premises SQL Server instances.",
+        "On-premises SQL Server instances, Azure virtual machine-based SQL Server instances, and databases in Azure SQL Database.",
+        "Only cloud-native services like Azure AD.",
+        "Only local development environments."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "SQL Server Authentication is versatile and can be utilized across multiple deployment types, including traditional on-premises setups, virtual machines hosted in Azure, and databases managed within Azure SQL Database.",
+      "id": 16
+    },
+    {
+      "question": "What is Active Directory - Universal with MFA?",
+      "options": [
+        "A non-interactive process for basic password verification.",
+        "An interactive work flow that supports Azure Multi-Factor Authentication (MFA).",
+        "A system used only for cloud SQL server engines.",
+        "A method requiring physical smart cards at all times."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "Active Directory - Universal with MFA is specifically defined as an interactive workflow that provides support for Azure Multi-Factor Authentication, enhancing the security of user sign-ins.",
+      "id": 17
+    },
+    {
+      "question": "According to the text, what does Azure MFA help safeguard access to?",
+      "options": [
+        "Only physical servers and network infrastructure.",
+        "Data and applications while meeting user demand for a simple sign-in process.",
+        "Credentials stored only within the local machine's registry.",
+        "The underlying operating system kernel files."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "Azure MFA is designed to provide robust security by safeguarding access to both data and applications, while simultaneously ensuring that the sign-in process remains simple for the end user.",
+      "id": 18
+    },
+    {
+      "question": "Which of the following are easy verification options delivered by Azure MFA?",
+      "options": [
+        "Biometric scans using fingerprint readers only.",
+        "Phone call, text message, smart cards with pin, or mobile app notification.",
+        "Physical key tokens that must be plugged into a USB port.",
+        "Only password resets initiated through an administrator console."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "Azure MFA offers flexibility in security verification by supporting multiple easy options, including phone calls, text messages, smart cards with PINs, and mobile application notifications.",
+      "id": 19
+    },
+    {
+      "question": "What does Azure MFA ultimately deliver to users?",
+      "options": [
+        "A mandatory requirement for physical presence at the sign-in point.",
+        "Only basic password authentication credentials.",
+        "Strong authentication with a range of easy verification options.",
+        "Exclusive access rights limited only to system administrators."
+      ],
+      "correctIndex": 2,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "The primary function and benefit of Azure MFA is delivering strong authentication, which is achieved through the use of various convenient and easy verification methods.",
+      "id": 20
+    },
+    {
+      "question": "According to the text, what does \"Federation\" refer to in the context of domain authentication?",
+      "options": [
+        "A mandatory requirement for all user accounts connecting to Azure SQL Database.",
+        "A collection of domains that have established trust.",
+        "The process of setting up Multi-Factor Authentication (MFA) on a client machine.",
+        "Using local credentials when the domain is not connected to any cloud service."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Federation describes a relationship between multiple domains where mutual trust has been established. This mechanism allows an organization's on-premises environment to securely interact with Azure Active Directory for authentication and authorization purposes.",
+      "id": 21
+    },
+    {
+      "question": "When should a user utilize Azure Active Directory Password Authentication?",
+      "options": [
+        "When the user is logging in using credentials from a federated domain.",
+        "If the user is logged into Windows using credentials from a domain that is not federated with Azure, or when using Azure AD authentication based on initial/client domain.",
+        "Only when connecting to Microsoft Azure SQL Database via an integrated trust relationship.",
+        "When the connection requires mapping to an asymmetric key for security purposes."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "This method is specifically recommended for situations where the user's current Windows login credentials originate from a domain that has not been federated with Azure, or when connecting using initial/client domain-based authentication methods.",
+      "id": 22
+    },
+    {
+      "question": "What condition must be met to use Active Directory Integrated Authentication?",
+      "options": [
+        "The connection must bypass all forms of Multi-Factor Authentication (MFA).",
+        "The user must be logged in to Windows using their Azure Active Directory credentials from a federated domain.",
+        "The login must utilize only local SQL Server credentials, ignoring the domain structure.",
+        "The system must rely solely on mapping the connection to an asymmetric key for verification."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "For Integrated Authentication to function correctly, the user's identity must be linked through a federated domain. This ensures that the authentication process uses the Azure Active Directory credentials associated with this trusted, federated environment.",
+      "id": 23
+    },
+    {
+      "question": "What are two alternative types of logins available besides standard Windows or SQL Server authentication?",
+      "options": [
+        "Using temporary passwords generated by an administrator and MFA tokens.",
+        "A login mapped directly to a certificate, or mapped to an asymmetric key.",
+        "Relying on the client domain's local user database for verification.",
+        "Utilizing only service accounts that do not require any password changes."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Beyond traditional Windows and SQL Server methods, users can create specialized logins by mapping them either directly to a digital certificate or to an asymmetric key. These types of logins are typically used when the SQL Server is configured with Message Broker features.",
+      "id": 24
+    },
+    {
+      "question": "متى يجب استخدام خيار Map to Credential؟",
+      "options": [
+        "عندما نريد منح صلاحيات لقاعدة بيانات معينة فقط.",
+        "عندما نريد أن نعطي حساب login معين صلاحيات خارج قاعدة البيانات (على قرص معين مثلا...).",
+        "عند إنشاء نقطة نهاية افتراضية للوصول الآمن.",
+        "عند استخدام مصادقة ويندوز بالكامل."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "خيار Map to Credential يُستخدم تحديداً عندما يكون الهدف هو منح حساب تسجيل دخول (login) معين صلاحيات تتجاوز حدود قاعدة البيانات، مثل الوصول إلى موارد موجودة على قرص محدد خارج نطاق قاعدة البيانات نفسها.",
+      "id": 25
+    },
+    {
+      "question": "ما هي الآلية المستخدمة لتأمين الوصول إلى نسخة SQL Server باستخدام المفتاح العام للشهادة؟",
+      "options": [
+        "استخدام نقطة نهاية افتراضية (default endpoint) مع مصادقة ويندوز.",
+        "استخدام أي عميل يمتلك المفتاح العام للشهادة، عبر نقطة نهاية غير افتراضية (nondefault endpoint).",
+        "الاعتماد فقط على اسم المستخدم وكلمة المرور في الاتصال.",
+        "إنشاء حساب خدمة جديد بالكامل لا يتطلب شهادات."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "لضمان وصول آمن إلى نسخة SQL Server باستخدام المفتاح العام للشهادة، يجب أن يستخدم العميل نقطة نهاية غير افتراضية (nondefault endpoint) تم إنشاؤها خصيصاً لهذا الغرض، مما يزيد من مستوى الأمان.",
+      "id": 26
+    },
+    {
+      "question": "ما نوع المصادقة الذي تدعمه ميزة Service Broker في SQL Server؟",
+      "options": [
+        "مصادقة كلمة المرور المعقدة (Complex Password Authentication).",
+        "مصادقة قائمة على الشهادات (Certificate-Based Authentication).",
+        "مصادقة اسم المستخدم وكلمة المرور المدمجة (Built-in Username/Password Authentication).",
+        "المصادقة عبر بروتوكول LDAP."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "ميزة Service Broker في SQL Server، والتي تُستخدم لإرسال الرسائل غير المتزامنة وإدارة قوائم الانتظار، تدعم بشكل خاص مصادقة قائمة على الشهادات (Certificate-Based Authentication)، مما يضمن أمان الاتصالات.",
+      "id": 27
+    },
+    {
+      "question": "عند محاولة الاتصال بقاعدة بيانات SQL موجودة على نظام ويندوز من بيئة لينكس، ما هي طريقة المصادقة التي يجب استخدامها؟",
+      "options": [
+        "مصادقة ويندوز (Windows Authentication).",
+        "طريقة SQL Server Authentication.",
+        "المصادقة عبر مفتاح SSH.",
+        "الاعتماد على صلاحيات الشبكة فقط."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "بما أن الاتصال يتم من نظام تشغيل مختلف (لينكس) إلى قاعدة بيانات تعمل على ويندوز، فإن الطريقة المعتمدة والمناسبة هي استخدام طريقة SQL Server Authentication التي تعتمد على اسم المستخدم وكلمة المرور الخاصة بـ SQL.",
+      "id": 28
+    },
+    {
+      "question": "في سياق أمن قواعد البيانات، ما هو المبدأ الأساسي الذي يصف العلاقة بين الأدوار (Roles) والأذونات (Permissions)؟",
+      "options": [
+        "يجب منح الأذونات مباشرة للمستخدمين لضمان التتبع الدقيق لكل إجراء.",
+        "يتم تعزيز الأمن عبر منح الأذونات للأدوار، ومن ثم تخصيص هذه الأدوار للمستخدمين.",
+        "لا يمكن فصل صلاحيات المستخدم عن أدوار النظام الأساسية.",
+        "يجب أن تكون جميع الصلاحيات مقتصرة على مستوى الخادم (Server Level) فقط."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "المبدأ الأمني الفعال هو منح الأذونات للأدوار أولاً، ثم تخصيص هذه الأدوار للمستخدمين. هذا يسهل إدارة الأمن بشكل كبير ويقلل من تعقيد عملية منح الصلاحيات لكل مستخدم على حدة.",
+      "id": 29
+    },
+    {
+      "question": "What is the primary purpose of using logins to sign database objects?",
+      "options": [
+        "To increase the overall performance of the SQL Server instance.",
+        "To encrypt the database objects, which is useful when third-party application code is proprietary.",
+        "To allow multiple users to access the object without needing specific permissions.",
+        "To simplify the process of backing up and restoring the database."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Signing database objects encrypts them, which provides a layer of security crucial when the code originates from a third party and must be protected from unauthorized access by customers.",
+      "id": 30
+    },
+    {
+      "question": "In SQL Server terminology, what does \"Mixed mode\" describe?",
+      "options": [
+        "A server that only accepts connections using Windows Authentication credentials.",
+        "A server configured to use Kerberos for all login attempts.",
+        "A description of a SQL Server instance capable of accepting both Windows Authentication and SQL Server Authentication logins.",
+        "A security setting that forces all users to create unique passwords upon connection."
+      ],
+      "correctIndex": 2,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Mixed mode is simply a descriptive term used for a SQL Server environment that has been configured to accept connections using two distinct methods: Windows Authentication and traditional SQL Server Authentication.",
+      "id": 31
+    },
+    {
+      "question": "According to database best practices, which authentication method should DBAs emphasize as always preferred?",
+      "options": [
+        "Using only Kerberos domain logins for maximum security.",
+        "Windows Authentication, via named domain accounts or service accounts.",
+        "Relying solely on SQL Server Authentication because it is easier to manage.",
+        "Implementing certificate-based logins for all users."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Database administrators are advised to prioritize and emphasize the use of Windows Authentication, whether through named domain accounts or service accounts, as this method offers superior security compared to SQL Server Authentication.",
+      "id": 32
+    },
+    {
+      "question": "Regarding password security in SQL Server logins, what significant change occurred starting with SQL Server 2005?",
+      "options": [
+        "Passwords began being stored only in encrypted format within the master database file.",
+        "User names and passwords of SQL Server-authenticated logins stopped being transmitted as plain text during the login process.",
+        "The requirement for complex passwords was introduced, making them impossible to reverse engineer.",
+        "All service accounts were automatically converted to use Kerberos authentication."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Since SQL Server 2005, a major security improvement was implemented where the transmission of user names and passwords for SQL Server-authenticated logins no longer occurs as plain text during the login process.",
+      "id": 33
+    },
+    {
+      "question": "When connecting to an instance running on Linux, what methods can be used?",
+      "options": [
+        "Only Windows Authentication is supported due to operating system restrictions.",
+        "Connections can be made using both Windows Authentication and SQL Authentication.",
+        "The connection must always use a Kerberos realm join command regardless of the authentication type.",
+        "Only certificate-based logins are permitted for Linux instances."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "To establish connections to SQL Server instances running on the Linux operating system, users have the flexibility to utilize two primary methods: Windows Authentication and standard SQL Authentication.",
+      "id": 34
+    },
+    {
+      "question": "What is Kerberos?",
+      "options": [
+        "A type of database management system used for security auditing.",
+        "A protocol designed to authenticate service requests between trusted hosts across an untrusted network.",
+        "A physical hardware device required for local area network encryption.",
+        "A programming language used exclusively for web application development."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "Kerberos is specifically defined as a protocol whose function is to authenticate service requests. This authentication process occurs when communication happens between trusted hosts, even if the underlying network connecting them is untrusted.",
+      "id": 35
+    },
+    {
+      "question": "Kerberos is designed to secure service requests across what type of network environment?",
+      "options": [
+        "A highly restricted and fully controlled internal corporate intranet.",
+        "An untrusted network, such as the internet.",
+        "Only local area networks (LANs) that use private IP addressing.",
+        "Dedicated point-to-point connections between two servers."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The primary purpose of Kerberos is to provide authentication services in environments where trust cannot be guaranteed, making it suitable for traversing untrusted networks like the internet.",
+      "id": 36
+    },
+    {
+      "question": "Which of the following operating systems include built-in support for the Kerberos protocol?",
+      "options": [
+        "Solaris and AIX only.",
+        "Microsoft Windows, Apple OS X, FreeBSD, and Linux.",
+        "Unix and macOS exclusively.",
+        "IBM z/OS and mainframe operating systems."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The material explicitly states that Kerberos is built into several major operating systems, including Microsoft Windows, Apple OS X, FreeBSD, and Linux, ensuring broad compatibility for authentication services.",
+      "id": 37
+    },
+    {
+      "question": "What defines a \"double hop issue\" in SQL Server architecture?",
+      "options": [
+        "When two different clients connect simultaneously to the same SQL Server instance.",
+        "When a client connects to one SQL Server, and that server subsequently needs to pull data from another SQL Server.",
+        "A failure that occurs when Kerberos authentication cannot be established between servers.",
+        "The process of migrating data between two separate database instances over the network."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "Double hop issues occur in complex networking scenarios where a client establishes a connection to an initial SQL Server, but that first server then needs to access or pull necessary data from a second, different SQL Server instance.",
+      "id": 38
+    },
+    {
+      "question": "Which statement accurately describes the \"sa\" login?",
+      "options": [
+        "It is a standard Windows-authenticated account used for routine administrative tasks.",
+        "It is a special SQL Server-authenticated login that is a known member of the sysadmin server role with SID value 0x01.",
+        "It is primarily designed to handle double hop connections using Kerberos authentication.",
+        "It can only be used by DBAs when the instance is configured solely for Windows Authorization."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The \"sa\" login is a highly privileged, special account that uses SQL Server Authentication and holds membership in the sysadmin server role. Its unique SID value of 0x01 makes it identifiable as a powerful administrative tool.",
+      "id": 39
+    },
+    {
+      "question": "Under what specific condition can Database Administrators (DBAs) utilize the sa account?",
+      "options": [
+        "When the instance is configured to use only Windows Authentication for all connections.",
+        "Only when the server is physically located in the same data center as the client.",
+        "If the SQL Server instance is running in mixed mode, allowing both Windows Authorization and SQL Server Authentication.",
+        "Whenever a Kerberos Double Hop connection is established between two servers."
+      ],
+      "correctIndex": 2,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The sa account can be used by DBAs only if the SQL Server instance is set to \"mixed mode.\" This configuration ensures that both Windows Authorization and traditional SQL Server Authentication methods are active, allowing access via the sa credentials.",
+      "id": 40
+    },
+    {
+      "question": "According to security best practices, which entities should never use the sa account?",
+      "options": [
+        "Database Administrators (DBAs) during emergency maintenance.",
+        "Security auditors performing compliance checks.",
+        "Applications, application developers, and end users.",
+        "System accounts used for automated backups and restores."
+      ],
+      "correctIndex": 2,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "Due to its extreme level of privilege and potential consequences, the sa account should never be utilized by non-administrative parties such as applications, developers writing code, or general end users. These groups must use accounts with permissions appropriate only for their specific roles.",
+      "id": 41
+    },
+    {
+      "question": "What type of permissions are service accounts usually assigned in SQL Server?",
+      "options": [
+        "Full administrative rights over the entire instance.",
+        "The minimal permissions required to run the specific services they manage.",
+        "Domain administrator credentials, regardless of function.",
+        "Permissions granted by default upon installation."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Service accounts are designed with the principle of least privilege; therefore, they should only be given the absolute minimum permissions necessary to perform the specific tasks and run the services assigned to them.",
+      "id": 42
+    },
+    {
+      "question": "According to best practices, which tool should one avoid using to change SQL Server feature service accounts?",
+      "options": [
+        "SQL Server Configuration Manager.",
+        "The Windows Services (services.msc) administrative page.",
+        "Dedicated PowerShell scripts for account management.",
+        "Using the `sp_dropserviceaccount` stored procedure."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Changing service accounts using the general Windows Services administrative page is discouraged because it bypasses SQL Server's intended configuration methods and can lead to operational failures.",
+      "id": 43
+    },
+    {
+      "question": "What is the likely consequence if an instance's service account is changed manually through the Windows Services administrative page?",
+      "options": [
+        "The change will be automatically reverted by SQL Server upon restart.",
+        "The service is likely to fail when attempting to start up.",
+        "Only read-only access will be granted, preventing any changes.",
+        "The instance will immediately require a full system patch update."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "Because the Windows Services page does not manage SQL Server's internal service dependencies correctly, manually changing the account there often results in the service failing to start because it cannot authenticate properly.",
+      "id": 44
+    },
+    {
+      "question": "What are principals within a SQL Server environment?",
+      "options": [
+        "Physical hardware components that connect to the server.",
+        "Entities that can request permission to SQL Server resources.",
+        "Specialized database roles used only by administrators.",
+        "Network protocols required for secure data transfer."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "Principals are defined as any entity—such as groups, individuals, or processes—that has the capability to request access and permission to various resources within the SQL Server system.",
+      "id": 45
+    },
+    {
+      "question": "According to security best practices, which default account should never be granted additional permissions?",
+      "options": [
+        "The SA (System Administrator) account.",
+        "The NT AUTHORITY\\SYSTEM account.",
+        "Domain administrator accounts.",
+        "Service accounts running the SQL Server Agent."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "Because many Windows applications run under the NT AUTHORITY\\SYSTEM account by default, granting it nonstandard permissions is highly discouraged to maintain system stability and security integrity.",
+      "id": 46
+    },
+    {
+      "question": "What is the primary advantage of using roles when managing permissions in SQL Server?",
+      "options": [
+        "It allows administrators to bypass the need for database users entirely.",
+        "It simplifies security administration because permission sets assigned to roles are inherited by all members.",
+        "Roles automatically grant full sysadmin privileges upon creation.",
+        "It eliminates the need to manage permissions at the Windows level."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "Using roles streamlines security management significantly; instead of setting unique permission sets for every individual user, administrators assign permissions once to a role, and all members automatically inherit those rights.",
+      "id": 47
+    },
+    {
+      "question": "Which list correctly identifies the types of principals scoped at the database level?",
+      "options": [
+        "Windows users or groups, SQL Server logins, and server roles.",
+        "Database users, data roles, and application roles.",
+        "NT AUTHORITY\\SYSTEM, sysadmin, and service accounts.",
+        "Principals, entities, and processes."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "While principals exist at multiple scopes, the specific types of principals that are scoped directly at the database level include database users, data roles, and application roles.",
+      "id": 48
+    },
+    {
+      "question": "What is the primary benefit of using role-based security in SQL Server?",
+      "options": [
+        "It allows users to bypass individual password requirements.",
+        "It enables assigning permissions to a group or role rather than to every individual user.",
+        "It automatically creates new database roles when needed by administrators.",
+        "It restricts access only to the default 'dbo' user account."
+      ],
+      "correctIndex": 1,
+      "page": "39",
+      "section": null,
+      "hint": "راجع الصفحة 39",
+      "explanation": "Role-based security is a fundamental feature of SQL Server that improves management efficiency and security. Instead of granting specific permissions to each individual user, administrators can assign those necessary rights to a role or group of users. This centralized approach simplifies permission management significantly.",
+      "id": 49
+    },
+    {
+      "question": "According to the material, what types of fixed roles exist in SQL Server?",
+      "options": [
+        "User-defined and temporary roles.",
+        "Fixed server and fixed database roles.",
+        "Global and local security roles.",
+        "Administrator and standard user roles."
+      ],
+      "correctIndex": 1,
+      "page": "39",
+      "section": null,
+      "hint": "راجع الصفحة 39",
+      "explanation": "SQL Server utilizes role-based security, and within this framework, certain predefined sets of permissions are known as fixed roles. These include both fixed server roles, which govern the entire instance, and fixed database roles, which manage permissions within a specific database.",
+      "id": 50
+    },
+    {
+      "question": "When granting permissions at the schema level, what is the key advantage for users?",
+      "options": [
+        "They automatically receive elevated privileges like Sysadmin access.",
+        "Users automatically inherit permissions on all new objects created within that schema.",
+        "The system requires manual permission grants every time a new object is added to the schema.",
+        "It prevents any user from accessing objects outside of the defined schema."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "Granting permissions at the schema level provides significant convenience because it establishes an inheritance model. When this method is used, users do not need explicit permission grants for every single new object created within that schema; they automatically inherit the necessary rights.",
+      "id": 51
+    },
+    {
+      "question": "In which scenario is creating a dedicated Login for a user unnecessary?",
+      "options": [
+        "When the user needs to manage permissions across multiple databases.",
+        "When linking with the Sysadmin Role, or when its functions are limited only to the SQL Server instance itself.",
+        "Whenever the user requires impersonation rights over other users.",
+        "If the user is intended to be a standard end-user accessing data in one specific database."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A dedicated Login may not be required under certain conditions, such as when linking with the Sysadmin Role or when the user's operational functions are confined solely to the SQL Server instance and do not involve multiple databases.",
+      "id": 52
+    },
+    {
+      "question": "Which fixed server role is described as encompassing all other roles and having unlimited scope, making it highly powerful but requiring extreme caution when assigned?",
+      "options": [
+        "securityadmin",
+        "sysadmin",
+        "processadmin",
+        "setupadmin"
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "The sysadmin fixed server role is the most comprehensive role, containing all other permissions and having unlimited scope. Because of its immense power, administrators should only assign this role to principals who are highly trusted.",
+      "id": 53
+    },
+    {
+      "question": "What specific actions can members of the securityadmin fixed server role perform regarding user permissions?",
+      "options": [
+        "They can only GRANT server-level permissions but not database-level ones.",
+        "They can GRANT, DENY, and REVOKE both server-level and database-level permissions.",
+        "They are limited to resetting passwords for SQL Server logins only.",
+        "They must have sysadmin membership to manage any user permissions."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "The securityadmin role is designed to be a central management point, allowing its members the ability to control access by GRANTing, DENYing, and REVOKING permissions at both the server level and within individual databases.",
+      "id": 54
+    },
+    {
+      "question": "If an administrator needs to stop processes that are currently running within an instance of SQL Server, which fixed server role should be assigned?",
+      "options": [
+        "setupadmin",
+        "processadmin",
+        "diskadmin",
+        "bulkadmin"
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "The members of the processadmin fixed server role are specifically granted the capability to monitor and terminate processes that are actively running within an SQL Server instance.",
+      "id": 55
+    },
+    {
+      "question": "Which fixed server role is responsible for allowing users to execute the `BULK INSERT` statement, typically used for loading large amounts of data?",
+      "options": [
+        "diskadmin",
+        "bulkadmin",
+        "securityadmin",
+        "sysadmin"
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "The bulkadmin fixed server role grants the necessary permissions to run the `BULK INSERT` statement, which is a function used for efficiently importing data into tables.",
+      "id": 56
+    },
+    {
+      "question": "What is a defining characteristic of all fixed server roles in SQL Server?",
+      "options": [
+        "They can be customized and modified by any user with basic login rights.",
+        "They have a fixed set of permissions and their scope cannot be changed.",
+        "They are only usable for managing linked servers.",
+        "They require the principal to have an active user account in every database."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "Fixed server roles are predefined by SQL Server with a set of permissions that are permanent and cannot be altered or customized, providing stable administrative boundaries.",
+      "id": 57
+    },
+    {
+      "question": "What is the primary characteristic of the `public` server role in SQL Server?",
+      "options": [
+        "It allows administrators to change membership for specific users easily.",
+        "Every single SQL Server login automatically belongs to this role.",
+        "It requires explicit assignment of permissions on every object it contains.",
+        "Its members can be restricted from accessing any securable objects."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "The `public` server role is a foundational element in SQL Server security; by default, every login created on the instance automatically becomes a member of this role. This means it serves as the baseline membership for all users connecting to the server.",
+      "id": 58
+    },
+    {
+      "question": "According to the material, when should permissions be assigned to the `public` role on an object?",
+      "options": [
+        "When you want only specific groups of users to access that object.",
+        "Only when the object needs to be available and accessible to all users.",
+        "Whenever a new database is created to ensure default visibility.",
+        "If the object contains sensitive data that must be protected from general viewing."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Assigning permissions to the `public` role grants access broadly across the entire server instance. Therefore, this permission level should only be used when the intent is for every single user connected to the SQL Server to have visibility or functionality related to that specific object.",
+      "id": 59
+    },
+    {
+      "question": "What function do Fixed Database Roles provide in SQL Server?",
+      "options": [
+        "They allow users to bypass standard login authentication procedures entirely.",
+        "They offer a pre-defined set of permissions, simplifying the management of permission groups.",
+        "They are used exclusively for creating temporary database objects that expire automatically.",
+        "They restrict access only to system administrators and prevent general user interaction."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Fixed database roles are designed as convenient security mechanisms. Instead of assigning individual permissions one by one, these roles bundle together common sets of necessary rights, which greatly simplifies the process of managing permissions for groups of users or applications.",
+      "id": 60
+    },
+    {
+      "question": "In the context of SQL Server databases, what is the purpose of using a schema?",
+      "options": [
+        "A schema acts as an alternative to creating entirely new databases within the instance.",
+        "It serves as a named container that allows grouping and organizing related database objects.",
+        "Schemas are used solely for defining server-level security policies that affect all users.",
+        "They restrict object visibility, making them inaccessible unless explicitly granted to an administrator."
+      ],
+      "correctIndex": 1,
+      "page": "45",
+      "section": null,
+      "hint": "راجع الصفحة 45",
+      "explanation": "A schema provides a logical structure within a database. It functions as a container—like a folder—that allows developers and administrators to group related objects (such as tables or views) together, thereby improving the organization and manageability of the database content.",
+      "id": 61
+    },
+    {
+      "question": "ما هو الوصف الصحيح لدور `db_owner` في قاعدة البيانات؟",
+      "options": [
+        "يمتلك صلاحيات محدودة على مستوى الخادم فقط.",
+        "يمتلك كامل الصلاحيات على مستوى قاعدة البيانات، ولكنه ليس كصلاحيات قاعدة البيانات نفسها.",
+        "يمكنه فقط تنفيذ عمليات القراءة الأساسية (SELECT).",
+        "لا يستطيع أداء أي أنشطة صيانة أو تكوين لقاعدة البيانات."
+      ],
+      "correctIndex": 1,
+      "page": "48",
+      "section": null,
+      "hint": "راجع الصفحة 48",
+      "explanation": "يمتلك أعضاء دور `db_owner` صلاحيات شاملة على مستوى قاعدة البيانات، مما يمكنهم من إجراء جميع أنشطة التكوين والصيانة وحتى حذف قاعدة البيانات بالكامل. ومع ذلك، يجب ملاحظة أنه لا يعني هذا امتلاك نفس الصلاحيات المطلقة لقاعدة البيانات نفسها.",
+      "id": 62
+    },
+    {
+      "question": "ما هي الوظيفة الرئيسية لدور `db_securityadmin`؟",
+      "options": [
+        "إنشاء المستخدمين الجدد في مستوى الخادم (Server Level).",
+        "يستطيع تعديل صلاحيات دور `dbo_owner`.",
+        "تحديد الصلاحيات على مستوى الأعمدة داخل الجدول.",
+        "إدارة الاتصال بين قواعد البيانات المختلفة."
+      ],
+      "correctIndex": 1,
+      "page": "48",
+      "section": null,
+      "hint": "راجع الصفحة 48",
+      "explanation": "يتمتع المستخدمون الذين يمتلكون دور `db_securityadmin` بصلاحية متقدمة تسمح لهم بتعديل وإدارة صلاحيات أعضاء دور `dbo_owner`. هذا الدور يركز على إدارة الصلاحيات بين الأدوار المختلفة داخل قاعدة البيانات.",
+      "id": 63
+    },
+    {
+      "question": "لماذا تعتبر صلاحيات الـ dbo أقوى من ال iba؟",
+      "options": [
+        "لأنها مرتبطة مباشرة بحساب المستخدم (Login).",
+        "لأن بعض المهام مثل مهام ال dbo أقوى من ال iba، مما يتطلب مستوى أعلى من الصلاحية.",
+        "لأن دور `dbo` هو الدور الافتراضي لجميع قواعد البيانات الجديدة.",
+        "لأنها تتطلب بالضرورة أن يكون المستخدم مسؤولاً عن قاعدة البيانات (DB Owner)."
+      ],
+      "correctIndex": 1,
+      "page": "48",
+      "section": null,
+      "hint": "راجع الصفحة 48",
+      "explanation": "تعتبر صلاحيات الـ dbo أقوى من iba لأن بعض المهام الإدارية والصيانة المتقدمة التي تحتاج إلى تنفيذها تتجاوز مستوى الصلاحيات العادية، وتتطلب قوة أكبر تمنحها هذه الصلاحيات.",
+      "id": 64
+    },
+    {
+      "question": "كيف يتم تطبيق الصلاحيات على الكائنات الجديدة داخل مخطط (Schema) معين؟",
+      "options": [
+        "يجب على المسؤول تعيين صلاحية جديدة لكل كائن يُنشأ يدوياً.",
+        "تُطبق الصلاحيات الممنوحة للمخطط تلقائيًا على جميع الكائنات الجديدة التي تنتمي إليه.",
+        "لا يتم تطبيق أي صلاحيات على الكائنات الجديدة، ويجب منحها بشكل منفصل.",
+        "تعتمد الصلاحية على الدور الذي قام بإنشاء الكائن وليس على المخطط نفسه."
+      ],
+      "correctIndex": 1,
+      "page": "43",
+      "section": null,
+      "hint": "راجع الصفحة 43",
+      "explanation": "عندما يتم تعيين صلاحيات لمخطط معين أو للمالك الخاص به، فإن هذه الصلاحيات لا تقتصر فقط على الكائنات الموجودة حاليًا، بل تُطبق تلقائيًا وبشكل افتراضي على أي كائنات جديدة يتم إنشاؤها داخل هذا المخطط في المستقبل.",
+      "id": 65
+    },
+    {
+      "question": "What is the primary capability of members belonging to the fixed database role `db_securityadmin`?",
+      "options": [
+        "They can only view security settings and cannot modify them.",
+        "They have the ability to modify role membership and manage permissions.",
+        "They are restricted solely to executing stored procedures within the database.",
+        "They can grant all types of permissions without restriction."
+      ],
+      "correctIndex": 1,
+      "page": "50",
+      "section": null,
+      "hint": "راجع الصفحة 50",
+      "explanation": "Members of the `db_securityadmin` fixed database role possess elevated privileges that allow them to manage who belongs to various roles and to oversee the overall management of permissions within the database environment.",
+      "id": 66
+    },
+    {
+      "question": "According to the security rules, what is the effect of using the `DENY` statement when granting permissions?",
+      "options": [
+        "It only affects users who are explicitly granted the permission later on.",
+        "It takes precedence over all other permissions, regardless of how they were granted.",
+        "It can be overridden by any subsequent `GRANT` statement issued by a system administrator.",
+        "It is ineffective unless the user also has explicit ownership rights to the object."
+      ],
+      "correctIndex": 1,
+      "page": "51",
+      "section": null,
+      "hint": "راجع الصفحة 51",
+      "explanation": "The `DENY` statement establishes a powerful security rule because it overrides all other permissions; even if a user receives a permission via `GRANT`, the presence of a `DENY` statement will negate that access.",
+      "id": 67
+    },
+    {
+      "question": "What is the fundamental principle that dictates users should only possess the minimum necessary permissions to perform their duties?",
+      "options": [
+        "The Principle of Maximum Privilege (PMP)",
+        "The Principle of Least Privilege (PLP)",
+        "The Role Separation Model (RSM)",
+        "The Security Admin Mandate (SAM)"
+      ],
+      "correctIndex": 1,
+      "page": "51",
+      "section": null,
+      "hint": "راجع الصفحة 51",
+      "explanation": "The Principle of Least Privilege (PLP) is a core security concept requiring that every user, system, or process be given only the minimum level of access rights needed to perform its specific function, thereby minimizing potential damage from unauthorized actions.",
+      "id": 68
+    },
+    {
+      "question": "After a user successfully authenticates and is allowed to log in to an instance of SQL Server, what must be established for that user to access specific databases?",
+      "options": [
+        "Only a single server login is required across all connected databases.",
+        "A separate user account must exist within each individual database the user intends to access.",
+        "The built-in guest account automatically grants full access to all necessary databases.",
+        "Creating a role membership in the master database is sufficient for access."
+      ],
+      "correctIndex": 1,
+      "page": "54",
+      "section": null,
+      "hint": "راجع الصفحة 54",
+      "explanation": "Once a user has been authenticated at the server level, SQL Server requires that a corresponding, separate user account must be created within every specific database they need to interact with. This practice ensures granular control over data access across multiple databases on the same server instance.",
+      "id": 69
+    },
+    {
+      "question": "What is the primary security benefit of requiring users to have dedicated accounts in each database they access?",
+      "options": [
+        "It automatically grants the user administrative rights (sysadmin).",
+        "It prevents users from connecting to the SQL Server instance and accessing all databases without explicit permission for each one.",
+        "It ensures that only system administrators can modify data definition language (DDL) commands.",
+        "It limits the user's ability to perform backups on the server."
+      ],
+      "correctIndex": 1,
+      "page": "54",
+      "section": null,
+      "hint": "راجع الصفحة 54",
+      "explanation": "By mandating a separate user account in every database, security is enhanced because users cannot simply connect to the main SQL Server instance and gain unrestricted access to all databases; they must be explicitly granted permissions for each one individually.",
+      "id": 70
+    },
+    {
+      "question": "Which built-in account type circumvents the requirement of having a dedicated database user account for every single database accessed?",
+      "options": [
+        "The db_accessadmin role.",
+        "A custom service account created by an administrator.",
+        "The guest account.",
+        "Any standard Windows group login."
+      ],
+      "correctIndex": 2,
+      "page": "54",
+      "section": null,
+      "hint": "راجع الصفحة 54",
+      "explanation": "The built-in `guest` account is designed to bypass the need for a separate database user account in every single database, allowing a login to access databases without meeting the typical per-database user requirement.",
+      "id": 71
+    },
+    {
+      "question": "According to the fixed roles listed on page 52, which role grants members the ability to run any Data Definition Language (DDL) command within a database?",
+      "options": [
+        "db_datawriter",
+        "db_datareader",
+        "db_dldadmin",
+        "db_backupoperator"
+      ],
+      "correctIndex": 2,
+      "page": "52",
+      "section": null,
+      "hint": "راجع الصفحة 52",
+      "explanation": "The `db_dldadmin` fixed database role is specifically designed to grant its members the powerful capability of executing any Data Definition Language (DDL) command within a given database, allowing structural changes.",
+      "id": 72
+    },
+    {
+      "question": "What is the primary function of the db_datawriter fixed database role?",
+      "options": [
+        "Reading all data from user tables.",
+        "Adding, deleting, or changing data in all user tables.",
+        "Running any Data Definition Language (DDL) command.",
+        "Backing up the entire contents of the database."
+      ],
+      "correctIndex": 1,
+      "page": "52",
+      "section": null,
+      "hint": "راجع الصفحة 52",
+      "explanation": "The `db_datawriter` role grants permissions that allow its members to modify data, meaning they can add new records, delete existing ones, or change data within all user tables in the database.",
+      "id": 73
+    },
+    {
+      "question": "ما هي التعليمية التي يجب تنفيذها لإلغاء صلاحية الاتصال (CONNECT permission) ومنع مشكلة Orphaned SID؟",
+      "options": [
+        "`REVOKE CONNECT FROM GUEST`",
+        "`Transact-SQL REVOKE CONNECT FROM GUEST`",
+        "`DENY CONNECT TO GUEST`",
+        "`ALTER ROLE GUEST DROP CONNECT`"
+      ],
+      "correctIndex": 1,
+      "page": "55",
+      "section": null,
+      "hint": "راجع الصفحة 55",
+      "explanation": "لمنع مشكلة Orphaned SID، يجب تنفيذ تعليمية محددة هي `Transact-SQL REVOKE CONNECT FROM GUEST`. هذه التعليمية تقوم بإلغاء صلاحية الاتصال العامة الممنوحة للمستخدم الضيف (GUEST)، مما يعزز أمان قاعدة البيانات ويقلل من الثغرات المحتملة.",
+      "id": 74
+    },
+    {
+      "question": "بعد إنشاء المستخدم (User) في قاعدة البيانات، كيف يتم منح هذا المستخدم صلاحيات القراءة والكتابة؟",
+      "options": [
+        "عبر استخدام تعليمية `GRANT SELECT, INSERT ON * TO [user]`",
+        "عبر إضافة العضوية إلى الـ Roles الخاصة بكل منهما، مثل `Alter role [db-datareader] add member [orphanlogin]` و `Alter role [db-datawriter] add member [orphanlogin]`",
+        "عن طريق تعديل صلاحيات قاعدة البيانات بالكامل باستخدام `ALTER DATABASE`",
+        "بتنفيذ تعليمية `SET USER PERMISSIONS = TRUE`"
+      ],
+      "correctIndex": 1,
+      "page": "56",
+      "section": null,
+      "hint": "راجع الصفحة 56",
+      "explanation": "لا يتم منح صلاحيات القراءة والكتابة مباشرة للمستخدم الجديد بشكل فردي، بل يتم إضافة العضوية إلى الـ Roles المخصصة. فمن خلال استخدام أوامر مثل `Alter role [db-datareader] add member [orphanlogin]`، يكتسب المستخدم الصلاحيات الجماعية المرتبطة بهذا الدور (Role).",
+      "id": 75
+    },
+    {
+      "question": "ما هي الخطوات الصحيحة لإنشاء Login جديد وتعيينه كمستخدم في قاعدة بيانات SQL Server؟",
+      "options": [
+        "إنشاء الـ user أولاً، ثم استخدام `CREATE LOGIN` له.",
+        "أولاً: إنشاء الـ login باستخدام `Create login`، ثم: استخدام قاعدة البيانات المستهدفة (`Use [svu1]`)، وأخيراً: إنشاء المستخدم المرتبط بالـ login عبر `Create user`.",
+        "تنفيذ أمر واحد يجمع بين `CREATE LOGIN` و `CREATE USER` في نفس الوقت.",
+        "تعديل الـ Role لإضافة صلاحيات الاتصال قبل إنشاء أي شيء آخر."
+      ],
+      "correctIndex": 1,
+      "page": "56",
+      "section": null,
+      "hint": "راجع الصفحة 56",
+      "explanation": "تتطلب عملية ربط الهوية الخارجية (Login) بالبيانات الداخلية (User) خطوتين أساسيتين متتاليتين. يجب أولاً إنشاء الـ Login على مستوى الخادم، ثم الانتقال إلى قاعدة البيانات المستهدفة واستخدام `Create user` لإنشاء المستخدم المرتبط بهذا الـ Login داخل نطاق القاعدة.",
+      "id": 76
+    },
+    {
+      "question": "عند استخدام تعليمية `Use db-name` في SQL Server، ما هي الملاحظة الأفضل المتعلقة بالصيغة؟",
+      "options": [
+        "يجب دائماً كتابة اسم قاعدة البيانات بين علامتي اقتباس مزدوجة (`\"`) بغض النظر عن محتواه.",
+        "يمكن استخدام الحالتين: `use [db_name]` أو `use db-name`. الحالة الثانية أفضل إذا كان اسم قاعدة البيانات يحتوي على فراغات.",
+        "يجب دائماً كتابة الأمر بالصيغة المختصرة دون علامات اقتباس لضمان التوافق.",
+        "لا يوجد فرق بين الحالتين، وكلاهما يعمل بنفس الكفاءة في جميع السيناريوهات."
+      ],
+      "correctIndex": 1,
+      "page": "56",
+      "section": null,
+      "hint": "راجع الصفحة 56",
+      "explanation": "عند التعامل مع أسماء قواعد البيانات التي قد تحتوي على مسافات أو فراغات، فإن استخدام الصيغة `use db-name` هو الأفضل والأكثر موثوقية. هذا يضمن أن نظام إدارة قواعد البيانات يتعامل مع الاسم بالكامل كوحدة واحدة وليس ككلمتين منفصلتين.",
+      "id": 77
+    },
+    {
+      "question": "ما هو مفهوم \"سلسلة الملكية\" (Ownership Chaining) في أمان SQL Server؟",
+      "options": [
+        "هي عملية إلغاء جميع الصلاحيات الممنوحة على مستوى قاعدة البيانات لزيادة الأمان.",
+        "آلية تضمن أن المستخدمين لا يمكنهم الوصول إلى أي بيانات إلا إذا كانوا أعضاءً في دور إداري (Admin Role).",
+        "هي ميزة تسمح بتمرير صلاحيات الكائن (Object) من كائن إلى آخر، مما يسهل تنفيذ الإجراءات المخزنة (Stored Procedures).",
+        "إجراء يتطلب دائماً أن يكون المستخدم هو مالك كل جدول أو عمود يحاول الوصول إليه."
+      ],
+      "correctIndex": 2,
+      "page": "57",
+      "section": null,
+      "hint": "راجع الصفحة 57",
+      "explanation": "سلسلة الملكية هي آلية أمنية متقدمة تسمح بتمرير الصلاحيات عبر الكائنات المختلفة داخل قاعدة البيانات. عندما يتم تنفيذ إجراء مخزن (Stored Procedure)، يمكن لهذا الإجراء أن يصل إلى كائنات أخرى، وتسمح هذه السلسلة بالوصول طالما أن المالك الأصلي يمتلك صلاحية الوصول الأولية.",
+      "id": 78
+    },
+    {
+      "question": "What is defined as an Orphaned SID in SQL Server security?",
+      "options": [
+        "A user account that has been disabled by the system administrator.",
+        "A user who is no longer associated with its intended login, meaning the user's SID no longer matches, even if the User Name and Login Name do.",
+        "A database that cannot be restored because of missing backup files.",
+        "A server login that has not been assigned to any specific database user."
+      ],
+      "correctIndex": 1,
+      "page": "60",
+      "section": null,
+      "hint": "راجع الصفحة 60",
+      "explanation": "An Orphaned SID occurs when a database user's Security Identifier (SID) no longer matches the SID of its corresponding server login, even if both the usernames and login names are identical. This mismatch prevents the user from accessing data correctly after migration or restoration.",
+      "id": 79
+    },
+    {
+      "question": "When restoring a noncontained database from one SQL Server instance to another, what is the typical outcome regarding users and logins?",
+      "options": [
+        "Both the database users and the server logins in the master database are transferred successfully.",
+        "The database users transfer, but the server logins stored in the master database do not.",
+        "Only the user accounts that were created locally on the destination server will be preserved.",
+        "All security principals (users and logins) must be manually recreated using scripts."
+      ],
+      "correctIndex": 1,
+      "page": "60",
+      "section": null,
+      "hint": "راجع الصفحة 60",
+      "explanation": "When a noncontained database is restored from one SQL Server to another, the internal database users are successfully transferred with the data. However, the server-level logins, which are stored in the master database, do not automatically transfer and must be managed separately.",
+      "id": 80
+    },
+    {
+      "question": "Which T-SQL command is used to resolve an Orphaned SID by explicitly linking a user account to its corresponding login?",
+      "options": [
+        "`CREATE LOGIN [loginname] WITH SID = '...'`",
+        "`ALTER DATABASE [db_name] OWNER TO [username]`",
+        "`ALTER USER [username] WITH LOGIN = [loginname]`",
+        "`UPDATE sys.sysusers SET login = [loginname]`"
+      ],
+      "correctIndex": 2,
+      "page": "60",
+      "section": null,
+      "hint": "راجع الصفحة 60",
+      "explanation": "To fix an Orphaned SID, the `ALTER USER` command is used. By executing `ALTER USER [username] WITH LOGIN = [loginname]`, you explicitly tell SQL Server to associate the existing database user with the correct server login, resolving the SID mismatch.",
+      "id": 81
+    },
+    {
+      "question": "What is the best practice to prevent an Orphaned SID problem when creating a new login on a destination server?",
+      "options": [
+        "Always use Windows Authentication instead of SQL Server Authentication.",
+        "Specify the matching SID using `sid='...'` during the `CREATE LOGIN` statement.",
+        "Drop and recreate all users in the target database to ensure clean security principals.",
+        "Only restore the master database, as it contains all necessary login information."
+      ],
+      "correctIndex": 1,
+      "page": "60",
+      "section": null,
+      "hint": "راجع الصفحة 60",
+      "explanation": "To prevent an Orphaned SID when setting up a new server environment or restoring data, one must use the `CREATE LOGIN` statement and explicitly provide the original Security Identifier (SID) of the user's corresponding account using the `sid='...'` clause. This ensures the login matches the existing user identity.",
+      "id": 82
+    },
+    {
+      "question": "ما الأمر المستخدم لإنشاء مستخدم لا يمتلك تسجيل دخول مرتبط به؟",
+      "options": [
+        "CREATE LOGIN [username] without password;",
+        "Create user [username] without login;",
+        "ALTER USER [username] NOLOGIN;",
+        "GRANT USER [username];"
+      ],
+      "correctIndex": 1,
+      "page": "61",
+      "section": null,
+      "hint": "راجع الصفحة 61",
+      "explanation": "الأمر `Create user [username] without login` هو الصيغة الصحيحة لإنشاء مستخدم ضمن قاعدة البيانات لا يرتبط بحساب تسجيل دخول على مستوى الخادم، مما يجعله كيانًا محليًا داخل المخطط.",
+      "id": 83
+    },
+    {
+      "question": "لمنح صلاحية قراءة (عرض) البيانات من جدول معين لمستخدم محدد، ما الأمر الذي يجب استخدامه؟",
+      "options": [
+        "Grant write on sales to Manager;",
+        "Grant select on sales to Manager;",
+        "Select permission for sales by Manager;",
+        "Allow read access from sales to Manager;"
+      ],
+      "correctIndex": 1,
+      "page": "61",
+      "section": null,
+      "hint": "راجع الصفحة 61",
+      "explanation": "الأمر `GRANT SELECT` هو الصيغة القياسية في SQL Server لمنح صلاحية القراءة فقط على البيانات الموجودة داخل جدول معين، ويجب تحديده باسم الجدول والمستخدم المستفيد.",
+      "id": 84
+    },
+    {
+      "question": "ما الهدف الأساسي من استخدام أمر `CREATE SECURITY POLICY`؟",
+      "options": [
+        "حذف جميع الصلاحيات الأمنية الممنوحة للمستخدمين.",
+        "تطبيق قواعد أمنية محددة على مستوى البيانات لضمان وصول المستخدمين فقط إلى المعلومات المصرح لهم بها.",
+        "تغيير اسم الجدول بالكامل في قاعدة البيانات.",
+        "إنشاء مستخدم جديد لا يمكنه الوصول لأي بيانات."
+      ],
+      "correctIndex": 1,
+      "page": "62",
+      "section": null,
+      "hint": "راجع الصفحة 62",
+      "explanation": "تهدف سياسة الأمان (`SECURITY POLICY`) إلى فرض قيود أمنية على مستوى البيانات، حيث تسمح بتحديد قواعد وصول دقيقة بناءً على المستخدم الذي يقوم بالاستعلام أو الإجراء، مما يعزز مبدأ الحد الأدنى من الامتيازات.",
+      "id": 85
+    },
+    {
+      "question": "عند تطبيق سياسة أمنية (Security Policy)، ما المكون الذي يُستخدم لتحديد الشروط الدقيقة التي يجب أن تتحقق لكي يتمكن المستخدم من رؤية صف معين من البيانات؟",
+      "options": [
+        "CREATE USER PREDICATE;",
+        "ADD FILTER PREDICATE;",
+        "SET ACCESS RULE;",
+        "CHECK SECURITY CONDITION;"
+      ],
+      "correctIndex": 1,
+      "page": "62",
+      "section": null,
+      "hint": "راجع الصفحة 62",
+      "explanation": "يُستخدم `ADD FILTER PREDICATE` لإضافة شرط تصفية محدد إلى سياسة الأمان. هذا الشرط يحدد أي الصفوف من البيانات يجب أن تكون مرئية للمستخدم، مما يسمح بتطبيق منطق الأعمال المعقد على مستوى الوصول للبيانات.",
+      "id": 86
+    },
+    {
+      "question": "إذا أردت تنفيذ استعلام أو إجراء كأنك مستخدم معين (على سبيل المثال، المستخدم 'Sales1') بغض النظر عن هويتك الحالية، فما الأمر الذي يجب أن تستخدمه؟",
+      "options": [
+        "EXECUTE AS ROLE = 'Sales1';",
+        "Execute as user = 'Sales1';",
+        "RUN AS USER 'Sales1';",
+        "USE CONTEXT FOR USER 'Sales1';"
+      ],
+      "correctIndex": 1,
+      "page": "63",
+      "section": null,
+      "hint": "راجع الصفحة 63",
+      "explanation": "الأمر `EXECUTE AS USER` يسمح للمستخدم بتنفيذ مجموعة من الأوامر أو الاستعلامات باستخدام صلاحيات وهوية مستخدم آخر محدد، مما يضمن أن يتم تطبيق القيود الأمنية الخاصة بذلك المستخدم أثناء التنفيذ.",
+      "id": 87
+    },
+    {
+      "question": "What type of data does Transparent Data Encryption (TDE) primarily encrypt?",
+      "options": [
+        "Data in transit",
+        "Data at rest",
+        "Data in use",
+        "System metadata"
+      ],
+      "correctIndex": 1,
+      "page": "64",
+      "section": null,
+      "hint": "راجع الصفحة 64",
+      "explanation": "TDE is designed to protect the physical database files from unauthorized access. By encrypting data at rest, it ensures that even if an attacker gains access to the underlying storage media, the data remains unreadable without the proper encryption keys.",
+      "id": 88
+    },
+    {
+      "question": "What specific threat does Always Encrypted mitigate by encrypting data in use?",
+      "options": [
+        "Physical theft of the database server",
+        "Unauthorized viewing of plaintext data by system administrators",
+        "Network sniffing during transmission",
+        "Corruption caused by faulty hardware"
+      ],
+      "correctIndex": 1,
+      "page": "65",
+      "section": null,
+      "hint": "راجع الصفحة 65",
+      "explanation": "Always Encrypted is a client-side encryption mechanism. It ensures that even highly privileged users, such as database administrators who have access to the server environment, cannot view the actual data values because they are encrypted before being processed or viewed.",
+      "id": 89
+    },
+    {
+      "question": "At what level does Always Encrypted perform its encryption?",
+      "options": [
+        "The file level",
+        "The page level",
+        "The column group level",
+        "The transaction log level"
+      ],
+      "correctIndex": 1,
+      "page": "65",
+      "section": null,
+      "hint": "راجع الصفحة 65",
+      "explanation": "Always Encrypted performs encryption at a granular level, specifically the page level. This allows for fine-grained control over which parts of the data are encrypted while still maintaining database functionality.",
+      "id": 90
+    },
+    {
+      "question": "Which of the following databases can utilize Transparent Data Encryption (TDE)?",
+      "options": [
+        "MySQL and PostgreSQL only",
+        "SQL Server, Azure SQL Database, and Azure SQL Data Warehouse",
+        "Oracle DB and MongoDB only",
+        "Any relational database system regardless of vendor"
+      ],
+      "correctIndex": 1,
+      "page": "64",
+      "section": null,
+      "hint": "راجع الصفحة 64",
+      "explanation": "TDE is a feature implemented across several Microsoft data platforms. It can be used in SQL Server, as well as its cloud counterparts like Azure SQL Database and Azure SQL Data Warehouse, providing comprehensive protection for data at rest across these environments.",
+      "id": 91
+    },
+    {
+      "question": "What command must be executed to secure the environment by creating a Master Key?",
+      "options": [
+        "CREATE DATABASE ENCRYPTION KEY WITH ALGORITHM = AES_128;",
+        "CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'UseStrongPasswordHere';",
+        "ALTER DATABASE [DatabaseName] SET ENCRYPTION ON;",
+        "CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My DEK Certificate';"
+      ],
+      "correctIndex": 1,
+      "page": "67",
+      "section": null,
+      "hint": "راجع الصفحة 67",
+      "explanation": "The process of securing the database begins by establishing a Master Key. This key is created using the `CREATE MASTER KEY` command, which requires setting an encryption password to protect the environment where subsequent keys and certificates will reside.",
+      "id": 92
+    },
+    {
+      "question": "After creating the Database Encryption Key (DEK), what step must be taken to ensure it is protected by the server certificate?",
+      "options": [
+        "CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My DEK Certificate';",
+        "ENCRYPTION BY SERVER CERTIFICATE MyServerCert;",
+        "ALTER DATABASE [DatabaseName] SET ENCRYPTION ON;",
+        "USE master;"
+      ],
+      "correctIndex": 1,
+      "page": "67",
+      "section": null,
+      "hint": "راجع الصفحة 67",
+      "explanation": "While the Database Encryption Key is created first, it must be explicitly protected by linking it to the server certificate. This is achieved using the `ENCRYPTION BY SERVER CERTIFICATE` clause, which encrypts the DEK using the public key contained within the specified certificate.",
+      "id": 93
+    },
+    {
+      "question": "Which command sequence is necessary to activate encryption on a database after all keys and certificates have been properly configured?",
+      "options": [
+        "CREATE MASTER KEY ENCRYPTION BY PASSWORD = 'UseStrongPasswordHere';",
+        "USE master;",
+        "ALTER DATABASE [DatabaseName] SET ENCRYPTION ON;",
+        "CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My DEK Certificate';"
+      ],
+      "correctIndex": 2,
+      "page": "67",
+      "section": null,
+      "hint": "راجع الصفحة 67",
+      "explanation": "The final step in the encryption process is activating it. Once the Master Key, the certificate, and the encrypted Database Encryption Key are all set up, the `ALTER DATABASE [DatabaseName] SET ENCRYPTION ON;` command must be run to make the database fully encrypted.",
+      "id": 94
+    },
+    {
+      "question": "What component is used to protect the Database Encryption Key (DEK) after it has been created?",
+      "options": [
+        "The Master Key password.",
+        "A server certificate.",
+        "The `USE master;` command.",
+        "The database name itself."
+      ],
+      "correctIndex": 1,
+      "page": "67",
+      "section": null,
+      "hint": "راجع الصفحة 67",
+      "explanation": "Although the Master Key secures the overall environment, the Database Encryption Key specifically requires protection by a dedicated server certificate. This certificate acts as the mechanism that encrypts and protects the DEK, ensuring that only systems with access to the corresponding private key can decrypt it.",
+      "id": 95
+    }
+  ]
+}

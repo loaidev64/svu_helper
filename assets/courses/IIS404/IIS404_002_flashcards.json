@@ -1,0 +1,265 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What course does this material cover?",
+      "a": "MS SQL Server Administration IIS404 (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "What is the topic of Chapter Two?",
+      "a": "Backup & Restore in MS SQL Server (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "To what program does this material belong?",
+      "a": "Bachelor of IT Program BAIT (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "Who is the author listed for Chapter Two?",
+      "a": "Eng. Ayham Mohammad (الصفحة 2)"
+    },
+    {
+      "id": 5,
+      "q": "What are the main sections covered in the textbook?",
+      "a": "Backup Types, Recovery Models, and Restore and Recovery (الصفحة 4)"
+    },
+    {
+      "id": 6,
+      "q": "Name three types of backup listed under \"Backup Types.\"",
+      "a": "Copy-only backup, Data backup, and File backup (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "What are the different recovery models discussed?",
+      "a": "Simple, Full, and Bulk logged (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "List the types of database backups mentioned.",
+      "a": "Full backup, Differential backup, and Log backup (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What essential safeguard does the SQL Server backup and restore component provide?",
+      "a": "Protecting critical data stored in your SQL Server databases. (Page 8)"
+    },
+    {
+      "id": 10,
+      "q": "Name three examples of failures that necessitate backing up data.",
+      "a": "Media failure, User errors, or Hardware failures. (Page 8)"
+    },
+    {
+      "id": 11,
+      "q": "How can an off-site backup be created in the event of a natural disaster affecting an on-premises location?",
+      "a": "By using SQL Server Backup to Windows Azure Blob storage service, creating a backup in a different region. (Page 8)"
+    },
+    {
+      "id": 12,
+      "q": "What is the purpose of having a well-planned backup and restore strategy?",
+      "a": "To help protect databases against data loss caused by a variety of failures. (Page 8)"
+    },
+    {
+      "id": 13,
+      "q": "What type of backup is independent of the regular sequence of SQL Server backups?",
+      "a": "A special-use backup called `copy_only` (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "According to the text, what do differential database backups contain?",
+      "a": "Only changes made to the database since its most recent full database backup (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "What is the command used for backing up one or more filegroups of a database?",
+      "a": "`backup database [DB-name] filegroup = ‘file group name’ to disk = ‘path of backup file.bak’` (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "When are partial backups useful?",
+      "a": "When you want to exclude filegroups designated for read-only access (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "What does Recovery Point Objective (RPO) indicate?",
+      "a": "How much data loss is acceptable in the case of disaster. (الصفحة 15)"
+    },
+    {
+      "id": 18,
+      "q": "Which objective defines the acceptable downtime for the recovery process?",
+      "a": "Recovery Time Objective (RTO). (الصفحة 15)"
+    },
+    {
+      "id": 19,
+      "q": "What does a Tail-Log Backup contain?",
+      "a": "Committed transaction log data that has not been backed up. (الصفحة 15)"
+    },
+    {
+      "id": 20,
+      "q": "What type of backup contains the Data since the last Full Backup, saving only changed Extents?",
+      "a": "Differential backup (D). (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "If a database is online and you plan to perform a restore operation, what should be done first?",
+      "a": "Begin by backing up the tail of the log, and must use the WITH NORECOVERY option of the BACKUP Transact-SQL statement. (Page 18)"
+    },
+    {
+      "id": 22,
+      "q": "What option should be used when attempting to take a tail-log backup on a damaged database?",
+      "a": "Use the WITH CONTINUE_AFTER_ERROR option of the BACKUP statement. (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "What are the three conditions required for successful tail-log backup on a damaged database?",
+      "a": "The log files must be undamaged, the database must be in a state that supports tail-log backups, and the database cannot contain any bulk-logged changes. (Page 18)"
+    },
+    {
+      "id": 24,
+      "q": "What is the function of using WITH NORECOVERY during restore operations?",
+      "a": "It takes the database into the restoring state, guaranteeing that the database does not change after the tail-log backup. (Page 18)"
+    },
+    {
+      "id": 25,
+      "q": "ما هي الميزة الرئيسية للنسخ الاحتياطي المضغوط (Compressed backup)؟",
+      "a": "أن النسخة الاحتياطية تكون أصغر من نسخة غير مضغوطة لنفس البيانات، مما يقلل عادةً من إدخال/إخراج الجهاز (device I/O) ويزيد سرعة النسخ الاحتياطي بشكل كبير. (الصفحة 19)"
+    },
+    {
+      "id": 26,
+      "q": "ما هي الأوامر المستخدمة لإنشاء قاعدة بيانات جديدة باسم `svu` وملف سجل لها؟",
+      "a": "Create database svu on (name='svu_data', filename='path.mdf') Log on (name='svu_log', filename='path.ldf') (الصفحة 19)"
+    },
+    {
+      "id": 27,
+      "q": "ما هي الأوامر المستخدمة لإنشاء جدول جديد باسم `table1` في قاعدة البيانات؟",
+      "a": "Drop table if exists table1 Create table table1 ( [time of transaction] time,[backup type] varchar(2) ) (الصفحة 19)"
+    },
+    {
+      "id": 28,
+      "q": "ما هي الخطوات التي تتبع لإنشاء قاعدة بيانات جديدة في المثال الموضح؟",
+      "a": "1. إنشاء DB جديدة: Create database svu on (name='svu_data', filename='path.mdf') Log on (name='svu_log', filename='path.ldf') Go Use svu Go (الصفحة 19)"
+    },
+    {
+      "id": 29,
+      "q": "عند إجراء نسخة احتياطية تفاضلية لقاعدة البيانات، ما هي العبارة التي يجب استخدامها في أمر `Backup database`؟",
+      "a": "استخدام `with differential`. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "عند استعادة قاعدة بيانات باستخدام عدة نسخ احتياطية، ما هو الخيار الذي يجب استخدامه لجميع النسخ باستثناء آخر عملية استعادة؟",
+      "a": "استخدام `with norecovery` في أمر `Restore database`. (الصفحة 24)"
+    },
+    {
+      "id": 31,
+      "q": "بعد إجراء عمليات الاستعادة المتعددة باستخدام خيار `NORECOVERY`، ما هو الخيار الذي يجب استخدامه لعملية الاستعادة الأخيرة لإعادة قاعدة البيانات إلى وضع التشغيل؟",
+      "a": "استخدام `with recovery`. (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "ما هي العبارة المستخدمة لأخذ نسخة احتياطية لسجل المعاملات لقاعدة بيانات معينة؟",
+      "a": "`Backup log database svu to disk='path\\L1.bak'`. (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "Which recovery model allows recovery to an arbitrary point in time?",
+      "a": "Full (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "What is the work loss exposure under the Simple recovery model?",
+      "a": "Changes since the most recent backup are unprotected. (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "Which recovery models require log backups?",
+      "a": "Full and Bulk logged (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "What specific features cannot be used in the Simple recovery model?",
+      "a": "Log shipping, Always On or Database mirroring Media recovery without data loss, Point-in-time restores (الصفحة 26)"
+    },
+    {
+      "id": 37,
+      "q": "What is a restore scenario in SQL Server?",
+      "a": "The process of restoring data from one or more backups and then recovering the database. (Page 30)"
+    },
+    {
+      "id": 38,
+      "q": "During a file restore, what happens to the filegroups containing the files?",
+      "a": "The filegroups that contain the files are automatically offline for the duration of the restore. (Page 30)"
+    },
+    {
+      "id": 39,
+      "q": "What is an adjunct of the full recovery model that permits high-performance bulk copy operations and reduces log space usage?",
+      "a": "Bulk-logged Recovery Model. (Page 28)"
+    },
+    {
+      "id": 40,
+      "q": "When a whole database is restored, what status does the database enter for the duration of the operation?",
+      "a": "The database is offline for the duration of the restore and recovery operations. (Page 30)"
+    },
+    {
+      "id": 41,
+      "q": "Under full/bulk-logged recovery models, what is the basic strategy for a complete database restore?",
+      "a": "Restoring a full database backup and, optionally, a differential backup (if any), followed by restoring all subsequent log backups (in sequence). The process finishes by recovering the last log backup using `RESTORE WITH RECOVERY`. (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "What is \"File restore\" used for in SQL Server?",
+      "a": "It restores one or more damaged read-only files without restoring the entire database. This feature requires the database to have at least one read-only filegroup. (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "When can a File restore be performed regarding the database status?",
+      "a": "It can be performed while the database is offline or, for some editions of SQL Server, while the database remains online. During this process, the filegroups containing the files being restored are always offline. (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "How does a complete database restore differ between simple and full/bulk-logged recovery models?",
+      "a": "Under Simple recovery model, it involves restoring the last Full backup plus any Differential. Under Full/Bulk-logged recovery models, it requires restoring all subsequent log backups in sequence. (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "عند تحديد صفحة في أمر `RESTORE DATABASE`، ما هي المعلومات المطلوبة لتحديد الصفحة؟",
+      "a": "يجب توفير رقم ملف الصفحة (`FILE ID`) ورقم الصفحة (`PAGE ID`). (الصفحة 34)"
+    },
+    {
+      "id": 46,
+      "q": "ماذا يعني استخدام الخيار `WITH NORECOVERY` في أمر استعادة قاعدة البيانات؟",
+      "a": "يشير إلى أن عملية الاستعادة لم تكتمل بعد، ويجب إجراء عمليات استعادة أخرى. (الصفحة 35)"
+    },
+    {
+      "id": 47,
+      "q": "ما هو الأمر المستخدم لاستعادة سجل المعاملات (transaction log) بعد استعادة النسخة الكاملة أو التفاضلية؟",
+      "a": "`RESTORE LOG <database> FROM '<backup_log>' WITH NORECOVERY;` (الصفحة 35)"
+    },
+    {
+      "id": 48,
+      "q": "ما هي الخطوات الأساسية لاستعادة قاعدة البيانات باستخدام T-SQL عند وجود نسخ احتياطية متعددة؟",
+      "a": "يجب البدء بالنسخة الكاملة (`FULL`), ثم النسخة التفاضلية (`DIFF`), وأخيراً سجل المعاملات (`LOG`). (الصفحة 35)"
+    },
+    {
+      "id": 49,
+      "q": "ما هو الموضوع الذي يتناوله الفصل الدراسي؟",
+      "a": "Backup & Restore in MS SQL Server (الصفحة X)"
+    },
+    {
+      "id": 50,
+      "q": "ما هي عملية الاستعادة التي تتضمن استعادة المكونات بشكل فردي؟",
+      "a": "Piecemeal restores (الصفحة X)"
+    },
+    {
+      "id": 51,
+      "q": "في مثال استعادة قاعدة البيانات الجزئية، أي نموذج الاسترداد يُستخدم؟",
+      "a": "Simple recovery model (الصفحة X)"
+    },
+    {
+      "id": 52,
+      "q": "ما هو نموذج الاسترداد الذي يتم استعراضه مع مثال استعادة قاعدة البيانات الكاملة بشكل جزئي؟",
+      "a": "Full recovery model (الصفحة X)"
+    }
+  ]
+}

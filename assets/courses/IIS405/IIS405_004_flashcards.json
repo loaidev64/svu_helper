@@ -1,0 +1,185 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو موضوع الفصل الرابع؟",
+      "a": "Oracle Network Configuration (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "ما هي نظرة عامة على خدمات شبكة أوراكل؟",
+      "a": "Objectives covering network connectivity and services. (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "ما هو نظرة عامة على مستمع شبكة أوراكل؟",
+      "a": "The Oracle Net Listener: Overview. (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما هي الأهداف المذكورة في بداية الفصل الرابع؟",
+      "a": "Oracle Net services mission, Start and stop listener, Create additional listener and reconfigure it, Create a listener by using the Oracle Net Configuration Assistant (NetCA), Clients connection methods with database. (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What are the three main components involved in the architecture of Oracle Net Services?",
+      "a": "Client or middle tier, Listener, and Database server (الصفحة 4)"
+    },
+    {
+      "id": 6,
+      "q": "According to the overview, what is the function of the Oracle Net Listener?",
+      "a": "It acts as the gateway to the Oracle instance for all nonlocal user connections (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "What tools can be used to configure and manage Oracle Net Services?",
+      "a": "Enterprise Manager Cloud Control or Oracle Net Manager, or using the Oracle Net Configuration Assistant (NetCA) (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "What does Oracle Net Services enable connections for?",
+      "a": "Network connections from a client or middle-tier application to the Oracle server (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What does Oracle Net Services enable?",
+      "a": "Network connections from a client or middle-tier application to the Oracle server. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "On the database server, what active process is responsible for coordinating connections between the database and external applications?",
+      "a": "Oracle Net Listener. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What role does Oracle Net act as after a network session is established?",
+      "a": "The data courier for both the client application and the database server. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "On the client computer, what is Oracle Net described as?",
+      "a": "A background component for application connections to the database. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "What is the Oracle Net Listener?",
+      "a": "It is the gateway to the Oracle instance for all nonlocal user connections. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "Name two tools used to configure the listener and specify log file locations.",
+      "a": "Enterprise Manager Cloud Control or Oracle Net Manager. (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "What does Oracle Net Services provide?",
+      "a": "User interface tools and command-line utilities that enable you to easily configure, manage, and monitor the network. (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "How can advanced administrators manually configure Oracle Net Services?",
+      "a": "By editing configuration files using a standard operating system (OS) text editor such as vi or qedit. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What are two types of naming used in Oracle Net?",
+      "a": "Directory naming and External naming (الصفحة 13)"
+    },
+    {
+      "id": 18,
+      "q": "Which Oracle Net service component resides on the server, listening for incoming client connection requests and managing traffic to the server?",
+      "a": "The Listener (الصفحة 15)"
+    },
+    {
+      "id": 19,
+      "q": "What is the purpose of Naming methods in defining Oracle Net Services Components?",
+      "a": "It is a resolution method used by a client application to resolve a connect identifier to a connect descriptor when attempting to connect to a database service (الصفحة 15)"
+    },
+    {
+      "id": 20,
+      "q": "Which component is defined as a collection of parameters that specifies preferences for enabling and configuring Oracle Net features on the client or server?",
+      "a": "Profiles (الصفحة 15)"
+    },
+    {
+      "id": 21,
+      "q": "To make a client or middle-tier connection, what information does Oracle Net require?",
+      "a": "The Host where the listener is running, Port that the listener is monitoring, Protocol that the listener is using, and Name of the service that the listener is handling (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "What are the four methods supported by Oracle Net for resolving connection information?",
+      "a": "Easy connect naming, Local naming, Directory naming, and External naming (الصفحة 18)"
+    },
+    {
+      "id": 23,
+      "q": "What is the general form of an Easy Connect connection string?",
+      "a": "`<username>/password@hostname>:<listener port>/service name>` (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "According to the text, what are two key characteristics of Easy connect naming?",
+      "a": "It is enabled by default and requires no client-side configuration (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What file stores the local list of known services when using local naming?",
+      "a": "tnsnames.ora (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "What is a key advantage of local naming compared to Easy Connect?",
+      "a": "Database users need to remember only a short alias rather than the long connect string required by Easy Connect (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "Name three advanced connection options supported by local naming.",
+      "a": "Connect-time failover, Source routing, Load balancing (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "For what type of organization is local naming considered appropriate?",
+      "a": "Organizations in which Oracle Net service configurations do not change often (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "What file displays the content containing connection details?",
+      "a": "tnsnames.ora (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "Which tool can be used to automatically change the content of tnsnames.ora?",
+      "a": "netca \"Net configuration Assistant\" (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What is the function of using \"Net configuration Assistant\"?",
+      "a": "To change the content of tnsnames.ora automatically (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "Where can one find an example display of connection details?",
+      "a": "The content of the tnsnames.ora file (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "After a network session is established, does Oracle Net act as the data courier for both the client application and the database server?",
+      "a": "True (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "To make a client or middle-tier connection, what information does Oracle Net not require the client to know?",
+      "a": "Host where the listener is running (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "Which naming resolution method uses a connection string like `SQL:CONNECT hr/db@db.us.oracle.com:1521/dba11g`?",
+      "a": "Easy connect naming (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "What is the function of Oracle Net after a network session is established?",
+      "a": "It acts as the data courier for both the client application and the database server (الصفحة 26)"
+    }
+  ]
+}

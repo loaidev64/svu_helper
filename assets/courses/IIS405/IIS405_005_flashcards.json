@@ -1,0 +1,245 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is the topic of Chapter 5?",
+      "a": "Tablespaces and Data Files (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "According to the Table of Contents, what fundamental concept is covered in Chapter 5?",
+      "a": "What is a tablespace? (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "Which topic addresses how table data is stored?",
+      "a": "How Table Data Is Stored (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "What overall subject does this chapter belong to?",
+      "a": "Oracle Database Administration (الصفحة 2)"
+    },
+    {
+      "id": 5,
+      "q": "What is a tablespace?",
+      "a": "A logical container that allows you to manage groups of data files, the physical files on disk that consume space. (الصفحة 4)"
+    },
+    {
+      "id": 6,
+      "q": "What entity represents any database object that stores data and requires space in a tablespace?",
+      "a": "Segment (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "What is an extent, and how is storage allocated using it?",
+      "a": "An extent is a set of consecutively numbered Oracle blocks within one datafile. Storage is allocated by extent. (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "How is a datafile physically composed?",
+      "a": "A datafile is physically made up of a number of operating system blocks. (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What is a tablespace?",
+      "a": "A logical container that allows you to manage groups of data files, the physical files on disk that consume space. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "How do data files persist compared to tablespaces?",
+      "a": "Data files persist whether the database is open or closed, while tablespaces only exist while the database is up and running. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "Through what means can a tablespace be viewed and managed?",
+      "a": "It is visible through data dictionary views (such as DBA_TABLESPACES); you manage them through SQL*Plus or graphical tools. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What are the characteristics of data files?",
+      "a": "They have a physical presence, can be viewed outside the database through OS utilities (such as ls and dir), and consume space on disk. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "What are tablespaces in a database?",
+      "a": "Logical storage units into which a database is divided; the DBA uses them to control disk space allocation, assign specific space quotas for database users, and manage data availability. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What does the segment entity represent in a database?",
+      "a": "Any database object that stores data and therefore requires space in a tablespace; examples include tables, index segments, and undo segments. (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "What is an extent?",
+      "a": "A set of consecutively numbered Oracle blocks within one datafile, which is how storage is allocated. (الصفحة 10)"
+    },
+    {
+      "id": 16,
+      "q": "What is the smallest unit of data used by a database?",
+      "a": "The data block, whose size is controlled by the parameter DB_BLOCK_SIZE and can never be changed after database creation. (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "When a table is created, what object is created specifically to hold its data?",
+      "a": "A segment (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "What term describes the unit in which a row is ultimately stored within a database block?",
+      "a": "A row piece (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "Name two circumstances that can cause an entire row to be stored across multiple pieces.",
+      "a": "When an inserted row is too large to fit into a single block (chained row), or when an update causes an existing row to outgrow the available free space of the current block (migrated row) (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "What type of chaining occurs when row pieces are in the same block, often used when a table has more than 255 columns?",
+      "a": "Intrablock chaining (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What does the SYSTEM tablespace provide storage for?",
+      "a": "The Oracle data dictionary objects; it stores all objects owned by the SYS user. (Page 18)"
+    },
+    {
+      "id": 22,
+      "q": "What is the SYSAUX tablespace used as?",
+      "a": "An auxiliary tablespace used as a data repository for Oracle database tools, such as Enterprise Manager, Statspack, LogMiner, and Logical Standby. (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "What information does the UNDO tablespace store?",
+      "a": "Information required to undo the effects of a transaction (insert, update, delete, or merge), especially if a transaction is purposely rolled back. (Page 18)"
+    },
+    {
+      "id": 24,
+      "q": "When creating a database, what are the five typically created tablespaces?",
+      "a": "SYSTEM, SYSAUX, UNDO, TEMP, USERS. (Page 16)"
+    },
+    {
+      "id": 25,
+      "q": "What are TEMP tablespaces typically used for?",
+      "a": "They are typically used for sorting query results or providing temporary storage when creating or rebuilding indexes. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "Can permanent database objects be stored in a TEMP tablespace?",
+      "a": "No, the space is only used for transient data and cannot contain permanent database objects. (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "What is the USERS tablespace often used as?",
+      "a": "It is often used as a default permanent tablespace for table and index data for users. (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "If no tablespace is specified during object creation, where will the object be created by default?",
+      "a": "By default, the object is created in the default permanent tablespace. (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "Historically, why did DBAs separate table and index data into different tablespaces?",
+      "a": "To reduce input/output (I/O) contention because the data files could be placed on different disks with separate controllers. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "Besides performance reasons, what are valid reasons for creating multiple tablespaces for table and index data?",
+      "a": "Backup and recovery requirements may be different; indexes may have storage requirements different from the table data; or to simplify management by logically grouping tables and indexes separately. (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "When might a user want to separate a LOB column into its own tablespace?",
+      "a": "Because they want to manage the LOB tablespace storage characteristics differently from those of the regular table data. (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "How does grouping objects in separate tablespaces assist with space management, even when using Automatic Segment Space Management (ASSM)?",
+      "a": "The grouping assists in the management of the objects as well as the automated space management. (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "When creating a tablespace in Toad for Oracle, what three items must be determined on the \"Basic Info\" page?",
+      "a": "A name for the new tablespace, its type (Permanent, Temporary, Undo), and the Extent Management setting (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "What is the recommended choice for Extent Management when creating a tablespace?",
+      "a": "Allocated Managed (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "When determining allocation size and segment management for a new tablespace, what options are available?",
+      "a": "Auto Allocate Extent Sizes, Uniform Extent Sizes, and Auto Segment Space Management (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "What are the possible types that determine a new tablespace's content type?",
+      "a": "Permanent, Temporary, or Undo (الصفحة 26)"
+    },
+    {
+      "id": 37,
+      "q": "When creating a datafile, what information must be entered along with the Datafile name and full path?",
+      "a": "The initial datafile size, whether it is Auto Extent (requiring determination of additional space), and if it has a maximum size limit. (الصفحة 28)"
+    },
+    {
+      "id": 38,
+      "q": "What are the two ways extents can be allocated in a tablespace?",
+      "a": "Automatic ('autoallocate'), where system manages extent sizes; or Uniform, which specifies management with uniform extents of a specified size (default is 1 MB). (الصفحة 30)"
+    },
+    {
+      "id": 39,
+      "q": "What are the key characteristics of an Undo Tablespace?",
+      "a": "It is used to store undo segments, cannot contain any other objects, and can only use the DATAFILE and EXTENT MANAGEMENT clauses. (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "Which type of tablespace cannot be specified with 'Automatic' extent allocation?",
+      "a": "A temporary tablespace. (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "What is an advantage of using the bigfile feature when creating a tablespace?",
+      "a": "It has the potential to create very large files (e.g., up to 128TB with a 32KB block size). (الصفحة 32)"
+    },
+    {
+      "id": 42,
+      "q": "What is a potential disadvantage of using a bigfile tablespace?",
+      "a": "If space runs out on the file system that supports the data file, you cannot expand the size of the tablespace. (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "Who automatically owns the undo segments in an instance?",
+      "a": "SYS. (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "What clause must be used to create a bigfile tablespace?",
+      "a": "Use the BIGFILE clause. (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "Temporary tablespaces are primarily used for what type of operation?",
+      "a": "Sort operations (الصفحة 34)"
+    },
+    {
+      "id": 46,
+      "q": "What permanent objects cannot reside in a temporary tablespace?",
+      "a": "No permanent schema objects can reside in a temporary tablespace. (الصفحة 34)"
+    },
+    {
+      "id": 47,
+      "q": "If a database is created without a default temporary tablespace, what tablespace is assigned by default to users created without a TEMPORARY TABLESPACE clause?",
+      "a": "The SYSTEM tablespace (الصفحة 34)"
+    },
+    {
+      "id": 48,
+      "q": "What command sequence is used to set a default temporary tablespace for an existing database?",
+      "a": "Create the temporary tablespace, then alter the database using ALTER DATABASE DEFAULT TEMPORARY TABLESPACE temp (الصفحة 34)"
+    }
+  ]
+}

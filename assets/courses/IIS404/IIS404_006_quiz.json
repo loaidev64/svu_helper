@@ -1,0 +1,545 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary responsibility of a DBA regarding MS SQL Server?",
+      "options": [
+        "Developing new application features and modules.",
+        "Monitoring the database and tuning its performance and design.",
+        "Managing network infrastructure and physical servers.",
+        "Writing stored procedures for user authentication only."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "A Database Administrator (DBA) is responsible for monitoring the entire SQL Server environment, ensuring optimal performance, and adjusting the physical design of the database using a comprehensive set of specialized tools.",
+      "id": 1
+    },
+    {
+      "question": "Which tool listed in the chapter contents is used to monitor system activity and trace events within MS SQL Server?",
+      "options": [
+        "Performance Dashboard",
+        "Open Activity Monitor",
+        "Dynamic Management Views (DMVs)",
+        "Query Store"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "The Open Activity Monitor is a key tool listed in the chapter contents that allows users to monitor real-time activity and trace various events occurring within the MS SQL Server instance.",
+      "id": 2
+    },
+    {
+      "question": "According to the material, what does monitoring and tuning provide for an MS SQL Server database?",
+      "options": [
+        "Only the ability to backup data regularly.",
+        "A comprehensive set of tools for monitoring events and tuning physical database design.",
+        "Automated security patches and updates only.",
+        "Direct access to the operating system's core files."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Monitoring and tuning provide a DBA with a comprehensive suite of tools that enable them to track various operational events and make necessary adjustments to optimize the physical structure and performance of the database.",
+      "id": 3
+    },
+    {
+      "question": "لمراقبة العمليات التي تتم من قبل المستخدمين على قاعدة البيانات، يمكن للمسؤول استخدام أي من الخيارات التالية؟",
+      "options": [
+        "الاعتماد فقط على تطبيقات خارجية مستقلة (third party applications).",
+        "استخدام أدوات المراقبة الموجودة بشكل أساسي ضمن SQL Server أو تطبيقات خارجية.",
+        "كتابة استعلامات T-SQL معقدة لمتابعة جميع العمليات يدوياً.",
+        "الاعتماد فقط على سجلات النظام التشغيلي (OS logs)."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "عند مراقبة العمليات التي يقوم بها المستخدمون، يمكن للمسؤولين الاستعانة بتطبيقات خارجية مستقلة أو استخدام مجموعة شاملة من أدوات المراقبة المتوفرة بشكل أساسي ضمن بيئة SQL Server نفسها.",
+      "id": 4
+    },
+    {
+      "question": "ما هي الوظيفة الأساسية لأداة SQL Trace في مراقبة أداء قاعدة البيانات؟",
+      "options": [
+        "تحليل التغيرات التاريخية في أداء الاستعلامات تلقائياً.",
+        "تسجيل الأحداث التي تحدث داخل قاعدة البيانات وتسمح بتصفيتها (filtering).",
+        "تعديل تصميم قاعدة البيانات المادية لتحسين الأداء بشكل مباشر.",
+        "عرض قائمة شاملة بجميع المستخدمين الذين قاموا بالدخول إلى النظام."
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "أداة SQL Trace هي آلية لتسجيل الأحداث التي تحدث داخل بيئة قاعدة البيانات، وتسمح للمستخدم بتحديد أنواع الأحداث المراد تتبعها وتصفيتها لتركيز المراقبة على العمليات المطلوبة فقط.",
+      "id": 5
+    },
+    {
+      "question": "ما هو الغرض الرئيسي من استخدام أداة Query Store في SQL Server؟",
+      "options": [
+        "تنفيذ إجراءات تخزين (Stored Procedures) معقدة بشكل دوري.",
+        "مراقبة موارد النظام الأساسية مثل الذاكرة والمعالج.",
+        "تتبع وتخزين بيانات الأداء التاريخية للاستعلامات لمقارنة التغيرات في أدائها.",
+        "إنشاء مخططات بيانية (diagrams) لتوضيح العلاقات بين الجداول."
+      ],
+      "correctIndex": 2,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Query Store هي أداة متقدمة تهدف إلى تسجيل وتخزين بيانات الأداء التاريخية للاستعلامات، مما يتيح للمسؤولين مقارنة كيفية تغير أداء الاستعلامات بمرور الوقت واتخاذ قرارات التحسين بناءً على هذه البيانات.",
+      "id": 6
+    },
+    {
+      "question": "أي من الأدوات التالية لا تُعد ضمن مجموعة أدوات مراقبة وضبط أداء SQL Server المذكورة في النص؟",
+      "options": [
+        "Open Activity Monitor.",
+        "Windows Performance Monitor (أداة نظام تشغيل خارجية).",
+        "Dynamic Management Views DMVs.",
+        "SQL Server Profiler."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "على الرغم من أن Windows Performance Monitor هي أداة قوية لمراقبة النظام، إلا أنها تُعتبر أداة نظام تشغيل خارجية وليست ضمن مجموعة أدوات المراقبة المتخصصة والمدمجة في بيئة SQL Server نفسها.",
+      "id": 7
+    },
+    {
+      "question": "What is the primary function of the Activity Monitor tool in SQL Server Management Studio?",
+      "options": [
+        "It is used exclusively for writing complex stored procedures.",
+        "It is a GUI tool that displays information related to the SQL Server and the database (DB).",
+        "It is designed solely for capturing all server-level events.",
+        "It helps in managing physical disk space allocation only."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The Activity Monitor serves as a graphical user interface (GUI) tool that provides comprehensive visibility into various aspects of the SQL Server and its associated databases, allowing users to monitor performance and activity at a glance.",
+      "id": 8
+    },
+    {
+      "question": "Which statement accurately describes the capability of the Active Expensive Queries option in Activity Monitor?",
+      "options": [
+        "It can only track resource usage for queries running on a single server instance.",
+        "It allows tracking all resources consumed and enables filtering results to a single database (DB) within SQL Server.",
+        "Its primary function is to capture system events using stored procedures.",
+        "It is limited to viewing information about the physical disk space allocation only."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The Active Expensive Queries feature provides advanced monitoring capabilities, allowing users not only to see which resources are being consumed but also to narrow down and filter those results specifically for a single database within the entire SQL Server environment.",
+      "id": 9
+    },
+    {
+      "question": "How does the SQL Trace mechanism capture events occurring on the server?",
+      "options": [
+        "It requires manual intervention by an administrator to check every event individually.",
+        "It captures all events that occur at the server level, requiring stored procedures and known event IDs for activation.",
+        "It relies solely on the GUI interface of SQL Server Management Studio (SSMS).",
+        "It only monitors resource consumption metrics without capturing event details."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "To activate SQL Trace, one must execute a code sequence involving system stored procedures and specify the exact IDs of the events that need to be captured, ensuring comprehensive monitoring of all server-level activities.",
+      "id": 10
+    },
+    {
+      "question": "What is the potential performance risk associated with configuring the Activity Monitor refresh interval?",
+      "options": [
+        "Setting it too high will prevent any data from being displayed in the GUI.",
+        "Setting it to less than 10 seconds can affect overall server performance due to the time used to run monitoring queries.",
+        "The refresh interval has no impact on server performance, regardless of the setting.",
+        "It only affects the client machine's processing power and not the server itself."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "If the Activity Monitor refresh interval is set to a very short duration, such as less than 10 seconds, the time required for the system to execute the necessary monitoring queries can consume significant resources, potentially degrading the overall performance of the SQL Server.",
+      "id": 11
+    },
+    {
+      "question": "ما هي الوظيفة الأساسية لـ SQL Server Profiler؟",
+      "options": [
+        "تحليل أداء قاعدة البيانات وتقديم توصيات لتحسينها.",
+        "واجهة مستخدم رسومية لالتقاط وحفظ البيانات حول الأحداث المختلفة لمراقبة مثيل محرك قاعدة البيانات.",
+        "إنشاء تتبعات (traces) جديدة على مثيل SQL Server باستخدام إجراءات التخزين النظامية.",
+        "استبدال أداة SQL Trace بالكامل في جميع بيئات العمل."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "تُعد SQL Server Profiler واجهة مستخدم رسومية مخصصة لـ SQL Trace، وتسمح للمستخدمين بالتقاط وحفظ البيانات المتعلقة بكل حدث يمر عبر مثيل محرك قاعدة البيانات أو خدمات التحليل لمراجعتها وتحليلها لاحقًا.",
+      "id": 12
+    },
+    {
+      "question": "ما هو الدور الرئيسي لأداة Database Engine Tuning Advisor (DTA)؟",
+      "options": [
+        "إدارة المستخدمين وتحديد صلاحياتهم على مستوى الخادم.",
+        "تحليل قواعد البيانات وتقديم توصيات لتحسين أداء الاستعلام، مثل تحديد وإنشاء الفهارس المثالية أو تقسيم الجداول.",
+        "مراقبة الأحداث في الوقت الحقيقي وتسجيلها في ملفات السجل (Log Files).",
+        "استبدال إجراءات التخزين النظامية لإنشاء التتبعات يدويًا."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "يقوم Database Engine Tuning Advisor بتحليل أداء قواعد البيانات بشكل شامل، ويقدم توصيات عملية يمكن استخدامها لتحسين سرعة الاستعلام، وتشمل هذه التوصيات تحديد وإنشاء مجموعة مثالية من الفهارس أو طرق تقسيم الجداول.",
+      "id": 13
+    },
+    {
+      "question": "ما هو التحذير الأهم المتعلق باستخدام Database Engine Tuning Advisor (DTA) في بيئة العمل الحقيقية؟",
+      "options": [
+        "يجب استخدامه فقط للمستخدمين ذوي الخبرة العالية لتجنب الأخطاء.",
+        "لا يُنصح باستخدامه في البيئة الحقيقية للعمل لأنه يقوم بإنشاء فهارس افتراضية (Hypothetical Indexes) تتطلب إزالة يدوية.",
+        "يجب تشغيله دائمًا مع أداة SQL Server Profiler لضمان الدقة.",
+        "لا يمكنه العمل إلا على قواعد البيانات التي تحتوي على سجلات معاملات كبيرة الحجم."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "ينص التنبيه على أن استخدام DTA في بيئة الإنتاج أو البيئة الحقيقية للعمل غير مستحسن، وذلك لأنه يقوم بإنشاء فهارس افتراضية لا يتم إزالتها تلقائيًا ويجب على المستخدم إزالتها يدويًا.",
+      "id": 14
+    },
+    {
+      "question": "كيف يمكن للمستخدمين إنشاء تتبعات (traces) على مثيل SQL Server بشكل يدوي بدلاً من استخدام SQL Server Profiler؟",
+      "options": [
+        "عن طريق تشغيل أمر `TRUNCATE TABLE` مباشرةً في نافذة الاستعلام.",
+        "باستخدام إجراءات التخزين النظامية Transact-SQL التي توفرها Microsoft SQL Server.",
+        "عبر تعديل ملفات سجل المعاملات (Transaction Log Files) يدوياً.",
+        "بالاعتماد على أداة Database Engine Tuning Advisor لتوليد الكود اللازم للتتبع."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "توفر Microsoft SQL Server مجموعة من إجراءات التخزين النظامية المكتوبة بلغة Transact-SQL، والتي تسمح للمطورين بتنفيذ عمليات إنشاء التتبعات يدوياً داخل تطبيقاتهم الخاصة بدلاً من الاعتماد على واجهة المستخدم الرسومية.",
+      "id": 15
+    },
+    {
+      "question": "What is the primary function of the `DBCC CHECKDB` command?",
+      "options": [
+        "To gather and display various types of performance information about the database.",
+        "To check the logical and physical integrity of all objects within a specified database.",
+        "To perform miscellaneous tasks such as enabling trace flags or removing DLLs from memory.",
+        "To validate the allocation of database pages only."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The `DBCC CHECKDB` command is used to ensure that all objects within a specified database maintain their logical and physical integrity. It performs comprehensive checks on various components, including checking the state of all pages, which helps administrators identify potential corruption or inconsistencies in the data structure.",
+      "id": 16
+    },
+    {
+      "question": "Which command category is designated for performing maintenance tasks on core database structures?",
+      "options": [
+        "Informational",
+        "Maintenance",
+        "Validation",
+        "Miscellaneous"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The Maintenance command category is specifically designed to handle necessary upkeep and structural changes related to a database, index, or filegroup. These tasks are crucial for keeping the database operational and optimized over time.",
+      "id": 17
+    },
+    {
+      "question": "If an administrator needs to perform operations that validate the structure of components like tables, indexes, or catalogs, which command category should they use?",
+      "options": [
+        "Maintenance",
+        "Validation",
+        "Informational",
+        "Miscellaneous"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The Validation command category is dedicated to performing validation operations. These operations ensure the structural correctness of various database elements, including tables, indexes, catalogs, and filegroups, confirming that they adhere to defined rules and allocations.",
+      "id": 18
+    },
+    {
+      "question": "What is the primary purpose of Dynamic Management Views (DMVs) in SQL Server?",
+      "options": [
+        "To run database consistency checks like DBCC CHECKALL.",
+        "To monitor SQL Server performance and troubleshoot issues.",
+        "To release unused cache entries from memory.",
+        "To validate link-level consistency for FILESTREAM data."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Dynamic Management Views (DMVs) are specialized views within SQL Server designed specifically to provide administrators with real-time information about the server's operational status and performance metrics, which is crucial for troubleshooting and monitoring.",
+      "id": 19
+    },
+    {
+      "question": "Which command is used to manually release all unused cache entries from all caches in SQL Server?",
+      "options": [
+        "DBCC CHECKCATALOG",
+        "DBCC FREESYSTEMCACHE",
+        "sys.dm_exec_query_stats",
+        "DBCC CHECKTABLE"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The `DBCC FREESYSTEMCACHE` command is used to proactively clear unused cache entries from all system caches, thereby freeing up available memory (RAM) for the SQL Server Database Engine to use with current operations.",
+      "id": 20
+    },
+    {
+      "question": "What information does the DMV `sys.dm_exec_query_stats` provide?",
+      "options": [
+        "The total size of the transaction log for a specific database.",
+        "A row for every query statement in a cached query plan, detailing processor time usage.",
+        "Whether the database is online or offline status.",
+        "The consistency level between table metadata and file system directories."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "`sys.dm_exec_query_stats` is a powerful DMV that tracks performance details for cached query plans, returning specific information such as the average, minimal, maximal, and total processor time consumed by each executed query statement.",
+      "id": 21
+    },
+    {
+      "question": "If an administrator needs to check the structural integrity of all pages and structures within a table or indexed view, which DBCC command should be used?",
+      "options": [
+        "DBCC CHECKALL",
+        "DBCC CHECKTABLE",
+        "DBCC CHECKCATALOG",
+        "sys.dm_db_log_space_usage"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The `DBCC CHECKTABLE` command is specifically designed to validate the integrity of a single table or indexed view by checking all underlying pages and structures that constitute that object within the database.",
+      "id": 22
+    },
+    {
+      "question": "Which Dynamic Management View (DMV) is used to retrieve a row for every session on the SQL Server instance, providing details like program name and session status?",
+      "options": [
+        "sys.dm_exec_requests",
+        "sys.dm_exec_sessions",
+        "sys.dm_db_log_stats",
+        "sys.databases"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "The `sys.dm_exec_sessions` DMV is specifically designed to return comprehensive information about every active session connected to the SQL Server instance, allowing users to monitor details such as which program initiated the connection and the current status of that session.",
+      "id": 23
+    },
+    {
+      "question": "To identify requests that are currently blocked or waiting for data locks, what specific value should one search for within the `sys.dm_exec_requests` DMV?",
+      "options": [
+        "Running",
+        "Suspended",
+        "Active",
+        "Completed"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "The `sys.dm_exec_requests` view tracks all user and system requests being executed. When a request is waiting for another process to release necessary data locks, its status column will typically show 'suspended', indicating that it is blocked.",
+      "id": 24
+    },
+    {
+      "question": "What key information does the `sys.dm_db_log_stats` DMV provide regarding transaction log files?",
+      "options": [
+        "The list of all connected users and their login names.",
+        "The current CPU usage percentage for the database engine.",
+        "Details including recovery model, total VLF count, and active log size.",
+        "A history of executed queries and their execution plans."
+      ],
+      "correctIndex": 2,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "`sys.dm_db_log_stats` is a specialized DMV that returns critical information about the transaction log files within a database. This includes details such as the recovery model, the total number of Virtual Log Files (VLF), and the amount of active log space used.",
+      "id": 25
+    },
+    {
+      "question": "To obtain useful information about the log structure for every database on the server simultaneously, what method should be employed?",
+      "options": [
+        "Using a simple `SELECT *` query across all DMVs.",
+        "Cross-joining with the `sys.databases` system view.",
+        "Running separate queries for each individual database name.",
+        "Querying only the master database using its ID."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "To project data and gather useful information about the log structure across an entire SQL Server instance, it is necessary to cross-join the relevant DMV with the `sys.databases` system view. This allows a single query to encompass all databases listed in the system catalog.",
+      "id": 26
+    },
+    {
+      "question": "What is the primary function of Query Store when monitoring database performance?",
+      "options": [
+        "To automatically restart services that are experiencing high CPU load.",
+        "To capture and track historical data on queries, plans, and runtime statistics for analysis.",
+        "To manage user permissions and restrict access to sensitive tables.",
+        "To optimize the physical storage location of database files (data files)."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "Query Store is a feature designed to simplify performance troubleshooting by automatically capturing historical data. It tracks details about queries, their execution plans, and runtime statistics, allowing users to analyze how query performance changes over time due to various factors.",
+      "id": 27
+    },
+    {
+      "question": "What primary function does `sys.dm_db_log_info` perform?",
+      "options": [
+        "It monitors general CPU utilization across all database instances.",
+        "It deals with and provides information about the log files within a database.",
+        "It tracks network latency between client applications and the server.",
+        "It manages user permissions and security roles for the database."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The `sys.dm_db_log_info` view is specifically designed to manage and provide detailed information regarding the log files of a database, making it a crucial tool for monitoring transaction logging activity.",
+      "id": 28
+    },
+    {
+      "question": "What specific components does the `sys.dm_db_log_info` view report on?",
+      "options": [
+        "Database connection strings and user credentials.",
+        "Virtual Log Files (VLFs), which constitute the database's transaction log.",
+        "Index fragmentation levels across all tables.",
+        "Server memory allocation and usage statistics."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "This management view focuses on the structure of the transaction log by detailing Virtual Log Files (VLFs). These VLFs are the physical components that make up the database's overall transaction log.",
+      "id": 29
+    },
+    {
+      "question": "What is a potential negative consequence of having an excessive number of VLFs in a database?",
+      "options": [
+        "It increases the required disk space for user data tables.",
+        "It can negatively impact the startup and recovery time of the database.",
+        "It automatically triggers index rebuilds, slowing down write operations.",
+        "It causes immediate failure of all stored procedures within the database."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Having a large number of VLFs can complicate the process of bringing the database online or recovering it after an outage, thereby negatively affecting both startup and recovery times.",
+      "id": 30
+    },
+    {
+      "question": "Which older database console command is replaced by using `sys.dm_db_log_info`?",
+      "options": [
+        "sp_helpdb",
+        "dbcc log info",
+        "sys.sp_monitor",
+        "EXEC sp_who"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The modern management view, `sys.dm_db_log_info`, serves as a replacement for the older database console command, `dbcc log info`, providing more detailed and programmatic access to log file information.",
+      "id": 31
+    },
+    {
+      "question": "According to the material, what types of performance bottlenecks can the Performance Dashboard help identify?",
+      "options": [
+        "Only network connectivity issues between servers.",
+        "CPU, I/O, blocking, and resource contention problems.",
+        "Operating system kernel failures or memory leaks.",
+        "User login attempts that exceed predefined limits."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Performance Dashboard is designed to give users a comprehensive view of the database's health by helping identify common performance bottlenecks, including those related to CPU usage, Input/Output operations, blocking, and resource contention.",
+      "id": 32
+    },
+    {
+      "question": "What key metrics can be monitored using the Performance Dashboard?",
+      "options": [
+        "Only user login counts and failed connection attempts.",
+        "CPU utilization, wait types, physical reads, duration, and CLR time.",
+        "Network packet loss rates and firewall rule violations.",
+        "Operating system patch levels and service pack installation dates."
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "The Performance Dashboard provides visibility into critical operational metrics such as CPU usage, various wait types, physical reads, the duration of operations, and CLR time to help diagnose performance issues.",
+      "id": 33
+    },
+    {
+      "question": "What are the primary capabilities of Windows Performance Monitor regarding data visualization?",
+      "options": [
+        "It can only display instantaneous, real-time metrics without historical context.",
+        "It displays useful information in comprehensive real-time graphs and allows saving historical data for a long time.",
+        "Its function is limited to generating simple bar charts that show immediate performance spikes.",
+        "It requires manual intervention every hour to collect new sets of data points."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "Windows Performance Monitor is highly useful because it provides comprehensive visualization tools, allowing users not only to view metrics as they happen in real time but also to retain and analyze historical performance data over extended periods.",
+      "id": 34
+    },
+    {
+      "question": "According to the text, what limitation does Windows Performance Monitor have when performing deep analysis?",
+      "options": [
+        "It cannot connect to network resources or remote servers for monitoring purposes.",
+        "It cannot provide sufficient information necessary for in-depth analysis, drawing a trend line, or setting a threshold.",
+        "It is restricted only to analyzing CPU usage and cannot monitor memory consumption.",
+        "It requires specialized scripting knowledge that most users do not possess."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "While powerful for monitoring, the tool has specific limitations; it cannot offer enough detailed information on its own to allow a user to perform deep analytical work, such as projecting future performance using trend lines or automatically flagging issues with defined thresholds.",
+      "id": 35
+    },
+    {
+      "question": "What is the overall focus of the discussion regarding Windows Performance Monitor?",
+      "options": [
+        "Managing operating system updates and patches for stability.",
+        "Configuring network firewall rules and access permissions.",
+        "Monitoring and tuning the performance of MS SQL Server.",
+        "Developing complex database queries and stored procedures."
+      ],
+      "correctIndex": 2,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "The material specifically discusses how Windows Performance Monitor can be utilized in the context of optimizing and improving the operational efficiency, or \"tuning,\" of Microsoft SQL Server databases.",
+      "id": 36
+    }
+  ]
+}

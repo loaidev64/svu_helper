@@ -1,0 +1,1130 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary focus of Chapter 8 in Oracle Database Administration?",
+      "options": [
+        "Managing user accounts and permissions",
+        "Schema Objects: Tables and Constraints",
+        "Network connectivity and security protocols",
+        "Advanced SQL query optimization techniques"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "Chapter 8 is dedicated to the management of schema objects, specifically covering how tables are structured and how constraints are applied to maintain data integrity within the Oracle database.",
+      "id": 1
+    },
+    {
+      "question": "In the context of database design, what is the main purpose of implementing Constraints?",
+      "options": [
+        "To determine the physical storage location of the table data",
+        "To enforce rules that ensure the accuracy and consistency of data",
+        "To optimize the speed of complex join operations across multiple tables",
+        "To manage user access levels and security permissions for the database schema"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Constraints are rules defined on columns or tables to limit what kind of data can be entered, thereby ensuring that the data remains accurate, consistent, and adheres to predefined business logic.",
+      "id": 2
+    },
+    {
+      "question": "Which type of table structure is described as an alternative organization method besides standard heap storage?",
+      "options": [
+        "Temporary Table",
+        "Index-Organized Table",
+        "View Object",
+        "Schema Definition File"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "An Index-Organized Table stores the data rows in the same physical order as the index keys, which can significantly improve performance for queries that frequently use indexed columns.",
+      "id": 3
+    },
+    {
+      "question": "Before creating or modifying schema objects like tables, what foundational knowledge must be understood?",
+      "options": [
+        "Advanced PL/SQL programming techniques",
+        "Naming Rules and Data Types",
+        "Operating System administration commands",
+        "Network routing protocols for database connections"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Understanding the established naming rules ensures that object names comply with database standards, while knowing data types is crucial because it dictates what kind of information can be stored in each column.",
+      "id": 4
+    },
+    {
+      "question": "What are the general rules regarding naming schema objects in a database?",
+      "options": [
+        "Names must be between 1 and 30 characters, but they can start with an alphabetic character from the database character set.",
+        "The length of names must be from 1 to 30 characters, and non-quoted names cannot begin with an alphabetic character from your database character set.",
+        "Names are restricted only to letters and numbers; underscores and dollar signs are forbidden.",
+        "Database link names can use the hash symbol (#) as long as they are less than 128 characters."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "General naming rules dictate that schema object names must be between one and thirty characters in length. Furthermore, when using non-quoted identifiers, the name cannot start with an alphabetic character from the database's defined character set.",
+      "id": 5
+    },
+    {
+      "question": "According to special naming rules for schema objects, what is the maximum allowed length for a database name?",
+      "options": [
+        "It can be up to 30 characters long, similar to general object names.",
+        "It may be up to 8 characters only.",
+        "It must be exactly 128 characters long.",
+        "There is no specific length restriction for database names."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Special naming rules impose stricter limits on certain objects. Specifically, a database name has a maximum allowed length of only eight characters, while database link names can be significantly longer at up to 128 characters.",
+      "id": 6
+    },
+    {
+      "question": "Which type of table is described as the default table type and the most commonly used because it does not require a specific reason for using an alternative structure?",
+      "options": [
+        "Index organized",
+        "Heap Organized",
+        "Temporary",
+        "Partitioned"
+      ],
+      "correctIndex": 1,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "The Heap Organized table is considered the default and most frequently utilized type. It serves as the standard storage mechanism unless a user has a specific technical reason to implement a different, specialized table structure.",
+      "id": 7
+    },
+    {
+      "question": "A program requires temporary storage for sorting data that is only needed during the execution of a session or transaction. Which table type should be used?",
+      "options": [
+        "Heap Organized, because it is the default and most flexible option.",
+        "Index organized, as it provides fast random access based on primary keys.",
+        "Temporary, which stores session private data allocated in temporary segments for the duration of a transaction.",
+        "Partitioned, since it allows large tables to be split into manageable physical segments."
+      ],
+      "correctIndex": 2,
+      "page": "5",
+      "section": null,
+      "hint": "راجع الصفحة 5",
+      "explanation": "The Temporary table type is specifically designed to handle session-private data. This data exists only for the duration of a program's execution or a database transaction and is used when sorting or storing intermediate results.",
+      "id": 8
+    },
+    {
+      "question": "What is described as the basic storage container for data within a database?",
+      "options": [
+        "A schema",
+        "A table",
+        "A constraint",
+        "A transaction log"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "A table serves as the fundamental structure where data is physically stored in a database. It acts as the primary container, allowing users to organize and manage records according to defined columns and rows.",
+      "id": 9
+    },
+    {
+      "question": "Which mechanism is responsible for ensuring that data adheres to predefined business rules by inspecting it during operations like insertion, updating, or deleting?",
+      "options": [
+        "The schema definition",
+        "A constraint",
+        "DML statements",
+        "The table structure"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "Constraints are specific database mechanisms designed solely to enforce data integrity. They check incoming data against established rules—such as ensuring uniqueness or non-null values—to prevent the violation of business logic.",
+      "id": 10
+    },
+    {
+      "question": "In a database context, what term refers to a collection of database objects that are owned by a particular user?",
+      "options": [
+        "A table",
+        "A schema",
+        "A constraint set",
+        "A data type"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "A schema is essentially the namespace or container for all database objects belonging to a specific user. It groups together tables, views, indexes, and other structures owned by that individual account.",
+      "id": 11
+    },
+    {
+      "question": "Which statements are used to create and modify the structure of a table, such as using CREATE TABLE?",
+      "options": [
+        "DML statements (Data Manipulation Language)",
+        "DDL statements (Data Definition Language)",
+        "Transaction control statements",
+        "Query language statements"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "Data Definition Language (DDL) commands, such as CREATE TABLE and ALTER TABLE, are used to define or modify the structure of database objects. Conversely, DML statements manipulate the data *within* those structures.",
+      "id": 12
+    },
+    {
+      "question": "When performing operations using DML statements (like INSERT or UPDATE), what must be explicitly or implicitly issued to conclude the transaction?",
+      "options": [
+        "A SELECT statement",
+        "A COMMIT or ROLLBACK",
+        "An ALTER TABLE command",
+        "A SCHEMA definition"
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "DML statements modify data and these changes are temporary until a transaction control command is issued. Therefore, either issuing a COMMIT to permanently save the changes or a ROLLBACK to discard them is mandatory.",
+      "id": 13
+    },
+    {
+      "question": "What is the primary difference in how VARCHAR2 handles storage compared to CHAR when defining a column?",
+      "options": [
+        "VARCHAR2 always stores data using fixed bytes, while CHAR uses variable bytes.",
+        "VARCHAR2 allocates space based on the actual number of characters stored, making it flexible.",
+        "CHAR can store any character set, whereas VARCHAR2 is limited to ASCII.",
+        "Both types allocate space based on the maximum defined length regardless of content."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "The key distinction is flexibility: VARCHAR2 dynamically allocates storage based only on the actual characters entered into the column. CHAR, however, reserves a fixed amount of space equal to its defined length, even if fewer characters are stored.",
+      "id": 14
+    },
+    {
+      "question": "What characters are permitted when naming schema objects in an Oracle database?",
+      "options": [
+        "Letters, hyphens (-), and underscores (_)",
+        "Letters, numbers, underscore (_), the dollar sign (\\$), or the hash symbol (#)",
+        "Numbers, periods (.), and dashes (-)",
+        "Alphabetic characters only"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "Schema object names must be composed of letters, numbers, underscores, the dollar sign, or the hash symbol. This set of allowed characters ensures compatibility and adherence to Oracle's naming conventions for database objects.",
+      "id": 15
+    },
+    {
+      "question": "What is the maximum length limit specified for a Database name in an Oracle environment?",
+      "options": [
+        "Up to 128 characters",
+        "Up to 8 characters",
+        "Up to 30 characters",
+        "No specific character limit exists"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "A database name has a strict length limitation, allowing for a maximum of eight characters. This constraint is separate from the longer limits allowed for other objects like database link names.",
+      "id": 16
+    },
+    {
+      "question": "Which table type is characterized as the default and most commonly used structure in Oracle?",
+      "options": [
+        "Index organized",
+        "Heap Organized",
+        "Temporary",
+        "Partitioned"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The Heap Organized table type is the standard, default table structure provided by Oracle. It is generally the most frequently used type unless a specific performance or data management requirement dictates otherwise.",
+      "id": 17
+    },
+    {
+      "question": "If a table is queried primarily using its primary key columns and stores data within a B-tree index structure for fast random access, what type of table is it?",
+      "options": [
+        "Heap Organized",
+        "Index organized",
+        "Temporary",
+        "External"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The Index organized table type maintains data within a balanced tree (B-tree) index structure. This design optimizes performance for queries that rely heavily on primary key lookups, providing fast random access capabilities.",
+      "id": 18
+    },
+    {
+      "question": "Which table type is specifically designed to hold session private data and only exists for the duration of a single transaction or session?",
+      "options": [
+        "Index organized",
+        "Temporary",
+        "Partitioned",
+        "In-Memory"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The Temporary table type is used for storing transient, session-specific data. This means the space allocated to it is automatically cleared once the associated transaction or session concludes.",
+      "id": 19
+    },
+    {
+      "question": "What kind of data storage mechanism does an External table utilize?",
+      "options": [
+        "Data stored entirely within Oracle's temporary segments.",
+        "Data stored in OS files outside the database, such as CSV files.",
+        "Data that must be loaded into Oracle memory for scanning.",
+        "Data residing only in a B-tree index structure."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "External tables are designed to efficiently access data that physically resides outside of the main database storage, allowing users to query files stored on the operating system level.",
+      "id": 20
+    },
+    {
+      "question": "When designing a new database table, what essential elements must be specified for each column?",
+      "options": [
+        "The primary key and foreign keys only.",
+        "The column names and their corresponding data types.",
+        "The index type and the storage allocation size.",
+        "Whether the column should be nullable or not null."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When creating a table, it is mandatory to define both the name of each column and the specific data type that will hold the information for that column. Understanding this relationship is fundamental when designing database schemas.",
+      "id": 21
+    },
+    {
+      "question": "Which of the following groups represents the comprehensive set of data types supported by Oracle?",
+      "options": [
+        "Character, Numeric, Date/Time, Object, and Structured.",
+        "Character, Numeric, Date/Time, RAW, ROWID, LOB, JSON.",
+        "String, Integer, Timestamp, Binary, and Text.",
+        "Primitive, Complex, LargeObject, and SemiStructured."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Oracle supports a robust set of data types to handle various kinds of information. These include Character, Numeric, Date/Time, RAW, ROWID, LOB, and JSON, allowing developers to store almost any type of data efficiently.",
+      "id": 22
+    },
+    {
+      "question": "What is the primary function or characteristic of the JSON data type in Oracle?",
+      "options": [
+        "It stores very large binary files that exceed standard character limits.",
+        "It is used exclusively for storing date and time stamps across multiple time zones.",
+        "It is designed to store semi-structured data, allowing flexibility similar to documents.",
+        "It represents a unique physical identifier assigned by the database system (ROWID)."
+      ],
+      "correctIndex": 2,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The JSON data type is specifically implemented to handle semi-structured data formats. This allows users to store complex, document-like information within the relational structure of the database while maintaining flexibility.",
+      "id": 23
+    },
+    {
+      "question": "What does LOB stand for in the context of Oracle's supported data types?",
+      "options": [
+        "Local Object Block",
+        "Large Object",
+        "Linked Operational Buffer",
+        "Logical Output Boundary"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "LOB stands for Large Object. This data type is used to store large amounts of binary or character data, such as images, audio files, and video streams, that exceed the capacity of standard data types.",
+      "id": 24
+    },
+    {
+      "question": "What is the primary advantage of using the `VARCHAR2` data type over the `CHAR` data type for storing character strings?",
+      "options": [
+        "CHAR always allocates space based on the actual number of characters inserted.",
+        "VARCHAR2 only allocates space corresponding to the number of characters actually stored in the string.",
+        "Both types allocate a fixed amount of space regardless of content size.",
+        "Using CHAR is generally safer when dealing with multibyte character sets."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The `VARCHAR2` data type is efficient because it dynamically allocates storage based on the actual length of the string inserted, meaning if you store a one-character string in a column defined as VARCHAR2(30), only space for that single character is consumed. In contrast, `CHAR` always reserves its full, fixed length regardless of how much data is actually stored.",
+      "id": 25
+    },
+    {
+      "question": "When defining a `VARCHAR2` column to handle potential multibyte characters (like Arabic), which method should be used to specify the maximum length?",
+      "options": [
+        "Specifying the length using BYTE because it guarantees storage in bytes.",
+        "Specifying the length using CHAR, as this ensures the specified number of characters can always be stored regardless of byte size.",
+        "Using NVARCHAR2 instead, as it automatically handles character counting.",
+        "The choice between BYTE and CHAR does not affect compatibility with multibyte sets."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "It is recommended to specify the length using `CHAR` when dealing with potential multibyte characters because some characters require more than one byte of storage. By specifying the length in characters, you guarantee that the database can store the desired number of characters, even if those characters consume multiple bytes each.",
+      "id": 26
+    },
+    {
+      "question": "Under what circumstances is it appropriate to use the fixed-length `CHAR` data type?",
+      "options": [
+        "When storing general text input where the size might vary frequently.",
+        "Only when the size of the value is absolutely static and will not change over time.",
+        "Whenever dealing with character sets that include non-Latin scripts.",
+        "If you anticipate needing to store data from a single-byte fixed-width character set."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The `CHAR` data type allocates a fixed amount of space, which can be inefficient if the stored value is much shorter than the defined length. Therefore, it should only be used when you are certain that the size of the data will never change and is absolutely static in nature.",
+      "id": 27
+    },
+    {
+      "question": "What is the primary use case for the `NVARCHAR2` and `NCHAR` data types?",
+      "options": [
+        "To store very large amounts of text data exceeding standard VARCHAR2 limits.",
+        "When a database originally used a single-byte character set but later needs to support multibyte Unicode characters.",
+        "For defining primary keys that must maintain fixed length regardless of content.",
+        "As a replacement for `VARCHAR2` when the maximum string length is less than 30 characters."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The `NVARCHAR2` and `NCHAR` data types are designed to support Unicode character sets, making them useful if a database was initially set up with a single-byte fixed-width character set but later requires the ability to store complex multibyte characters.",
+      "id": 28
+    },
+    {
+      "question": "According to the material, what is the maximum number of characters that can be specified in a `VARCHAR2` or `NVARCHAR2` data type in modern Oracle Database versions?",
+      "options": [
+        "30 characters (the standard limit).",
+        "Up to 32,767 characters.",
+        "The limit is determined by the size of the underlying storage block.",
+        "There is no specified maximum length; it depends on available memory."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "In Oracle Database version 12c and higher, developers have been given the capability to specify a significantly larger limit for character fields, allowing them to define lengths up to 32,767 characters in both `VARCHAR2` and `NVARCHAR2`.",
+      "id": 29
+    },
+    {
+      "question": "What character set is utilized by Oracle for storing data defined using the CHAR/VARCHAR2 data types?",
+      "options": [
+        "NLS_NCHAR_CHARACTERSET",
+        "NLS_CHARACTERSET",
+        "AL32UTF8",
+        "VARCHAR2_SET"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "The NLS_CHARACTERSET is the specific character set that Oracle uses to store data for standard CHAR and VARCHAR2 columns. This setting determines how characters are encoded when they occupy between 1 and 4 bytes of storage space.",
+      "id": 30
+    },
+    {
+      "question": "When using NCHAR/NVARCHAR2, what is the minimum guaranteed size in bytes that each character will occupy?",
+      "options": [
+        "1 byte",
+        "2 bytes",
+        "4 bytes",
+        "Variable bytes depending on the character"
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "For NCHAR/NVARCHAR2 data types, Oracle guarantees that every single character will occupy a minimum of 2 bytes. This ensures consistent storage and prevents any character from occupying less than two bytes, regardless of its actual encoding size.",
+      "id": 31
+    },
+    {
+      "question": "Which three numeric data types does Oracle support for storing data intended for use with mathematical functions such as SUM, AVG, MAX, and MIN?",
+      "options": [
+        "INT, REAL, DECIMAL",
+        "NUMBER, BINARY_DOUBLE, BINARY_FLOAT",
+        "CHAR, VARCHAR2, NCHAR",
+        "INTEGER, FLOAT, DOUBLE"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Oracle provides three specific numeric data types—NUMBER, BINARY_DOUBLE, and BINARY_FLOAT—that are designed to handle numerical calculations. These types allow users to perform aggregate functions like SUM or AVG on the stored data.",
+      "id": 32
+    },
+    {
+      "question": "If a DBA defines a column using data types such as INT or INTEGER, how does Oracle internally implement this definition?",
+      "options": [
+        "It uses the NLS_NCHAR_CHARACTERSET for storage.",
+        "It implements these types using the NUMBER data type.",
+        "It requires explicit casting to BINARY_DOUBLE.",
+        "It creates a separate column with a dedicated integer type."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Although Oracle supports various conceptual data types like INT, INTEGER, REAL, or DECIMAL in definitions, they are all implemented internally by the database using the NUMBER data type. This provides flexibility and consistency across different numeric specifications.",
+      "id": 33
+    },
+    {
+      "question": "Which two specific data types should be used when performing scientific calculations that require high precision?",
+      "options": [
+        "NUMBER and INTEGER",
+        "BINARY_DOUBLE and BINARY_FLOAT",
+        "CHAR and NCHAR",
+        "REAL and DECIMAL"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "For specialized tasks like scientific computations, the BINARY_DOUBLE and BINARY_FLOAT data types are recommended. These types map directly to standard Java data types (DOUBLE and FLOAT), making them suitable for high-precision mathematical operations.",
+      "id": 34
+    },
+    {
+      "question": "Which Oracle data type is best suited for storing a date component along with time granularity down to fractions of a second?",
+      "options": [
+        "DATE",
+        "TIMESTAMP",
+        "INTERVAL DAY TO SECOND",
+        "NUMBER"
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The TIMESTAMP data type is specifically designed to store both a date and a time component, offering precision that can be granular down to fractions of a second. While the DATE type includes a time component, its granularity is limited to seconds.",
+      "id": 35
+    },
+    {
+      "question": "What characteristic defines the RAW data type in Oracle?",
+      "options": [
+        "It stores large amounts of character text exceeding VARCHAR2 limits.",
+        "It provides a physical location identifier for every row on disk.",
+        "It allows storing binary data and has a maximum declared size of 32,767 bytes.",
+        "It is used exclusively to store time durations between years and months."
+      ],
+      "correctIndex": 2,
+      "page": "23",
+      "section": null,
+      "hint": "راجع الصفحة 23",
+      "explanation": "The RAW data type is designed for storing binary data, such as globally unique identifiers or encrypted information. It has a maximum declared size limit of 32,767 bytes, and the data are displayed in hexadecimal format.",
+      "id": 36
+    },
+    {
+      "question": "If you need to store large amounts of character data, like log files, that exceed the capacity of VARCHAR2, which LOB data type should be used?",
+      "options": [
+        "CLOB",
+        "CLOB",
+        "RAW",
+        "TIMESTAMP WITH TIME ZONE"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "A Character Large Object (CLOB) is specifically intended for storing large amounts of character data. It serves as the appropriate alternative when textual information exceeds the storage limits of a standard VARCHAR2 column.",
+      "id": 37
+    },
+    {
+      "question": "What does the ROWID pseudocolumn contain?",
+      "options": [
+        "The user who last modified the row's data.",
+        "The physical location of the row on disk.",
+        "A unique identifier generated by the application layer.",
+        "The date and time when the record was created."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "ROWID stands for Row Identifier, and it is a pseudocolumn that Oracle automatically provides with every table row. It contains the physical address or location of that specific row within the database storage on disk.",
+      "id": 38
+    },
+    {
+      "question": "Which data type should be used when the primary requirement is to store a duration or an interval of time?",
+      "options": [
+        "DATE",
+        "INTERVAL",
+        "TIMESTAMP",
+        "NUMBER"
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "The INTERVAL data type is specifically designed within Oracle to store a measure of duration, such as the difference between two points in time. It has variations like INTERVAL YEAR TO MONTH and INTERVAL DAY TO SECOND for precise duration tracking.",
+      "id": 39
+    },
+    {
+      "question": "What is the primary characteristic of a BFILE column?",
+      "options": [
+        "It stores large amounts of binary data that are meant to be human readable.",
+        "It stores a pointer to a file located on the operating system outside the database.",
+        "It allows for information encoded in the nation character set within the database.",
+        "It is designed to hold structured JSON data directly inside a table column."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "A BFILE column does not store the actual file content; instead, it stores a pointer that directs the database to an external file located on the operating system. This design choice is used when storing large binary files outside of the database structure itself.",
+      "id": 40
+    },
+    {
+      "question": "Which type of LOB data is considered \"external\" because it points to a location outside the Oracle database?",
+      "options": [
+        "BLOB",
+        "BFILE",
+        "NCLOB",
+        "CLOB"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "BFILES are classified as external LOBs because they store only a pointer to a file residing on the operating system. In contrast, CLOBs, NCLOBs, and BLOBs are considered internal LOBs since their data resides within the database's own data files.",
+      "id": 41
+    },
+    {
+      "question": "If a user needs to store large binary data such as images or video files that must be managed by Oracle security features, which data type should they use?",
+      "options": [
+        "BFILE",
+        "BLOB",
+        "NCLOB",
+        "CLOB"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "BLOBs are designed to store large amounts of binary data and are stored internally within the database. Because they reside inside the Oracle database, they benefit from full participation in database transactions and coverage by Oracle security features.",
+      "id": 42
+    },
+    {
+      "question": "What is the main advantage of using JSON columns when storing structured data in a table?",
+      "options": [
+        "It guarantees that all data stored will be encoded in the nation character set.",
+        "It allows the data to be stored and queried using SQL without needing to know the schema details beforehand.",
+        "It ensures that the binary data is always human readable for easy viewing.",
+        "It automatically handles pointers to external files on the operating system."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "JSON columns provide flexibility by allowing developers to store semi-structured data directly in a table column. This means you can query and work with the JSON content using standard SQL functions without having to predefine or know the exact schema structure of the data.",
+      "id": 43
+    },
+    {
+      "question": "What specific capability does an NCLOB offer compared to a standard CLOB?",
+      "options": [
+        "It allows storage only of binary files like images and videos.",
+        "It supports information encoded in the nation character set of the database.",
+        "It requires the data to be stored as a pointer to an external OS file.",
+        "It is limited to storing only simple text strings without special characters."
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The NCLOB (National Character Large Object) extends the functionality of CLOBs by specifically supporting and allowing for information that is encoded using the nation character set, which handles a broader range of international characters.",
+      "id": 44
+    },
+    {
+      "question": "What is the default table type used by Oracle when creating a new table?",
+      "options": [
+        "Index organized",
+        "Heap organized",
+        "Temporary",
+        "Partitioned"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The term \"heap organized\" refers to the standard and default method of storing data in an Oracle table. This means that the records are stored without being forced into a specific, predefined physical order within the table structure.",
+      "id": 45
+    },
+    {
+      "question": "In the context of database storage, what does the term 'heap' mean when describing how data is stored in a table?",
+      "options": [
+        "The data must be sorted alphabetically by primary key.",
+        "The data are not stored in a specific physical order.",
+        "The data can only be accessed through an index structure.",
+        "The data requires explicit partitioning before insertion."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "When data is described as being in a \"heap,\" it means that the records are stored randomly or non-sequentially within the table space, forming a collection of data rather than adhering to a strict physical order.",
+      "id": 46
+    },
+    {
+      "question": "Which of the following is NOT listed as a general factor to consider when creating a table?",
+      "options": [
+        "Naming conventions",
+        "Required database administrator approval",
+        "Constraints (primary key, foreign keys)",
+        "Tablespace(s) for the table and its indexes"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "When designing a table, several factors must be considered, including naming rules, data types, constraints, and storage requirements. However, while DBA approval is often necessary in practice, it is not listed among the general technical factors that should be considered during the design phase itself.",
+      "id": 47
+    },
+    {
+      "question": "If a user creates a new table without explicitly specifying a tablespace, where will the table be created?",
+      "options": [
+        "In the system default permanent tablespace.",
+        "In the default permanent tablespace of the user who executes the CREATE TABLE statement.",
+        "The table creation will fail until a specific tablespace is named.",
+        "It will automatically use the largest available temporary tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Oracle databases are designed to be flexible; if you do not specify a location for a new object like a table, it defaults to being created within the permanent storage area designated as the default tablespace for the user who is performing the creation action.",
+      "id": 48
+    },
+    {
+      "question": "When querying JSON data stored in an Oracle column (e.g., `dprojects`), how can you access specific nested elements like the project ID and name?",
+      "options": [
+        "SELECT dept.projectID, dept.projectName from dept;",
+        "SELECT dept.deptno, dept.dprojects.projectID, dept.dprojects.projectName from dept;",
+        "SELECT * FROM JSON_DATA(dept.dprojects);",
+        "SELECT department_id, project_name from dept WHERE dprojects LIKE '%project%';"
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "To query specific fields nested within a JSON column, you must use dot notation (`.`) to traverse the structure of the data. This allows the SQL statement to accurately pull out individual elements like `dprojects.projectID` and `dprojects.projectName`.",
+      "id": 49
+    },
+    {
+      "question": "Which SQL clause is used when defining a primary key constraint on the `dept` table, and what does it enforce?",
+      "options": [
+        "CONSTRAINT dept_pk PRIMARY KEY (deptno) USING INDEX TABLESPACE hr_index",
+        "CONSTRAINT dept_pk PRIMARY KEY (deptno)",
+        "UNIQUE INDEX dept_uk1 ON dept(dname)",
+        "DEPARTMENTNO NUMBER(10)"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The `CONSTRAINT dept_pk PRIMARY KEY (deptno)` clause is used directly within the table definition to establish that the `deptno` column must uniquely identify each department record and cannot contain null values.",
+      "id": 50
+    },
+    {
+      "question": "When creating a unique index on the `dname` column of the `dept` table, which command should be executed?",
+      "options": [
+        "CREATE TABLE dept_uk1 ON dept(dname)",
+        "CREATE UNIQUE INDEX dept_uk1 ON dept(dname) TABLESPACE hr_index;",
+        "ALTER TABLE dept ADD CONSTRAINT dept_uk1 UNIQUE (dname);",
+        "CREATE INDEX dept_uk1 USING DEPT(dname);"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "To create a unique index specifically on the `dname` column, the syntax requires using `CREATE UNIQUE INDEX`, followed by the index name (`dept_uk1`), the table and column (`ON dept(dname)`), and optionally specifying the tablespace.",
+      "id": 51
+    },
+    {
+      "question": "In the provided DDL for creating the `emp` table, which of the following combinations correctly lists a column name and its data type?",
+      "options": [
+        "empno VARCHAR2(10 CHAR)",
+        "ename VARCHAR2(10 CHAR)",
+        "job NUMBER(9 CHAR)",
+        "hiredate DATE (CHAR)"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The `emp` table definition specifies that the employee name (`ename`) must be stored as a character string with a maximum length of 10 characters, which is represented by the data type `VARCHAR2(10 CHAR)`.",
+      "id": 52
+    },
+    {
+      "question": "What SQL command is used to add descriptive information (a comment) to an existing table?",
+      "options": [
+        "COMMENT ON TABLE dept IS 'Department table'",
+        "COMMENT ON TABLE dept IS 'Department table';",
+        "ALTER TABLE dept ADD COMMENT 'Department table';",
+        "DESCRIBE TABLE dept WITH COMMENT 'Department table';"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The `COMMENT ON TABLE` statement is the standard SQL command used to attach a descriptive text or comment to an existing database object, such as the `dept` table.",
+      "id": 53
+    },
+    {
+      "question": "Which SQL clause is used to define a primary key constraint when creating or altering a table?",
+      "options": [
+        "UNIQUE KEY",
+        "PRIMARY KEY",
+        "FOREIGN KEY",
+        "CHECK CONSTRAINT"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The `PRIMARY KEY` clause is specifically designed to enforce that the values in a column or set of columns are unique and non-null, thereby uniquely identifying each record within the table.",
+      "id": 54
+    },
+    {
+      "question": "To establish a relationship between two tables, which constraint should be used?",
+      "options": [
+        "UNIQUE CONSTRAINT",
+        "FOREIGN KEY",
+        "PRIMARY KEY",
+        "CHECK CONSTRAINT"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "A foreign key links the data in one table to the primary key of another table. It ensures referential integrity by guaranteeing that values entered into the referencing column actually exist in the referenced column.",
+      "id": 55
+    },
+    {
+      "question": "What is the purpose of implementing a unique constraint on a column?",
+      "options": [
+        "To ensure that all values are greater than zero.",
+        "To guarantee that every value in the column is distinct and no two rows share the same value.",
+        "To define which columns can be used as the primary identifier for the table.",
+        "To link the table to another table using a parent key."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "A unique constraint ensures that all values in the specified column or group of columns are distinct, meaning no duplicate entries are allowed within that column across the entire table.",
+      "id": 56
+    },
+    {
+      "question": "If you need to restrict data entry so that a numerical value must always be positive, which type of constraint should you apply?",
+      "options": [
+        "PRIMARY KEY",
+        "CHECK CONSTRAINT",
+        "UNIQUE CONSTRAINT",
+        "FOREIGN KEY"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "A check constraint allows the user to define specific business rules that values in a column must satisfy. For example, `CHECK (column >= 0)` ensures that only non-negative numbers can be entered.",
+      "id": 57
+    },
+    {
+      "question": "Which SQL command is used to create an index on existing columns?",
+      "options": [
+        "ALTER TABLE ADD INDEX",
+        "CREATE INDEX",
+        "UPDATE INDEX",
+        "MODIFY INDEX"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The `CREATE INDEX` statement is the standard SQL method for building an index structure on one or more columns of a table, which significantly improves data retrieval performance.",
+      "id": 58
+    },
+    {
+      "question": "When using Toad to create a new table, where should you define constraints like Primary Key and Foreign Key?",
+      "options": [
+        "Only in the `CREATE TABLE` statement's final clause.",
+        "You can define them either within the column definition or as separate table constraints.",
+        "They must always be defined using an `ALTER TABLE` command after creation.",
+        "Constraints are only applicable when creating indexes, not tables."
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "SQL provides flexibility in defining constraints; they can be specified directly within the column definition list or declared separately at the end of the table definition using `CONSTRAINT`.",
+      "id": 59
+    },
+    {
+      "question": "Which statement correctly demonstrates how to add a foreign key constraint to an existing table named `emp`?",
+      "options": [
+        "CREATE FOREIGN KEY (deptno) REFERENCES dept(deptno) ON emp;",
+        "ALTER TABLE emp ADD CONSTRAINT emp_fkl FOREIGN KEY (deptno) REFERENCES dept(deptno);",
+        "UPDATE EMP SET DEPTNO = dept.DEPTNO WHERE ...;",
+        "ADD CONSTRAINT emp_fkl FOREIGN KEY (deptno) TO dept(deptno) ON emp;"
+      ],
+      "correctIndex": 1,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The `ALTER TABLE` statement is used to modify the structure of an existing table, and it must be combined with `ADD CONSTRAINT` followed by the `FOREIGN KEY... REFERENCES` syntax.",
+      "id": 60
+    },
+    {
+      "question": "What is the primary function of applying a `NOT NULL` constraint to a column?",
+      "options": [
+        "It ensures that the column can only store integer values.",
+        "It guarantees that every row inserted into the table must provide a value for that column, preventing null entries.",
+        "It restricts the data in the column to be unique across all rows.",
+        "It automatically indexes the column for faster retrieval times."
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "The `NOT NULL` constraint is used to enforce data integrity by ensuring that a specific column cannot contain null values. If an attempt is made to insert or update a row without providing a value for this constrained column, the database will reject the operation.",
+      "id": 61
+    },
+    {
+      "question": "If you attempt to add a `NOT NULL` constraint to an existing table where some rows currently have null values in that column, what action must be taken first?",
+      "options": [
+        "You must drop and recreate the entire table structure.",
+        "You must update the table data so that every row has a non-null value for that column.",
+        "You can simply ignore the warning and proceed with adding the constraint.",
+        "The database will automatically fill the null values with default characters."
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "Before applying a `NOT NULL` constraint to an existing table, you must ensure that all current data conforms to the rule. If any row contains a null value in the column targeted by the constraint, the database will prevent the addition of the constraint until those null values are updated with valid data.",
+      "id": 62
+    },
+    {
+      "question": "When a constraint is set to `ENABLE VALIDATE`, what does this state guarantee regarding data entry?",
+      "options": [
+        "It allows new rows that violate the constraint but prevents updates.",
+        "It ensures that no row can be entered or modified if it violates the constraint, and all existing rows already conform to it.",
+        "It only checks for uniqueness violations during insertion, not modification.",
+        "It automatically disables validation until a manual `ALTER` command is issued."
+      ],
+      "correctIndex": 1,
+      "page": "37",
+      "section": null,
+      "hint": "راجع الصفحة 37",
+      "explanation": "The `ENABLE VALIDATE` state means the constraint is fully active and enforced. This guarantees two things: first, that no new data violating the rule can be entered; and second, that all existing data in the table already adheres to the defined rules.",
+      "id": 63
+    },
+    {
+      "question": "Which sequence of SQL commands is used to temporarily disable a foreign key constraint named `emp_dept_fk` on a table called `emp`, allowing for bulk data loading or modification?",
+      "options": [
+        "ALTER TABLE emp DISABLE CONSTRAINT emp_dept_fk;",
+        "ALTER TABLE emp DISABLE CONSTRAINT emp_dept_fk;",
+        "ALTER TABLE emp SET NOVALIDATE CONSTRAINT emp_dept_fk;",
+        "DROP CONSTRAINT emp_dept_fk ON emp;"
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "To temporarily disable a constraint, the `ALTER TABLE` statement is used. The syntax requires specifying the table name, followed by the action (`DISABLE`), and finally the specific constraint name. This allows modifications to be made without immediate validation checks.",
+      "id": 64
+    },
+    {
+      "question": "According to standard SQL data types supported by Oracle, which of the following options is generally *not* recognized as a fundamental internal datatype?",
+      "options": [
+        "CHAR",
+        "FLOAT",
+        "INTEGER",
+        "VARCHAR2"
+      ],
+      "correctIndex": 1,
+      "page": "39",
+      "section": null,
+      "hint": "راجع الصفحة 39",
+      "explanation": "While `CHAR`, `INTEGER` (or `NUMBER`), and `VARCHAR2` are standard, supported data types in Oracle SQL, the provided quiz section indicates that `FLOAT` is listed as an example of a type that might not be universally recognized or supported depending on the specific database implementation context being tested.",
+      "id": 65
+    },
+    {
+      "question": "What sources can be used to define a virtual column?",
+      "options": [
+        "Only existing columns from the same table.",
+        "Existing columns, constants, SQL functions, and user-defined PL/SQL functions, or combinations thereof.",
+        "Only user-defined PL/SQL functions.",
+        "A combination of only constants and SQL functions."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "Virtual columns are derived from various sources to calculate their values. These sources include one or more existing columns within the same table, fixed constants, standard SQL functions, user-defined PL/SQL functions, or any combination of these elements.",
+      "id": 66
+    },
+    {
+      "question": "How are virtual columns stored and evaluated by Oracle?",
+      "options": [
+        "They are permanently stored on disk like regular columns.",
+        "They are not stored on disk; their values are calculated when the SQL query executes (evaluated at runtime).",
+        "They require explicit storage allocation before they can be used in a query.",
+        "They are only evaluated during data insertion and cannot be read later."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "A key characteristic of virtual columns is that they do not consume physical disk space because they are never stored. Instead, their values are calculated dynamically by Oracle every time the SQL query runs, which process is known as runtime evaluation.",
+      "id": 67
+    },
+    {
+      "question": "Which of the following is an advantage of using a virtual column?",
+      "options": [
+        "They automatically prevent data from being updated in other tables.",
+        "You can create an index on a virtual column and store statistics for optimization purposes.",
+        "They eliminate the need to use WHERE clauses when querying the table.",
+        "They are only useful for simple arithmetic calculations involving constants."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "Virtual columns offer significant advantages, including the ability to create function-based indexes on them and store statistics. These features allow the cost-based optimizer (CBO) to use the virtual column's data efficiently during query planning.",
+      "id": 68
+    },
+    {
+      "question": "Why is defining a virtual column beneficial for database consistency?",
+      "options": [
+        "It guarantees that the table will never need an index.",
+        "They provide one central definition of the column, ensuring consistency across the entire database.",
+        "They automatically synchronize data with other related tables upon modification.",
+        "They are only accessible through stored procedures and cannot be queried directly."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "Because a virtual column is permanently defined within the database structure, it establishes a single, authoritative definition for that calculated value. This central definition ensures consistency whenever the column's value is referenced or used in queries.",
+      "id": 69
+    },
+    {
+      "question": "What syntax must be used when creating a table to define a virtual column?",
+      "options": [
+        "`generated always as (calculation)`",
+        "`generated always as (case when ... end)`",
+        "`virtual calculated by (formula)`",
+        "`compute value using (expression)`"
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "To define a virtual column, the syntax must specify that the column is generated and that its calculation should occur every time (`generated always as`). The specific formula or logic to calculate the value is placed within the parentheses.",
+      "id": 70
+    },
+    {
+      "question": "Which of the following table types cannot have a virtual column defined on them?",
+      "options": [
+        "A regular, heap-organized table",
+        "An index-organized table",
+        "A temporary table",
+        "A cluster table"
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Virtual columns are restricted in where they can be created. They must be defined on a regular, heap-organized table and cannot be used on specialized structures like index-organized tables, external tables, temporary tables, object tables, or cluster tables.",
+      "id": 71
+    },
+    {
+      "question": "When creating a primary key constraint in Oracle, what is the behavior regarding unique indexes?",
+      "options": [
+        "Oracle creates a unique index with a different name than the constraint.",
+        "Oracle also creates a unique index with the same name as the constraint.",
+        "Oracle does not create any associated unique index automatically.",
+        "The creation of an index depends on whether the table is heap or index organized."
+      ],
+      "correctIndex": 1,
+      "page": "43",
+      "section": null,
+      "hint": "راجع الصفحة 43",
+      "explanation": "A key feature of defining a primary key constraint in Oracle is that it automatically enforces uniqueness and integrity by creating a unique index. This unique index will share the same name as the primary key constraint itself.",
+      "id": 72
+    },
+    {
+      "question": "Which scenario best describes a reason for making a table read-only?",
+      "options": [
+        "The data needs to be frequently updated by multiple users simultaneously.",
+        "The data is historical and should never be updated in normal circumstances.",
+        "The table structure requires frequent modifications to its columns.",
+        "The system anticipates that the table will be merged with another dataset."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Read-only features are implemented when the data is considered historical or immutable, meaning it should not change under normal operational circumstances. This feature also helps ensure stability during maintenance procedures.",
+      "id": 73
+    },
+    {
+      "question": "According to the caveats associated with virtual columns, what must the output of a virtual column be?",
+      "options": [
+        "A set of values derived from multiple columns.",
+        "A scalar value (i.e., a single value, not a set of values).",
+        "A complex data type structure.",
+        "A reference to another table's primary key."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Virtual columns are designed to compute and display a single derived piece of information based on other column values. Therefore, their output must always resolve to a scalar value, meaning only one specific value can be returned for that row.",
+      "id": 74
+    },
+    {
+      "question": "What type of data source must virtual columns reference?",
+      "options": [
+        "Columns from any table within the same schema.",
+        "Columns from the table in which the virtual column is defined.",
+        "Data stored in external files linked to the database.",
+        "Values derived from other virtual columns."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Virtual columns are self-contained calculations; they can only reference data that already exists within the table where the virtual column is being defined. They cannot look up values in other tables or even reference other virtual columns.",
+      "id": 75
+    }
+  ]
+}

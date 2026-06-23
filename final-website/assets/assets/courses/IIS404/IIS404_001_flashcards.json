@@ -1,0 +1,20 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is a dirty read?",
+      "a": "It reads data written by an uncommitted transaction. (الصفحة 1)"
+    },
+    {
+      "id": 2,
+      "q": "Which isolation level guarantees that transactions behave as if they ran sequentially?",
+      "a": "Serializable (الصفحة 1)"
+    },
+    {
+      "id": 3,
+      "q": "What is a phantom read?",
+      "a": "Encountering new rows that didn't exist before within the transaction. (الصفحة 1)"
+    }
+  ]
+}

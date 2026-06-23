@@ -1,0 +1,107 @@
+{
+  "code": "IIS101",
+  "title": "IIS101",
+  "totalUnits": 10,
+  "units": [
+    {
+      "id": "001",
+      "title": "قواعد",
+      "lecture": "IIS101_001_lecture.md",
+      "quiz": "IIS101_001_quiz.json",
+      "flashcards": "IIS101_001_flashcards.json",
+      "pdf": "IIS101_001_pdf.pdf",
+      "quizCount": 10,
+      "flashcardCount": 55
+    },
+    {
+      "id": "002",
+      "title": "النظم",
+      "lecture": "IIS101_002_lecture.md",
+      "quiz": "IIS101_002_quiz.json",
+      "flashcards": "IIS101_002_flashcards.json",
+      "pdf": "IIS101_002_pdf.pdf",
+      "quizCount": 28,
+      "flashcardCount": 90
+    },
+    {
+      "id": "003",
+      "title": "قواعد",
+      "lecture": "IIS101_003_lecture.md",
+      "quiz": "IIS101_003_quiz.json",
+      "flashcards": "IIS101_003_flashcards.json",
+      "pdf": "IIS101_003_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 50
+    },
+    {
+      "id": "004",
+      "title": "النظم",
+      "lecture": "IIS101_004_lecture.md",
+      "quiz": "IIS101_004_quiz.json",
+      "flashcards": "IIS101_004_flashcards.json",
+      "pdf": "IIS101_004_pdf.pdf",
+      "quizCount": 27,
+      "flashcardCount": 60
+    },
+    {
+      "id": "005",
+      "title": "قواعد",
+      "lecture": "IIS101_005_lecture.md",
+      "quiz": "IIS101_005_quiz.json",
+      "flashcards": "IIS101_005_flashcards.json",
+      "pdf": "IIS101_005_pdf.pdf",
+      "quizCount": 28,
+      "flashcardCount": 60
+    },
+    {
+      "id": "006",
+      "title": "أسئلة النماذج",
+      "lecture": "IIS101_006_lecture.md",
+      "quiz": "IIS101_006_quiz.json",
+      "flashcards": "IIS101_006_flashcards.json",
+      "pdf": "IIS101_006_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 40
+    },
+    {
+      "id": "007",
+      "title": "قواعد",
+      "lecture": "IIS101_007_lecture.md",
+      "quiz": "IIS101_007_quiz.json",
+      "flashcards": "IIS101_007_flashcards.json",
+      "pdf": "IIS101_007_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 60
+    },
+    {
+      "id": "008",
+      "title": "تسوية",
+      "lecture": "IIS101_008_lecture.md",
+      "quiz": "IIS101_008_quiz.json",
+      "flashcards": "IIS101_008_flashcards.json",
+      "pdf": "IIS101_008_pdf.pdf",
+      "quizCount": 28,
+      "flashcardCount": 50
+    },
+    {
+      "id": "009",
+      "title": "Data Storage (تخزين المعطيات)",
+      "lecture": "IIS101_009_lecture.md",
+      "quiz": "IIS101_009_quiz.json",
+      "flashcards": "IIS101_009_flashcards.json",
+      "pdf": "IIS101_009_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 45
+    },
+    {
+      "id": "010",
+      "title": "مستودعات",
+      "lecture": "IIS101_010_lecture.md",
+      "quiz": "IIS101_010_quiz.json",
+      "flashcards": "IIS101_010_flashcards.json",
+      "pdf": "IIS101_010_pdf.pdf",
+      "quizCount": 26,
+      "flashcardCount": 46
+    }
+  ]
+}

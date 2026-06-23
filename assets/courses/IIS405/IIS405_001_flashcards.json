@@ -1,0 +1,145 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو الموضوع الأول ضمن أهداف الفصل؟",
+      "a": "مفاهيم الحوسبة السحابية (The cloud computing concepts) (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "ماذا يغطي الهدف الثاني في محتويات الكتاب؟",
+      "a": "مزايا الحوسبة السحابية (Benefits of Cloud Computing) (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "ما هو الموضوع الذي يتناول الصعوبات أو التحديات المرتبطة بالحوسبة السحابية؟",
+      "a": "تحديات الحوسبة السحابية (Challenges of Cloud Computing) (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما هي النماذج التي يتم تناولها في الهدف الرابع من محتويات الكتاب؟",
+      "a": "نماذج خدمات الحوسبة السحابية (Cloud Computing Service Models) (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What is Cloud Computing?",
+      "a": "It's essentially a web-based service for computing resources, including server, network, storage, and applications. (الصفحة 4)"
+    },
+    {
+      "id": 6,
+      "q": "How does the pay-as-you-go model work in cloud computing?",
+      "a": "You only pay for computing resources for the duration of your use. (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "What benefit allows companies to handle fluctuating resource needs?",
+      "a": "Scalability, which means scale up and scale out on-demand. (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "According to the text, what is a challenge related to cloud computing costs?",
+      "a": "While cloud computing is good for ad hoc usage, it becomes more costly if you try to adopt it as the only solution for all your hosting requirements. (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "According to NIST, what is Cloud Computing?",
+      "a": "A web-based service for computing resources, including server, network, storage, and applications, provided as on-demand basis. (الصفحة 9)"
+    },
+    {
+      "id": 10,
+      "q": "What does Infrastructure as a Service (IaaS) provide?",
+      "a": "Supply physical/virtual machines, storage, firewall, load balances, VLANs, etc. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What is Platform as a Service (PaaS)?",
+      "a": "Provides the dev environment like Dev toolkit for example, Microsoft Azure and Google App engine. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "In Software as a Service (SaaS), what does the consumer do?",
+      "a": "The application is placed in the cloud by the SaaS provider; the consumer just pays for usage. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "What is a key financial advantage of cloud computing compared to traditional asset ownership?",
+      "a": "It eliminates large capital expenditure (CAPEX) costs, resulting in lower OPEX due to a pay-as-you-go model. (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What challenge relates to local laws that restrict where data can be stored?",
+      "a": "Laws of the land, which prohibit keeping data on servers not in direct control of the data owner or outside a given country. (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "What technical challenge makes moving resources between different cloud service providers difficult?",
+      "a": "Cloud interoperability. (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "According to the benefits listed, what does \"Scalability\" allow users to do on demand?",
+      "a": "Scale up and scale out. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "What resources do IaaS providers supply?",
+      "a": "Physical/virtual machines, storage, firewall, load balances, VLANs, etc. (Page 14)"
+    },
+    {
+      "id": 18,
+      "q": "In an IaaS model, who is responsible for patching and maintaining the operating system and application software?",
+      "a": "The consumer (Page 14)"
+    },
+    {
+      "id": 19,
+      "q": "What does PaaS provide to the user?",
+      "a": "A dev environment like Dev toolkit (Page 14)"
+    },
+    {
+      "id": 20,
+      "q": "In a PaaS model, what is the consumer not responsible for managing?",
+      "a": "The underlying infrastructure and components such as the operating system or database (Page 14)"
+    },
+    {
+      "id": 21,
+      "q": "What is Software as a Service (SaaS)?",
+      "a": "In the SaaS model, the application is placed in the cloud by the SaaS provider, and the consumer just pays for usage. (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "Where are computing resources located and how are they shared in the Public cloud deployment model?",
+      "a": "They are present in the cloud service provider's datacenter and are shared with various consumers in a multi-tenant architecture. (الصفحة 18)"
+    },
+    {
+      "id": 23,
+      "q": "What is the major advantage of using the Public cloud deployment model?",
+      "a": "You don't need to invest in Hardware and effort in setting up the cloud. (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "When is the Public cloud model unsuitable?",
+      "a": "When there are local laws that prevent you from keeping your data outside your premises, as it lacks full control of computing resources. (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "What makes the public cloud model a good option for startups and any organization?",
+      "a": "It helps avoid CAPEX costs related to DB servers. (Page 20)"
+    },
+    {
+      "id": 26,
+      "q": "In the private cloud deployment model, where are computing resources placed?",
+      "a": "On-premise or at the cloud provider's premises but dedicated for consumers. (Page 20)"
+    },
+    {
+      "id": 27,
+      "q": "Which service is described as an IaaS offering to run Oracle database on Exadata machines in Oracle Cloud?",
+      "a": "Oracle Database Exadata Cloud Service. (Page 20)"
+    },
+    {
+      "id": 28,
+      "q": "What is recommended regarding cloud service providers' offerings?",
+      "a": "Check the cloud service provider's portal to get the latest offerings. (Page 20)"
+    }
+  ]
+}

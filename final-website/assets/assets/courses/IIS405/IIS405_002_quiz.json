@@ -1,0 +1,650 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What does the acronym DBA stand for in the context of Oracle Database Administration?",
+      "options": [
+        "Data Backup Agent",
+        "Database administrator",
+        "Digital Business Analyst",
+        "Data Base Access"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "A Database Administrator, or DBA, is responsible for managing and maintaining the database system. This role involves overseeing tasks such as security, performance tuning, backup procedures, and ensuring the overall integrity and availability of the data stored within the Oracle environment.",
+      "id": 1
+    },
+    {
+      "question": "Which specific architecture is listed in the objectives for optimal use when planning a database?",
+      "options": [
+        "Standard Flexible Architecture (SFA)",
+        "Optimal Flexible Architecture (OFA)",
+        "Optimized Functional Array (OFA)",
+        "Operational Field Arrangement (OFA)"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The material specifies that one of the key objectives is to utilize the Optimal Flexible Architecture (OFA). This architecture represents a recommended structure for planning and implementing database systems, ensuring efficiency and scalability.",
+      "id": 2
+    },
+    {
+      "question": "What tool is used specifically for installing the Oracle software according to the course objectives?",
+      "options": [
+        "Toad for Oracle",
+        "Oracle Universal Installer (OUI)",
+        "Database Management Utility (DMU)",
+        "System Configuration Tool (SCT)"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The curriculum outlines that installing the Oracle software must be done using the Oracle Universal Installer (OUI). This dedicated tool manages the complex process of setting up and configuring all necessary components of the Oracle database system on a given operating system.",
+      "id": 3
+    },
+    {
+      "question": "What is one of the core responsibilities or typical tasks performed by a Database Administrator (DBA)?",
+      "options": [
+        "Developing new application code for the database.",
+        "Evaluating the necessary hardware and software resources for the database.",
+        "Managing the company's overall network infrastructure outside of the database scope.",
+        "Handling payroll and human resource management tasks."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "A Database Administrator (DBA) is responsible for the entire lifecycle of the database, which includes planning and maintaining its environment. Evaluating hardware and software resources is a critical initial step in designing and implementing any robust Oracle database system.",
+      "id": 4
+    },
+    {
+      "question": "What is the primary purpose or benefit of using Optimal Flexible Architecture (OFA)?",
+      "options": [
+        "To ensure that all users can access the database regardless of their physical location.",
+        "To make maintaining multiple versions of various Oracle products straightforward within a file system directory structure.",
+        "To automatically encrypt all data stored in the database, preventing unauthorized viewing.",
+        "To replace the need for dedicated backup software by using only operating system tools."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "Optimal Flexible Architecture (OFA) is specifically designed to manage complexity when an organization needs to run multiple versions of different Oracle products. By standardizing the file system directory structure, OFA simplifies maintenance and upgrades across various product lines.",
+      "id": 5
+    },
+    {
+      "question": "Which tool listed in the material can be used for connecting to a cloud database and performing general management tasks?",
+      "options": [
+        "Operating System Network Manager (OSNM)",
+        "SQL Developer",
+        "Microsoft Word Processor",
+        "General Accounting Ledger Tool"
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The text mentions that tools like SQL Developer, TOAD, and others are useful for connecting to a cloud database. SQL Developer is listed as an example of such a tool used by DBAs for managing and monitoring the database environment.",
+      "id": 6
+    },
+    {
+      "question": "What is the initial step required when designing and implementing an Oracle database?",
+      "options": [
+        "Planning the database and security strategy.",
+        "Evaluating the database server hardware.",
+        "Creating, migrating, and opening the database.",
+        "Implementing the database design."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The process of designing an Oracle database must begin with a thorough assessment of the physical resources available. Therefore, evaluating the existing or planned database server hardware is the foundational step before any software installation or strategic planning can occur.",
+      "id": 7
+    },
+    {
+      "question": "Which task is crucial for ensuring the smooth operation and efficiency of a maintained Oracle database?",
+      "options": [
+        "Backing up the database.",
+        "Monitoring database performance.",
+        "Enrolling system users and planning network access.",
+        "Recovering from database failure."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "While tasks like backing up data and recovering from failures are critical, monitoring database performance is the ongoing activity that ensures the system remains efficient and operates optimally over time. This continuous oversight allows administrators to proactively address potential bottlenecks or issues.",
+      "id": 8
+    },
+    {
+      "question": "Which of the following directories is NOT listed as a standard directory included in the OFA (Oracle File Architecture)?",
+      "options": [
+        "Oracle inventory directory.",
+        "System temporary directory.",
+        "Oracle base directory (ORACLE_BASE).",
+        "Oracle home directory (ORACLE_HOME)."
+      ],
+      "correctIndex": 1,
+      "page": "7",
+      "section": null,
+      "hint": "راجع الصفحة 7",
+      "explanation": "The OFA standard defines specific locations for core Oracle components, including the inventory, the base directory, and the home directory. A general system temporary directory is not listed among these required, standardized paths.",
+      "id": 9
+    },
+    {
+      "question": "According to the minimum hardware requirements for Oracle Database 19c, what is the recommended minimum physical memory (RAM)?",
+      "options": [
+        "Less than 2 GB.",
+        "At least 8 GB.",
+        "Exactly 16 GB.",
+        "The amount required by the operating system only."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "To successfully install and run Oracle Database 19c, a minimum physical memory of 8 GB is required. This specification ensures that the core processes have sufficient working space to operate efficiently during installation and normal use.",
+      "id": 10
+    },
+    {
+      "question": "For which type of operating system is Oracle Database 19c explicitly stated as *not* being available?",
+      "options": [
+        "Windows Server (Enterprise Edition).",
+        "Windows 10 Home Edition.",
+        "Linux distributions.",
+        "Professional editions of Windows."
+      ],
+      "correctIndex": 1,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "The material specifies that Oracle Database 19c is only available for professional or enterprise versions of Windows, meaning it cannot be installed on consumer-grade operating systems like the Home Edition.",
+      "id": 11
+    },
+    {
+      "question": "What is Optimal Flexible Architecture (OFA)?",
+      "options": [
+        "A method for upgrading Oracle software across multiple servers.",
+        "A file system directory structure designed to simplify maintaining multiple versions of various Oracle products.",
+        "A specific tool used only for database monitoring and management tasks.",
+        "The primary location where all writable files must be stored in a 19c environment."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "OFA is defined as a file system directory structure that provides flexibility, making it straightforward to manage and maintain multiple versions of different Oracle products within the same environment.",
+      "id": 12
+    },
+    {
+      "question": "What benefit does following the OFA standard provide for an organization?",
+      "options": [
+        "It guarantees zero downtime during all patching activities.",
+        "It makes security implementations, migrations, and automations easier due to consistency across environments.",
+        "It eliminates the need for specialized database monitoring tools like SQL Developer.",
+        "It automatically handles all necessary user permissions and access controls."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "By adhering to the OFA standard, organizations benefit from consistent locations for log files and directory structures. This consistency significantly simplifies implementing security measures, performing migrations, and automating tasks across different environments.",
+      "id": 13
+    },
+    {
+      "question": "Which of the following is NOT listed as a tool used for Oracle database monitoring and management?",
+      "options": [
+        "SQL Developer",
+        "Data Pump",
+        "TOAD",
+        "OEM 19c Cloud Control"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "While Data Pump is a utility mentioned in the context of Oracle tools, it is primarily used for data transfer and loading. Tools specifically listed for monitoring and management include SQL Developer, TOAD, and OEM 19c Cloud Control.",
+      "id": 14
+    },
+    {
+      "question": "What is the primary function of the ORACLE_BASE directory in version 19c?",
+      "options": [
+        "To store all user-created database schemas and objects.",
+        "To separate read-only ORACLE_HOME directories from writable files, thereby improving security and separation of concerns.",
+        "To act as a temporary staging area for data being loaded into the database.",
+        "To manage network connectivity settings between different Oracle instances."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "The ORACLE_BASE directory is crucial in 19c because it establishes separation: read-only directories are kept in dedicated ORACLE_HOME locations, while writable files are managed within the ORACLE_BASE itself. This structure enhances security and simplifies patching processes.",
+      "id": 15
+    },
+    {
+      "question": "According to the OFA standard, which set of directories should a user be familiar with?",
+      "options": [
+        "Oracle software directory and ORACLE_BASE",
+        "Oracle inventory directory, Oracle base directory (ORACLE_BASE), and Oracle home directory (ORACLE_HOME)",
+        "System configuration directory and Oracle product directory",
+        "Global database directory and Oracle instance directory"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The OFA standard defines three critical directories that users must know: the Oracle inventory directory, which tracks components; the Oracle base directory (ORACLE_BASE), which is the general location for an installation; and the Oracle home directory (ORACLE_HOME), which holds specific software files.",
+      "id": 16
+    },
+    {
+      "question": "What does the ORACLE_BASE directory represent in the OFA standard?",
+      "options": [
+        "The specific software files installed for a particular Oracle product.",
+        "The general location where an Oracle installation is placed on the file system.",
+        "A record of all components tracked during the entire installation process.",
+        "The primary directory used to define global database identifiers."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "ORACLE_BASE serves as the overarching, general location for an Oracle installation. It acts as a container or root directory for the various parts of the software suite installed on the system.",
+      "id": 17
+    },
+    {
+      "question": "Which directory is responsible for holding the specific software files for an Oracle product?",
+      "options": [
+        "The Oracle inventory directory",
+        "The Oracle home directory (ORACLE_HOME)",
+        "The general operating system base directory",
+        "The global database identifier directory"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "ORACLE_HOME is specifically designated to contain the actual, specific software files for a particular Oracle product. This separation allows multiple products or versions to coexist within the same overall installation structure.",
+      "id": 18
+    },
+    {
+      "question": "What is the primary purpose of the Oracle inventory directory?",
+      "options": [
+        "To define the global database name and service identifier.",
+        "To track all installed components according to the OFA standard.",
+        "To serve as the general root location for the entire installation.",
+        "To store the specific executable files for running the software."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The Oracle inventory directory functions as a record keeper, tracking every component that has been successfully installed on the system according to the OFA standard. This allows administrators to maintain an accurate list of all deployed parts.",
+      "id": 19
+    },
+    {
+      "question": "What is the minimum physical memory (RAM) recommended to run core processes normally when installing Oracle Database 19c?",
+      "options": [
+        "2 GB",
+        "8 GB",
+        "16 GB",
+        "32 GB"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "To ensure that the core processes of Oracle Database 19c run normally without negatively impacting overall system performance, a minimum physical memory (RAM) of 8 GB is required. While 2 GB might be sufficient for running Oracle alone, 8 GB provides better stability and performance for general operation.",
+      "id": 20
+    },
+    {
+      "question": "If the physical memory installed on a system falls between 2 GB and 16 GB, how should the virtual memory (swap) be configured?",
+      "options": [
+        "Set it to exactly 16 GB regardless of current RAM size.",
+        "Set it to 1 times the size of the existing RAM.",
+        "Set it to a fixed value of 8 GB for optimal performance.",
+        "It should be set automatically by the operating system without manual intervention."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "When the physical memory is within the range of 2 GB and 16 GB, Oracle recommends setting the virtual memory to a value equal to one time the size of the installed RAM. This ensures adequate temporary space for the database operations while remaining proportional to the available physical resources.",
+      "id": 21
+    },
+    {
+      "question": "Which system architecture is mandatory for installing Oracle Database 19c?",
+      "options": [
+        "32 bit Windows systems (Workstation or Server)",
+        "64 bit Windows systems (Workstation or Server)",
+        "Any modern processor supporting AMD64 or Intel EM64T.",
+        "Systems running any version of the Windows OS."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Oracle Database 19c is designed exclusively for 64 bit operating systems, specifically requiring a Workstation or Server edition. Attempting to install this database on a 32 bit Windows OS will result in incompatibility issues and failure to run the software correctly.",
+      "id": 22
+    },
+    {
+      "question": "Which editions of Windows are supported for installing Oracle Database 19c?",
+      "options": [
+        "Windows 10 Home Edition, Professional, and Enterprise Editions.",
+        "Windows 10 Professional, Enterprise, and Education Editions.",
+        "Any version of Windows 10 that is currently available.",
+        "Only the latest release of Windows Server editions."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Oracle Database 19c has specific compatibility requirements regarding the operating system edition. It can only be installed on Windows 10 Professional, Enterprise, and Education Editions; therefore, users running the Home Edition cannot install this version of the database.",
+      "id": 23
+    },
+    {
+      "question": "What must be verified regarding user access before beginning the installation of Oracle Database 18c?",
+      "options": [
+        "We must ensure that the system has sufficient physical RAM installed.",
+        "We need to verify that we are connected to our Windows as an administration user.",
+        "The account used must have read/write permissions on all network drives.",
+        "Only a dedicated service account with limited privileges should be used for installation."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "It is crucial that the user performing the Oracle Database 18c installation has administrative rights within Windows. Failing to log in as an administrator can lead to critical installation errors and cause the entire setup process to crash.",
+      "id": 24
+    },
+    {
+      "question": "When verifying hardware requirements for Oracle Database installation, which four items must be determined?",
+      "options": [
+        "The CPU speed, the network bandwidth, the physical RAM size, and the free disk space.",
+        "The physical RAM size, the configured virtual memory size, the amount of free disk space on the system, and the temp directory space.",
+        "The operating system version, the available storage capacity, the CPU core count, and the network latency.",
+        "The total installed hard drive size, the number of connected peripherals, the RAM speed, and the OS patch level."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Proper hardware verification requires checking four specific components: the physical amount of Random Access Memory (RAM), the configured virtual memory (paging file), the general free disk space on the system, and the dedicated available space within the temporary directory.",
+      "id": 25
+    },
+    {
+      "question": "How is the required disk space for the temp directory calculated during prerequisite checks?",
+      "options": [
+        "It is equivalent to the total amount of free disk space multiplied by two.",
+        "It is equivalent to the total amount of free disk space, minus what is required for the Oracle software to be installed.",
+        "It must be at least 50% of the system's total physical RAM size.",
+        "It should simply match the minimum recommended storage capacity listed by Oracle."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "To determine the available disk space for the temporary directory, one must subtract the amount of disk space needed to install the Oracle software from the system's total free disk space. This calculation ensures enough room is reserved for both installation and temporary files.",
+      "id": 26
+    },
+    {
+      "question": "To begin the installation of Oracle Database 19c, what steps must be taken?",
+      "options": [
+        "Run the setup file directly from the Windows Start Menu without elevated privileges.",
+        "Go to the Oracle19c folder, locate the setup.exe file, run it, and choose \"run as administrator.\"",
+        "Download a separate patch utility and execute that first before running any setup files.",
+        "Use the command prompt to manually set up all necessary environment variables before starting the process."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The initial steps for installing Oracle Database 19c involve navigating to the designated `Oracle19c` folder, finding the `setup.exe` file, and executing it with administrative privileges by choosing \"run as administrator.\"",
+      "id": 27
+    },
+    {
+      "question": "What does choosing the \"Create and configure a single instance database\" installation option accomplish?",
+      "options": [
+        "It only configures the Oracle Server software without creating any initial database.",
+        "It configures an Oracle Database Server on the machine and simultaneously creates a starter database for practice.",
+        "It is exclusively used when planning to perform a complex upgrade or configuring a RAC environment.",
+        "It requires the user to manually create all necessary system tables using DBCA."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Selecting \"Create and configure a single instance database\" performs two actions: it sets up the core Oracle Database Server software on your machine, and it automatically provisions a functional starter database that can be used for learning and practice purposes immediately after installation.",
+      "id": 28
+    },
+    {
+      "question": "Under what circumstances is selecting the \"Set Up Software Only\" option advisable during an Oracle installation?",
+      "options": [
+        "When you are setting up a simple development environment where only basic software functionality is needed.",
+        "When configuring a Real Application Clusters (RAC) setup or when planning to perform a major upgrade.",
+        "If you intend to use the default starter database provided by the installer for initial testing.",
+        "Whenever you want the installation process to handle all aspects of server and database creation automatically."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The \"Set Up Software Only\" option is designed for advanced scenarios, such as setting up a Real Application Clusters (RAC) environment or when preparing for an upgrade. By choosing this, you only install the necessary software components without creating any database instance, allowing manual control over the database creation process.",
+      "id": 29
+    },
+    {
+      "question": "If a user selects \"Set Up Software Only\" during installation, what utility must they use to manually create the required database?",
+      "options": [
+        "The SQL*Plus command line interface.",
+        "The DBCA (Database Configuration Assistant) utility.",
+        "The OS package manager (e.g., apt or yum).",
+        "A dedicated script provided by Oracle Support."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Since \"Set Up Software Only\" only installs the server software and leaves no database, you must use a specialized tool to build the database structure. The Database Configuration Assistant (DBCA) is the utility designed for this purpose, allowing manual creation of the necessary database instance.",
+      "id": 30
+    },
+    {
+      "question": "What are the two types of \"System Class\" options presented during the Oracle installation process?",
+      "options": [
+        "Development class and Production class.",
+        "Desktop class and Server class.",
+        "Client class and Enterprise class.",
+        "Single Instance class and Multi-Instance class."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "During the installation steps, after determining the general setup type, the installer requires the user to specify a \"System Class.\" The two specific options presented for this classification are Desktop class and Server class, which define the intended operational environment of the database server.",
+      "id": 31
+    },
+    {
+      "question": "Which tool should a user utilize if they need to change database connections or adjust aliases?",
+      "options": [
+        "Schema Browser",
+        "TNSnames editor",
+        "SQL Developer Editor",
+        "Connection Manager Utility"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The TNSnames editor is specifically designed for managing the network connection details and defining aliases, allowing users to modify how they connect to different database instances.",
+      "id": 32
+    },
+    {
+      "question": "What utility allows a user to view all objects belonging to the current schema as well as objects from other schemas in a single interface?",
+      "options": [
+        "TNSnames editor",
+        "Schema Browser",
+        "SQL Developer Editor",
+        "Connection Manager Utility"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "The Schema Browser is the dedicated utility for exploring the database structure, providing a comprehensive view of all available objects across various schemas.",
+      "id": 33
+    },
+    {
+      "question": "When using tools like the \"Editor,\" what types of code can a user write and manage?",
+      "options": [
+        "Only simple SELECT statements",
+        "SQL statements, PL/SQL statements, procedures, and functions",
+        "Operating system shell scripts only",
+        "Connection configuration files"
+      ],
+      "correctIndex": 1,
+      "page": "27",
+      "section": null,
+      "hint": "راجع الصفحة 27",
+      "explanation": "The Editor is the primary workspace for writing various types of database code, including standard SQL statements, as well as complex procedural logic like PL/SQL procedures and functions.",
+      "id": 34
+    },
+    {
+      "question": "To administer and monitor a connected database, where should the user look?",
+      "options": [
+        "Only within the TNSnames editor settings",
+        "The provided menu items for management tasks",
+        "Directly through the Schema Browser object list",
+        "By modifying the connection alias in the Editor"
+      ],
+      "correctIndex": 1,
+      "page": "27",
+      "section": null,
+      "hint": "راجع الصفحة 27",
+      "explanation": "Administrative and monitoring functions are typically managed through specific, dedicated menu items within the development environment, providing structured access to system controls.",
+      "id": 35
+    },
+    {
+      "question": "What must a Global Database Name do?",
+      "options": [
+        "It determines the physical installation location of the database.",
+        "It must be unique to distinguish the database from all other databases in a network.",
+        "It dictates the required operating system version for the database.",
+        "It specifies the maximum number of users allowed to connect to the database."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The Global Database Name is crucial because it provides a unique identifier, ensuring that the specific database instance can be distinguished from every other database operating within the same network environment.",
+      "id": 36
+    },
+    {
+      "question": "What does the Oracle System Identifier (SID) serve as?",
+      "options": [
+        "A temporary name used only during initial setup and configuration.",
+        "The name of our database, which also serves as our database SID.",
+        "A unique identifier for the physical server hosting the database files.",
+        "A connection string required when using advanced networking tools like TNSNAMES."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The Oracle System Identifier (SID) is fundamentally the name given to the database itself; this name serves a dual purpose by acting as both the primary identifier and the standard SID used for connecting via tools such as SQLPLUS or Toad for Oracle.",
+      "id": 37
+    },
+    {
+      "question": "By default, what is the Global Database Name set to?",
+      "options": [
+        "ORACLE_SID",
+        "ORCL",
+        "SYSTEMDB",
+        "GLOBAL"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "When a database is initially configured without manual changes, the system automatically sets the default value for the Global Database Name to ORCL. While this name can be changed if necessary, it is important to remember and document the chosen identifier.",
+      "id": 38
+    },
+    {
+      "question": "Which of the following statements about the Global Database Name is true?",
+      "options": [
+        "It only needs to be unique within a single physical machine.",
+        "It must be unique across all databases in an entire network.",
+        "Changing it requires modifying the operating system's hostname settings.",
+        "Its uniqueness requirement is only enforced when using specialized connection tools."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The Global Database Name functions as a network identifier, meaning its primary rule is that it must be unique across all databases connected within the entire network to prevent confusion and ensure proper routing of connections.",
+      "id": 39
+    },
+    {
+      "question": "Is Oracle Database 19c only available for Windows 10 Professional, Enterprise and Education editions?",
+      "options": [
+        "No, it is available for all versions of Windows 10.",
+        "Yes, its availability is restricted to these specific editions.",
+        "It is only available for the Enterprise edition.",
+        "It requires a dedicated server operating system."
+      ],
+      "correctIndex": 1,
+      "page": "31",
+      "section": null,
+      "hint": "راجع الصفحة 31",
+      "explanation": "Oracle Database 19c has compatibility requirements and is designed to run on specific, higher-tier versions of Windows 10, namely Professional, Enterprise, and Education editions. These limitations ensure that the necessary features and underlying system resources are present for proper operation.",
+      "id": 40
+    },
+    {
+      "question": "Which edition of Windows cannot install Oracle Database 19c?",
+      "options": [
+        "Windows 10 Professional Edition",
+        "Windows 10 Home Edition",
+        "Windows 10 Enterprise Edition",
+        "Windows 10 Education Edition"
+      ],
+      "correctIndex": 1,
+      "page": "31",
+      "section": null,
+      "hint": "راجع الصفحة 31",
+      "explanation": "The basic consumer version, Windows 10 Home Edition, lacks the necessary system components and architectural support required by Oracle Database 19c. Therefore, users must upgrade to a more robust edition like Professional or Enterprise to successfully install and run the database software.",
+      "id": 41
+    },
+    {
+      "question": "What is the purpose associated with the link https://localhost:5500/em?",
+      "options": [
+        "Managing network connections for the database instance.",
+        "Providing access to the Oracle Database Configuration Assistant.",
+        "Viewing general Enterprise Manager reports and metrics.",
+        "Configuring user accounts and passwords via a command line interface."
+      ],
+      "correctIndex": 1,
+      "page": "31",
+      "section": null,
+      "hint": "راجع الصفحة 31",
+      "explanation": "The specific URL provided, https://localhost:5500/em, is the designated access point for the Oracle Database Configuration Assistant. This tool allows administrators to perform various configuration tasks on the database instance through a graphical user interface.",
+      "id": 42
+    },
+    {
+      "question": "Which statement regarding the availability of Oracle Database 19c is correct?",
+      "options": [
+        "It can be installed on any version of Windows 10, including Home Edition.",
+        "It requires specific editions like Professional or Enterprise for installation.",
+        "Its functionality is limited only to Linux operating systems.",
+        "The Configuration Assistant link is used solely for network monitoring."
+      ],
+      "correctIndex": 1,
+      "page": "31",
+      "section": null,
+      "hint": "راجع الصفحة 31",
+      "explanation": "Oracle Database 19c has strict compatibility requirements, meaning it cannot be installed on every version of Windows 10; specific editions are required. Furthermore, the Configuration Assistant tool serves a dedicated purpose related to database setup and configuration, not general network monitoring.",
+      "id": 43
+    }
+  ]
+}

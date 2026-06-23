@@ -1,0 +1,65 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is defined as reading data written by a transaction that has not yet committed?",
+      "options": [
+        "A phantom read",
+        "A dirty read",
+        "A repeatable read",
+        "A serializable read"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "A dirty read occurs when one transaction reads data that was modified by another transaction, but that modifying transaction has not yet committed its changes. If the writing transaction subsequently rolls back, the reading transaction will have used incorrect or non-existent data.",
+      "id": 1
+    },
+    {
+      "question": "Which isolation level provides the highest guarantee, ensuring transactions behave as if they executed one after the other?",
+      "options": [
+        "Read Committed",
+        "Serializable",
+        "Repeatable Read",
+        "Read Uncommitted"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "The Serializable isolation level is the strictest and highest guarantee available. It ensures that concurrent transactions execute in a manner equivalent to sequential execution, meaning the results are consistent regardless of the actual timing or interleaving of operations.",
+      "id": 2
+    },
+    {
+      "question": "What concurrency anomaly describes encountering new rows within a transaction that did not exist when the transaction started?",
+      "options": [
+        "Dirty read",
+        "Phantom read",
+        "Lost update",
+        "Non-repeatable read"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "A phantom read happens when a query executes twice within the same transaction and finds that new rows have appeared in the result set, even though those rows were not present at the beginning of the transaction. This is distinct from changing data in existing rows.",
+      "id": 3
+    },
+    {
+      "question": "If a database uses the Read Committed isolation level, which type of read anomaly can it prevent?",
+      "options": [
+        "Phantom reads and dirty reads",
+        "Dirty reads",
+        "Lost updates",
+        "Non-repeatable reads"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "The Read Committed level ensures that any data read has been committed by another transaction, thereby preventing a dirty read. However, it does not prevent other anomalies like phantom or non-repeatable reads because subsequent reads might see changes made by other transactions before they commit.",
+      "id": 4
+    }
+  ]
+}

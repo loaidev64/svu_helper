@@ -1,0 +1,160 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو عنوان الفصل؟",
+      "a": "Chapter 10: Data Dictionary Fundamentals (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هو المجال الذي يغطيه الكتاب؟",
+      "a": "Oracle Database Administration (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "ما هي أنواع العروض التي تتم مناقشتها في محتويات الفصل؟",
+      "a": "Static Views و Dynamic Performance Views (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "ما هو الموضوع الرئيسي الذي يلي الأهداف (Objectives) في جدول المحتويات؟",
+      "a": "Data Dictionary Architecture (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هي المحاور الرئيسية التي يغطيها موضوع \"Data Dictionary Architecture\"؟",
+      "a": "Data Dictionary Contents، Static Views، Dynamic Performance Views، و Problem solving using data dictionary views (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "ما هو النوع الأول من العروض الذي يتم تناوله في سياق \"Data Dictionary Architecture\"؟",
+      "a": "Static Views (العروض الثابتة) (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "ما هو النوع الثاني من العروض الذي يركز على الأداء ويتم تناوله ضمن موضوع Data Dictionary Architecture؟",
+      "a": "Dynamic Performance Views (عروض الأداء الديناميكية) (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "بالإضافة إلى المحتويات وأنواع العروض، ما هو الهدف الرابع الذي يتم تغطيته في \"Data Dictionary Architecture\"؟",
+      "a": "Problem solving using data dictionary views (حل المشكلات باستخدام عروض قاموس البيانات) (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What is the Oracle data dictionary?",
+      "a": "The metadata of the database and contains the names and attributes of all objects in the database. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "According to the text, what types of information does the data dictionary store critical information about?",
+      "a": "Physical characteristics of the database, users, objects, and dynamic performance metrics. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "Who owns the Oracle data dictionary and how should it be modified?",
+      "a": "It is owned by the sys user and should never be modified directly using SQL. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What general categories of read-only data dictionary views does Oracle provide?",
+      "a": "Two general categories of read-only data dictionary views. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "What are \"dynamic performance views\" and what kind of information do they provide?",
+      "a": "They offer a real-time view of activity in the database, such as users connected to the database, SQL currently executing, memory usage, locks, and I/O statistics (Page 10)."
+    },
+    {
+      "id": 14,
+      "q": "Which data dictionary views contain information available only to the current user?",
+      "a": "The USER views (Page 10)."
+    },
+    {
+      "id": 15,
+      "q": "What is the purpose of the ALL views in the data dictionary?",
+      "a": "They show all object information that the current user has access to, such as displaying all database tables on which the current user can perform any type of DML operation (Page 10)."
+    },
+    {
+      "id": 16,
+      "q": "Which data dictionary views contain metadata describing all objects in the database, regardless of ownership or access privilege?",
+      "a": "The DBA views (Page 12)."
+    },
+    {
+      "id": 17,
+      "q": "What are dynamic performance data dictionary views?",
+      "a": "Views constantly updated by Oracle that reflect the current condition of the instance and database, critical for diagnosing real-time performance issues. (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "What is the hierarchical structure of V$ views?",
+      "a": "The top layer are V$ synonyms pointing to SYS.V$ views; these are based on SYS.GV$ views, which in turn are based on the X$ memory structures at the bottom layer. (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "What is required for certain dynamic performance views to contain significant information?",
+      "a": "V$PARAMETER contains meaningful data after STARTUP NOMOUNT; V$CONTROLFILE requires the database to be mounted; and some V$ views like V$BH require the database to be opened. (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "What are dynamic performance data dictionary views colloquially referred to as?",
+      "a": "The V$(and GV$)$ views. (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What is the difference between V$ views and GVS global views?",
+      "a": "V$ views are instance specific for dynamic performance information, whereas GVS global views provide global dynamic performance information regarding all instances in a cluster (Page 16)"
+    },
+    {
+      "id": 22,
+      "q": "What is the hierarchy of logical and physical storage containers in an Oracle database?",
+      "a": "Tablespaces consist of one or more physical data files. Each data file consists of many OS blocks, and every segment contains one or more extents (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "Which data dictionary views are used to pinpoint logical and physical issues like insufficient space?",
+      "a": "DBA_TABLES, DBA_SEGMENTS, DBA_TABLESPACES, and DBA_DATA_FILES (Page 18)"
+    },
+    {
+      "id": 24,
+      "q": "How can one display the definitions of V$ and GVS views?",
+      "a": "By querying the VIEW_DEFINITION column of the $FIXED_VIEW_DEFINITION view (Page 16)"
+    },
+    {
+      "id": 25,
+      "q": "How many CDB/DBA/ALL/USER static views are there?",
+      "a": "Several thousand (Page 20)"
+    },
+    {
+      "id": 26,
+      "q": "Approximately how many V$ dynamic performance views are there?",
+      "a": "More than 700 (Page 20)"
+    },
+    {
+      "id": 27,
+      "q": "What does the diagram provide regarding data dictionary views?",
+      "a": "A secure foundation on which to build your understanding of how to leverage the data dictionary views (Page 20)"
+    },
+    {
+      "id": 28,
+      "q": "If troubleshooting an issue regarding materialized views, what SQL query can be used to find associated data dictionary views?",
+      "a": "`SQL> select object_name from dba_objects where object_name like '%MV%' and owner='SYS';` (الصفحة 22)"
+    },
+    {
+      "id": 29,
+      "q": "Which view stores the names of the data dictionary views?",
+      "a": "The DICTIONARY view. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "What is the purpose of using the DICTIONARY and DICT_COLUMNS views?",
+      "a": "They can be invaluable when needing more information about each view. (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "Which materialized view related views are listed in the table, along with their descriptions?",
+      "a": "DBA_MVIEW_LOGS (All materialized view logs), DBA_MVIEWS (All materialized views), and DBA_MVIEW_ANALYSIS (Description of accessible materialized views). (الصفحة 22)"
+    }
+  ]
+}

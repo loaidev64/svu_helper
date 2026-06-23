@@ -1,0 +1,980 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the title of Chapter Five in this textbook material?",
+      "options": [
+        "Database Indexing Techniques",
+        "Performance Techniques in MS SQL Server",
+        "Advanced Query Optimization Methods",
+        "Mastering SQL Server Administration"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter focuses specifically on optimizing database performance, and the official title listed on page 2 is \"Performance Techniques in MS SQL Server.\" This indicates that the content will cover various methods to improve the speed and efficiency of SQL operations.",
+      "id": 1
+    },
+    {
+      "question": "Under which academic program does this material fall?",
+      "options": [
+        "Master of Science in Computer Engineering (MSCE)",
+        "Bachelor of IT Program BAIT",
+        "Diploma in Information Technology (DIT)",
+        "Graduate Certificate in Database Management"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The document clearly states that the material is designed for students enrolled in the \"Bachelor of IT Program BAIT.\" This identifies the academic level and specialization for which the course content is intended.",
+      "id": 2
+    },
+    {
+      "question": "What specific field or subject area does this textbook cover?",
+      "options": [
+        "Network Security Protocols (NSP)",
+        "MS SQL Server Administration IIS404",
+        "Cloud Computing Infrastructure (CCI)",
+        "Advanced Operating Systems Theory (AOST)"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The subject matter is centered around managing and optimizing Microsoft SQL Server databases. The full course title provided on page 2 confirms that the specific area of study is \"MS SQL Server Administration IIS404.\"",
+      "id": 3
+    },
+    {
+      "question": "What is the primary function of a B-Tree in a database system?",
+      "options": [
+        "It dictates the physical storage order of all data rows in a table.",
+        "It serves as an indexing structure to facilitate quick retrieval of rows based on key values.",
+        "It automatically manages concurrency improvements by storing data exclusively in memory.",
+        "It is used only for defining primary keys and foreign key relationships."
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "A B-Tree is a self-balancing tree structure designed specifically to store indexed key values. Its purpose is to allow the database system to efficiently locate and retrieve rows of data quickly by navigating the structured index, rather than performing a full table scan.",
+      "id": 4
+    },
+    {
+      "question": "Which type of index determines the physical order in which the data records are stored on disk?",
+      "options": [
+        "Nonclustered Index",
+        "Clustered Index",
+        "Included Column Index",
+        "Hash Index"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "A clustered index dictates the physical arrangement of the data rows within a table. When a table has a clustered index, the actual data records are sorted and stored on disk according to the key values defined by that index.",
+      "id": 5
+    },
+    {
+      "question": "What feature allows a Non-Clustered Index to store additional columns that are not part of the primary search key?",
+      "options": [
+        "Clustered Key Definition",
+        "Included Columns",
+        "Physical Ordering Constraint",
+        "Memory Optimization Flag"
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "Non-clustered indexes can utilize \"included columns.\" This feature allows developers to include additional non-key columns within the index structure. These included columns are available for querying purposes without needing to access the main table data, improving query performance.",
+      "id": 6
+    },
+    {
+      "question": "What is the primary benefit of using a Memory optimized table in SQL Server?",
+      "options": [
+        "It guarantees that all indexes must be clustered by default.",
+        "It significantly improves concurrency and performance by storing frequently accessed data directly in memory.",
+        "It eliminates the need for any form of indexing structure entirely.",
+        "It restricts the database to only using B-Tree structures for all operations."
+      ],
+      "correctIndex": 1,
+      "page": "1",
+      "section": null,
+      "hint": "راجع الصفحة 1",
+      "explanation": "Memory optimized tables are designed to store data primarily in RAM rather than traditional disk storage. This architecture drastically reduces I/O latency, leading to substantial improvements in concurrency and overall query performance for high-transaction workloads.",
+      "id": 7
+    },
+    {
+      "question": "What is an index in a database?",
+      "options": [
+        "A physical file that stores all the data rows of a table.",
+        "An on-disk structure associated with a table or view that speeds retrieval of rows from the table or view.",
+        "A programming language used to write complex queries.",
+        "A type of primary key that uniquely identifies every record."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "An index is fundamentally an on-disk structure designed for performance enhancement. Its purpose is to speed up the process of retrieving specific rows from a table or view by providing quick lookup paths, much like an index in a book helps you find information faster than reading every page.",
+      "id": 8
+    },
+    {
+      "question": "What data structure stores the keys built from one or more columns within an index?",
+      "options": [
+        "Hash Table (HT)",
+        "B-tree (Balanced tree)",
+        "Linked List (LL)",
+        "Array Structure (AS)"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The keys derived from the specified columns are stored within a specialized structure called a B-tree. This balanced tree format is highly efficient for organizing and retrieving data, ensuring that search operations remain fast regardless of the size of the dataset.",
+      "id": 9
+    },
+    {
+      "question": "How does the B-tree algorithm enable quick searching for row values?",
+      "options": [
+        "By sequentially checking every single key until the desired value is found.",
+        "By starting near the value to be searched and moving up or down until the desired value is reached.",
+        "By requiring a full table scan before any search can begin.",
+        "By comparing the target value only against the primary key column."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The B-tree structure utilizes an efficient searching algorithm that does not require checking every single record. Instead, it intelligently starts near the approximate location of the desired value and systematically navigates up or down through the tree levels until the exact match is found quickly.",
+      "id": 10
+    },
+    {
+      "question": "ما هي الفكرة الرئيسية من استخدام ال B-Trees في قواعد البيانات الكبيرة؟",
+      "options": [
+        "أنها تضمن أن جميع المفاتيح موجودة في الذاكرة الرئيسية (main memory).",
+        "تقليل استخدام و الوصول للقرص الصلب عند التعامل مع كميات كبيرة من البيانات.",
+        "أنها تسمح بتخزين كل البيانات بشكل تسلسلي دون الحاجة إلى هيكل شجري.",
+        "أن تكون بديلاً كاملاً عن الـ Clustered Index في SQL Server."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "الهدف الأساسي من استخدام هياكل B-Trees هو التعامل مع مجموعات بيانات ضخمة لا يمكن تحميلها بالكامل في الذاكرة الرئيسية (main memory). لذلك، فإن الفكرة المحورية هي تقليل عدد مرات الوصول إلى القرص الصلب (disk I/O)، مما يحسن بشكل كبير أداء الاستعلامات.",
+      "id": 11
+    },
+    {
+      "question": "وفقاً لما ورد في النص، ما هما النوعان الرئيسيان من ال Index الموجودين في SQL Server؟",
+      "options": [
+        "Primary Index و Secondary Index",
+        "Clustered و Nonclustered",
+        "Unique Index و Composite Index",
+        "Physical Index و Logical Index"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "يوضح النص أن نظام إدارة قواعد البيانات SQL Server يحتوي على نوعين رئيسيين من الفهارس (Indexes). وهما الـ Clustered Index، الذي يرتب البيانات فعلياً في الجدول، والـ Nonclustered Index، الذي هو مجرد مؤشر منفصل يشير إلى موقع البيانات.",
+      "id": 12
+    },
+    {
+      "question": "عند إنشاء مفتاح أساسي (Primary Key) يدوياً في جدول ما، ما الذي يحدث بشكل تلقائي فيما يتعلق بالفهرسة؟",
+      "options": [
+        "يتم إنشاء Unique Constraint فقط لضمان عدم تكرار القيم.",
+        "يتم إنشاء Clustered Index بشكل تلقائي لهذا المفتاح الأساسي.",
+        "لا يتم إنشاء أي فهرس (Index) على الإطلاق، بل يعتمد النظام على الفحص المباشر للبيانات.",
+        "يتم إنشاء Nonclustered Index فقط لضمان السرعة في البحث."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "من القواعد الأساسية في SQL Server أن تعيين حقل كـ Primary Key يفرض قيوداً على البيانات ويضمن فرادة القيم، ولتحقيق أفضل أداء لهذا المفتاح الحيوي، يقوم النظام تلقائياً بإنشاء Clustered Index عليه.",
+      "id": 13
+    },
+    {
+      "question": "متى لا يمكن إنشاء Unique index (فهرس فريد) على عمود واحد أو مجموعة من الأعمدة؟",
+      "options": [
+        "إذا كان العمود يحتوي على بيانات نصية طويلة جداً.",
+        "إذا احتوى العمود أو مجموعة الأعمدة على قيمة NULL في أكثر من صف.",
+        "إذا لم يكن العمود جزءاً من مفتاح أساسي (Primary Key).",
+        "إذا تم إنشاء الفهرس يدوياً بدلاً من أن يكون تلقائياً."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "لكي يعمل الـ Unique Index بشكل صحيح، يجب أن يضمن عدم تكرار أي قيمة في العمود أو مجموعة الأعمدة المحددة. ووفقاً لقواعد الفهرسة، فإن التعامل مع قيم NULL المتعددة يعتبر بمثابة تكرار للبيانات لأغراض الفهرسة، مما يمنع إنشاء هذا النوع من الفهارس.",
+      "id": 14
+    },
+    {
+      "question": "ما هو الفرق الأساسي بين الترتيب الفيزيائي للبيانات باستخدام الـ Clustered Index والـ Nonclustered Index؟",
+      "options": [
+        "يحدد كل من المؤشرين نفس الترتيب الفيزيائي للأسطر في الجدول.",
+        "يحدد الـ Clustered Index الترتيب الفيزيائي، بينما يتم ترتيب البيانات بواسطة الـ Nonclustered Index بشكل مستقل عن البنية الفيزيائية.",
+        "لا يمكن إنشاء Nonclustered Index إذا كان هناك Clustered Index موجود بالفعل.",
+        "يستخدم كل من المؤشرين نفس الهيكل الداخلي لتخزين المفاتيح والقيم."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "الـ Clustered Index هو الذي يحدد الترتيب الفيزيائي للأسطر في الجدول، مما يعني أن البيانات نفسها مرتبة على القرص الصلب وفقاً لهذا المؤشر. أما الـ Nonclustered Index، فهو يقوم بإنشاء هيكل فهرسة منفصل عن البنية الفعلية للبيانات، وبالتالي فإن ترتيبه لا يؤثر على الترتيب الفيزيائي للأسطر في الجدول.",
+      "id": 15
+    },
+    {
+      "question": "متى يُعتبر استخدام الـ Clustered Index هو الخيار الأمثل لتحقيق أفضل أداء للاستعلامات (Queries)؟",
+      "options": [
+        "عند إجراء استعلام عن قيمة ثابتة ومحددة بدقة (Point Lookup).",
+        "عندما تكون الاستعلام Query عبارة عن نطاق قيم (Range) وليس استعلاماً عن قيمة واحدة.",
+        "في حالة عدم وجود أي مؤشرات على الجدول، حيث يتم استخدام الـ Heap افتراضياً.",
+        "عند الحاجة إلى إنشاء أكثر من فهرس فريد (Unique Index) للجدول."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "يُفضل استخدام الـ Clustered Index عندما تتوقع الاستعلامات أن تكون على شكل نطاق قيم (Range)، لأن هذا المؤشر يضمن ترتيب البيانات فيزيائياً حسب المفتاح، مما يجعل قراءة مجموعة من القيم المتجاورة أسرع بكثير. أما الاستعلام عن قيمة ثابتة مفردة فقد يكون الـ Nonclustered Index أكثر فعالية.",
+      "id": 16
+    },
+    {
+      "question": "ما هي المزايا التي يتمتع بها الـ Nonclustered Index مقارنة بالبنية الفيزيائية للجدول؟",
+      "options": [
+        "يضمن أن الجدول لا يمكن أن يحتوي على أي أسطر مفقودة (Null Values).",
+        "يمكن إنشاء أكثر من Nonclustered Index، ويقدم أفضل أداء عند الاستعلام عن قيمة ثابتة.",
+        "يجب أن يكون الـ Nonclustered Index دائماً فريداً (Unique) لضمان سلامة البيانات.",
+        "يحدد الترتيب الفيزيائي للبيانات بشكل إلزامي ولا يمكن تغييره لاحقاً."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "الميزة الرئيسية للـ Nonclustered Index هي أنه يسمح بإنشاء عدة مؤشرات مختلفة على نفس الجدول، وكل منها مستقل عن ترتيب البيانات الفيزيائي. كما أنه فعال جداً في عمليات البحث التي تستهدف قيمة ثابتة ومحددة بدقة.",
+      "id": 17
+    },
+    {
+      "question": "في حال تطبيق قيد فريد (Unique Constraint) على عمود أو مجموعة أعمدة، ما الذي يتم إنشاؤه تلقائياً لضمان سلامة البيانات؟",
+      "options": [
+        "يتم إنشاء Clustered Index بشكل إجباري على هذا العمود.",
+        "يتم إنشاء Unique Nonclustered Index له بشكل أوتوماتيكي.",
+        "لا يتم إنشاء أي مؤشر، بل يعتمد النظام على التحقق من القيد فقط.",
+        "يتم تحويل الجدول بالكامل إلى هيكل Heap لضمان عدم تكرار البيانات."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "عند تحديد قيد فريد (Unique Constraint)، يقوم نظام إدارة قواعد البيانات تلقائياً بإنشاء Unique Nonclustered Index لهذا العمود أو المجموعة من الأعمدة. هذا المؤشر يضمن أن جميع القيم في هذا الحقل ستكون فريدة، ويساعد أيضاً في تسريع عمليات البحث عن هذه القيم الفريدة.",
+      "id": 18
+    },
+    {
+      "question": "What defines a Clustered Index in a table?",
+      "options": [
+        "It is a separate index structure independent of the physical data sort order.",
+        "It sorts and stores the actual data rows based on their key values, allowing only one per table.",
+        "It is used exclusively for queries that return large result sets.",
+        "It requires the use of included columns to function correctly."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "A clustered index dictates the physical order in which the data rows are stored on disk, meaning the table itself is sorted by this key. Because the data can only be physically sorted one way, a table can have only one such index.",
+      "id": 19
+    },
+    {
+      "question": "If a non-clustered index points to a data row, what type of pointer is used in its leaf level?",
+      "options": [
+        "Only the primary key value of the data row.",
+        "Either the clustered index key or the data page ID and row ID if the table is a heap.",
+        "A unique identifier that must be manually added to the index definition.",
+        "The physical disk address where the data resides, regardless of structure."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "The pointer mechanism in a non-clustered index varies depending on how the main table is structured. If the table has a clustered index, the pointer uses that key; otherwise, if it's stored as an unordered heap, it must use the data page ID and row ID to locate the specific record.",
+      "id": 20
+    },
+    {
+      "question": "Which scenario makes a non-clustered index particularly useful?",
+      "options": [
+        "When the goal is to enforce the primary physical sort order of the entire dataset.",
+        "For queries that return small result sets or frequently use exact matches in the WHERE clause.",
+        "When the table structure must be optimized for sequential data access only.",
+        "When all columns referenced by a query are already part of the clustered index key."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Non-clustered indexes are valuable when you need to optimize specific search paths without controlling the physical storage order. They are especially effective for queries that narrow down results quickly using exact matches or do not require retrieving massive amounts of data.",
+      "id": 21
+    },
+    {
+      "question": "What is the primary benefit of considering included columns in a non-clustered index?",
+      "options": [
+        "It guarantees that the table will automatically receive a clustered index.",
+        "It allows the creation of a covering index, ensuring all referenced query columns are available within the index structure itself.",
+        "It eliminates the need for any WHERE clause filtering on the indexed columns.",
+        "It forces the database to store the data rows in an optimal sequential order."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Including columns allows you to build a \"covering\" index, meaning that even if those columns are not used for searching (in the WHERE clause), they are stored within the non-clustered index structure. This prevents the database from having to perform an extra lookup back to the main data table to retrieve necessary information.",
+      "id": 22
+    },
+    {
+      "question": "What is the primary benefit of adding a column using the INCLUDE clause when creating a Non-Clustered Index?",
+      "options": [
+        "It forces the included column to become the clustered key for the table.",
+        "It makes the column available in the leaf-level pages of the index, eliminating the need to access data pages.",
+        "It automatically converts the non-clustered index into a unique primary key constraint.",
+        "It ensures that the included column is always physically stored with the clustered index."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Using the INCLUDE clause allows specific columns to be stored directly within the leaf-level pages of the Non-Clustered Index structure. This means that when querying data, the system can retrieve the values for these included columns without having to perform an additional lookup back to the main data pages, significantly improving query performance.",
+      "id": 23
+    },
+    {
+      "question": "What is the fundamental limitation concerning Clustered Indexes on a single table?",
+      "options": [
+        "A clustered index cannot be created if the table contains foreign key constraints.",
+        "A database table can only have one Clustered Index defined.",
+        "The system automatically creates multiple clustered indexes when primary keys are added.",
+        "Only columns with unique values can be used to define a clustered index."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "A core rule in database design is that a table can only have one Clustered Index. Since the clustered index determines the physical order and structure of the data rows on disk, having more than one would conflict with how the data is physically stored and managed by the system.",
+      "id": 24
+    },
+    {
+      "question": "Under what conditions are indexes automatically created by the database system?",
+      "options": [
+        "When a table is altered to add a foreign key constraint.",
+        "When PRIMARY KEY or UNIQUE constraints are defined on a table.",
+        "Whenever any column in the table is designated as an included column.",
+        "Only when a user explicitly runs a CREATE INDEX statement after populating the table."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "The database management system automatically recognizes and creates indexes when you define constraints that enforce uniqueness or primary identification on a table. Specifically, defining a PRIMARY KEY or a UNIQUE constraint triggers the creation of an index to maintain data integrity and optimize lookups.",
+      "id": 25
+    },
+    {
+      "question": "In the context of indexing, what does it mean for a column to be available in the leaf-level pages of an index?",
+      "options": [
+        "The column is physically stored alongside the primary key columns in the table's main data structure.",
+        "The column's value is included directly within the non-clustered index structure itself, making it easily accessible during a query.",
+        "The column must be part of the clustered index definition to be available at the leaf level.",
+        "It means that the column can only be queried using JOIN operations with other tables."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "When an included column is stored in the leaf-level pages of a Non-Clustered Index, it means the index structure itself carries the data for that column. This direct inclusion allows the query engine to satisfy the request using only the index pages, avoiding costly trips back to the main table's data pages.",
+      "id": 26
+    },
+    {
+      "question": "كيف يخزن فهرس العمود (Columnstore Index) البيانات مقارنة بالفهارس التقليدية؟",
+      "options": [
+        "يقوم بتخزين البيانات في صفحات بناءً على الأسطر بشكل أساسي.",
+        "يعمل على الذاكرة، ويكتب البيانات مضغوطة في صفحات بناءً على الأعمدة وليس الأسطر.",
+        "يعتمد فقط على البحث عن قيم محددة (Seeking).",
+        "يتطلب دائمًا إنشاء فهرس غير مكدس (Nonclustered Index) بغض النظر عن نوع العمل."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "يعمل فهرس العمود بطريقة متقدمة تعتمد على الذاكرة، حيث يقوم بتخزين البيانات مضغوطة في صفحات بناءً على الأعمدة بدلاً من تخزينها صفاً بصف. هذا التخزين القائم على الأعمدة يجعله فعالًا للغاية لتحليل مجموعات كبيرة من البيانات.",
+      "id": 27
+    },
+    {
+      "question": "متى يُنصح باستخدام فهارس الصف (Rowstore indexes)؟",
+      "options": [
+        "عند إجراء مسح كامل للجدول لتنفيذ تابع تجميعي كبير (Aggregate function).",
+        "عندما تكون لدينا استعلامات تبحث عن قيمة معينة أو نطاق قيم صغير، خاصة في أحمال العمل المعاملاتية.",
+        "دائمًا عند التعامل مع جداول الحقائق الكبيرة (Fact Tables) في مستودعات البيانات.",
+        "عندما يكون الهدف هو تحقيق أعلى نسبة ضغط للبيانات المتاحة."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "تُعد فهارس الصف مثالية للاستعلامات التي تتطلب البحث عن قيمة محددة أو نطاق صغير من القيم، وهي مناسبة بشكل خاص لأحمال العمل المعاملاتية (transactional workloads) لأنها تعتمد على عمليات بحث الجدول (table seeks).",
+      "id": 28
+    },
+    {
+      "question": "ما هو الاستخدام الأمثل لفهرس العمود المكدس (Clustered Columnstore Index)؟",
+      "options": [
+        "تنفيذ التحليلات في بيئة عمل OLTP بشكل فوري.",
+        "استخدامها في بيئات مستودعات البيانات والجداول الكبيرة للأبعاد، لتحسين أداء الاستعلام وضغط البيانات.",
+        "التعامل مع العمليات التي تتطلب البحث عن قيمة واحدة محددة بدقة عالية.",
+        "عندما يكون الجدول صغير الحجم ولا يتجاوز آلاف السجلات."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "يُعد فهرس العمود المكدس الخيار القياسي لتخزين والاستعلام عن جداول الحقائق الكبيرة في مستودعات البيانات. هذا النوع من الفهارس مصمم لتحسين أداء الاستعلامات وتحقيق ضغط بيانات عالٍ عند التعامل مع كميات كبيرة من البيانات عبر عمليات المسح الكامل للجدول (full table scans).",
+      "id": 29
+    },
+    {
+      "question": "ما هي طريقة عمل \"معالجة الاستعلام بنمط الدفعات\" (Batch-mode Query Processing)؟",
+      "options": [
+        "تعتمد على البحث المتسلسل لكل سطر في الجدول بشكل منفصل.",
+        "تعتمد على خوارزمية التنفيذ بالاستعلام القائم على المتجهات، حيث تتم معالجة مجموعة أسطر سوية بدلاً من كل سطر على حدة.",
+        "تتطلب دائمًا أن يكون الجدول قد تم فهرسته باستخدام فهارس الصف (Rowstore).",
+        "هي عملية مخصصة فقط لبيئات العمليات المعاملاتية (OLTP) ولا تصلح للتحليل."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "تعتمد معالجة الاستعلام بنمط الدفعات على خوارزمية متقدمة تسمى التنفيذ بالاستعلام القائم على المتجهات. بدلاً من أن تعالج كل سطر بشكل فردي، تقوم هذه الطريقة بمعالجة مجموعة كاملة من الأسطر كوحدة واحدة (Batch)، مما يؤدي إلى زيادة كبيرة في أداء الاستعلام.",
+      "id": 30
+    },
+    {
+      "question": "ما هي بنية الجدول المستخدمة في مثال `citable`؟",
+      "options": [
+        "`( id int, dateDate date, Note varchar (50) )`",
+        "`( id int, theDate date, Note varchar (50) )`",
+        "`( id varchar, theDate datetime, Note nvarchar (50) )`",
+        "`( id int, Date date, Note varchar (50) )`"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "بنية الجدول `citable` تتكون من ثلاثة أعمدة: عمود `id` كعدد صحيح، وعمود `theDate` من نوع بيانات التاريخ (`date`)، وعمود `Note` كنص متغير بطول 50 حرفًا.",
+      "id": 31
+    },
+    {
+      "question": "كم عدد السجلات التي تم إدخالها فعلياً في جدول citable خلال عملية التعبئة؟",
+      "options": [
+        "100",
+        "100000",
+        "1000",
+        "59"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "عند تنفيذ حلقات الإدخال باستخدام الأوامر المذكورة، يظهر الناتج أن عدد السجلات التي تم إدراجها في جدول `citable` هو 100,000 سجل.",
+      "id": 32
+    },
+    {
+      "question": "ما هي الأداة المستخدمة لتحديد أداء الاستعلام (Query) قبل التنفيذ؟",
+      "options": [
+        "Select * into",
+        "Test Execution Plan",
+        "Count(*) from citable",
+        "Declare @id int = 1"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "يتم استخدام خطة تنفيذ الاختبار (Test Execution Plan) لتحليل أداء الاستعلام وتحديد التكلفة المقدرة له قبل تشغيله فعليًا، مما يساعد في تحسين الكفاءة.",
+      "id": 33
+    },
+    {
+      "question": "ما الأمر الذي يستخدم لإنشاء جدول جديد وتعبئته بالبيانات من جدول موجود؟",
+      "options": [
+        "`INSERT INTO new_table SELECT * FROM old_table`",
+        "`Select * into [new_table] from [old_table]`",
+        "`CREATE TABLE new_table AS SELECT * FROM old_table`",
+        "`SELECT * INTO new_table FROM old_table`"
+      ],
+      "correctIndex": 1,
+      "page": "26",
+      "section": null,
+      "hint": "راجع الصفحة 26",
+      "explanation": "الأمر الصحيح لإنشاء جدول جديد وتعبئته بالبيانات من جدول موجود هو استخدام الصيغة `Select * into [new_table] from [old_table]`، حيث يقوم هذا الأمر بنسخ الهيكل والبيانات معًا.",
+      "id": 34
+    },
+    {
+      "question": "What type of index is reported to achieve the best performance when used with aggregate functions?",
+      "options": [
+        "Clustered Index",
+        "Columnstore Index",
+        "Nonclustered Index",
+        "Heap Index"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Columnstore Indexes are highly optimized for analytical queries and operations involving aggregation. They store data column by column, which significantly reduces storage space and improves performance when calculating aggregate functions like SUM or AVG across large datasets compared to traditional row-based indexes.",
+      "id": 35
+    },
+    {
+      "question": "According to the maintenance guidelines presented, what is the condition that necessitates performing an index rebuild operation?",
+      "options": [
+        "When the query execution time increases by more than 10%.",
+        "When the fragmentation percentage exceeds 30%.",
+        "When the table contains fewer than 10 rows.",
+        "When the index was created more than one year ago."
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Index maintenance procedures dictate that if the measured fragmentation level of an index surpasses 30%, a full rebuild (`REBUILD`) operation must be performed. This aggressive rebuilding process is necessary to restore optimal physical data ordering and performance efficiency.",
+      "id": 36
+    },
+    {
+      "question": "Which SQL query command is used to retrieve the average fragmentation percentage and the count of fragments for a specific index?",
+      "options": [
+        "`SELECT avg_fragmentation_in_percent, fragment_count FROM sys.dm_db_index_physical_stats WHERE object_id = [ID]`",
+        "`Select avg_fragmentation_in_percent, fragment_count from sys.dm_db_index_physical_stats (db_id(N'SVU'), object_id('citable'), 1, null, 'limited');`",
+        "`SELECT fragmentation_level, count FROM sys.indexes WHERE table_name = 'citable'`",
+        "`EXEC sp_helpindex @table='citable', @stats=fragmentation`"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The system dynamic management view `sys.dm_db_index_physical_stats` is the dedicated tool used by database administrators to assess the physical health of indexes. By passing specific parameters like database ID, object ID, and index ID, one can accurately retrieve metrics such as average fragmentation percentage and fragment count.",
+      "id": 37
+    },
+    {
+      "question": "If an administrator determines that an index needs rebuilding due to high fragmentation, what is the correct SQL syntax structure for executing this maintenance task?",
+      "options": [
+        "`ALTER INDEX [IndexName] ON [TableName] REORGANIZE`",
+        "`Alter index ci on citable rebuild`",
+        "`UPDATE INDEX [IndexName] ON [TableName] TO REBUILD`",
+        "`MAINTAIN INDEX [IndexName] ON [TableName] WITH REBUILD`"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The standard T-SQL syntax for rebuilding an index is `ALTER INDEX [IndexName] ON [TableName] rebuild`. This command physically reconstructs the index structure, which is necessary when fragmentation levels are critically high (over 30%).",
+      "id": 38
+    },
+    {
+      "question": "ما هي الأداة المستخدمة لقياس نسبة التجزئة (Fragmentation) لفهارس قاعدة البيانات؟",
+      "options": [
+        "`sys.dm_db_index_stats`",
+        "`sys.dm_db_index_physical_stats`",
+        "`sp_helpindex`",
+        "`DBCC CHECKTABLE`"
+      ],
+      "correctIndex": 1,
+      "page": "31",
+      "section": null,
+      "hint": "راجع الصفحة 31",
+      "explanation": "يتم استخدام عرض `sys.dm_db_index_physical_stats` لتحديد حالة الفهارس، حيث يوفر هذا العرض معلومات مفصلة حول نسبة التجزئة (Fragmentation) لكل فهرس في قاعدة البيانات.",
+      "id": 39
+    },
+    {
+      "question": "ما هو الوصف الصحيح لـ \"Batch-mode query processing\"؟",
+      "options": [
+        "آلية تعالج البيانات صفًا بصف بشكل تسلسلي لتحسين الأمان.",
+        "آلية تنفيذ استعلام تعتمد على المتجهات، حيث تعالج البيانات في دفعات (chunks of cache).",
+        "عملية تتطلب دائمًا استخدام فهارس Rowstore فقط.",
+        "طريقة لتقليل حجم الذاكرة المؤقتة المستخدمة أثناء الاستعلام."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "يمثل وضع الدفعات آلية تنفيذ استعلام متقدمة تعتمد على معالجة البيانات في مجموعات أو دفعات صغيرة من ذاكرة التخزين المؤقت (cache)، مما يجعلها أكثر كفاءة وسرعة في التعامل مع كميات كبيرة من البيانات.",
+      "id": 40
+    },
+    {
+      "question": "ما هي الفائدة الرئيسية لاستخدام وضع الدفعات (Batch-mode) مع فهارس Columnstore؟",
+      "options": [
+        "يقلل بشكل أساسي من مساحة التخزين المطلوبة على القرص الصلب.",
+        "يمكنه معالجة ما يصل إلى 900 صفًا في وقت واحد، مما يحسن أداء الاستعلام بنسبة كبيرة (3-4x).",
+        "يسمح بتشغيل الاستعلامات المعقدة التي تتجاوز حدود الذاكرة المتاحة.",
+        "يضمن أن جميع البيانات المخزنة هي بيانات نصية فقط."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "عند استخدام وضع الدفعات مع فهارس Columnstore، يمكن للنظام معالجة عدد كبير من الصفوف دفعة واحدة (تصل إلى 900 صف)، وهذا التحسين في المعالجة المتوازية يؤدي إلى تحسن ملحوظ في أداء الاستعلام يصل إلى 3-4 مرات.",
+      "id": 41
+    },
+    {
+      "question": "كيف يمكن تفعيل وضع الدفعات (Batch Mode) على فهارس الصفوف (Rowstore)؟",
+      "options": [
+        "تشغيل أمر `ALTER INDEX REBUILD` مع تحديد خيار BatchMode=True.",
+        "عن طريق التبديل إلى أحدث مستوى توافقية (Compatibility Level - CL).",
+        "إنشاء فهرس جديد من نوع Columnstore يغطي البيانات المطلوبة.",
+        "استخدام أوامر تحسين الأداء المخصصة في SQL Server Management Studio."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "لتفعيل ميزات وضع الدفعات على فهارس الصفوف (Rowstore)، يجب تحديث مستوى التوافقية لقاعدة البيانات إلى أحدث إصدار مدعوم، حيث أن هذا يتيح للمنصة الاستفادة من آليات المعالجة المتقدمة.",
+      "id": 42
+    },
+    {
+      "question": "What is the primary performance benefit of enabling lock escalation at the partition level instead of locking an entire table?",
+      "options": [
+        "It guarantees faster data retrieval for all users simultaneously.",
+        "It can reduce overall lock contention on the table by limiting scope.",
+        "It automatically optimizes the indexing structure within the database.",
+        "It eliminates the need for transaction logging entirely."
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "Enabling lock escalation at the partition level is a performance optimization technique because it restricts the scope of locks to smaller segments of data. This reduction in the locked area minimizes contention, allowing more concurrent operations on different partitions while still maintaining data integrity.",
+      "id": 43
+    },
+    {
+      "question": "To allow lock escalation to occur at the partition level and thereby reduce lock contention, what specific option must be set within the ALTER TABLE statement?",
+      "options": [
+        "SET LOCK_ESCALATION = PARTITION",
+        "Set the LOCK_ESCALATION option of the ALTER TABLE statement to AUTO.",
+        "USE OPTION LOCK_ESCALATE ON THE TABLE",
+        "EXECUTE ALTER TABLE WITH ESCALATION=AUTO"
+      ],
+      "correctIndex": 1,
+      "page": "36",
+      "section": null,
+      "hint": "راجع الصفحة 36",
+      "explanation": "To utilize the performance benefits of partition-level locking, the database administrator must explicitly set the `LOCK_ESCALATION` option within the `ALTER TABLE` statement to `AUTO`. This setting instructs the system to manage lock escalation down to the partition level when appropriate.",
+      "id": 44
+    },
+    {
+      "question": "The technique described for improving performance by managing lock granularity is primarily associated with which database concept?",
+      "options": [
+        "Indexing optimization",
+        "Data normalization",
+        "Partitioning",
+        "View creation"
+      ],
+      "correctIndex": 2,
+      "page": "34",
+      "section": null,
+      "hint": "راجع الصفحة 34",
+      "explanation": "The discussion about dividing a large table into smaller, manageable segments (partitions) and managing locks at that segment level falls under the concept of partitioning. This technique allows for granular control over data management and concurrency.",
+      "id": 45
+    },
+    {
+      "question": "What does a database object called a Partition function define?",
+      "options": [
+        "How to map partitions to filegroups for independent backups.",
+        "How the rows of a table or index are mapped to a set of partitions based on the values of a partitioning column.",
+        "The specific data types that cannot be partitioned, such as text and image.",
+        "The number of columns required in the underlying table structure."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A Partition function is responsible for defining how the rows within a table or index are distributed across multiple partitions. This mapping process relies on the values contained within a designated partitioning column, thereby establishing both the total count and the boundaries of these partitions.",
+      "id": 46
+    },
+    {
+      "question": "What is the primary purpose of using a Partition scheme?",
+      "options": [
+        "To define which columns can be used for data storage.",
+        "To map the partitions defined by a partition function to a set of filegroups, enabling independent backup operations.",
+        "To calculate derived values that change when underlying data changes.",
+        "To restrict access to specific rows based on user permissions."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "The Partition scheme acts as a mapping layer that connects the logical partitions created by the partition function to physical storage units called filegroups. This linkage is crucial because it allows database administrators to perform backup operations on individual filegroups, ensuring greater flexibility and isolation during maintenance.",
+      "id": 47
+    },
+    {
+      "question": "Which of the following types of data fields cannot be partitioned?",
+      "options": [
+        "Integer or numeric columns.",
+        "Date/time columns used for monthly partitioning.",
+        "Next, text, image, xml, varchar(max), nvarchar(max), varbinary(max).",
+        "Small integer (smallint) columns."
+      ],
+      "correctIndex": 2,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "Certain data types are inherently complex or large in size, making them unsuitable for the partitioning process. Specifically, the text, image, and various maximum length string/binary types like `varchar(max)` cannot be used as partitioning columns because they do not fit the requirements for defining partition boundaries effectively.",
+      "id": 48
+    },
+    {
+      "question": "What is a key characteristic of a Partitioning column?",
+      "options": [
+        "It must always be a computed column to ensure data integrity.",
+        "Its value changes if the underlying data changes, making it suitable for dynamic partitioning.",
+        "It can only store numeric values and cannot handle dates or text.",
+        "It is automatically managed by the database system and requires no user definition."
+      ],
+      "correctIndex": 1,
+      "page": "38",
+      "section": null,
+      "hint": "راجع الصفحة 38",
+      "explanation": "A Partitioning column must be capable of reflecting changes in the underlying data to ensure that partitioning remains accurate over time. Therefore, it can be either a computed or persisted column whose value will update if the source data records are modified.",
+      "id": 49
+    },
+    {
+      "question": "ما هي الأعمدة التي تتكون منها جدول `notpartitionedtable`؟",
+      "options": [
+        "id (int identity (1,1) not null)، Amount (int)، Thedate (datetime not null).",
+        "id (int identity (1,1) not null)، Thedate (datetime not null)، Amount (int).",
+        "Thedate (datetime not null)، id (int identity (1,1) not null)، Amount (int).",
+        "id (int identity (1,1) not null)، Thedate (datetime not null)، Name (varchar(50))."
+      ],
+      "correctIndex": 1,
+      "page": "40",
+      "section": null,
+      "hint": "راجع الصفحة 40",
+      "explanation": "يتكون جدول `notpartitionedtable` من ثلاثة أعمدة رئيسية: عمود `id` وهو معرف فريد يزداد تلقائيًا، وعمود `Thedate` لتخزين التاريخ كنوع بيانات `datetime`، بالإضافة إلى عمود `Amount` الذي يخزن قيمة مالية كعدد صحيح (`int`).",
+      "id": 50
+    },
+    {
+      "question": "ما هي قيمة الـ cost التي ظهرت عند تنفيذ استعلام نطاق تاريخي قبل إنشاء فهرس `Clustered Index`؟",
+      "options": [
+        "3.07",
+        "11.64",
+        "1.00",
+        "لا يمكن تحديدها من المعطيات المتاحة."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "عند تشغيل خطة التنفيذ (Execute plan) للاستعلام الذي يحدد نطاق تاريخي باستخدام الجدول غير المجزأ، كانت قيمة التكلفة (cost) التي ظهرت هي 11.64، مما يشير إلى مستوى الأداء قبل تحسين البنية بواسطة الفهرسة.",
+      "id": 51
+    },
+    {
+      "question": "ماذا يمثل انخفاض قيمة الـ cost من 11.64 إلى 3.07 بعد إنشاء `Clustered Index`؟",
+      "options": [
+        "أن عملية إضافة البيانات كانت غير مكتملة.",
+        "تحسنًا كبيرًا في أداء الاستعلام نتيجة لإنشاء الفهرس `Clustered Index`.",
+        "أن الجدول يحتاج إلى إعادة بناء كاملة (Rebuild).",
+        "أن قيمة التكلفة لا تتأثر بوجود الفهارس على الإطلاق."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "يمثل انخفاض قيمة الـ cost بشكل ملحوظ، من 11.64 إلى 3.07، تحسنًا كبيرًا في كفاءة أداء الاستعلامات. هذا التحسن يحدث لأن الفهرس `Clustered Index` يقوم بتنظيم البيانات فعلياً على القرص بطريقة تسهل الوصول إليها بسرعة فائقة عند البحث أو التصفية حسب نطاق معين.",
+      "id": 52
+    },
+    {
+      "question": "ما هو الهدف الأساسي من مقارنة أداء الاستعلامات قبل وبعد إنشاء فهرس `Clustered Index`؟",
+      "options": [
+        "التأكد من أن الجدول يحتوي على بيانات كافية للتخزين.",
+        "تحديد ما إذا كان هناك تحسين في الأداء يمكن تحقيقه عن طريق الفهرسة.",
+        "معرفة عدد السجلات الإجمالي الموجودة في قاعدة البيانات.",
+        "تغيير نوع البيانات الأساسي للأعمدة المستخدمة في الاستعلام."
+      ],
+      "correctIndex": 1,
+      "page": "42",
+      "section": null,
+      "hint": "راجع الصفحة 42",
+      "explanation": "الهدف الرئيسي من إجراء هذه المقارنة هو تقييم مدى تأثير إضافة الفهرس `Clustered Index` على كفاءة تشغيل الاستعلامات. إذا انخفضت قيمة الـ cost، فهذا دليل واضح على أن إنشاء الفهرس قد أدى إلى تحسين ملموس في سرعة استرجاع البيانات وأداء النظام بشكل عام.",
+      "id": 53
+    },
+    {
+      "question": "What is the primary purpose of using the `Create partition function` command in SQL Server?",
+      "options": [
+        "To define the physical filegroups where data will be stored.",
+        "To specify the boundaries or ranges that determine how data will be divided into partitions.",
+        "To create the actual partitioned table structure.",
+        "To manage the indexes associated with the partitioned data."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "The partition function is essential because it defines the logical boundaries, or ranges, for the partitioning key. By specifying these boundaries (like date ranges), you tell SQL Server exactly where the data segments will begin and end before they are mapped to physical filegroups.",
+      "id": 54
+    },
+    {
+      "question": "In the context of partitioning, what role does the `Create partition schema` command play?",
+      "options": [
+        "It defines the specific column that will be used as the partitioning key.",
+        "It maps the output ranges from the partition function to designated physical filegroups.",
+        "It automatically creates all necessary indexes on the partitioned table.",
+        "It determines the data type of the primary key for the new table."
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "The partition schema acts as a bridge between the logical partitioning defined by the function and the physical storage structure. It takes the ranges outputted by the partition function and assigns them to specific, pre-existing filegroups, ensuring that each data segment has a designated physical home.",
+      "id": 55
+    },
+    {
+      "question": "When creating a new table in SQL Server using partitioning, which clause must be included to ensure the table is partitioned?",
+      "options": [
+        "`WITH INDEX ON`",
+        "`On partitionschema (column_name)`",
+        "`USING FILEGROUP`",
+        "`PRIMARY KEY COLUMN`"
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "To make a table partitioned, you must specify the partitioning schema when creating it. The syntax `On partitionschema (column_name)` tells SQL Server that the data in this column should be used to determine which partition and filegroup the row belongs to.",
+      "id": 56
+    },
+    {
+      "question": "To improve performance on a partitioned table, what type of index is recommended for optimal management?",
+      "options": [
+        "Nonclustered Index",
+        "Clustered Index Partitioned",
+        "Standard View Index",
+        "Foreign Key Constraint Index"
+      ],
+      "correctIndex": 1,
+      "page": "44",
+      "section": null,
+      "hint": "راجع الصفحة 44",
+      "explanation": "Creating a clustered index partitioned ensures that the physical ordering of the data on disk aligns perfectly with the logical partitioning scheme. This allows SQL Server to manage and query data segments efficiently, significantly boosting performance when querying specific date ranges or partitions.",
+      "id": 57
+    },
+    {
+      "question": "ما هي نتيجة المقارنة في الأداء بين جدول `notpartitiontable` وجدول `partitiontable`؟",
+      "options": [
+        "الحصول على قيمة cost = 2.6 لجدول notpartitiontable وقيمة cost = 3.07 لجدول partitiontable",
+        "الحصول على قيمة cost = 3.07 لجدول notpartitiontable وقيمة cost = 2.6 لجدول partitiontable",
+        "لا يوجد فرق في الأداء بين الجدولين عند إجراء المقارنة",
+        "يجب أن تكون قيمة cost متساوية لكلا الجدولين"
+      ],
+      "correctIndex": 1,
+      "page": "46",
+      "section": null,
+      "hint": "راجع الصفحة 46",
+      "explanation": "عند مقارنة الأداء، تظهر نتيجة الـ `cost` لجدول `notpartitiontable` بقيمة 3.07، بينما يظهر جدول `partitiontable` بقيمة أقل وهي 2.6، مما يشير إلى تحسن في الأداء باستخدام التقسيم (Partitioning).",
+      "id": 58
+    },
+    {
+      "question": "ما هو الأمر المستخدم لتقسيم الـ partition إذا أصبح كبيرًا جدًا؟",
+      "options": [
+        "Alter table function split range ('20180331')",
+        "Alter partition function [partitionfunction () split range ('20180331')]",
+        "Split partition by date('20180331')",
+        "Execute sp_split_range @date = '20180331'"
+      ],
+      "correctIndex": 1,
+      "page": "46",
+      "section": null,
+      "hint": "راجع الصفحة 46",
+      "explanation": "لتقسيم الـ partition الذي أصبح كبيرًا جدًا، يجب استخدام الأمر `Alter partition function` وتحديد نطاق التقسيم باستخدام `split range` متبوعاً بالتاريخ المطلوب.",
+      "id": 59
+    },
+    {
+      "question": "ما هو الإجراء الذي يتم تنفيذه لاختبار مدى الاستفادة من ضغط البيانات (Data Compression)؟",
+      "options": [
+        "Select index_id, partition_number, rows from sys.partitions where object_id=",
+        "Exec sp_estimate_date_compression_saving @shcema_name ='dbo'",
+        "Alter table dbo set compression = 'on'",
+        "EXECUTE COMPRESS TABLE dbo"
+      ],
+      "correctIndex": 1,
+      "page": "46",
+      "section": null,
+      "hint": "راجع الصفحة 46",
+      "explanation": "لاختبار ما إذا كانت عملية ضغط البيانات ستفيد، يجب تنفيذ الإجراء المخزن `sp_estimate_date_compression_saving` وتمرير اسم المخطط (`@shcema_name`) إليه لمقارنة الحجم قبل وبعد الضغط.",
+      "id": 60
+    },
+    {
+      "question": "ما هي الاستعلامات التي يمكن استخدامها لمعرفة تفاصيل الأقسام (partitions) في النظام؟",
+      "options": [
+        "Select partition details from sys.tables where object_id=",
+        "Select index_id, partition_number, rows from sys.partitions where object_id=",
+        "Show partitions for table name 'dbo'",
+        "EXEC sp_get_partition_info @object_id="
+      ],
+      "correctIndex": 1,
+      "page": "46",
+      "section": null,
+      "hint": "راجع الصفحة 46",
+      "explanation": "لمعرفة تفاصيل الأقسام المختلفة في النظام، يجب استخدام استعلام يحدد `index_id` و`partition_number` وعدد الصفوف (`rows`) من جدول نظام `sys.partitions` وتحديد الكائن المراد فحصه عبر `object_id`.",
+      "id": 61
+    },
+    {
+      "question": "What was the primary focus of bwin.party's customer success story?",
+      "options": [
+        "Implementing a new content management system for gaming sites.",
+        "Utilizing an In-memory OLTP solution to improve performance.",
+        "Migrating their entire infrastructure to cloud storage services.",
+        "Developing custom APIs for third-party game integrations."
+      ],
+      "correctIndex": 1,
+      "page": "49",
+      "section": null,
+      "hint": "راجع الصفحة 49",
+      "explanation": "The success story detailed in the material centered on bwin.party's ability to enhance its system performance by adopting an In-memory OLTP solution, demonstrating a significant technological upgrade.",
+      "id": 62
+    },
+    {
+      "question": "What major operational challenge did bwin.party face due to its high-traffic gaming websites?",
+      "options": [
+        "Difficulty managing international payment gateways and currencies.",
+        "Handling huge overloads on their existing infrastructure.",
+        "Slow loading times for user profile pages during peak hours.",
+        "Maintaining compliance with various regional data privacy laws."
+      ],
+      "correctIndex": 1,
+      "page": "49",
+      "section": null,
+      "hint": "راجع الصفحة 49",
+      "explanation": "Because bwin.party operated high-traffic gaming websites, the sheer volume of users and transactions created huge overloads that strained their existing infrastructure capacity.",
+      "id": 63
+    },
+    {
+      "question": "Which specific Microsoft solution did bwin.party implement to resolve its performance issues?",
+      "options": [
+        "SQL Server Enterprise Edition with advanced caching mechanisms.",
+        "The In-memory OLTP solution in SQL Server 2014.",
+        "Azure Cosmos DB for global, scalable data storage.",
+        "A custom load balancer setup using NGINX technology."
+      ],
+      "correctIndex": 1,
+      "page": "49",
+      "section": null,
+      "hint": "راجع الصفحة 49",
+      "explanation": "To boost performance and handle increased traffic, bwin.party specifically adopted the In-memory OLTP solution, which was available within SQL Server 2014.",
+      "id": 64
+    },
+    {
+      "question": "After implementing the new solution, what level of transaction processing capability did the system achieve?",
+      "options": [
+        "Handling approximately 50,000 requests per second.",
+        "Handling 250,000 requests per second, nearly 20 times their original load.",
+        "Maintaining a stable rate of 100,000 requests per second regardless of traffic spikes.",
+        "Increasing capacity by only 5 times the previous peak performance."
+      ],
+      "correctIndex": 1,
+      "page": "49",
+      "section": null,
+      "hint": "راجع الصفحة 49",
+      "explanation": "The successful implementation allowed the system to handle an impressive volume of transactions, reaching 250,000 requests per second, which represented a massive improvement over their initial operational load.",
+      "id": 65
+    }
+  ]
+}

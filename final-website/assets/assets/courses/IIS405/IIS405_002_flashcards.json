@@ -1,0 +1,225 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What does DBA stand for?",
+      "a": "Database administrator (DBA) (الصفحة 3)"
+    },
+    {
+      "id": 2,
+      "q": "Name one objective related to planning database management.",
+      "a": "Plan managing database and tools (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "What architecture is listed as an objective for use?",
+      "a": "Optimal Flexible Architecture (OFA) (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "Which specific software guide is covered in the objectives?",
+      "a": "User's Guide for: Toad for Oracle (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "What is the first objective listed in the Objectives section?",
+      "a": "Describe your role as a database administrator (DBA) and explain typical tasks. (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "What is the second objective regarding Oracle Database management?",
+      "a": "Plan an Oracle Database installation. (الصفحة 6)"
+    },
+    {
+      "id": 7,
+      "q": "Which architecture should be used, according to the objectives?",
+      "a": "Use Optimal Flexible Architecture (OFA). (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "What tool is used for installing Oracle software, as per the objectives?",
+      "a": "Install the Oracle software by using Oracle Universal Installer (OUI). (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What is the initial step in designing and implementing an Oracle database?",
+      "a": "Evaluating the database server hardware (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "Which task involves planning the security and overall structure of a database?",
+      "a": "Planning the database and security strategy (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "What is the process for protecting data against loss in an Oracle database environment?",
+      "a": "Backing up the database (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What ongoing task ensures the smooth operation and efficiency of a maintained Oracle database?",
+      "a": "Monitoring database performance (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "What is Optimal Flexible Architecture (OFA)?",
+      "a": "OFA is a file system directory structure that should make maintaining multiple versions of multiple Oracle products straightforward. (الصفحة 12)"
+    },
+    {
+      "id": 14,
+      "q": "According to the text, what benefits are gained by following the OFA standard?",
+      "a": "Security, migrations, and automations are going to be easier to implement because of consistency across the environments. (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "What function does the ORACLE_BASE directory in 19c perform?",
+      "a": "It provides a way to separate the ORACLE_HOME directories for read-only directories and have the writable files in the ORACLE_BASE. (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "Name some tools used for Oracle database monitoring and management.",
+      "a": "SQL Developer, TOAD, OEM 19c Cloud Control, Oracle Universal Installer, Database Configuration Assistant, etc. (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "According to the OFA standard, what are the three directories that users should be familiar with?",
+      "a": "Oracle inventory directory, Oracle base directory (ORACLE_BASE), and Oracle home directory (ORACLE_HOME). (Page 14)"
+    },
+    {
+      "id": 18,
+      "q": "What is the name of the directory representing the general location for an Oracle installation?",
+      "a": "Oracle base directory (ORACLE_BASE). (Page 14)"
+    },
+    {
+      "id": 19,
+      "q": "Which directory holds the specific software files for an Oracle product?",
+      "a": "Oracle home directory (ORACLE_HOME). (Page 14)"
+    },
+    {
+      "id": 20,
+      "q": "What is the purpose of the Oracle inventory directory?",
+      "a": "It tracks the installed components within the OFA standard. (Page 14)"
+    },
+    {
+      "id": 21,
+      "q": "What is the minimum physical memory (RAM) required to run core processes normally when installing Oracle Database 19c?",
+      "a": "8 GB minimum (Page 18)"
+    },
+    {
+      "id": 22,
+      "q": "If physical memory is between 2 GB and 16 GB, how should virtual memory be set for Oracle Database 19c installation?",
+      "a": "Set virtual memory to 1 times the size of the RAM (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "What type of Windows system architecture is required for installing Oracle Database 19c?",
+      "a": "Only available for 64 bit Windows systems (Workstation or Server) (Page 18)"
+    },
+    {
+      "id": 24,
+      "q": "Which editions of Windows are supported for installing Oracle Database 19c?",
+      "a": "Windows 10 Professional, Enterprise and Education Editions (Page 18)"
+    },
+    {
+      "id": 25,
+      "q": "Before beginning the installation of Oracle Database 18c, what must be verified regarding user access?",
+      "a": "We need to verify that we are connected to our Windows as an administration user. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "When verifying hardware requirements for Oracle Database installation, what four items must be determined?",
+      "a": "The physical RAM size; the size of the configured virtual memory; the amount of free disk space on the system; and the amount of disk space available in the temp directory. (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "How is the required disk space for the temp directory calculated?",
+      "a": "It is equivalent to the total amount of free disk space, minus what is required for the Oracle software to be installed. (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "To begin the installation of the Oracle Database 19c, what steps must be taken?",
+      "a": "Go to the Oracle19c folder, locate the setup.exe file, run it, and choose \"run as administrator.\" (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "What does choosing \"Create and configure a single instance database\" accomplish?",
+      "a": "It configures an Oracle Database Server on our machine and creates a starter database for learning and practice purposes (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "When should one choose the \"Set Up Software Only\" option during installation?",
+      "a": "When configuring a RAC or planning to perform an upgrade, as it only configures the Oracle Server software and no database will be created (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "If \"Set Up Software Only\" is chosen, what utility must be used to create the database manually?",
+      "a": "The DBCA utility (Database Configuration Assistant) (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "What are the two types of \"System Class\" options presented during installation?",
+      "a": "Desktop class and Server Class (الصفحة 24)"
+    },
+    {
+      "id": 33,
+      "q": "What tool can be used to change connections or adjust aliases?",
+      "a": "The TNSnames editor (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "Which utility allows a user to view all objects of the current user/schema and other schema objects in one view?",
+      "a": "Schema Browser (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "What types of code can be written using tools like SQL Developer?",
+      "a": "The ability to write the SQL statement or PL/SQL statements, procedures, functions, etc. (الصفحة 27)"
+    },
+    {
+      "id": 36,
+      "q": "Where can a user administer and monitor the connected database?",
+      "a": "By finding specific menu items (الصفحة 27)"
+    },
+    {
+      "id": 37,
+      "q": "What does the Global Database Name do?",
+      "a": "It is the name that identifies the database (الصفحة 30)"
+    },
+    {
+      "id": 38,
+      "q": "Why must a Global Database Name be unique?",
+      "a": "To distinguish the database from all other databases in a network (الصفحة 30)"
+    },
+    {
+      "id": 39,
+      "q": "What is the Oracle System Identifier (SID)?",
+      "a": "The name of our database as well as serve as our database SID (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "By default, what is the Global Database Name set to?",
+      "a": "ORCL (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "Is Oracle Database 19c only available for Windows 10 Professional, Enterprise and Education editions?",
+      "a": "True (الصفحة 31)"
+    },
+    {
+      "id": 42,
+      "q": "Is Oracle Database 19c only available for Windows 10 Home Edition?",
+      "a": "False (الصفحة 31)"
+    },
+    {
+      "id": 43,
+      "q": "Which edition of Windows cannot install Oracle Database 19c?",
+      "a": "Windows 10 Home Edition (الصفحة 31)"
+    },
+    {
+      "id": 44,
+      "q": "What is the purpose associated with the link https://localhost:5500/em?",
+      "a": "Oracle Database Configuration Assistant (الصفحة 31)"
+    }
+  ]
+}

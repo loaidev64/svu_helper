@@ -1,0 +1,725 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "How can availability be measured?",
+      "options": [
+        "By calculating the total cost of downtime.",
+        "As a percentage of \"100% operational\".",
+        "Based on the number of physical servers installed.",
+        "Using the average time between failures (MTBF)."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Availability is measured by determining what percentage of time a system is fully functional and ready for use, which is represented as \"100% operational.\" This metric helps quantify reliability over a given period.",
+      "id": 1
+    },
+    {
+      "question": "What does the Recovery Point Objective (RPO) define?",
+      "options": [
+        "The maximum amount of time allowed for system downtime after a failure.",
+        "How much data an organization is prepared to lose during a disaster.",
+        "The total budget allocated for implementing high availability solutions.",
+        "The number of people required to restore the system functionality."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The Recovery Point Objective (RPO) determines the maximum acceptable amount of data loss measured in time. It answers the question: \"How much data are you prepared to lose?\" This value dictates the necessary frequency and method of backups or replication.",
+      "id": 2
+    },
+    {
+      "question": "What does the Recovery Time Objective (RTO) define?",
+      "options": [
+        "The total cost associated with implementing a disaster recovery plan.",
+        "The maximum amount of time available to restore the system to an operational state after a failure.",
+        "The percentage increase in performance expected after migration.",
+        "The minimum number of resources required for business continuity."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The Recovery Time Objective (RTO) defines the maximum tolerable duration of time that a system can be down following an incident before critical business functions are severely impacted. It focuses on minimizing downtime and restoring service quickly.",
+      "id": 3
+    },
+    {
+      "question": "When planning for high availability solutions, what must be considered?",
+      "options": [
+        "Only the technical feasibility and hardware requirements.",
+        "The trade-off between budget, resources, equipment, people, money, and the chosen technical solution.",
+        "Primarily focusing on minimizing data loss regardless of cost or effort.",
+        "Only the current operational status without considering future growth needs."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Planning for high availability is a complex process that requires balancing multiple constraints. It involves making trade-offs concerning financial limitations (budget, money), human capital (people), physical assets (resources, equipment), and ultimately selecting the most appropriate technical solution given these restrictions.",
+      "id": 4
+    },
+    {
+      "question": "What does Recovery Point Objective (RPO) measure in the context of business continuity planning?",
+      "options": [
+        "The total time required to restore system functionality after a failure.",
+        "How much data an organization is prepared to lose following a failure.",
+        "The maximum amount of money that can be spent on recovery equipment.",
+        "The duration for which the system must remain operational without interruption."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The Recovery Point Objective (RPO) determines the acceptable level of data loss following a failure. It answers the question, \"How much data are you prepared to lose?\" This value is typically measured in units of time such as seconds or minutes.",
+      "id": 5
+    },
+    {
+      "question": "The Recovery Time Objective (RTO) defines which critical metric for an organization?",
+      "options": [
+        "The maximum acceptable amount of data loss between backups.",
+        "The maximum tolerable duration of time that a system can be down after a failure.",
+        "The total cost associated with implementing the high availability solution.",
+        "The percentage of uptime required to meet industry standards."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The Recovery Time Objective (RTO) specifies the maximum amount of time available to bring an environment back up to a known and usable state after a failure occurs. Unlike RPO, which deals with data loss, RTO focuses purely on the duration of downtime.",
+      "id": 6
+    },
+    {
+      "question": "According to HA/DR planning principles, what is the relationship between money available, acceptable data loss, and length of downtime?",
+      "options": [
+        "The amount of money available is directly proportional to both acceptable data loss and length of downtime.",
+        "The amount of money available is inversely proportional to the amount of acceptable data loss and length of downtime.",
+        "There is no measurable relationship; these three factors are independent variables.",
+        "Increasing the budget always allows for zero data loss and zero downtime, regardless of complexity."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The available budget dictates a trade-off between acceptable data loss and tolerable downtime. Specifically, the amount of money an organization can allocate is inversely proportional to both the acceptable data loss and the length of required uptime, meaning more resources allow for tighter constraints on both metrics.",
+      "id": 7
+    },
+    {
+      "question": "What widely-held standard of availability is known as \"five 9s\"?",
+      "options": [
+        "90% operational time over a year.",
+        "99.9% operational time (three nines).",
+        "99.999 percent availability.",
+        "100% guaranteed uptime with no exceptions."
+      ],
+      "correctIndex": 2,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The \"five 9s\" refers to a standard of 99.999 percent availability. Achieving this level is extremely difficult and represents a high benchmark for system reliability, though it does not guarantee zero downtime or zero data loss.",
+      "id": 8
+    },
+    {
+      "question": "Which two values are the primary metrics that businesses use to drive their High Availability (HA) and Disaster Recovery (DR) strategy?",
+      "options": [
+        "Cost per minute and total equipment budget.",
+        "Recovery Point Objective (RPO) and Recovery Time Objective (RTO).",
+        "Five 9s standard and operational staff count.",
+        "Replication frequency and database mirroring capability."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Businesses use the Recovery Point Objective (RPO) to define acceptable data loss, and the Recovery Time Objective (RTO) to define acceptable downtime duration. These two values are defined in a Service-Level Agreement (SLA) and dictate the technical solution required for HA/DR planning.",
+      "id": 9
+    },
+    {
+      "question": "What are the two critical metrics that must be considered when evaluating High Availability (HA) versus Disaster Recovery (DR)?",
+      "options": [
+        "System uptime percentage and Mean Time Between Failures (MTBF)",
+        "Recovery Time Objective (RTO) and Recovery Point Objective (RPO)",
+        "Annual maintenance cost and operational expenditure (OPEX)",
+        "Service Level Agreement (SLA) duration and user load capacity"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "When planning for system resilience, organizations must define two key metrics: RTO, which specifies the maximum acceptable time to restore service, and RPO, which defines the maximum amount of data loss tolerable. These objectives guide the design and implementation of both HA and DR strategies.",
+      "id": 10
+    },
+    {
+      "question": "How is High Availability (HA) fundamentally described in terms of its function?",
+      "options": [
+        "It is a curative strategy used only after a complete infrastructure failure has occurred.",
+        "It is a preventative idea that aims to keep the server online as much as possible (Available).",
+        "It focuses solely on restoring data from backups taken months prior.",
+        "It requires the system to be completely shut down for scheduled maintenance periods."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "High Availability is proactive; its core goal is prevention. HA strategies are designed to minimize downtime and keep services running continuously, thereby mitigating potential service interruptions before they escalate into a full disaster.",
+      "id": 11
+    },
+    {
+      "question": "What concept does Disaster Recovery (DR) represent?",
+      "options": [
+        "A continuous process of monitoring system performance in real time.",
+        "A curative idea dealing with situations when a system needs to be recovered after an infrastructure failure or disaster.",
+        "The routine scheduling of database backups every night at midnight.",
+        "An ongoing effort to improve network bandwidth and connectivity speed."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Disaster Recovery is reactive, meaning it addresses the aftermath of a major incident. It provides the plan and mechanisms necessary to restore operations when preventative measures fail and the entire infrastructure has failed or been compromised by a disaster.",
+      "id": 12
+    },
+    {
+      "question": "What relationship exists between cost and the Recovery Point Objective (RPO) in implementing High Availability?",
+      "options": [
+        "There is no direct correlation; RPO can be set regardless of budget constraints.",
+        "HA costs increase as the desired RPO becomes shorter, requiring more robust solutions.",
+        "A longer RPO always results in lower implementation costs for the system.",
+        "The cost relationship depends only on the physical distance between the primary and secondary sites."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Achieving a very short Recovery Point Objective means that data loss must be minimal, often requiring real-time replication or continuous backup methods. These advanced technologies are complex and expensive to implement, thus increasing the overall cost of the HA solution.",
+      "id": 13
+    },
+    {
+      "question": "ما هي الخطوات الأساسية التي يقوم بها SQL Agent في عملية الـ Log Shipping؟",
+      "options": [
+        "استعادة البيانات مباشرة من السيرفر الأول إلى السيرفر الثاني.",
+        "نقل الباكاب من السيرفر الأول لمجلد مشترك، ثم نقله للسيرفر الثاني، وأخيراً الاستعادة على السيرفر المستهدف.",
+        "استخدام الـ Backup لعملية Failover تلقائي بالكامل دون تدخل بشري.",
+        "إنشاء اتصال مباشر بين السيرفرين لتزامن البيانات بشكل مستمر (Synchronous)."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "تعتمد عملية Log Shipping على ثلاث مراحل رئيسية يقوم بها SQL Agent: أولاً، يتم أخذ نسخة احتياطية للـ Log file ونقلها إلى مجلد مشترك. ثانياً، يتم نقل هذه النسخة من المجلد المشترك إلى السيرفر الثانوي. وأخيراً، تتم استعادة (Restore) البيانات في السيرفر المستهدف لإتمام عملية التحديث.",
+      "id": 14
+    },
+    {
+      "question": "في سياق الـ Log Shipping، ما هو نوع الاسترداد الذي لا يمكن أن يعمل مع هذه العملية؟",
+      "options": [
+        "Full Recovery",
+        "Simple Recovery",
+        "Transactional Recovery",
+        "Read-Only Restore"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "يتطلب الـ Log Shipping عملية استعادة دقيقة ومرحلية للبيانات. ونوع الاسترداد المسمى Simple Recovery لا يقوم بعملية استعادة للسجلات (Log)، مما يجعله غير مناسب أو غير فعال لإتمام عملية نقل البيانات عبر مسار الـ Log Shipping.",
+      "id": 15
+    },
+    {
+      "question": "عندما يحدث تعطل في السيرفر الأساسي (Primary Server) أثناء استخدام Log Shipping، كيف تتم عملية الانتقال إلى السيرفر الثانوي؟",
+      "options": [
+        "يتم بشكل تلقائي وفوري بواسطة نظام التشغيل.",
+        "يطلق على العملية اسم Failover ويكون انتقالاً يدوياً يتطلب تدخلاً بشرياً.",
+        "لا يمكن إجراء أي نوع من عمليات التعافي (Recovery) في هذه الحالة.",
+        "يجب إعادة تشغيل السيرفر الأساسي أولاً قبل محاولة الانتقال."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "عملية التحول إلى السيرفر الثانوي أو الثالث بعد تعطل السيرفر الأساسي تسمى Failover، وهي عملية تتطلب تدخلاً يدوياً من المسؤول التقني لضمان سلامة البيانات وتجنب فقدانها.",
+      "id": 16
+    },
+    {
+      "question": "ما هي الأدوار الممكنة التي يمكن أن يلعبها السيرفر الثانوي (Secondary Server) أثناء تطبيق Log Shipping؟",
+      "options": [
+        "يجب أن يكون دائماً في وضع التوقف الكامل ولا يمكن استخدامه لأي غرض آخر.",
+        "يمكن استخدامه للـ Read-Only أو أن يكون جاهزاً للعمل كوضع احتياطي (Standby).",
+        "لا يمكنه العمل إلا بعد اكتمال عملية Failover بنجاح.",
+        "يجب أن يتصل مباشرة بالسيرفر الأساسي عبر شبكة خاصة لضمان التوافرية العالية فقط."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "يوفر السيرفر الثانوي مرونة عالية؛ فإما أنه يُستخدم كنسخة للقراءة فقط (Read-Only) لمراقبة البيانات، أو يكون جاهزاً للعمل بشكل كامل في حالة وقوع عطل مفاجئ في السيرفر الأساسي ليقوم بدور الـ Standby.",
+      "id": 17
+    },
+    {
+      "question": "ما الأمر المستخدم لاستعادة قاعدة البيانات وتحديد أنها ليست في وضع الاسترداد؟",
+      "options": [
+        "`Restore Database ShipDB from Disk = 'E:\\svu\\bait\\Demo\\...\\ShipDBFB.bak ' with standardrecovery`",
+        "`Restore Database ShipDB from Disk = 'E:\\svu\\bait\\Demo\\...\\ShipDBFB.bak ' with norecovery`",
+        "`Backup Database ShipDB to Disk = 'E:\\svu\\bait\\Demo\\...\\ShipDBFB.bak ' with norecovery`",
+        "`Move \"ShipDB_Data' to 'G:\\new_DB\\...\\ShipDB_mirror_data.mdf'`"
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "عند استعادة قاعدة البيانات باستخدام الأمر `Restore Database`، فإن إضافة الكلمة المفتاحية `with norecovery` تضمن أن عملية الاستعادة لا تتطلب إجراءات استرداد معقدة، مما يسمح بالتعامل مع ملفات البيانات مباشرة.",
+      "id": 18
+    },
+    {
+      "question": "ما المكون المسؤول عن أتمتة وجدولة العمليات مثل عمل النسخ الاحتياطي؟",
+      "options": [
+        "Shared Folder",
+        "Job في SQL Server Agent",
+        "Restore Database",
+        "No Recovery mode"
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "يعتبر الـ Job الموجود ضمن SQL Server Agent هو الأداة المسؤولة عن أتمتة العمليات وجدولة المهام المختلفة، مثل جدولة عملية النسخ الاحتياطي (Backup)، مما يضمن تنفيذها بشكل دوري ومجدول.",
+      "id": 19
+    },
+    {
+      "question": "عند الوصول إلى خطوة الـ Restore من طريق الـ GUI، ما هما الوضعان المتاحان لتحديد وضع قاعدة البيانات؟",
+      "options": [
+        "Standard by mode و Offline",
+        "No Recovery mode و Standard by mode",
+        "Backup mode و Mirroring mode",
+        "Read Only و Writeable"
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "عند إجراء عملية استعادة لقاعدة البيانات عبر واجهة المستخدم الرسومية (GUI)، يتاح للمستخدم اختيار وضعين رئيسيين لتحديد حالة قاعدة البيانات بعد الاستعادة، وهما No Recovery mode و Standard by mode.",
+      "id": 20
+    },
+    {
+      "question": "ما الغرض من الأمر `Move \"ShipDB_Data' to 'G:\\new_DB\\...\\ShipDB_mirror_data.mdf'`؟",
+      "options": [
+        "إجراء عملية النسخ الاحتياطي لقاعدة البيانات بالكامل.",
+        "نقل ملفات قاعدة البيانات إلى مكان خاص بالسيرفر الثاني بعد الاستعادة.",
+        "تغيير اسم قاعدة البيانات في السيرفر الأول.",
+        "تشغيل أمر استرداد كامل للبيانات المفقودة."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "يتم استخدام أوامر `Move` لنقل ملفات بيانات قاعدة البيانات (`.mdf`) وملفات سجلها (`.ldf`) إلى مسار محدد على السيرفر الثاني، وهي خطوة ضرورية لإكمال عملية الاستعادة وتجهيز البيئة الجديدة.",
+      "id": 21
+    },
+    {
+      "question": "ما هو الوضع الذي يضمن أن تكون قاعدة البيانات قابلة للقراءة فقط بعد عملية الاستعادة؟",
+      "options": [
+        "No Recovery mode",
+        "Read Only (وضعها بحالة Read Only)",
+        "Standard by mode",
+        "Offline"
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "تحديد وضع \"Read Only\" يضمن أن المستخدمين يمكنهم قراءة البيانات الموجودة في قاعدة البيانات المستعادة، ولكنه يمنع أي عمليات تعديل أو كتابة جديدة عليها حتى يتم تغيير الوضع.",
+      "id": 22
+    },
+    {
+      "question": "في سياق Database Mirroring، ما هو الفرق الأساسي بين High-performance mode و High-safety mode؟",
+      "options": [
+        "High-performance mode يتطلب اتصالاً بالإنترنت بينما High-safety mode لا يتطلبه.",
+        "High-performance mode يعمل بشكل غير متزامن (Asynchronously) ويستخدم فقط السيرفر الأولي والسيرفر المرآة.",
+        "High-safety mode يضمن عدم فقدان البيانات دائمًا، بغض النظر عن التكوين.",
+        "لا يوجد فرق جوهري؛ كلاهما يوفر نفس مستوى الحماية للبيانات."
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "يعمل وضع الأداء العالي (High-performance mode) بشكل غير متزامن، مما يعني أنه يركز على السرعة ويستخدم فقط السيرفر الأولي والسيرفر المرآة دون ضمانات عالية المستوى لسلامة البيانات مقارنة بالوضع الآمن.",
+      "id": 23
+    },
+    {
+      "question": "What is SQL Server Transaction Log Shipping primarily designed to provide?",
+      "options": [
+        "A fully automatic failover mechanism from the primary server to the secondary server.",
+        "An inexpensive and easily managed High Availability (HA) and Disaster Recovery (DR) solution at the database level.",
+        "Real-time replication of all data changes instantly across multiple physical locations.",
+        "A method for performing full system backups without needing a shared network location."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "SQL Server Transaction Log Shipping is specifically designed to offer an affordable and simple way to maintain high availability and disaster recovery capabilities at the database level, making it suitable for organizations seeking robust data protection solutions.",
+      "id": 24
+    },
+    {
+      "question": "When manually building a custom log shipping solution, what specific commands or modes must be used when restoring transaction log backups?",
+      "options": [
+        "Use the RESTORE feature with WITH FULLRECOVERY to ensure all transactions are applied immediately.",
+        "Use the RESTORE feature with NORECOVERY, or RESTORE with STANDBY.",
+        "Simply restore the backup files without specifying any recovery mode.",
+        "Utilize the Database Mirroring wizard for automated restoration processes."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "When implementing a custom log shipping solution, it is crucial to use the `RESTORE` feature with either `NORECOVERY` or `STANDBY`. These modes ensure that the database remains in a state where further transaction logs can be applied before being brought fully online.",
+      "id": 25
+    },
+    {
+      "question": "If a failover occurs on the primary server, what process must be followed to guarantee zero data loss of committed transactions?",
+      "options": [
+        "The secondary database automatically takes over all pending transactions without manual intervention.",
+        "The tail of the log on the primary server is backed up, transferred to the shared location, and restored after the latest regular transaction logs.",
+        "Only the last full backup taken before the failure can be used for recovery purposes.",
+        "The database must immediately enter RECOVERY mode without any additional logging steps."
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "To ensure that no committed transactions are lost during a failover, the final segment of the transaction log—known as the tail of the log—must be backed up from the primary server. This backup is then transferred to the shared location and restored after all routine transaction logs have been applied.",
+      "id": 26
+    },
+    {
+      "question": "What is the primary function of Replication in a database environment?",
+      "options": [
+        "To manage user access credentials across multiple servers.",
+        "Copying and distributing data and database objects from one database to another while maintaining consistency.",
+        "Encrypting sensitive data before it is transferred over a network.",
+        "Optimizing query performance by indexing large datasets."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Replication utilizes a set of technologies designed specifically for copying and distributing data and database objects from an initial source to other databases. The goal of this process is to synchronize the data across these locations, ensuring consistency throughout the distributed system.",
+      "id": 27
+    },
+    {
+      "question": "How does Log Shipping contribute to minimizing data loss during a failover event?",
+      "options": [
+        "By automatically restoring all historical transaction logs immediately upon failure detection.",
+        "By allowing the environment to recover with zero or minimal data loss, often by restoring the latest shipped transaction log.",
+        "By requiring manual intervention to transfer the entire database backup file before switching servers.",
+        "By ensuring that only read-only copies of the database are available at the failover site."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Log Shipping is a mechanism that helps minimize data loss during a failover because it continuously ships transaction logs. This allows the recovery environment to be brought back online with either zero data loss or minimal data loss, depending on how recently the latest transaction log was successfully restored.",
+      "id": 28
+    },
+    {
+      "question": "In the context of Replication architecture, where is the Publisher located and what role does the Distributor play?",
+      "options": [
+        "The Publisher is at the Subscriber, and the Distributor manages all network connections.",
+        "The Publisher is located at the Master Database, and the Distributor is created when Subscribers are established in other branches/customers.",
+        "Both the Publisher and Distributor must be hosted on separate cloud platforms for redundancy.",
+        "The Distributor is always managed by a third-party service provider to ensure neutrality."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The architecture dictates that the Publisher resides at the Master Database, serving as the source of data. Furthermore, when new Subscribers are set up in different branches or customer locations, a Distributor must be created to manage and facilitate the replication process.",
+      "id": 29
+    },
+    {
+      "question": "Which characteristic accurately describes Snapshot Replication?",
+      "options": [
+        "It continuously streams changes from the Publisher to the Subscriber in real time.",
+        "It involves transferring all data from the Publisher to the Subscriber at specific intervals.",
+        "It requires manual setup of a dedicated agent on both the source and target machines.",
+        "It is designed primarily for merging conflicting records from multiple independent sources."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Snapshot Replication operates by taking periodic snapshots of the data. This process involves transferring all necessary data from the Publisher to the Subscriber at set intervals, rather than streaming every single change as it happens.",
+      "id": 30
+    },
+    {
+      "question": "Which of the following options correctly lists the three types of replication mentioned in the text?",
+      "options": [
+        "Continuous Replication, Batch Replication, and Mirroring Replication.",
+        "Snapshot Replication, Transactional Replication, and Merge Replication.",
+        "Primary Replication, Secondary Replication, and Failover Replication.",
+        "Master Replication, Slave Replication, and Witness Replication."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The material identifies three distinct technologies used for replication: Snapshot Replication, which transfers full data sets; Transactional Replication, which handles ongoing transactions; and Merge Replication, which is designed to combine changes from multiple sources.",
+      "id": 31
+    },
+    {
+      "question": "Which scenario is most appropriate for using Snapshot Replication by itself?",
+      "options": [
+        "When real-time updates of cash or stocks are mandatory in an OLTP system.",
+        "When data changes infrequently, or when replicating small volumes of data.",
+        "When high throughput and continuous two-directional synchronization are required.",
+        "When integrating heterogeneous data from multiple sites requiring immediate consistency."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Snapshot Replication is ideal for situations where the data does not change often, or when only small amounts of data need to be copied. It also works well if it is acceptable for the receiving copy of the data to be temporarily out of date compared to the original source (Publisher).",
+      "id": 32
+    },
+    {
+      "question": "Transactional Replication is typically applied in environments that require:",
+      "options": [
+        "The ability for both Publisher and Subscriber roles to remain active simultaneously.",
+        "Real-time updates, such as those found in an OLTP system for a bank, where high latency is unacceptable.",
+        "Accepting tables without primary keys by generating GUIDs.",
+        "Initial data sets when complete refreshes of the entire database are needed."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Transactional Replication is designed for mission-critical systems like banking or OLTP environments where immediate consistency and real-time updates are essential. This type of replication requires high throughput because latency must be minimized.",
+      "id": 33
+    },
+    {
+      "question": "What key characteristic defines Merge Replication?",
+      "options": [
+        "It only provides the initial data set, making it suitable only for read-only copies.",
+        "It is two-directional and allows both the Publisher and Subscriber to remain active in their respective roles.",
+        "It requires that all replicated tables must have a defined primary key (PK).",
+        "It is best suited for scenarios where data changes occur over very large volumes in short bursts."
+      ],
+      "correctIndex": 1,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "Merge Replication is unique because it supports two-directional synchronization, meaning both the Publisher and Subscriber can actively contribute updates to each other. Furthermore, it handles tables that may lack a primary key by generating GUIDs for tracking purposes.",
+      "id": 34
+    },
+    {
+      "question": "What must be done as the initial step when using the Cluster Wizard?",
+      "options": [
+        "Define the administrative access point name.",
+        "Select all the servers (nodes) that will participate in the cluster.",
+        "Run a full validation check on connectivity and resources.",
+        "Review and confirm the final cluster settings."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "The Cluster Wizard begins by requiring the user to identify every physical or virtual machine that needs to be part of the high availability group. This initial selection process ensures that all intended nodes are accounted for before proceeding to validation or configuration steps.",
+      "id": 35
+    },
+    {
+      "question": "Before finalizing cluster creation, what critical check is performed during the Validation Warning step?",
+      "options": [
+        "Verifying that the administrative access point name is unique across the network.",
+        "Checking connectivity and resource availability for all selected nodes.",
+        "Assigning a static IP address to the primary node.",
+        "Confirming user credentials for local administrator accounts on each server."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "The validation step is crucial because it systematically tests whether every machine listed as a potential cluster member can communicate with all other members and if they possess the necessary resources to function correctly within the clustered environment. This prevents failures later in the deployment process.",
+      "id": 36
+    },
+    {
+      "question": "When configuring the \"Access Point for Administering the Cluster,\" what specific information must be provided?",
+      "options": [
+        "Only the desired cluster name, as the IP address will be assigned automatically.",
+        "The name and the corresponding static IP address that will be used to administer the cluster.",
+        "A list of all domain administrators who will manage the cluster.",
+        "The subnet mask and gateway information for the entire network segment."
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "The administrative access point serves as the single, consistent entry point for managing the entire cluster. Therefore, both a unique name and a dedicated IP address must be specified so that administrators can reliably connect to the cluster regardless of which individual node is currently active.",
+      "id": 37
+    },
+    {
+      "question": "What is the primary purpose of reaching the Confirmation screen in the Cluster Wizard?",
+      "options": [
+        "To modify the list of nodes if any servers were forgotten during setup.",
+        "To review all configured parameters, including names, IP addresses, and nodes, before committing to creation.",
+        "To run a final validation check that was skipped earlier in the process.",
+        "To define user roles and permissions for cluster management accounts."
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "The Confirmation screen acts as the final checkpoint. Its purpose is to allow the user to thoroughly review every setting—from the cluster name to the IP address and the list of participating nodes—to ensure that all configurations are correct before executing the irreversible action of creating the cluster.",
+      "id": 38
+    },
+    {
+      "question": "What feature within MS SQL Server is designed to provide high availability and disaster recovery capabilities?",
+      "options": [
+        "Database Mirroring",
+        "AlwaysOn High Availability",
+        "Replication Service",
+        "Failover Cluster Instance"
+      ],
+      "correctIndex": 1,
+      "page": "29",
+      "section": null,
+      "hint": "راجع الصفحة 29",
+      "explanation": "AlwaysOn High Availability is the specific feature in MS SQL Server that allows users to configure redundancy and ensure continuous operation of databases, thereby providing both high availability and disaster recovery capabilities.",
+      "id": 39
+    },
+    {
+      "question": "In the context of high availability and disaster recovery, what container object is used to group multiple databases?",
+      "options": [
+        "Database Instance",
+        "Availability Group",
+        "Cluster Node",
+        "Failover Cluster"
+      ],
+      "correctIndex": 1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "An Availability Group acts as a logical container that groups together several individual databases. This grouping allows the entire set of databases to be managed and protected together for high availability and disaster recovery purposes.",
+      "id": 40
+    },
+    {
+      "question": "Before an administrator can proceed with creating a new availability group, what critical step must be performed within SQL Server Management Studio?",
+      "options": [
+        "Create a dedicated Windows Failover Cluster",
+        "Enable AlwaysOn High Availability",
+        "Configure the primary replica node",
+        "Install the necessary network adapters"
+      ],
+      "correctIndex": 1,
+      "page": "29",
+      "section": null,
+      "hint": "راجع الصفحة 29",
+      "explanation": "Enabling AlwaysOn High Availability is the prerequisite step that must be completed in SQL Server Management Studio before any availability group can be successfully created or configured, as it activates the underlying HA/DR functionality.",
+      "id": 41
+    },
+    {
+      "question": "Which specific wizard guides a user through the process of setting up an AlwaysOn High Availability Group?",
+      "options": [
+        "Database Replication Wizard",
+        "AlwaysOn High Availability Group Wizard",
+        "Failover Cluster Setup Wizard",
+        "Disaster Recovery Planning Wizard"
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The AlwaysOn High Availability Group Wizard is the dedicated tool within SQL Server Management Studio that walks the user through all necessary steps and configurations required to successfully establish an AlwaysOn High Availability Group.",
+      "id": 42
+    },
+    {
+      "question": "What is the primary benefit provided by implementing an Availability Group in MS SQL Server?",
+      "options": [
+        "To increase the overall processing speed of the database server.",
+        "To ensure high availability and disaster recovery for databases by maintaining multiple copies (replicas) of the data.",
+        "To simplify user authentication across different network segments.",
+        "To encrypt all stored data at rest, regardless of location."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "An Availability Group is a feature designed to provide robust high availability and disaster recovery capabilities. By maintaining multiple synchronized copies, or replicas, of the database data across different servers, if one server fails, operations can quickly failover to another replica, minimizing downtime.",
+      "id": 43
+    },
+    {
+      "question": "In the context of data synchronization between primary and secondary replicas, what does \"Synchronous\" replication guarantee?",
+      "options": [
+        "That the connection between the two replicas will never be interrupted by network issues.",
+        "That all transactions are committed to both the primary and secondary replica before being acknowledged.",
+        "That the secondary replica will automatically take over if the primary fails within five minutes.",
+        "That data corruption is impossible because every write operation is verified multiple times."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "Synchronous replication ensures maximum data consistency by requiring that a transaction must be successfully committed to both the primary and the secondary replica before the client application receives confirmation of success. This guarantees zero data loss upon failover, though it may introduce slight latency due to the required round-trip communication.",
+      "id": 44
+    },
+    {
+      "question": "When initially configuring an Availability Group, what is the mandatory first step?",
+      "options": [
+        "Specifying the network credentials for all participating servers.",
+        "Specifying which databases will be included in the availability group.",
+        "Defining the failover mechanism and RPO/RTO goals.",
+        "Creating a dedicated Windows service account for replication traffic."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "Before any synchronization or replica setup can occur, the administrator must first tell the Availability Group feature exactly which databases are intended to be protected and included within the group structure. These selected databases form the core of the high availability solution.",
+      "id": 45
+    },
+    {
+      "question": "If an administrator views the status of a secondary replica and sees that it is marked as \"Not Connected,\" what does this indicate?",
+      "options": [
+        "The replica has been intentionally taken offline for maintenance purposes.",
+        "The replica is currently not communicating or connected to the primary replica.",
+        "The data synchronization process has failed due to corruption on the secondary server.",
+        "The database contained within the replica is read-only and cannot participate in replication."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "A \"Not Connected\" status means that the communication link between the secondary replica and the primary replica is broken or non-existent at this moment. This requires investigation to determine if it is a network issue, service failure, or configuration problem preventing proper synchronization.",
+      "id": 46
+    },
+    {
+      "question": "Before an administrator can successfully specify the connection details for adding a new secondary replica, what critical piece of information must be configured first?",
+      "options": [
+        "The specific failover mode (automatic vs manual).",
+        "The data synchronization preference for that replica (e.g., synchronous or asynchronous).",
+        "The IP address range used by the primary server's network card.",
+        "The service account credentials with administrative rights on the secondary machine."
+      ],
+      "correctIndex": 1,
+      "page": "19",
+      "section": null,
+      "hint": "راجع الصفحة 19",
+      "explanation": "When adding a new member to an Availability Group, the system needs to know *how* data should flow from the source to the destination. Therefore, specifying whether synchronization will be synchronous or asynchronous is a prerequisite step that dictates the replication behavior and consistency guarantees for the replica.",
+      "id": 47
+    },
+    {
+      "question": "Which of the following best describes the role of replicas within an Availability Group?",
+      "options": [
+        "They are independent copies used only for backup purposes when the primary fails completely.",
+        "They maintain synchronized copies of the data, allowing failover to ensure continuous operation.",
+        "They function solely as read-only reporting endpoints and cannot participate in write operations.",
+        "They require manual intervention every time a transaction occurs on the primary server."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "Replicas are core components of an Availability Group, serving as synchronized copies of the database data. Their purpose is to ensure business continuity; if the primary fails, one of these replicas can be promoted to take over operations seamlessly, thereby maintaining high availability.",
+      "id": 48
+    }
+  ]
+}

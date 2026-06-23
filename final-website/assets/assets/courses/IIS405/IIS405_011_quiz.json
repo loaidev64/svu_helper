@@ -1,0 +1,680 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary subject matter covered in Chapter 11?",
+      "options": [
+        "Oracle Database Administration I",
+        "Large Objects",
+        "LOB Locators and Indexes",
+        "Reading BFILEs"
+      ],
+      "correctIndex": 1,
+      "page": "2",
+      "section": null,
+      "hint": "راجع الصفحة 2",
+      "explanation": "The chapter title clearly indicates that the focus of this section is on \"Large Objects,\" which are data types used to store large amounts of information within the Oracle database.",
+      "id": 1
+    },
+    {
+      "question": "Which of the following topics describes components related to managing LOB data structures?",
+      "options": [
+        "Measuring LOB Space Consumed",
+        "Illustrating LOB Locators, Indexes, and Chunks",
+        "Maintaining LOB Columns",
+        "Reading BFILEs"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The table of contents lists \"Illustrating LOB Locators, Indexes, and Chunks\" as a specific objective. These components are critical for managing the physical storage and retrieval efficiency of large object data within the database.",
+      "id": 2
+    },
+    {
+      "question": "If a user needs to incorporate large binary files into their database structure, which process must they perform?",
+      "options": [
+        "Measuring LOB Space Consumed",
+        "Creating a Table with a LOB Column",
+        "Maintaining LOB Columns",
+        "Reading BFILEs"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "To store large data types within the structured environment of a table, the user must explicitly define and create a column that utilizes a Large Object (LOB) data type.",
+      "id": 3
+    },
+    {
+      "question": "When accessing external files for use with LOB functionality, what specific feature is discussed in the chapter?",
+      "options": [
+        "Creating a Table with a LOB Column",
+        "Reading BFILEs",
+        "Measuring LOB Space Consumed",
+        "Illustrating LOB Locators, Indexes, and Chunks"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The table of contents includes \"Reading BFILEs\" as a dedicated topic. This feature allows the database to read data from external files stored on the operating system rather than solely from internal database tables.",
+      "id": 4
+    },
+    {
+      "question": "Which LOB data type is specifically designed for storing character large objects such as text files, XML files, and general textual content?",
+      "options": [
+        "BLOB",
+        "CLOB",
+        "NCLOB",
+        "BFILE"
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The Character Large Object (CLOB) data type is used to store large amounts of character data. This makes it ideal for textual content like XML files or general text documents, distinguishing it from binary or national character storage types.",
+      "id": 5
+    },
+    {
+      "question": "When storing unstructured binary data, such as images, video clips, and audio waveforms, which LOB data type should be utilized?",
+      "options": [
+        "CLOB",
+        "BLOB",
+        "NCLOB",
+        "BFILE"
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "The Binary Large Object (BLOB) is the appropriate choice for storing unstructured binary data. This includes any type of file that does not fit into standard character or national character formats, such as images and video files.",
+      "id": 6
+    },
+    {
+      "question": "What distinguishes the BFILE data type from other LOB types like BLOB or CLOB?",
+      "options": [
+        "It is used exclusively for storing XML documents.",
+        "It stores a pointer to an external file located on the operating system's filesystem.",
+        "It can only store national character sets.",
+        "It is limited in size and cannot handle large data volumes."
+      ],
+      "correctIndex": 1,
+      "page": "4",
+      "section": null,
+      "hint": "راجع الصفحة 4",
+      "explanation": "BFILE stands for Binary File and is unique because it does not store the file content directly within the database. Instead, it stores a locator that points to an actual file residing on the operating system's filesystem.",
+      "id": 7
+    },
+    {
+      "question": "In the physical structure of LOB storage, what component acts as the mechanism that locates and manages the data segments?",
+      "options": [
+        "Chunk",
+        "Locator",
+        "Index",
+        "Table Space"
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The locator is a crucial element in managing LOBs. It provides the necessary information—such as the physical location within the database—that allows the system to find and access the actual data segments, which are stored in chunks.",
+      "id": 8
+    },
+    {
+      "question": "What kind of data are Large Object (LOB) data types designed to store in a database?",
+      "options": [
+        "Only highly structured, relational data records.",
+        "Large and unstructured data such as text, images, or video.",
+        "Small amounts of character strings limited by standard column sizes.",
+        "Data that must be processed through complex stored procedures only."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "LOBs are specifically designed to handle massive volumes of unstructured data. This includes various types like text, images, video, and sound, allowing the database to store content that does not fit into standard, fixed-size columns.",
+      "id": 9
+    },
+    {
+      "question": "Which statement accurately describes the BFILE data type?",
+      "options": [
+        "It stores binary data within the database transaction space for full recovery coverage.",
+        "It is a read-only object stored on the filesystem outside of the database.",
+        "It supports national character sets and varying character widths like NCLOB.",
+        "It is used exclusively for storing XML documents that are processed by applications."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "The BFILE data type differs significantly because it does not store the file content inside the database itself; rather, it points to a binary file located on the operating system's filesystem. Because of this external storage method, it is read-only and falls outside standard Oracle security and recovery mechanisms.",
+      "id": 10
+    },
+    {
+      "question": "Which LOB type should be used for storing character documents such as big text files or XML files?",
+      "options": [
+        "BLOB (Binary Large Object)",
+        "CLOB (Character Large Object)",
+        "NCLOB (National Character Large Object)",
+        "BFILE (Binary File Large Object)"
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "CLOB is the appropriate type for storing character data. It is designed to hold large volumes of text, such as big text files or XML documents, ensuring that the content remains readable and manageable as character strings within the database environment.",
+      "id": 11
+    },
+    {
+      "question": "What are examples of semi-structured data mentioned in the material?",
+      "options": [
+        "Simple numeric IDs and dates.",
+        "Highly normalized tables with foreign keys.",
+        "JSON, XML documents, or word processor files.",
+        "Small character strings limited to a few hundred characters."
+      ],
+      "correctIndex": 2,
+      "page": "9",
+      "section": null,
+      "hint": "راجع الصفحة 9",
+      "explanation": "Semi-structured data refers to document types that contain logical structure but are not rigidly defined by the database schema. Examples provided in the text include formats like JSON and XML, which applications interpret rather than relying on fixed relational units.",
+      "id": 12
+    },
+    {
+      "question": "What data types are specifically recommended for storing large amounts of unstructured binary data?",
+      "options": [
+        "CLOB and NCLOB",
+        "BLOB and BFILE",
+        "VARCHAR2 and CHAR",
+        "DATE and TIMESTAMP"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The Binary Large Object (BLOB) and the Binary File object (BFILE) data types are designed to handle large amounts of unstructured binary data, making them ideal choices for storing complex media or raw file contents.",
+      "id": 13
+    },
+    {
+      "question": "In the context of Internal LOBs, what term describes the smallest unit of allocation that is made up of one or more database blocks?",
+      "options": [
+        "LOB locator",
+        "Chunk",
+        "Index entry",
+        "Database block"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "A chunk represents the fundamental physical storage unit for an Internal LOB. It is defined as the smallest allocation unit, consisting of one or more database blocks, used to store the actual data pieces of a Large Object.",
+      "id": 14
+    },
+    {
+      "question": "When querying a table that contains an Internal LOB, which two components does the database utilize together to successfully locate the appropriate LOB chunks?",
+      "options": [
+        "The DBMS_LOB package and the SQL query",
+        "The LOB locator and its associated LOB index",
+        "The primary key and the chunk size",
+        "The table name and the column type"
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "To retrieve data from an Internal LOB, the database first uses the LOB locator stored in the row. This locator then points to a specific LOB index, which finally guides the system to the physical location of the required LOB chunks.",
+      "id": 15
+    },
+    {
+      "question": "How does the LOB locator function when dealing with External LOBs (specifically BFILE)?",
+      "options": [
+        "It stores the actual binary data in database blocks.",
+        "It stores the directory path and file name on the operating system.",
+        "It calculates a hash value of the external file's contents.",
+        "It requires the user to manually input the chunk size during querying."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "For External LOBs, such as those referencing files via BFILE, the LOB locator does not store the data itself. Instead, it acts as a pointer by recording the necessary metadata—the directory path and file name—required for the database to access the external file on the operating system.",
+      "id": 16
+    },
+    {
+      "question": "When is it recommended to store a Secure File LOB in a separate tablespace from the main table data?",
+      "options": [
+        "Always, regardless of size or growth pattern.",
+        "If the LOB segment requires different storage characteristics such as size and growth patterns.",
+        "Only when the LOB exceeds 10 MB in size.",
+        "When using a non-partitioned table structure."
+      ],
+      "correctIndex": 1,
+      "page": "13",
+      "section": null,
+      "hint": "راجع الصفحة 13",
+      "explanation": "It is recommended to place the LOB segment in a separate tablespace if that segment has unique storage requirements, such as distinct size limitations or specific growth patterns, allowing for optimized resource management independent of the main table data.",
+      "id": 17
+    },
+    {
+      "question": "Which of the following methods can be used when partitioning a LOB table?",
+      "options": [
+        "By using only RANGE partitioning based on date columns.",
+        "LIST, RANGE, or HASH.",
+        "Only by defining specific primary keys.",
+        "Using advanced compression techniques exclusively."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "A LOB table can be partitioned using three main methods: LIST partitioning, which groups data based on discrete values; RANGE partitioning, which organizes data over a continuous range of values; and HASH partitioning, which distributes data across partitions using a hashing algorithm.",
+      "id": 18
+    },
+    {
+      "question": "What is one primary benefit of implementing partitioning for LOB tables?",
+      "options": [
+        "It automatically increases the overall storage capacity limit.",
+        "It helps with balancing I/O operations, maintenance tasks, and backup procedures.",
+        "It eliminates the need for defining a primary key on the table.",
+        "It guarantees that all data will be stored using Secure File format."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Partitioning is beneficial because it helps distribute the workload across multiple segments, which improves performance by balancing Input/Output (I/O), simplifying maintenance operations, and optimizing backup procedures for large datasets.",
+      "id": 19
+    },
+    {
+      "question": "Which SQL statement structure is used to modify the storage characteristics of a specific partition within a LOB table?",
+      "options": [
+        "ALTER TABLE ... SET PARTITION STORAGE TO...",
+        "ALTER TABLE ... MODIFY PARTITION (pX) LOB (patch_desc) STORE AS...",
+        "UPDATE TABLE ... CHANGE PARTITION pX COLUMN...",
+        "CREATE OR REPLACE TABLE ... MODIFY PARTITION pX;"
+      ],
+      "correctIndex": 1,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "To change the storage characteristics of an existing partition, you must use the `ALTER TABLE` statement followed by `MODIFY PARTITION`. This allows administrators to specify new storage details for a particular partition without affecting others.",
+      "id": 20
+    },
+    {
+      "question": "What is the recommended LOB architecture to use for storing LOB data in modern Oracle databases, due to its advanced features?",
+      "options": [
+        "Basic Files",
+        "Secure Files",
+        "Legacy Files",
+        "Standard Files"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Secure Files is the recommended option because it includes several enhancements over Basic Files LOBs. While Basic Files were available prior to Oracle Database 11g, using Secure Files ensures access to modern features like encryption and compression for better data management.",
+      "id": 21
+    },
+    {
+      "question": "Which of the following enhancements is NOT listed as an improvement provided by Secure Files compared to Basic Files LOBs?",
+      "options": [
+        "Encryption",
+        "Data Streaming",
+        "Compression",
+        "Deduplication"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Secure Files provides significant enhancements, including encryption for transparent data protection, compression for saving space, and deduplication to eliminate redundant copies of LOBs. Data streaming is not listed among the core architectural improvements provided by this feature set.",
+      "id": 22
+    },
+    {
+      "question": "To ensure that a Secure Files LOB can be created, what specific requirement must be met regarding its storage location?",
+      "options": [
+        "It must be stored in a dedicated tablespace named 'LOB_DATA'.",
+        "It must be stored in a tablespace using ASSM (Automatic Segment Space Management).",
+        "The tablespace must have the `SECUREFILE` option enabled.",
+        "The LOB column must reside within the system schema."
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "A Secure Files LOB requires specific underlying infrastructure to function correctly. It must be stored in a tablespace that utilizes ASSM, which manages segment space automatically and is necessary for the secure file architecture to operate properly.",
+      "id": 23
+    },
+    {
+      "question": "If an administrator wants to ensure that all newly created LOBs are automatically treated as Secure Files types by default, what value should they set for the `DB_SECUREFILE` parameter?",
+      "options": [
+        "NEVER",
+        "PREFERRED",
+        "ALWAYS",
+        "PERMITTED"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Setting the `DB_SECUREFILE` parameter to 'PREFERRED' establishes a default preference, specifying that all LOBs should be created as Secure Files types unless there is an explicit instruction or constraint preventing it. The value 'ALWAYS' would force creation regardless of underlying tablespace capabilities.",
+      "id": 24
+    },
+    {
+      "question": "What is the recommended underlying LOB architecture for creating a LOB column?",
+      "options": [
+        "Basic Files",
+        "Secure Files",
+        "Character Data Type",
+        "Binary Large Object (BLOB)"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "It is best practice to create a LOB using the Secure Files architecture because this type allows users to utilize advanced features such as compression and encryption, making it the recommended choice.",
+      "id": 25
+    },
+    {
+      "question": "Prior to Oracle Database 12c, what two components are created for every LOB column in a table?",
+      "options": [
+        "A segment and an index",
+        "A LOB segment and a LOB index",
+        "Two separate tablespaces",
+        "Only the primary key index and a data segment"
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "When creating a table with LOB columns before Oracle Database 12c, the system automatically creates two associated components: a dedicated LOB segment to hold the data and an associated LOB index to manage that data.",
+      "id": 26
+    },
+    {
+      "question": "What is the significance of the \"deferred segment creation feature\" for LOBs?",
+      "options": [
+        "It means the LOB column cannot be modified after table creation.",
+        "The LOB segment and index are not created until a record is actually inserted into the table.",
+        "All LOB data must reside in the system tablespace, regardless of user settings.",
+        "The LOBs automatically use the default `USERS` tablespace for storage."
+      ],
+      "correctIndex": 1,
+      "page": "20",
+      "section": null,
+      "hint": "راجع الصفحة 20",
+      "explanation": "The deferred segment creation feature means that even though the table structure defines space for a LOB column, the physical segments and indices required to store the data are only created by the database when an actual row is inserted into the table.",
+      "id": 27
+    },
+    {
+      "question": "Which view can be used to verify if a LOB column's storage location is set to \"in-row\"?",
+      "options": [
+        "USER_LOB_COLUMNS",
+        "USER_LOBs",
+        "DBA_TABLES",
+        "ALL_SEGMENTS"
+      ],
+      "correctIndex": 1,
+      "page": "21",
+      "section": null,
+      "hint": "راجع الصفحة 21",
+      "explanation": "To check the physical storage location of a LOB column and determine if it is stored within the row structure, you must query the `USER_LOBs` view.",
+      "id": 28
+    },
+    {
+      "question": "When Oracle creates a LOB column, what two main structures are created to manage and store the data?",
+      "options": [
+        "Only a LOB segment is created to hold all the data chunks.",
+        "A LOB segment stores the actual data, and a LOB index tracks its physical location.",
+        "The system creates only an entry in the `USER_LOBS` view without physical segments.",
+        "It creates separate table entries for every chunk of LOB data stored."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "When a LOB column is implemented, Oracle establishes two primary structures: the LOB segment, which is responsible for physically storing the large object data itself, and the LOB index, which acts as a map to keep track of where the various chunks of that LOB data are stored within the database.",
+      "id": 29
+    },
+    {
+      "question": "According to the material, when does an initial segment for a table or LOB column typically get created in the database?",
+      "options": [
+        "Immediately after the `CREATE TABLE` statement is executed.",
+        "It is not created until a row containing data is inserted into the table (deferred segment creation).",
+        "Only if the user explicitly runs an `ALTER TABLE ADD SEGMENT` command.",
+        "Segment creation only occurs when querying the `USER_SEGMENTS` view."
+      ],
+      "correctIndex": 1,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "Oracle employs a mechanism called deferred segment creation, meaning that even though you define a table structure using `CREATE TABLE`, the physical initial segments for the table or its LOB columns will not be allocated until an actual row containing data is inserted into that table.",
+      "id": 30
+    },
+    {
+      "question": "Which view can be queried to display information regarding both LOB segments and their corresponding LOB index names?",
+      "options": [
+        "`USER_SEGMENTS`",
+        "`DBA_TABLES`",
+        "`user_lobs`",
+        "`ALL_LOB_DETAILS`"
+      ],
+      "correctIndex": 2,
+      "page": "22",
+      "section": null,
+      "hint": "راجع الصفحة 22",
+      "explanation": "The `user_lobs` view is specifically designed to provide details about LOB segments and their associated index structures. By querying this view, a user can easily see the names of both the segment that holds the data and the index that tracks its physical location for any table owned by the user.",
+      "id": 31
+    },
+    {
+      "question": "If a developer wishes to ensure that a LOB column is stored in a tablespace separate from the main table's default tablespace, which clause must be used during the `CREATE TABLE` statement?",
+      "options": [
+        "`STORE AS (tablespace new_lob_ts)`",
+        "`LOCATION TO (tablespace new_lob_ts)`",
+        "`LOB...STORE AS (tablespace new_lob_ts)`",
+        "`WITH SEGMENT IN (tablespace new_lob_ts)`"
+      ],
+      "correctIndex": 2,
+      "page": "24",
+      "section": null,
+      "hint": "راجع الصفحة 24",
+      "explanation": "To override the default behavior and force a LOB segment to reside in a specific tablespace, you must use the dedicated `LOB...STORE AS` clause within the `CREATE TABLE` statement. This allows for granular control over where large object data is physically stored within the database architecture.",
+      "id": 32
+    },
+    {
+      "question": "If an LOB segment is expected to have different storage characteristics, such as varying size or growth patterns, where should it be created to allow separate management?",
+      "options": [
+        "Within the same tablespace as the regular table data.",
+        "In a separated tablespace from that of the table data.",
+        "In an automatically managed (ASM) tablespace regardless of separation.",
+        "Directly within the database's system tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "Creating the LOB in a separate tablespace is recommended because it allows administrators to manage the storage requirements and growth patterns of the large object column independently from the regular data stored in the main table, providing better control over resource allocation.",
+      "id": 33
+    },
+    {
+      "question": "According to best practices for implementing Secure Files LOBs, what must be true about the tablespace containing the LOB segment?",
+      "options": [
+        "It must be a locally managed (LMT) tablespace.",
+        "It must be an ASM managed tablespace.",
+        "It can be any type of tablespace as long as it is large enough.",
+        "It does not need specific management, only sufficient free space."
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "When implementing a Secure Files LOB architecture, the tablespace that holds this segment must be managed by ASM (Automatic Storage Management). This requirement ensures proper handling and allocation of the large object data within the specified storage environment.",
+      "id": 34
+    },
+    {
+      "question": "Which SQL command correctly creates a table named `patchmain` with an associated CLOB column called `patch_desc`, ensuring it uses the Secure Files architecture stored in the `lob_data` tablespace?",
+      "options": [
+        "CREATE TABLE patchmain (patch_id NUMBER, patch_desc CLOB) STORE AS SECUREFILE (TABLESPACE lob_data);",
+        "SQL> create table patchmain( patch_id number ,patch_desc clob) lob(patch_desc) store as securefile (tablespace lob_data);",
+        "CREATE TABLE patchmain (patch_id NUMBER, patch_desc CLOB) USING SECUREFILE (TABLESPACE lob_data);",
+        "SQL> create table patchmain( patch_id number ,patch_desc clob ) lob(patch_desc) store as securefile;"
+      ],
+      "correctIndex": 1,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "The correct syntax requires specifying the LOB column within the `lob()` clause and explicitly defining its storage type using `store as securefile` followed by the target tablespace. This structure ensures that the LOB segment is created with the desired architecture and location.",
+      "id": 35
+    },
+    {
+      "question": "To verify the specific architecture (like Secure Files) of a LOB segment, which data dictionary view should be queried?",
+      "options": [
+        "USER_TABLES",
+        "DBA_LOB_COLUMNS",
+        "USER_SEGMENTS",
+        "ALL_STORAGE_DETAILS"
+      ],
+      "correctIndex": 2,
+      "page": "25",
+      "section": null,
+      "hint": "راجع الصفحة 25",
+      "explanation": "The `USER_SEGMENTS` view is used to query segment details, including the segment name, type, and subtype. By querying this view, a user can confirm if a specific LOB segment has been allocated with the expected architecture, such as Secure Files.",
+      "id": 36
+    },
+    {
+      "question": "What is a key benefit of using the SecureFiles architecture for LOB storage?",
+      "options": [
+        "It eliminates the need for partitioning tables.",
+        "It removes the requirement to specify options like CHUNK, PCTVERSION, FREEPOOLS, FREELIST, and FREELIST GROUPS.",
+        "It automatically compresses all stored data without user intervention.",
+        "It restricts LOB storage only to the primary tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "The SecureFiles architecture simplifies LOB management by handling many underlying storage details automatically. Specifically, it removes the necessity for developers to manually specify options such as CHUNK, PCTVERSION, FREEPOOLS, FREELIST, and FREELIST GROUPS when creating LOB columns.",
+      "id": 37
+    },
+    {
+      "question": "What is the primary advantage of implementing a partitioned table that contains a LOB column?",
+      "options": [
+        "It guarantees that all data stored in the LOB will be compressed using the highest available setting.",
+        "It allows spreading the LOB data across multiple tablespaces, which helps balance I/O, maintenance, and backup operations.",
+        "It automatically deduplicates all values within the LOB column regardless of the partition.",
+        "It ensures that the entire table must be stored in a single dedicated tablespace for optimal performance."
+      ],
+      "correctIndex": 1,
+      "page": "28",
+      "section": null,
+      "hint": "راجع الصفحة 28",
+      "explanation": "Partitioning is a technique used to divide large data structures into smaller, manageable segments. When applied to LOB columns, this allows the data to be spread across different tablespaces, which significantly improves resource management by balancing I/O operations, simplifying maintenance tasks, and optimizing backup procedures.",
+      "id": 38
+    },
+    {
+      "question": "If you need to change the storage characteristics of an existing partitioned LOB column, what SQL statement should you use?",
+      "options": [
+        "ALTER TABLE ... MODIFY COLUMN",
+        "ALTER TABLE ... MODIFY PARTITION",
+        "UPDATE LOB ... SET STORAGE",
+        "ALTER PARTITION ... CHANGE STORAGE"
+      ],
+      "correctIndex": 1,
+      "page": "29",
+      "section": null,
+      "hint": "راجع الصفحة 29",
+      "explanation": "To modify the storage characteristics of a specific partition within a partitioned LOB column after the table has been created, you must use the `ALTER TABLE ... MODIFY PARTITION` statement. This command allows administrators to adjust settings like compression or deduplication for that particular segment without affecting others.",
+      "id": 39
+    },
+    {
+      "question": "Which Oracle edition is required if a user wishes to utilize both Partitioning and Advanced Compression features together?",
+      "options": [
+        "Standard Edition One (SE1)",
+        "Enterprise Edition",
+        "Express Edition",
+        "Basic Database License"
+      ],
+      "correctIndex": -1,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "Both the advanced feature of partitioning and the capability for advanced compression are considered extra cost options within Oracle. Therefore, to utilize both features simultaneously in a production environment, the user must possess an Oracle Enterprise Edition license.",
+      "id": 40
+    },
+    {
+      "question": "Which view is used to check the details regarding the storage characteristics (like compression and deduplication) of all LOB partitions associated with a table?",
+      "options": [
+        "USER_LOBs",
+        "DBA_TABLES",
+        "USER_LOB_PARTITIONS",
+        "ALL_USER_LOBS"
+      ],
+      "correctIndex": 2,
+      "page": "30",
+      "section": null,
+      "hint": "راجع الصفحة 30",
+      "explanation": "The `user_lob_partitions` view is specifically designed to provide detailed information about how LOB data has been partitioned. This includes viewing details such as the partition name, associated tablespace, and whether compression or deduplication methods are applied to that specific segment of the LOB column.",
+      "id": 41
+    },
+    {
+      "question": "If a table is created with a LOB column and no tablespace is specified during creation, where will the LOB data be stored by default?",
+      "options": [
+        "In a dedicated system tablespace.",
+        "In the same tablespace as its parent table.",
+        "In the temporary tablespace defined for the session.",
+        "It requires manual specification of a separate LOB tablespace."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "By default, when you create a table and include a LOB column without explicitly specifying a dedicated tablespace for the LOB data, Oracle will store that LOB within the same tablespace allocated to the rest of the table's data.",
+      "id": 42
+    },
+    {
+      "question": "Which SQL statement is used to move an existing LOB column from its current tablespace to a separate, designated tablespace?",
+      "options": [
+        "CREATE TABLE ... MOVE LOB AS (tablespace <new_tablespace>);",
+        "ALTER TABLE...MOVE...STORE AS",
+        "UPDATE TABLE SET LOB = STORE TO (<new_tablespace>);",
+        "RENAME COLUMN LOB TO NEW_LOB IN (<new_tablespace>);"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The specific command designed for relocating a LOB column to a different storage location is the `ALTER TABLE...MOVE...STORE AS` statement. This allows DBAs to separate large data objects from the main table structure.",
+      "id": 43
+    },
+    {
+      "question": "What is the correct basic syntax required to move a LOB column named `<lob_name>` in a table called `<table_name>` to a new tablespace?",
+      "options": [
+        "alter table <table_name> store lob(<lob_name>) as (tablespace <new_tablespace>);",
+        "alter table <table_name> move lob(<lob_name>) store as (tablespace <new_tablespace>);",
+        "alter table <table_name> set lob(<lob_name>) to tablespace <new_tablespace>;",
+        "update table <table_name> move lob(<lob_name>) to (<new_tablespace>);"
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The precise syntax for this operation involves using the `ALTER TABLE` command, followed by `MOVE LOB`, and then specifying the destination tablespace using `STORE AS (tablespace <new_tablespace>)`.",
+      "id": 44
+    },
+    {
+      "question": "According to best practices, why is it highly recommended to store a LOB column in a tablespace separate from the rest of its table data?",
+      "options": [
+        "Because separating the LOB ensures that only authorized users can access the large data.",
+        "Because LOB data often have different growth and storage requirements than the main table data, making dedicated maintenance optimal.",
+        "To prevent the database administrator (DBA) from accidentally running out of disk space on the primary tablespace.",
+        "It is a mandatory requirement for compliance with industry standards for large object storage."
+      ],
+      "correctIndex": 1,
+      "page": "32",
+      "section": null,
+      "hint": "راجع الصفحة 32",
+      "explanation": "The primary reason for separating LOB data into its own dedicated tablespace is that LOBs and the rest of the table data often exhibit different patterns of growth and require distinct storage management, making separate maintenance more efficient and stable.",
+      "id": 45
+    }
+  ]
+}

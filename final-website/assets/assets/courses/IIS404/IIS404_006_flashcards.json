@@ -1,0 +1,185 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو موضوع الفصل المتعلق بـ MS SQL Server؟",
+      "a": "Performance Monitoring and Tuning in MS SQL Server (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هو الدور المسؤول عن مراقبة قاعدة البيانات وضبطها؟",
+      "a": "A DBA (Database Administrator) (الصفحة 3)"
+    },
+    {
+      "id": 3,
+      "q": "اذكر أداة تستخدم لمراقبة وتحسين أداء MS SQL Server.",
+      "a": "Open Activity Monitor, SQL Trace, DBCC, إلخ. (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "ما الذي يوفره المراقبة والضبط لقاعدة بيانات MS SQL Server؟",
+      "a": "مجموعة شاملة من الأدوات لمراقبة الأحداث في SQL Server ولضبط تصميم قاعدة البيانات المادية (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "لمراقبة العمليات التي تتم من قبل المستخدمين على الـ DB، ما هي الخيارات المتاحة؟",
+      "a": "الإستعانة بتطبيقات خارجية مستقلة (third party applications) أو استخدام أدوات المراقبة الموجودة بشكل أساسي ضمن الـ SQL Server (الصفحة 6)."
+    },
+    {
+      "id": 6,
+      "q": "اذكر بعض الأدوات الرئيسية لمراقبة وضبط أداء SQL Server.",
+      "a": "Open Activity Monitor، SQL Trace، SQL Server Profiler، Database Engine Tuning Advisor DTA، DBCC، Dynamic Management Views DMVs، و System Stored Procedures (الصفحة 6)."
+    },
+    {
+      "id": 7,
+      "q": "ما هي وظيفة الـ Query Store؟",
+      "a": "هو أحد الأدوات المذكورة لمراقبة وضبط أداء SQL Server (الصفحة 4/6)."
+    },
+    {
+      "id": 8,
+      "q": "ما الذي يوفره Microsoft SQL Server فيما يتعلق بمراقبة العمليات في قاعدة البيانات؟",
+      "a": "يوفر مجموعة شاملة من الأدوات لمراقبة الأحداث في SQL Server ولضبط تصميم قاعدة البيانات المادية (الصفحة 6)."
+    },
+    {
+      "id": 9,
+      "q": "ما هي أداة Activity Monitor؟",
+      "a": "هي أداة تحوي واجهة رسومية GUI، تقوم بعرض معلومات متعلقة بال SQL Server و ال DB. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "ما الميزة التي يوفرها خيار Active Expensive Queries في Activity Monitor؟",
+      "a": "يتيح استهلاك كافة الموارد، كما يمكن فلترة النتائج على DB واحدة فقط من الموجودات في SQL Server. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "كيف يعمل SQL Trace لالتقاط الأحداث؟",
+      "a": "يقوم ب Capture لجميع ال Events التي تحدث على مستوى السيرفر، ويتطلب كتابة كود مكون من مجموعة الإستدعانات لل system stored procedures مع تحديد أرقام ال Events. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "ما تأثير ضبط زمن التحديث في Activity Monitor؟",
+      "a": "عند ضبطه بأقل من 10 ثواني، فإن الوقت المستخدم لتشغيل الاستعلامات يمكن أن يؤثر على أداء السيرفر. (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "ما هي وظيفة SQL Server Profiler؟",
+      "a": "واجهة مستخدم رسومية لـ SQL Trace لمراقبة مثيل محرك قاعدة البيانات أو خدمات التحليل، وتُستخدم لالتقاط وحفظ البيانات حول كل حدث لتحليلها لاحقًا (الصفحة 12)"
+    },
+    {
+      "id": 14,
+      "q": "ما هو دور Database Engine Tuning Advisor (DTA)؟",
+      "a": "يقوم بتحليل قواعد البيانات ويقدم توصيات يمكن استخدامها لتحسين أداء الاستعلام، مثل تحديد وإنشاء مجموعة مثالية من الفهارس أو طرق تقسيم الجداول (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "كيف يمكن إنشاء تتبعات (traces) على مثيل SQL Server يدويًا؟",
+      "a": "باستخدام إجراءات التخزين النظامية Transact-SQL التي توفرها Microsoft SQL Server (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "ما هو التحذير المتعلق باستخدام توصيات DTA في بيئة العمل الحقيقية؟",
+      "a": "لا يُنصح باستخدامه في البيئة الحقيقية للعمل لأنه يقوم بإنشاء فهارس افتراضية (Hypothetical Indexes) يجب إزالتها يدويًا (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "What does `DBCC CHECKDB` check?",
+      "a": "The logical and physical integrity of all the objects in the specified database by performing operations like checking the state of all pages (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "Which command category is used for maintenance tasks on a database, index, or filegroup?",
+      "a": "Maintenance (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "What type of operations are performed in the Validation command category?",
+      "a": "Validation operations on a database, table, index, catalog, filegroup, or allocation of database pages (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "Which command category is used for tasks that gather and display various types of information?",
+      "a": "Informational (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What are Dynamic Management Views (DMVs) used for?",
+      "a": "They can be used to monitor SQL Server performance and troubleshoot issues. (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "What is the function of DBCC FREESYSTEMCACHE?",
+      "a": "It releases all unused cache entries from all caches, making memory available for current entries. (الصفحة 16)"
+    },
+    {
+      "id": 23,
+      "q": "What information does sys.dm_exec_query_stats return?",
+      "a": "A row for every query statement in a cached query plan, providing information about average, minimal, maximal, and total processor time used by the plan. (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "What does running DBCC CHECKTABLE do?",
+      "a": "It checks the integrity of all the pages and structures that make up the table or indexed view in the database. (الصفحة 16)"
+    },
+    {
+      "id": 25,
+      "q": "Which DMV returns a row for every session on the queried SQL Server instance, along with details such as the name of the program and session status?",
+      "a": "`sys.dm_exec_sessions` (الصفحة 19)"
+    },
+    {
+      "id": 26,
+      "q": "To find blocked requests using which DMV should one search for a 'suspended' value in the status column?",
+      "a": "`sys.dm_exec_requests` (الصفحة 19)"
+    },
+    {
+      "id": 27,
+      "q": "What key information does `sys.dm_db_log_stats` return regarding transaction log files?",
+      "a": "Information including recovery model, current VLF size, total VLF count, and active log size. (الصفحة 19)"
+    },
+    {
+      "id": 28,
+      "q": "How can one project data for the entire database to get useful information about the log structure?",
+      "a": "By cross-joining with the `sys.databases` system view. (الصفحة 19)"
+    },
+    {
+      "id": 29,
+      "q": "What is the purpose of `sys.dm_db_log_info`?",
+      "a": "It deals with the log files and requires the database ID for input. (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "What specific components does `sys.dm_db_log_info` view?",
+      "a": "Virtual Log Files or VLFs, which make up the transaction log of the database. (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What is the negative consequence of having a large number of VLFs in a database?",
+      "a": "It can negatively impact the startup and recovery time of your database. (الصفحة 22)"
+    },
+    {
+      "id": 32,
+      "q": "Which command does `sys.dm_db_log_info` replace?",
+      "a": "The database console command, dbcc log info. (الصفحة 22)"
+    },
+    {
+      "id": 33,
+      "q": "ما هي الوظيفة الأساسية لـ Windows Performance Monitor؟",
+      "a": "يعرض معلومات مفيدة في رسوم بيانية شاملة وفي الوقت الفعلي، ويمكنه حفظ البيانات التاريخية لفترة طويلة. (الصفحة 25)"
+    },
+    {
+      "id": 34,
+      "q": "ما نوع البيانات التي يمكن أن يوفرها Windows Performance Monitor للمستخدمين؟",
+      "a": "الرسوم البيانية الشاملة والبيانات في الوقت الفعلي والبيانات التاريخية. (الصفحة 25)"
+    },
+    {
+      "id": 35,
+      "q": "ما هي القيود المتعلقة بتحليل الأداء عند استخدام Windows Performance Monitor؟",
+      "a": "لا يمكنه توفير معلومات كافية للتعمق في التحليل أو لرسم خط اتجاه أو تحديد عتبة. (الصفحة 25)"
+    },
+    {
+      "id": 36,
+      "q": "ما هو الموضوع الذي يتناوله النص فيما يتعلق بتحسين الأداء؟",
+      "a": "مراقبة الأداء وتحسينه في MS SQL Server. (الصفحة 25)"
+    }
+  ]
+}

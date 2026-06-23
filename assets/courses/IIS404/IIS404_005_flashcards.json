@@ -1,0 +1,345 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "ما هو عنوان الفصل الخامس؟",
+      "a": "Performance Techniques in MS SQL Server (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "ما هو البرنامج الأكاديمي الذي يندرج تحته هذا المحتوى؟",
+      "a": "Bachelor of IT Program BAIT (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "ما هو مجال الإدارة الذي يتناوله الكتاب؟",
+      "a": "MS SQL Server Administration IIS404 (الصفحة 2)"
+    },
+    {
+      "id": 4,
+      "q": "من هو مؤلف هذا المحتوى؟",
+      "a": "Eng. Ayham Mohammad (الصفحة 2)"
+    },
+    {
+      "id": 5,
+      "q": "What indexing structure is listed under \"Indexes\"?",
+      "a": "B-Tree (الصفحة 4)"
+    },
+    {
+      "id": 6,
+      "q": "Which index type determines the physical order of data in a table?",
+      "a": "Clustered Index (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "What feature is used for improving concurrency and performance by storing data in memory?",
+      "a": "Memory optimized table (الصفحة 4)"
+    },
+    {
+      "id": 8,
+      "q": "Which index type allows the inclusion of columns that are not part of the key itself?",
+      "a": "Non-Clustered Index - Included Columns (الصفحة 4)"
+    },
+    {
+      "id": 9,
+      "q": "What is an index in a database?",
+      "a": "An on-disk structure associated with a table or a view that speeds retrieval of rows from the table or view (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "What structure stores the keys built from one or more columns in an index?",
+      "a": "B-tree (Balanced tree) (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "How does a B-tree enable quick searching for row values?",
+      "a": "By starting near the value to be searched and moving up or down until the desired value is reached (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "What must an index contain?",
+      "a": "Keys built from one or more columns in the table or view (الصفحة 8)"
+    },
+    {
+      "id": 13,
+      "q": "ما هي الفكرة الرئيسية من استخدام ال B-Trees؟",
+      "a": "تقليل استخدام و الوصول للقرص الصلب (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "ما هما النوعان الرئيسيان من ال Index في SQL Server؟",
+      "a": "Clustered و Nonclustered (الصفحة 10)"
+    },
+    {
+      "id": 15,
+      "q": "عند إنشاء PK يدوياً، ما الذي يتم إنشاؤه بشكل تلقائي؟",
+      "a": "Clustered Index (الصفحة 10)"
+    },
+    {
+      "id": 16,
+      "q": "متى لا يمكن إنشاء Unique index على عمود واحد أو أعمدة متعددة؟",
+      "a": "إذا كان العمود يحتوي على NULL في أكثر من صف، أو إذا كانت مجموعة الأعمدة تحتوي على NULL في أكثر من صف (الصفحة 10)"
+    },
+    {
+      "id": 17,
+      "q": "ما الذي يحدده الـ Clustered Index؟",
+      "a": "يتم التمييز والترتيب حسب صنف واجد فقط فيزيائيا، و إنشاءه ليس إجباري (الصفحة 14)"
+    },
+    {
+      "id": 18,
+      "q": "كيف يتم ترتيب البيانات باستخدام الـ Nonclustered Index مقارنة بالبنية الفيزيائية؟",
+      "a": "يتم به الترتيب بشكل مستقل عن الترتيب الفيزيائي (منفصل عن البنية) (الصفحة 14)"
+    },
+    {
+      "id": 19,
+      "q": "متى يكون استخدام الـ Clustered Index هو الأفضل لتحقيق أفضل النتائج؟",
+      "a": "عندما تكون الاستعلام Query عبارة عن Range وليس استعلام عن قيمة واحدة (الصفحة 14)"
+    },
+    {
+      "id": 20,
+      "q": "عند إنشاء قيد Unique، ما الذي يتم إنشاؤه بشكل أوتوماتيكي؟",
+      "a": "يتم إنشاء Unique Nonclustered Index له بشكل أوتوماتيكي (الصفحة 14)"
+    },
+    {
+      "id": 21,
+      "q": "What is the defining characteristic of a Clustered Index?",
+      "a": "It sorts and stores the data rows in the table or view based on their key values, and only one clustered index can exist per table. (الصفحة 16)"
+    },
+    {
+      "id": 22,
+      "q": "When should nonclustered indexes be considered for use?",
+      "a": "For queries that do not return large result sets, columns frequently used in the WHERE clause that return exact matches, or columns with many distinct values (high cardinality). (الصفحة 18)"
+    },
+    {
+      "id": 23,
+      "q": "What types of pointers are stored in the leaf level of a nonclustered index?",
+      "a": "The pointer is either the clustered index key for the data row (if the table has one) or the data page ID and row ID if the table is stored as a heap structure. (الصفحة 18)"
+    },
+    {
+      "id": 24,
+      "q": "What is the benefit of using included columns in a nonclustered index?",
+      "a": "It allows for creating a covering index that places all referenced columns from a critical query into the nonclustered index, even if only some are used as search arguments. (الصفحة 18)"
+    },
+    {
+      "id": 25,
+      "q": "In a Non-Clustered Index, what is the benefit of adding a column using INCLUDE?",
+      "a": "It makes the column available in the leaf-level pages of the index so that additional overhead of going to the data pages to retrieve the address is not needed. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "When are indexes automatically created on a table?",
+      "a": "Indexes are automatically created when PRIMARY KEY and UNIQUE constraints are defined on a table. (الصفحة 19)"
+    },
+    {
+      "id": 27,
+      "q": "What is the limitation regarding Clustered Indexes on a single table?",
+      "a": "It is not allowed to have more than one Clustered Index. (الصفحة 19)"
+    },
+    {
+      "id": 28,
+      "q": "If a clustered index already exists, what happens when defining a PRIMARY KEY constraint?",
+      "a": "The system will prevent the creation of a second Clustered Index because only one is allowed. (الصفحة 19)"
+    },
+    {
+      "id": 29,
+      "q": "كيف يخزن فهرس العمود (Columnstore Index) البيانات مقارنة بالفهارس التقليدية؟",
+      "a": "يعمل على الذاكرة، ويكتب البيانات مضغوطة في صفحات بناءً على الأعمدة وليس الأسطر (الصفحة 22)."
+    },
+    {
+      "id": 30,
+      "q": "ما هو الاستخدام الأمثل لفهرس العمود المكدس (Clustered Columnstore Index)؟",
+      "a": "استخدامها في بيئات مستودعات البيانات (data warehousing) والجداول الكبيرة للأبعاد (Large Dimension tables)، حيث يحسن أداء الاستعلام وضغط البيانات حتى 10 مرات (الصفحة 24)."
+    },
+    {
+      "id": 31,
+      "q": "متى يُنصح باستخدام فهارس الصف (Rowstore indexes)؟",
+      "a": "عندما تكون لدينا استعلامات تبحث عن قيمة معينة أو نطاق قيم صغير، خاصة في أحمال العمل المعاملاتية (transactional workloads) (الصفحة 24)."
+    },
+    {
+      "id": 32,
+      "q": "ما هي طريقة عمل \"معالجة الاستعلام بنمط الدفعات\" (Batch-mode Query Processing)؟",
+      "a": "تعتمد على خوارزمية التنفيذ بالاستعلام القائم على المتجهات (Vector-based Query execution)، حيث تتم معالجة مجموعة أسطر سوية بدلاً من معالجة كل سطر على حدة، مما يعطي أداء أعلى بـ 3-4 مرات (الصفحة 24)."
+    },
+    {
+      "id": 33,
+      "q": "ما هي بنية الجدول المستخدمة في مثال `citable`؟",
+      "a": "`( id int, theDate date, Note varchar (50) )` (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "كم عدد السجلات التي تم إدخالها فعلياً في جدول citable خلال عملية التعبئة؟",
+      "a": "100000 (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "ما هي الأداة المستخدمة لتحديد أداء الاستعلام (Query) قبل التنفيذ؟",
+      "a": "Test Execution Plan (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "ما هو الأمر الذي يستخدم لإنشاء جدول جديد وتعبئته بالبيانات من جدول موجود؟",
+      "a": "`Select * into [new_table] from [old_table]` (الصفحة 26)"
+    },
+    {
+      "id": 37,
+      "q": "ما هو نوع الفهرس الذي يحقق أفضل أداء عند استخدامه مع التوابع التجميعية؟",
+      "a": "Columnstore Index (الصفحة 30)"
+    },
+    {
+      "id": 38,
+      "q": "ما هي الطريقة التي يجب استخدامها لإعادة بناء (Rebuild) الفهرس؟",
+      "a": "عندما تكون نسبة التجزئة (Fragmentation) تتجاوز الـ 30% (الصفحة 30)"
+    },
+    {
+      "id": 39,
+      "q": "ما هو الاستعلام المستخدم لعرض متوسط نسبة التجزئة وعدد أجزاء الفهرس؟",
+      "a": "`Select avg_fragmentation_in_percent, fragment_count from sys.dm_db_index_physical_stats` (الصفحة 30)"
+    },
+    {
+      "id": 40,
+      "q": "ما هو الأمر المستخدم لتطبيق إعادة بناء (Rebuild) على الفهرس؟",
+      "a": "`Alter index [اسم_الفهرس] on [اسم_الجدول] rebuild` (الصفحة 30)"
+    },
+    {
+      "id": 41,
+      "q": "ما هي \"Fragmentation\"؟",
+      "a": "تشير إلى نسبة التجزئة، ويتم قياسها باستخدام `sys.dm_db_index_physical_stats` (الصفحة 31)"
+    },
+    {
+      "id": 42,
+      "q": "ما هو \"Batch-mode query processing\"؟",
+      "a": "آلية تنفيذ استعلام تعتمد على المتجهات، تعالج البيانات في دفعات (chunks of cache)، وهي مدمجة بإحكام مع فهرس Columnstore (الصفحة 32)"
+    },
+    {
+      "id": 43,
+      "q": "ما هي فائدة استخدام وضع الدفعات (batch-mode) مع فهارس \"Columnstore\"؟",
+      "a": "يمكنه معالجة ما يصل إلى 900 صفًا معًا، مما يحسن أداء الاستعلام بنسبة 3-4x (الصفحة 32)"
+    },
+    {
+      "id": 44,
+      "q": "كيف يمكن تفعيل وضع الدفعات (Batch Mode) على فهرس الصفوف (Rowstore)؟",
+      "a": "عن طريق التبديل إلى أحدث مستوى توافقية (Compatibility Level - CL) (الصفحة 32)"
+    },
+    {
+      "id": 45,
+      "q": "What can be improved by enabling lock escalation at the partition level instead of a whole table?",
+      "a": "This can reduce lock contention on the table. (الصفحة 36)"
+    },
+    {
+      "id": 46,
+      "q": "To allow lock escalation to the partition and reduce lock contention, what option should be set in the ALTER TABLE statement?",
+      "a": "Set the LOCK_ESCALATION option of the ALTER TABLE statement to AUTO. (الصفحة 36)"
+    },
+    {
+      "id": 47,
+      "q": "What is the primary benefit of enabling lock escalation at the partition level?",
+      "a": "It reduces lock contention on the table. (الصفحة 36)"
+    },
+    {
+      "id": 48,
+      "q": "Which section discusses improving performance by managing lock escalation at the partition level?",
+      "a": "Partitioning. (الصفحة 34)"
+    },
+    {
+      "id": 49,
+      "q": "What does a database object called a Partition function define?",
+      "a": "How the rows of a table or index are mapped to a set of partitions based on the values of a partitioning column, defining the number and boundaries of the partitions (الصفحة 38)"
+    },
+    {
+      "id": 50,
+      "q": "What is the primary reason for using a Partition scheme?",
+      "a": "It maps the partitions of a partition function to a set of filegroups, allowing independent backup operations on individual filegroups (الصفحة 38)"
+    },
+    {
+      "id": 51,
+      "q": "What is a Partitioning column?",
+      "a": "A column used for partitioning; it can be a computed column or a persisted column whose value changes if the underlying data changes (الصفحة 38)"
+    },
+    {
+      "id": 52,
+      "q": "Name some types of fields that cannot be partitioned.",
+      "a": "Next, text, image, xml, varchar(max), nvarchar(max), varbinary(max) (الصفحة 38)"
+    },
+    {
+      "id": 53,
+      "q": "ما هي الأعمدة التي تتكون منها جدول `notpartitionedtable`؟",
+      "a": "id (int identity (1,1) not null)، Thedate (datetime not null)، Amount (int). (الصفحة 40)"
+    },
+    {
+      "id": 54,
+      "q": "كم كانت قيمة الـ cost عند تنفيذ استعلام نطاق تاريخي قبل إنشاء فهرس `Clustered Index`؟",
+      "a": "11.64 (الصفحة 42)"
+    },
+    {
+      "id": 55,
+      "q": "ما هي قيمة الـ cost بعد إنشاء `Clustered Index` على جدول `notpartitionedtable`؟",
+      "a": "3.07 (الصفحة 42)"
+    },
+    {
+      "id": 56,
+      "q": "عند مقارنة أداء الاستعلامات، ماذا يمثل انخفاض قيمة الـ cost؟",
+      "a": "تحسن في الأداء نتيجة لإنشاء الفهرس `Clustered Index`. (الصفحة 42)"
+    },
+    {
+      "id": 57,
+      "q": "ما الأمر المستخدم لإنشاء دالة التقسيم التي تحدد حدود التقسيم؟",
+      "a": "`Create partition function` (الصفحة 44)"
+    },
+    {
+      "id": 58,
+      "q": "ما هو الكائن الذي يأخذ مخرج دالة التقسيم ويضعه في مجموعات الملفات المحددة؟",
+      "a": "Partition Schema (`Create partition schema`) (الصفحة 44)"
+    },
+    {
+      "id": 59,
+      "q": "كيف يتم إنشاء جدول مجزأ باستخدام SQL Server؟",
+      "a": "باستخدام `On partitionschema` عند إنشاء الجدول (مثال: `Create table partitionedtable (...) On partitionschema (thedate);`) (الصفحة 44)"
+    },
+    {
+      "id": 60,
+      "q": "ما هو نوع الفهرس الذي يمكن إنشاؤه على جدول مجزأ لتحسين الأداء؟",
+      "a": "Clustered Index Partitioned (`Create clustered index... on partitionschema`) (الصفحة 44)"
+    },
+    {
+      "id": 61,
+      "q": "ما هي نتيجة المقارنة في الأداء بين جدول `notpartitiontable` وجدول `partitiontable`؟",
+      "a": "الحصول على قيمة cost = 3.07 لجدول notpartitiontable وقيمة cost = 2.6 لجدول notpartitiontable (الصفحة 46)"
+    },
+    {
+      "id": 62,
+      "q": "ما هو الأمر المستخدم لتقسيم الـ partition إذا أصبح كبيرًا جدًا؟",
+      "a": "Alter partition function [partitionfunction () split range ('20180331') (الصفحة 46)"
+    },
+    {
+      "id": 63,
+      "q": "ما هو الإجراء الذي يتم تنفيذه لاختبار مدى الاستفادة من ضغط البيانات (Data Compression)؟",
+      "a": "Exec sp_estimate_date_compression_saving @shcema_name ='dbo' (الصفحة 46)"
+    },
+    {
+      "id": 64,
+      "q": "ما هي الاستعلامات التي يمكن استخدامها لمعرفة تفاصيل الأقسام (partitions) في النظام؟",
+      "a": "Select index_id, partition_number, rows from sys.partitions where object_id= (الصفحة 46)"
+    },
+    {
+      "id": 65,
+      "q": "What was the subject of bwin.party's customer success story?",
+      "a": "In-memory OLTP customer success story (الصفحة 49)"
+    },
+    {
+      "id": 66,
+      "q": "What challenge did bwin.party face with its high-traffic gaming websites?",
+      "a": "Handling huge overloads on their infrastructure (الصفحة 49)"
+    },
+    {
+      "id": 67,
+      "q": "What specific Microsoft solution did bwin.party implement to improve performance?",
+      "a": "In-memory OLTP solution in SQL Server 2014 (الصفحة 49)"
+    },
+    {
+      "id": 68,
+      "q": "How many requests per second could the system handle after implementing the solution?",
+      "a": "250,000 requests per second (almost 20 times the original load) (الصفحة 49)"
+    }
+  ]
+}

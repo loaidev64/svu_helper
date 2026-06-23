@@ -1,0 +1,410 @@
+{
+  "title": "اختبار قواعد",
+  "questions": [
+    {
+      "question": "What is the primary function of auditing in the context of SQL Server?",
+      "options": [
+        "Managing user permissions and roles within the database.",
+        "Tracking events and changes that occur within the Database Engine.",
+        "Optimizing query performance by analyzing execution plans.",
+        "Encrypting sensitive data to prevent unauthorized access."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Auditing is a security mechanism designed to monitor and record all significant activities, such as changes or events, that take place within the Database Engine. This capability allows administrators to maintain a detailed history of who did what and when it happened.",
+      "id": 1
+    },
+    {
+      "question": "Which specific component is utilized in SQL Server to track audit events?",
+      "options": [
+        "SQL Profiler",
+        "SQL Server Audit",
+        "Transaction Log Reader",
+        "Database Firewall"
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "The dedicated tool for monitoring and recording security and operational activities within the database is called SQL Server Audit. This component provides the necessary framework to capture detailed records of actions at both the instance and database levels.",
+      "id": 2
+    },
+    {
+      "question": "According to the material, what constitutes an Audit object?",
+      "options": [
+        "A single user account that has elevated permissions.",
+        "A collection of server actions or database actions.",
+        "A physical file stored on the operating system drive.",
+        "The primary key used to identify a specific record in a table."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "An Audit object is fundamentally defined as an aggregation point, collecting various types of activities. These collected actions can originate either from the server level or the database level, allowing for comprehensive monitoring.",
+      "id": 3
+    },
+    {
+      "question": "To successfully keep track of specific events or actions within SQL Server, what must be established?",
+      "options": [
+        "A dedicated physical storage device separate from the main server.",
+        "An audit specification that defines a collection of desired actions.",
+        "Manual intervention by an administrator after every transaction.",
+        "Disabling all automatic logging features to reduce overhead."
+      ],
+      "correctIndex": 1,
+      "page": "3",
+      "section": null,
+      "hint": "راجع الصفحة 3",
+      "explanation": "Tracking specific events requires defining an audit specification, which acts as the blueprint for what needs monitoring. This specification dictates which actions are considered important and must be collected by the system's target destination.",
+      "id": 4
+    },
+    {
+      "question": "What is Auditing in the context of SQL Server and Azure SQL Database?",
+      "options": [
+        "It is a process used only in the Enterprise edition to track data changes.",
+        "It is the act of tracking and recording events that occur within the Database Engine.",
+        "It refers exclusively to using Change Data Capture (CDC) features.",
+        "It is solely responsible for managing user permissions within the database."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Auditing is fundamentally defined as the process of monitoring and recording various events that take place inside the Database Engine, ensuring a historical record of activity within the system.",
+      "id": 5
+    },
+    {
+      "question": "How does SQL Server Audit track actions at both the instance and database level?",
+      "options": [
+        "It relies on manual logging by administrators to capture all necessary details.",
+        "It uses extended events to provide the ability to track and record actions across different levels.",
+        "It requires direct interaction with the operating system's security logs only.",
+        "It is limited to tracking changes made at the database level, not the instance level."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "SQL Server Audit leverages extended events as its primary mechanism. This feature allows administrators to monitor and record actions that occur both globally across the entire server instance and specifically within individual databases.",
+      "id": 6
+    },
+    {
+      "question": "To successfully track actions, what three main components must be defined when setting up an audit?",
+      "options": [
+        "The database name, the user role, and the connection string.",
+        "A collection (audit), an audit specification, and a target (destination).",
+        "The server version, the service account, and the backup schedule.",
+        "The data type, the column name, and the transaction scope."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Tracking actions requires three distinct elements: the `audit` object (the collection), which groups related actions; the audit specification, which defines *what* specific actions are to be tracked; and the target, which determines *where* those recorded actions will be stored.",
+      "id": 7
+    },
+    {
+      "question": "Where are audit records typically logged, and why is this logging process handled asynchronously?",
+      "options": [
+        "They are only written to SQL Server tables because file systems are unreliable.",
+        "They are logged to event logs or audit files; they are written asynchronously for performance reasons.",
+        "They must be written synchronously to ensure immediate data integrity upon action occurrence.",
+        "They are stored in the transaction log and read only when a manual query is executed."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "Audit records can be saved either to Windows Event Logs or dedicated audit files. To prevent performance degradation on the database engine, the writing of these audit targets is performed asynchronously, meaning it happens in the background shortly after the event occurs.",
+      "id": 8
+    },
+    {
+      "question": "What does the SQL Server `audit` object represent?",
+      "options": [
+        "The physical location where all audit records are stored on the file system.",
+        "A collection that groups together server actions or database actions for monitoring purposes.",
+        "The specific set of permissions required to read the audit logs.",
+        "The mechanism used to capture data changes from temporal tables."
+      ],
+      "correctIndex": 1,
+      "page": "6",
+      "section": null,
+      "hint": "راجع الصفحة 6",
+      "explanation": "The `audit` object itself is not a physical log; rather, it serves as a logical container or collection that groups together various types of actions—whether those actions pertain to the entire server instance or just a specific database.",
+      "id": 9
+    },
+    {
+      "question": "What does a Server audit object define?",
+      "options": [
+        "Only actions that occur at the database level.",
+        "The actions to collect at the instance level or database level (for all databases on the instance).",
+        "Actions limited only to specific user accounts.",
+        "Audit results destined exclusively for the Windows Security event log."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "A Server audit object is designed to define a broad scope of monitoring, allowing administrators to collect actions either at the entire instance level or specifically targeting events across all databases within that instance.",
+      "id": 10
+    },
+    {
+      "question": "When creating a Database audit specification, what type of objects must not be monitored?",
+      "options": [
+        "User-defined functions (UDFs).",
+        "Server-scoped objects.",
+        "Views created in other databases.",
+        "System stored procedures."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Database audit specifications are confined to the database level, meaning they cannot monitor server-scoped objects. These types of objects require a separate Server audit specification for monitoring.",
+      "id": 11
+    },
+    {
+      "question": "Which of the following destinations can be used to send audit results?",
+      "options": [
+        "The SQL Server error log file only.",
+        "The Windows Security event log, the Windows Application event log, or an audit file on the file system.",
+        "Only a dedicated network logging service.",
+        "Directly into the database's transaction log."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "Audit results can be directed to multiple locations for centralized monitoring. The available destinations include the Windows Security event log, the Windows Application event log, or a designated audit file stored on the file system.",
+      "id": 12
+    },
+    {
+      "question": "Regarding Database audits, what is the limitation concerning creation frequency?",
+      "options": [
+        "You can create up to five database audits per instance.",
+        "Only one database audit can be created per database per audit.",
+        "A new database audit must be created every time a user role changes.",
+        "Database audits are limited by the number of available system administrators."
+      ],
+      "correctIndex": 1,
+      "page": "8",
+      "section": null,
+      "hint": "راجع الصفحة 8",
+      "explanation": "To maintain clear and manageable monitoring, SQL Server enforces a strict rule: only one database audit can exist for any given database per specific audit configuration.",
+      "id": 13
+    },
+    {
+      "question": "To begin creating a server audit within SQL Server Management Studio, which folder must be expanded in Object Explorer?",
+      "options": [
+        "Audits",
+        "Security",
+        "Databases",
+        "Objects"
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "To initiate the process of setting up a server audit, you must first locate and expand the Security folder within the Object Explorer pane in SQL Server Management Studio. This location houses the necessary auditing tools and settings.",
+      "id": 14
+    },
+    {
+      "question": "According to the material, under what condition is it possible to create an audit specification?",
+      "options": [
+        "If the user has administrative rights on the server.",
+        "Only if an audit already exists.",
+        "When a new database is created.",
+        "After running a system maintenance job."
+      ],
+      "correctIndex": 1,
+      "page": "10",
+      "section": null,
+      "hint": "راجع الصفحة 10",
+      "explanation": "The material specifies that creating an audit specification is conditional; it can only be done if there is an existing audit in place to reference or build upon.",
+      "id": 15
+    },
+    {
+      "question": "When configuring a new server audit and selecting 'File' as the Audit Destination, what critical piece of information must be provided?",
+      "options": [
+        "The name of the SQL Server instance.",
+        "A valid file path.",
+        "The username performing the audit setup.",
+        "The specific database to monitor."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "If you choose 'File' as the destination for your audit, you must explicitly enter a valid and accessible file path in the configuration dialog box so that SQL Server knows where to store the resulting audit logs.",
+      "id": 16
+    },
+    {
+      "question": "When naming a new server audit, what recommendation is provided regarding best practices?",
+      "options": [
+        "Use the default name generated by the system for simplicity.",
+        "Choose an appropriate and descriptive name.",
+        "Always use the current date and time in the name.",
+        "Name it after the database being audited."
+      ],
+      "correctIndex": 1,
+      "page": "12",
+      "section": null,
+      "hint": "راجع الصفحة 12",
+      "explanation": "Although SQL Server provides a default name based on the current date and time, it is highly recommended that the user manually enters an appropriate and descriptive name for better management and identification of the audit logs.",
+      "id": 17
+    },
+    {
+      "question": "Where should a user begin to create a server audit specification in SQL Server Management Studio?",
+      "options": [
+        "In the Audit folder within Object Explorer.",
+        "By expanding the Security folder and right-clicking the Server Audit Specification folder.",
+        "Directly by selecting New Server Audit Specification from the main menu bar.",
+        "Within the Database Audit Specifications section of Object Explorer."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "To initiate the creation process for a server audit specification, you must navigate to the Security folder within Object Explorer. From there, right-clicking the Server Audit Specification folder provides the option to create a new specification.",
+      "id": 18
+    },
+    {
+      "question": "When creating a new server audit specification, what is required in the Audit list box?",
+      "options": [
+        "A newly created server audit name.",
+        "The previously created server audit.",
+        "Any existing database audit specification.",
+        "A default system audit template."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When setting up a new server audit specification, the Audit list box must contain the reference to an already established server audit. This links the new specification to the specific audit that will be monitored.",
+      "id": 19
+    },
+    {
+      "question": "After successfully creating a server audit specification, what critical action must be performed for it to function?",
+      "options": [
+        "Running the `ENABLE AUDIT` command in T-SQL.",
+        "Right-clicking the newly created audit and clicking Enable Audit.",
+        "Creating a corresponding database user role.",
+        "Linking it directly to an existing server login."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "Simply creating the specification is not enough; you must explicitly activate it. This is done by right-clicking the newly created audit and selecting \"Enable Audit\" from the shortcut menu, ensuring that monitoring begins immediately.",
+      "id": 20
+    },
+    {
+      "question": "Besides providing a name, what other elements can be chosen when setting up a server audit specification?",
+      "options": [
+        "The specific database instance to monitor.",
+        "One or more audit actions, or audit action groups.",
+        "A dedicated service account for logging purposes.",
+        "The required retention period in days."
+      ],
+      "correctIndex": 1,
+      "page": "14",
+      "section": null,
+      "hint": "راجع الصفحة 14",
+      "explanation": "When configuring the server audit specification, users have flexibility beyond just naming it. They can select and define which specific actions or groups of actions within the database they wish to monitor and record.",
+      "id": 21
+    },
+    {
+      "question": "What is the primary function of a system-versioned temporal table?",
+      "options": [
+        "To automatically encrypt all data stored within the table for security purposes.",
+        "To enforce foreign key constraints across multiple related tables.",
+        "To keep a full history of data changes and allow querying the state of the data at any point in time.",
+        "To optimize query performance by indexing only the most recently updated records."
+      ],
+      "correctIndex": 2,
+      "page": "15",
+      "section": null,
+      "hint": "راجع الصفحة 15",
+      "explanation": "A system-versioned temporal table is designed for historical tracking. Its main purpose is to maintain a complete record of all changes made to the data, allowing users to view what the data looked like at any specific point in the past.",
+      "id": 22
+    },
+    {
+      "question": "Where is the database audit specification located within SQL Server Management Studio?",
+      "options": [
+        "Under the Database Properties folder",
+        "Under the database security context",
+        "Directly under the Object Explorer root node",
+        "Within the System Tables folder"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "The location for creating a database audit specification is found within the database's security context. This means that when you are working with a specific database, you must navigate to its security settings to find and manage auditing specifications.",
+      "id": 23
+    },
+    {
+      "question": "Which of the following methods can be used to view an audit log?",
+      "options": [
+        "Only through the SQL Server Management Studio (SSMS) interface",
+        "In SQL Server Management Studio or in the Security Log in the Windows Event Viewer",
+        "By running a dedicated stored procedure like `VIEW_AUDIT()`",
+        "Through the operating system's file explorer directly"
+      ],
+      "correctIndex": 1,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "Audit logs can be accessed through multiple interfaces. Specifically, you have the option of viewing them either within SQL Server Management Studio or by checking the Security Log located in the Windows Event Viewer.",
+      "id": 24
+    },
+    {
+      "question": "What minimum permission level is required to view or modify the Audit Log?",
+      "options": [
+        "Database Owner",
+        "System Administrator",
+        "Control Server",
+        "Read Data User"
+      ],
+      "correctIndex": 2,
+      "page": "16",
+      "section": null,
+      "hint": "راجع الصفحة 16",
+      "explanation": "To ensure proper access and modification rights for audit records, a user must possess at least the 'Control Server' permission level. This high-level permission grants the necessary authority to interact with sensitive logging data.",
+      "id": 25
+    },
+    {
+      "question": "In the context of temporal tables, what two columns are typically used to define the period of validity for each row?",
+      "options": [
+        "`RecordID` and `CreationDate`",
+        "A start time column (like `SysStartTime`) and an end time column (like `SysEndTime`)",
+        "`LastModifiedBy` and `TransactionID`",
+        "`CurrentValue` and `HistoricalValue`"
+      ],
+      "correctIndex": 1,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "Temporal tables track data over time by associating a period of validity with each row. This period is defined by two specific columns: one marking the start time (`SysStartTime`) and another marking the end time (`SysEndTime`).",
+      "id": 26
+    },
+    {
+      "question": "When querying temporal data, which clause must be used to access both current and historical records?",
+      "options": [
+        "`SELECT * FROM table WHERE date BETWEEN :start AND :end`",
+        "`GET HISTORY FOR TABLE name`",
+        "The `SELECT ... FOR SYSTEM_TIME` clause",
+        "`AS OF SYSTEM TIME 'date'`"
+      ],
+      "correctIndex": 2,
+      "page": "18",
+      "section": null,
+      "hint": "راجع الصفحة 18",
+      "explanation": "To query data that spans across both the current state and historical versions within a temporal table, you must utilize the specialized SQL syntax: `SELECT ... FOR SYSTEM_TIME`. This clause allows the database to retrieve records based on specific time ranges.",
+      "id": 27
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "title": "معطيات بطاقات",
+  "cards": [
+    {
+      "id": 1,
+      "q": "What is the topic covered in Chapter 6?",
+      "a": "Managing Control Files, Online Redo Logs, and Archive logs (الصفحة 2)"
+    },
+    {
+      "id": 2,
+      "q": "Name three types of files managed in Chapter 6.",
+      "a": "Control Files, Online Redo Logs, and Archive logs (الصفحة 2)"
+    },
+    {
+      "id": 3,
+      "q": "According to the Table of Contents, what is the first objective listed?",
+      "a": "Multilplex control file (الصفحة 3)"
+    },
+    {
+      "id": 4,
+      "q": "What section deals with managing Redo Logs in Chapter 6?",
+      "a": "Online Redo Logs (الصفحة 3)"
+    },
+    {
+      "id": 5,
+      "q": "ما هي الأهداف الرئيسية لتعلم إدارة ملفات قاعدة البيانات؟",
+      "a": "تشمل الأهداف: عمل تعددية ملف التحكم، إضافة ملف تحكم جديد، عمل تعددية سجلات الإعادة، فهم عمليات تبديل السجل، وإدارة سجلات الإعادة، وتطبيق قاعدة البيانات في وضع الأرشيف (الصفحة 6)"
+    },
+    {
+      "id": 6,
+      "q": "ما هو تعريف ملف التحكم (Control File)؟",
+      "a": "هو ملف ثنائي صغير يصف هيكل قاعدة البيانات ويتم إنشاؤه عند إنشاء قاعدة البيانات (الصفحة 4)"
+    },
+    {
+      "id": 7,
+      "q": "ماذا يعني عمل تعددية ملف التحكم (Multiplexing the Control File)؟",
+      "a": "الاحتفاظ بنسخة من نفس ملف التحكم في مواقع مختلفة (الصفحة 6)"
+    },
+    {
+      "id": 8,
+      "q": "اذكر مهمتين رئيسيتين لإدارة سجلات الإعادة (Redo Logs).",
+      "a": "عمل تعددية سجلات الإعادة وفهم عمليات تبديل السجل (الصفحة 6)"
+    },
+    {
+      "id": 9,
+      "q": "What is a control file?",
+      "a": "A small binary file that describes the structure of the database and it is created when the DB is created. (الصفحة 8)"
+    },
+    {
+      "id": 10,
+      "q": "How many control files should a database have to minimize data loss impact?",
+      "a": "A minimum of two control files on different storage devices. (الصفحة 8)"
+    },
+    {
+      "id": 11,
+      "q": "Name some entries contained in a control file.",
+      "a": "Database name, Names and locations of data files, Names and locations of online redo log files, Current online redo log sequence number, Checkpoint information, and Names and locations of RMAN backup files. (الصفحة 8)"
+    },
+    {
+      "id": 12,
+      "q": "When starting the database in nonmount mode, where does the instance get the location of control files?",
+      "a": "From the CONTROL_FILES initialization parameter in the spfile or init.ora file. (الصفحة 9)"
+    },
+    {
+      "id": 13,
+      "q": "When a database is altered into mount mode, what happens to the control files?",
+      "a": "The control files are read and opened for use (الصفحة 10)"
+    },
+    {
+      "id": 14,
+      "q": "What is the minimum number of control files recommended by Oracle, and what term describes keeping copies in different locations?",
+      "a": "A minimum of two control files; this process is called Multiplexing (الصفحة 12)"
+    },
+    {
+      "id": 15,
+      "q": "List the basic procedure for adding a control file.",
+      "a": "1. Update CONTROL_FILES parameter with new location/name. 2. Shut down database. 3. Copy existing control file to new location. 4. Restart database (الصفحة 12)"
+    },
+    {
+      "id": 16,
+      "q": "What view can be queried while the database is mounted or open to view control file location and name information?",
+      "a": "V$CONTROLFILE view (الصفحة 12)"
+    },
+    {
+      "id": 17,
+      "q": "When adding a control file using an spfile, what is the first step after determining the current CONTROL_FILES parameter's value?",
+      "a": "Alter your CONTROL_FILES parameter to include the new control file, limiting the scope of the operation to the spfile (الصفحة 13)"
+    },
+    {
+      "id": 18,
+      "q": "What SQL statement must be used to alter the CONTROL_FILES parameter and ensure the change is limited to the spfile?",
+      "a": "`alter system set control_files = '...', '...' scope=spfile;` (الصفحة 13)"
+    },
+    {
+      "id": 19,
+      "q": "If a database is not using an spfile, what will be displayed in the VALUE column when running the statement to verify this?",
+      "a": "The VALUE column will be blank. (الصفحة 15)"
+    },
+    {
+      "id": 20,
+      "q": "After altering the CONTROL_FILES parameter, what sequence of actions must occur before starting up the database to make the new control file available?",
+      "a": "Shut down the database (`shutdown immediate`), copy an existing control file to the new location/name using the OS cp command, and then start up the database. (الصفحة 13)"
+    },
+    {
+      "id": 21,
+      "q": "Online redo logs store a record of what?",
+      "a": "Transactions that have occurred in your database (Page 18)"
+    },
+    {
+      "id": 22,
+      "q": "Name two purposes served by online redo logs.",
+      "a": "Providing a mechanism for recording changes to the database so that in the event of a media failure, you have a method of recovering transactions; and ensuring that in the event of total instance failure, committed transactions can be recovered (crash recovery) (Page 18)"
+    },
+    {
+      "id": 23,
+      "q": "What is multiplexing an online redo log group?",
+      "a": "Creating multiple members in each redo log group, which is known as multiplexing your online redo log group (Page 18)"
+    },
+    {
+      "id": 24,
+      "q": "How many online redo log groups and members are required in a database?",
+      "a": "You are required to have at least two online redo log groups, and each online redo log group must contain at least one online redo log member (Page 18)"
+    },
+    {
+      "id": 25,
+      "q": "What are four conditions that cause the log writer to flush the contents of the redo log buffer?",
+      "a": "A COMMIT is issued, a log switch occurs, three seconds pass, or the redo log buffer is one-third full. (الصفحة 20)"
+    },
+    {
+      "id": 26,
+      "q": "In a Container Database (CDB), who manages the redo logs and what does this mean for PDBs?",
+      "a": "The CDB will manage the redo logs; PDBs do not have their own redo logs, meaning planning is done at the CDB level. (الصفحة 20)"
+    },
+    {
+      "id": 27,
+      "q": "What happens when the current online redo log group fills up?",
+      "a": "A log switch occurs, and the log writer starts writing to the next online redo log group. (الصفحة 20)"
+    },
+    {
+      "id": 28,
+      "q": "To what does the log writer write simultaneously, and what is required for the database to continue operating?",
+      "a": "The log writer writes simultaneously to all members of a redo log group; successful writing to at least one member is needed. (الصفحة 20)"
+    },
+    {
+      "id": 29,
+      "q": "Why must a database be placed in archivelog mode?",
+      "a": "To save a history of the transaction information because online redo log groups are eventually overwritten (الصفحة 22)"
+    },
+    {
+      "id": 30,
+      "q": "What happens if you lose all members of the current online redo log file?",
+      "a": "You lose transactions (الصفحة 22)"
+    },
+    {
+      "id": 31,
+      "q": "What physical storage device should be used for redundancy when managing log files?",
+      "a": "Redundant devices like RAID (redundant array of inexpensive disks) (الصفحة 24)"
+    },
+    {
+      "id": 32,
+      "q": "How should log files be sized and managed regarding switching?",
+      "a": "Appropriately size the log files, so that they switch and are archived at regular intervals (الصفحة 24)"
+    },
+    {
+      "id": 33,
+      "q": "When adding Online Redo Log Groups, what must be specified for the members?",
+      "a": "The name and location of the members with a file specification (الصفحة 26)"
+    },
+    {
+      "id": 34,
+      "q": "What parameter can be selected for each redo log file group when adding online groups?",
+      "a": "The GROUP parameter (الصفحة 26)"
+    },
+    {
+      "id": 35,
+      "q": "If the GROUP parameter is omitted, who generates its value automatically?",
+      "a": "The Oracle server (الصفحة 26)"
+    },
+    {
+      "id": 36,
+      "q": "What section describes adding Online Redo Log Groups?",
+      "a": "2.4. Adding Online Redo Log Groups (الصفحة 26)"
+    }
+  ]
+}
