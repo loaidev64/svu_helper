@@ -3,6 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:path_provider/path_provider.dart';
 import '../models/course.dart';
 import '../utils/io_stub.dart' if (dart.library.io) 'dart:io';
+import 'analytics_service.dart';
 
 class DownloadService {
   static const _baseUrl = 'https://svu-helper.vercel.app/assets/assets/courses';
@@ -23,7 +24,8 @@ class DownloadService {
       final data = res.data as Map<String, dynamic>;
       final list = (data['courses'] as List<dynamic>).cast<Map<String, dynamic>>();
       return list.map((c) => Course.fromJson(c)).toList();
-    } catch (_) {
+    } catch (e) {
+      AnalyticsService.instance.logBreadcrumb('fetchRemoteIndex failed: $e');
       return null;
     }
   }
@@ -89,6 +91,7 @@ class DownloadService {
 
     state['overall'] = 'completed';
     await stateFile.writeAsString(const JsonEncoder.withIndent('  ').convert(state));
+    AnalyticsService.instance.logBreadcrumb('downloadCourse completed: $courseCode');
   }
 
   static Future<List<Map<String, dynamic>>> _fetchManifestUnits(String courseCode) async {

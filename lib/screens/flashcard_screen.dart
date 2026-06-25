@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
 import '../services/course_service.dart';
+import '../services/analytics_service.dart';
 
 class FlashcardScreen extends StatefulWidget {
   final String courseCode;
@@ -42,11 +43,15 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       final cards =
           (data['cards'] as List<dynamic>).cast<Map<String, dynamic>>();
       cards.shuffle(Random());
+      AnalyticsService.instance.logFlashcardStarted(
+        widget.courseCode, widget.unitId, cards.length,
+      );
       setState(() {
         _cards = cards;
         _loading = false;
       });
     } catch (e) {
+      AnalyticsService.instance.recordError(e, StackTrace.current, context: 'flashcard_screen._loadFlashcards');
       setState(() {
         _error = e.toString();
         _loading = false;

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "209227031685",
+    "project_id": "svu-helper",
+    "storage_bucket": "svu-helper.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:209227031685:android:57a9e1026dad17c022f5ec",
+        "android_client_info": {
+          "package_name": "com.example.svu_helper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtq-tSXxGB4Frr3d2jdvvya7my3CD8lS0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

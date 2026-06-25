@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../services/course_service.dart';
-import 'flashcard_screen.dart';
-import 'pdf_screen.dart';
-import 'quiz_screen.dart';
+import '../services/analytics_service.dart';
 
 class CourseScreen extends StatefulWidget {
   final String courseCode;
@@ -27,7 +26,9 @@ class _CourseScreenState extends State<CourseScreen> {
   Future<void> _loadManifest() async {
     try {
       _manifest = await CourseService.loadManifest(widget.courseCode);
-    } catch (_) {}
+    } catch (e) {
+      AnalyticsService.instance.recordError(e, StackTrace.current, context: 'course_screen._loadManifest');
+    }
     setState(() {
       _loading = false;
     });
@@ -62,17 +63,17 @@ class _CourseScreenState extends State<CourseScreen> {
                 subtitle: const Text('عرض الملف الأصلي'),
                 onTap: () async {
                   Navigator.pop(ctx);
+                  AnalyticsService.instance.logUnitOptionSelected(
+                    widget.courseCode, unit['id'] as String, 'pdf',
+                  );
                   final path = await _getFilePath(pdfPath);
                   if (!mounted) return;
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => PdfScreen(
-                        courseCode: widget.courseCode,
-                        unitId: unit['id'] as String,
-                        filePath: path,
-                        isDownloaded: widget.isDownloaded,
-                      ),
-                    ),
+                  context.push(
+                    '/course/${widget.courseCode}/pdf/${unit['id']}',
+                    extra: {
+                      'filePath': path,
+                      'isDownloaded': widget.isDownloaded,
+                    },
                   );
                 },
               ),
@@ -82,14 +83,12 @@ class _CourseScreenState extends State<CourseScreen> {
                 subtitle: Text('${unit['quizCount']} سؤال'),
                 onTap: () {
                   Navigator.pop(ctx);
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => QuizScreen(
-                        courseCode: widget.courseCode,
-                        unitId: unit['id'] as String,
-                        isDownloaded: widget.isDownloaded,
-                      ),
-                    ),
+                  AnalyticsService.instance.logUnitOptionSelected(
+                    widget.courseCode, unit['id'] as String, 'quiz',
+                  );
+                  context.push(
+                    '/course/${widget.courseCode}/quiz/${unit['id']}',
+                    extra: widget.isDownloaded,
                   );
                 },
               ),
@@ -99,14 +98,12 @@ class _CourseScreenState extends State<CourseScreen> {
                 subtitle: Text('${unit['flashcardCount']} بطاقة'),
                 onTap: () {
                   Navigator.pop(ctx);
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => FlashcardScreen(
-                        courseCode: widget.courseCode,
-                        unitId: unit['id'] as String,
-                        isDownloaded: widget.isDownloaded,
-                      ),
-                    ),
+                  AnalyticsService.instance.logUnitOptionSelected(
+                    widget.courseCode, unit['id'] as String, 'flashcard',
+                  );
+                  context.push(
+                    '/course/${widget.courseCode}/flashcard/${unit['id']}',
+                    extra: widget.isDownloaded,
                   );
                 },
               ),

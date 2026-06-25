@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../models/course.dart';
 import '../services/course_service.dart';
 import '../services/download_service.dart';
-import 'course_screen.dart';
+import '../services/analytics_service.dart';
 
 class HomeScreen extends StatefulWidget {
   final List<Course> newCourses;
@@ -49,7 +50,8 @@ class _HomeScreenState extends State<HomeScreen> {
         _courses = merged;
         _loading = false;
       });
-    } catch (_) {
+    } catch (e) {
+      AnalyticsService.instance.recordError(e, StackTrace.current, context: 'home_screen._loadCourses');
       final local = await CourseService.loadLocalCourses();
       setState(() {
         _courses = local;
@@ -59,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Future<void> _startDownload(String courseCode) async {
+    AnalyticsService.instance.logDownloadStarted(courseCode);
     setState(() {
       _downloadingCodes.add(courseCode);
       _downloadProgress[courseCode] = 0;
@@ -77,6 +80,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onFileProgress: (fileName, fileP) {},
       );
       await CourseService.markCourseDownloaded(courseCode);
+      AnalyticsService.instance.logDownloadCompleted(courseCode);
       if (mounted) {
         setState(() {
           _downloadingCodes.remove(courseCode);
@@ -89,7 +93,8 @@ class _HomeScreenState extends State<HomeScreen> {
           );
         });
       }
-    } catch (_) {
+    } catch (e) {
+      AnalyticsService.instance.logDownloadFailed(courseCode, e.toString());
       if (mounted) {
         setState(() {
           _downloadingCodes.remove(courseCode);
@@ -131,14 +136,8 @@ class _HomeScreenState extends State<HomeScreen> {
         subtitle: Text('${c.code} · ${c.totalUnits} وحدة'),
         trailing: const Icon(Icons.chevron_right),
         onTap: () {
-          Navigator.of(context).push(
-            MaterialPageRoute(
-              builder: (_) => CourseScreen(
-                courseCode: c.code,
-                isDownloaded: c.isDownloaded,
-              ),
-            ),
-          );
+          AnalyticsService.instance.logCourseTap(c.code);
+          context.push('/course/${c.code}', extra: c.isDownloaded);
         },
       ),
     );

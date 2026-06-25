@@ -1,7 +1,31 @@
-import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
+import 'dart:ui' show PlatformDispatcher;
 
-void main() {
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'services/analytics_service.dart';
+import 'router.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await AnalyticsService.instance.init();
+
+  FlutterError.onError = (details) {
+    AnalyticsService.instance.recordError(
+      details.exception,
+      details.stack ?? StackTrace.current,
+      context: details.library,
+    );
+  };
+  PlatformDispatcher.instance.onError = (error, stack) {
+    AnalyticsService.instance.recordError(error, stack, fatal: true);
+    return true;
+  };
+
+  setupScreenTracking();
+  AnalyticsService.instance.logScreenView('splash');
+
   runApp(const SvuHelperApp());
 }
 
@@ -10,14 +34,14 @@ class SvuHelperApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'SVU Helper',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      routerConfig: router,
     );
   }
 }

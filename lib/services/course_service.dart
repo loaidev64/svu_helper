@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:path_provider/path_provider.dart';
 import '../models/course.dart';
 import '../utils/io_stub.dart' if (dart.library.io) 'dart:io';
+import 'analytics_service.dart';
 
 class CourseService {
   static String? _docsPath;
@@ -38,7 +39,9 @@ class CourseService {
       try {
         final data = jsonDecode(await manifest.readAsString()) as Map<String, dynamic>;
         courses.add(Course.fromJson(data, isDownloaded: true));
-      } catch (_) {}
+      } catch (e) {
+        AnalyticsService.instance.logBreadcrumb('loadDownloadedCourses: malformed manifest for $code: $e');
+      }
     }
     return courses;
   }

@@ -2,8 +2,9 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:gpt_markdown/gpt_markdown.dart';
+import 'package:go_router/go_router.dart';
 import '../services/course_service.dart';
-import 'pdf_screen.dart';
+import '../services/analytics_service.dart';
 
 class QuizScreen extends StatefulWidget {
   final String courseCode;
@@ -78,11 +79,15 @@ class _QuizScreenState extends State<QuizScreen> {
         q['correctIndex'] = indices.indexOf(correctIdx);
       }
 
+      AnalyticsService.instance.logQuizStarted(
+        widget.courseCode, widget.unitId, questions.length,
+      );
       setState(() {
         _questions = questions;
         _loading = false;
       });
     } catch (e) {
+      AnalyticsService.instance.recordError(e, StackTrace.current, context: 'quiz_screen._loadQuiz');
       setState(() {
         _error = e.toString();
         _loading = false;
@@ -116,8 +121,17 @@ class _QuizScreenState extends State<QuizScreen> {
     );
 
     if (_currentIndex + 1 >= _questions.length) {
+      final correct = _answers.where((a) => a.isCorrect).length;
+      AnalyticsService.instance.logQuizCompleted(
+        widget.courseCode, widget.unitId, correct, _answers.length,
+      );
       setState(() {
         _mode = _ScreenMode.result;
+      });
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        AnalyticsService.instance.logQuizResultViewed(
+          widget.courseCode, widget.unitId, correct, _answers.length,
+        );
       });
     } else {
       setState(() {
@@ -129,12 +143,14 @@ class _QuizScreenState extends State<QuizScreen> {
   }
 
   void _reviewWrongAnswers() {
+    AnalyticsService.instance.logQuizReviewStarted(widget.courseCode, widget.unitId);
     setState(() {
       _mode = _ScreenMode.review;
     });
   }
 
   void _restartQuiz() {
+    AnalyticsService.instance.logQuizRestarted(widget.courseCode, widget.unitId);
     _currentIndex = 0;
     _selectedOption = null;
     _answered = false;
@@ -215,25 +231,25 @@ class _QuizScreenState extends State<QuizScreen> {
                               color: Colors.amber.shade700,
                             ),
                             onPressed: () async {
+                              AnalyticsService.instance.logQuizPdfReferenced(
+                                widget.courseCode, widget.unitId,
+                              );
                               final fileName =
                                   '${widget.courseCode}_${widget.unitId}_pdf.pdf';
                               final dir = await CourseService.getCourseDir(widget.courseCode);
                               final path = '$dir/$fileName';
                               if (!mounted) return;
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (_) => PdfScreen(
-                                    courseCode: widget.courseCode,
-                                    unitId: widget.unitId,
-                                    filePath: path,
-                                    initialPage: (int.tryParse(
-                                          q['page'] as String? ?? '',
-                                        ) ??
-                                        0) +
-                                        1,
-                                    isDownloaded: widget.isDownloaded,
-                                  ),
-                                ),
+                              context.push(
+                                '/course/${widget.courseCode}/pdf/${widget.unitId}',
+                                extra: {
+                                  'filePath': path,
+                                  'initialPage': (int.tryParse(
+                                        q['page'] as String? ?? '',
+                                      ) ??
+                                      0) +
+                                      1,
+                                  'isDownloaded': widget.isDownloaded,
+                                },
                               );
                             },
                           ),

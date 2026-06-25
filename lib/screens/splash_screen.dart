@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
+import 'package:go_router/go_router.dart';
 import '../services/course_service.dart';
 import '../services/download_service.dart';
+import '../services/analytics_service.dart';
 import '../models/course.dart';
-import 'home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -34,14 +35,19 @@ class _SplashScreenState extends State<SplashScreen> {
             _newCourses = DownloadService.getNewCourses(remote, [...local, ...downloaded]);
           }
         }
-      } catch (_) {}
+      } catch (_) {
+        AnalyticsService.instance.logBreadcrumb('Failed to fetch remote courses on splash');
+      }
+    }
+
+    AnalyticsService.instance.logAppOpen();
+    if (_newCourses.isNotEmpty) {
+      AnalyticsService.instance.logNewCoursesAvailable(_newCourses.length);
     }
 
     await Future.delayed(const Duration(seconds: 3));
     if (mounted) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => HomeScreen(newCourses: _newCourses)),
-      );
+      context.go('/home', extra: _newCourses);
     }
   }
 
